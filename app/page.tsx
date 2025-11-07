@@ -1,65 +1,179 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import type { Metadata } from 'next';
 
-export default function Home() {
+const orgLD = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  name: 'Stride Podiatry',
+  url: 'https://www.stride-podiatry.com.au/',
+  telephone: '+61468518993',
+  email: 'luke@stride-podiatry.com.au',
+  image: 'https://www.stride-podiatry.com.au/images/logo.png',
+  areaServed: [
+    'Adelaide Metro',
+    'Northern Adelaide',
+    'Southern Adelaide',
+    'Eastern Adelaide',
+    'Western Adelaide',
+    'Adelaide CBD',
+  ],
+  priceRange: '$$',
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61570588927493',
+    'https://www.instagram.com/stride.podiatry/',
+  ],
+};
+
+export const metadata: Metadata = {
+  title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+  description:
+    'Expert mobile podiatry across Adelaide. Home-visit foot care, ingrown toenails, heel pain, diabetic assessments, orthotics and more. No referral needed—book online.',
+  alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
+};
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <script
+        key="org-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLD) }}
+      />
+
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="title">Mobile Podiatrist in Adelaide</h1>
+          <h2 className="subtitle">Stride Podiatry — We Come to You</h2>
+          <Link
+            href="/booking"
+            className="hero-cta-button"
+            aria-label="Book a home visit with Stride Podiatry"
+          >
+            Book Your Home Visit
+          </Link>
+        </div>
+      </section>
+
+      <section className="home-container">
+        <div className="profile-image">
+          <Image
+            src="/images/profile-pic.webp"
+            alt="Luke Wheldale — Mobile Podiatrist in Adelaide"
+            width={350}
+            height={420}
+            priority
+          />
+        </div>
+
+        <div className="home-text">
+          <div className="welcome-card">
+            <h2>Professional Mobile Podiatry Across Adelaide</h2>
+            <p className="highlight-text">
+              No referral is necessary to see a podiatrist—<strong>book directly with us today!</strong>
+            </p>
+          </div>
+
+          <div className="service-highlight">
+            <p>
+              We are a <strong>mobile podiatry service</strong>, treating you at home, work, or in aged care facilities. We offer{' '}
+              <Link href="/services#ingrown-toenails">ingrown toenail care</Link>,{' '}
+              <Link href="/services#heel-pain">heel pain treatment</Link>,{' '}
+              <Link href="/services#diabetic-assessments">diabetic foot assessments</Link>,{' '}
+              <Link href="/services#orthotics">custom orthotics</Link>, and more.
+            </p>
+          </div>
+
+          <div className="location-card">
+            <h3>Service Areas</h3>
+            <p>
+              <strong>We cover ALL of Adelaide Metro including:</strong>
+            </p>
+
+            <ul className="location-list">
+              <li>
+                <strong>Northern Adelaide:</strong> Elizabeth, Salisbury, Modbury, Tea Tree Gully, Golden Grove, Mawson Lakes, Parafield Gardens, Gawler, Pooraka, Para Hills
+              </li>
+              <li>
+                <strong>Southern Adelaide:</strong> Noarlunga, Marion, Brighton, Glenelg, Hallett Cove, Morphett Vale, Reynella, Seaford, Christies Beach, Aldinga
+              </li>
+              <li>
+                <strong>Eastern Adelaide:</strong> Norwood, Burnside, Unley, Glen Osmond, Magill, Kensington, Payneham, Campbelltown, Rostrevor, Athelstone
+              </li>
+              <li>
+                <strong>Western Adelaide:</strong> Henley Beach, West Lakes, Port Adelaide, Seaton, Findon, Woodville, Grange, Fulham, Semaphore, Largs Bay
+              </li>
+              <li>
+                <strong>Central Adelaide:</strong> Adelaide CBD, North Adelaide, Prospect, Walkerville, Kent Town, Mile End, Bowden, Thebarton, Goodwood, Parkside
+              </li>
+            </ul>
+
+            <p className="contact-note">
+              Outside Adelaide Metro? <em>Contact us — we may still be able to help.</em>
+            </p>
+          </div>
+
+          <div className="contact-card">
+            <h3>Get in Touch</h3>
+            <div className="contact-info">
+              <p>
+                📞 <strong>Phone:</strong> <a href="tel:+61468518993">0468 518 993</a>
+              </p>
+              <p>
+                📧 <strong>Email:</strong> <a href="mailto:luke@stride-podiatry.com.au">luke@stride-podiatry.com.au</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="services-preview">
+        <div className="section-content">
+          <h2>Our Mobile Podiatry Services</h2>
+          <p>
+            General foot care, custom orthotics, foot pain treatment, ingrown toenail care, diabetes management, biomechanical assessment and more — delivered at your home.
+          </p>
+          <Link href="/services" className="view-all-services">
+            View All Services
+          </Link>
+        </div>
+      </section>
+
+      <section className="coverage-section">
+        <div className="section-content">
+          <h2>We Accept All Major Insurance</h2>
+          <ul className="insurance-list">
+            <li><strong>Medicare</strong> — Chronic Disease Management (CDM)</li>
+            <li><strong>NDIS</strong> — eligible participants</li>
+            <li><strong>DVA</strong> — Gold Card holders</li>
+            <li><strong>Private Health Insurance</strong></li>
+          </ul>
+          <p className="insurance-note">
+            No referral needed for private patients. Bring any documentation for Medicare, NDIS or DVA claims.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="faq-preview">
+        <div className="section-content">
+          <h2>Have Questions?</h2>
+          <p>
+            Visit our <Link href="/faq">FAQ Page</Link> for answers about services, Medicare, NDIS and more.
+          </p>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="cta-section">
+        <div className="book-now">
+          <h2>Ready to Take the First Step?</h2>
+          <p>
+            Book your <strong>home-visit appointment</strong> today and experience expert podiatry care at your convenience.
+          </p>
+          <Link href="/booking" className="book-now-button">
+            Book Now
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
