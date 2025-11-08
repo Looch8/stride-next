@@ -70,13 +70,14 @@ export default function HomePage() {
           <div className="welcome-card">
             <h2>Professional Mobile Podiatry Across Adelaide</h2>
             <p className="highlight-text">
-              No referral is necessary to see a podiatrist—<strong>book directly with us today!</strong>
+              No referral is necessary to see a podiatrist—<strong>book a podiatry home visit directly with us today!</strong>
             </p>
           </div>
 
           <div className="service-highlight">
             <p>
-              We are a <strong>mobile podiatry service</strong>, treating you at home, work, or in aged care facilities. We offer{' '}
+              We deliver full <strong>podiatry home visit</strong> care, bringing the same services you receive in a clinic to your
+              home, workplace or aged care facility. That includes{' '}
               <Link href="/services#ingrown-toenails">ingrown toenail care</Link>,{' '}
               <Link href="/services#heel-pain">heel pain treatment</Link>,{' '}
               <Link href="/services#diabetic-assessments">diabetic foot assessments</Link>,{' '}

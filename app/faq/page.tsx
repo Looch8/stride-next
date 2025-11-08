@@ -6,12 +6,12 @@ const faqData: FAQItem[] = [
   {
     question: 'Do I need a referral to see a podiatrist?',
     answer:
-      "No, you don't need a referral to book with Stride Podiatry. We accept private bookings, Medicare CDM plans, NDIS and DVA clients.",
+      "No—Stride Podiatry home visits can be booked directly. We welcome private bookings as well as clients using Medicare CDM plans (with GP referral), Support at Home packages, NDIS plans, DVA Gold Cards and private health insurance.",
   },
   {
     question: 'Do you accept Medicare, NDIS, and DVA clients?',
     answer:
-      'Yes—Medicare CDM (with GP referral), DVA Gold Card holders, and NDIS (where eligible).',
+      'Yes. We work with Medicare CDM referrals, Support at Home (SaH), Department of Veterans’ Affairs Gold Card holders, NDIS plans (where eligible) and private health insurance.',
   },
   {
     question: 'Where do you provide mobile podiatry services?',
