@@ -1153,63 +1153,85 @@ textarea:focus-visible {
 
 /* Contact */
 .contact {
-  padding: 4rem 2rem;
+  padding: var(--section-pad) clamp(1.25rem, 4vw, 2.5rem);
   background: var(--bg-50);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .contact-container {
-  max-width: 1200px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .contact-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
-.contact h1,
-.contact h2 {
+.contact-header h1,
+.contact-info h2,
+.contact-form-container h2 {
   font-weight: 700;
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact h1::after,
-.contact h2::after {
+.contact-header h1 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info h2,
+.contact-form-container h2 {
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-header h1::after,
+.contact-info h2::after,
+.contact-form-container h2::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 70px;
   height: 4px;
   background-color: var(--brand-primary);
+  border-radius: 999px;
 }
 
 .contact p {
-  font-size: 1.2rem;
-  color: #4b5563;
-  line-height: 1.6;
+  font-size: var(--text-lg);
+  color: var(--brand-muted);
+  line-height: 1.65;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
   margin-top: 3rem;
 }
 
 .contact-info,
 .contact-form-container {
   background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border-radius: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(91, 115, 134, 0.12);
 }
 
 .contact-info ul {
@@ -1225,13 +1247,15 @@ textarea:focus-visible {
   text-align: center;
   gap: 0.5rem;
   margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 12px;
+  padding: 1.25rem;
+  border-radius: 16px;
   transition: all 0.2s ease;
+  background: rgba(243, 247, 251, 0.6);
 }
 
 .contact-item:hover {
-  background: var(--bg-50);
+  background: #f8fbff;
+  box-shadow: inset 0 0 0 1px rgba(95, 126, 146, 0.15);
 }
 
 .contact-item .icon {
@@ -1272,49 +1296,72 @@ textarea:focus-visible {
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1rem;
-  border: 2px solid #e3e8ee;
-  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  border: 1.5px solid #d6e0e8;
+  border-radius: 16px;
   font-size: 1.05rem;
   transition: all 0.25s;
-  background: #f7fafc;
+  background: #f8fbfd;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  border-color: var(--brand-primary);
+  border-color: rgba(95, 126, 146, 0.7);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 4px rgba(109, 137, 157, 0.15);
+  box-shadow: 0 15px 35px rgba(24, 48, 63, 0.12);
   background: #ffffff;
 }
 
 .contact-form button {
-  padding: 1.1rem 2.5rem;
-  font-size: 1.15rem;
-  color: #ffffff;
-  background: linear-gradient(135deg, #6d899d, #567283);
+  padding: 1rem 2.4rem;
+  font-size: 1.05rem;
+  color: #0f172a;
+  background: #bfe0f7;
   border: none;
-  border-radius: 12px;
+  border-radius: 999px;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 0.3px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-width: 220px;
+  text-align: center;
 }
 
 .contact-form button.loading {
-  background: #5e7b8e;
+  background: #d6e3ec;
   cursor: not-allowed;
+  box-shadow: none;
+}
+
+.contact-form button:not(.loading):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 44px rgba(15, 23, 42, 0.18);
 }
 
 .message {
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 8px;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  border: 1px solid rgba(91, 115, 134, 0.15);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info,
+  .contact-form-container {
+    padding: 1.75rem;
+  }
 }
 
 /* FAQ */
