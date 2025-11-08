@@ -462,18 +462,26 @@ textarea:focus-visible {
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .social-links a {
   color: #445e6c;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: opacity 0.2s;
+  font-size: 2rem;
+  transition: color 0.2s ease;
+  display: inline-flex;
+}
+
+.social-links a svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 .social-links a:hover {
-  opacity: 0.8;
+  color: #6d899d;
 }
 
 .copyright {
@@ -601,6 +609,19 @@ textarea:focus-visible {
 .contact-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-text a {
+  font-weight: 600;
+  color: var(--brand-primary-800);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.home-text a:hover {
+  color: var(--brand-primary-700);
+  border-bottom-color: currentColor;
 }
 
 .home-text h3,
@@ -1280,6 +1301,11 @@ textarea:focus-visible {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-details .social-links a {
+  font-size: 2.2rem;
 }
 
 .contact-form {
@@ -1318,32 +1344,34 @@ textarea:focus-visible {
 }
 
 .contact-form button {
-  padding: 1rem 2.4rem;
-  font-size: 1.05rem;
-  color: #0f172a;
-  background: #bfe0f7;
+  padding: 1.1rem 2.5rem;
+  font-size: 1.15rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6d899d, #567283);
   border: none;
-  border-radius: 999px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 0.3px;
-  margin-top: 0.5rem;
-  align-self: flex-start;
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.15);
+  margin-top: 1rem;
+  align-self: center;
+  box-shadow: 0 8px 18px rgba(86, 114, 131, 0.28);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  min-width: 220px;
+  width: min(100%, 420px);
   text-align: center;
 }
 
 .contact-form button.loading {
-  background: #d6e3ec;
+  background: #5e7b8e;
+  color: #ffffff;
   cursor: not-allowed;
+  opacity: 0.9;
   box-shadow: none;
 }
 
 .contact-form button:not(.loading):hover {
-  transform: translateY(-3px);
-  box-shadow: 0 22px 44px rgba(15, 23, 42, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(86, 114, 131, 0.3);
 }
 
 .message {
@@ -1684,4 +1712,16 @@ textarea:focus-visible {
     width: 200px;
     height: 200px;
   }
+}
+.faq-preview a {
+  font-weight: 600;
+  color: var(--brand-primary-800);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.faq-preview a:hover {
+  color: var(--brand-primary-700);
+  border-bottom-color: currentColor;
 }

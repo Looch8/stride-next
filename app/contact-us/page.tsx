@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 
 import ContactForm from '@/components/contact-form';
+import SocialIcon from '@/components/social-icon';
+import { socialLinks } from '@/content/social-links';
 
 const contactLD = {
   '@context': 'https://schema.org',
@@ -70,20 +72,17 @@ export default function ContactPage() {
                   <div className="contact-details">
                     <strong>Follow us</strong>
                     <div className="social-links">
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61570588927493"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Facebook
-                      </a>
-                      <a
-                        href="https://www.instagram.com/stride.podiatry/?hl=en"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Instagram
-                      </a>
+                      {socialLinks.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={link.label}
+                        >
+                          <SocialIcon name={link.icon} />
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>

@@ -1,15 +1,7 @@
-const currentYear = new Date().getFullYear();
+import SocialIcon from '@/components/social-icon';
+import { socialLinks } from '@/content/social-links';
 
-const socialLinks = [
-  {
-    href: 'https://www.facebook.com/profile.php?id=61570588927493',
-    label: 'Facebook',
-  },
-  {
-    href: 'https://www.instagram.com/stride.podiatry/?hl=en',
-    label: 'Instagram',
-  },
-];
+const currentYear = new Date().getFullYear();
 
 export default function SiteFooter() {
   return (
@@ -35,7 +27,7 @@ export default function SiteFooter() {
               rel="noreferrer"
               aria-label={link.label}
             >
-              {link.label}
+              <SocialIcon name={link.icon} />
             </a>
           ))}
         </div>
