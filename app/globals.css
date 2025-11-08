@@ -415,7 +415,7 @@ textarea:focus-visible {
   .dropdown-trigger {
     width: 100%;
     text-align: left;
-    margin: 0;
+    margin: 0 0.25rem;
     border-radius: 8px;
     padding: var(--tapY) var(--tapX);
   }
