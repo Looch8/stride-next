@@ -21,6 +21,18 @@ const poppins = Poppins({
 	display: 'swap',
 });
 
+const organizationJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'Stride Podiatry',
+	url: 'https://www.stride-podiatry.com.au',
+	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
+	sameAs: [
+		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
+		'https://www.instagram.com/stride.podiatry/',
+	],
+};
+
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.stride-podiatry.com.au'),
 	title: {
@@ -45,12 +57,6 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	twitter: {
-		card: 'summary_large_image',
-		title: 'Stride Podiatry',
-		description:
-			'Mobile podiatry across Adelaide. Home-visit podiatry for toenails, pain, orthotics and more.',
-	},
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -65,6 +71,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					{children}
 				</main>
 				<SiteFooter />
+				<script
+					type="application/ld+json"
+					suppressHydrationWarning
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(organizationJsonLd),
+					}}
+				/>
 			</body>
 		</html>
 	);
