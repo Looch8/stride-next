@@ -631,6 +631,9 @@ textarea:focus-visible {
   margin-bottom: 1rem;
   position: relative;
   padding-bottom: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-text h3::after,
@@ -638,7 +641,8 @@ textarea:focus-visible {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50px;
   height: 3px;
   background-color: var(--brand-primary);
@@ -648,6 +652,11 @@ textarea:focus-visible {
   font-size: 1.3rem;
   color: var(--brand-primary);
   font-weight: 600;
+}
+
+.location-card,
+.contact-card {
+  text-align: center;
 }
 
 .location-list,
@@ -662,6 +671,7 @@ textarea:focus-visible {
   margin-bottom: 0.8rem;
   padding-left: 1.5rem;
   position: relative;
+  text-align: left;
 }
 
 .location-list li::before,
@@ -1724,4 +1734,9 @@ textarea:focus-visible {
 .faq-preview a:hover {
   color: var(--brand-primary-700);
   border-bottom-color: currentColor;
+}
+.service-highlight p {
+  font-size: var(--text-lg);
+  line-height: 1.75;
+  color: var(--brand-ink);
 }

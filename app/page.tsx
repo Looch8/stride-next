@@ -141,15 +141,16 @@ export default function HomePage() {
 
       <section className="coverage-section">
         <div className="section-content">
-          <h2>We Accept All Major Insurance</h2>
+          <h2>We Accept All Major Funding Schemes</h2>
           <ul className="insurance-list">
-            <li><strong>Medicare</strong> — Chronic Disease Management (CDM)</li>
-            <li><strong>NDIS</strong> — eligible participants</li>
-            <li><strong>DVA</strong> — Gold Card holders</li>
+            <li><strong>National Disability Insurance Scheme (NDIS)</strong></li>
+            <li><strong>Chronic Disease Management (CDM / Medicare)</strong></li>
+            <li><strong>Support at Home (SaH)</strong></li>
+            <li><strong>Department of Veterans’ Affairs (DVA)</strong></li>
             <li><strong>Private Health Insurance</strong></li>
           </ul>
           <p className="insurance-note">
-            No referral needed for private patients. Bring any documentation for Medicare, NDIS or DVA claims.
+            Documentation from your provider helps us process claims quickly. Private patients are always welcome—no referral needed.
           </p>
         </div>
       </section>
