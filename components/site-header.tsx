@@ -12,7 +12,13 @@ import {
 
 import { serviceNavItems } from '@/content/services';
 
-const NAV_LINKS = [
+type NavLink = {
+  href: string;
+  label: string;
+  dropdown?: boolean;
+};
+
+const NAV_LINKS: readonly NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/about-us', label: 'About' },
   { href: '/services', label: 'Services', dropdown: true },
@@ -20,7 +26,7 @@ const NAV_LINKS = [
   { href: '/contact-us', label: 'Contact Us' },
   { href: '/referral', label: 'Referrals' },
   { href: '/faq', label: 'FAQ' },
-] as const;
+];
 
 const dropdownServices = [
   { href: '/services', label: 'All Services' },
