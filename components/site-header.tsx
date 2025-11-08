@@ -3,7 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useRef, useState, type MouseEvent } from 'react';
+import {
+  useEffect,
+  useRef,
+  useState,
+  type MouseEvent as ReactMouseEvent,
+} from 'react';
 
 import { serviceNavItems } from '@/content/services';
 
@@ -64,12 +69,12 @@ function HeaderContent({ pathname }: HeaderContentProps) {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
-  const toggleServices = (event: MouseEvent<HTMLButtonElement>) => {
+  const toggleServices = (event: ReactMouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
     setServicesOpen((prev) => !prev);
   };
 
-  const handleNavClick = (event: MouseEvent<HTMLUListElement>) => {
+  const handleNavClick = (event: ReactMouseEvent<HTMLUListElement>) => {
     const target = event.target as HTMLElement;
     if (target.closest('a')) {
       setIsMobileMenuOpen(false);
