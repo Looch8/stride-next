@@ -27,10 +27,18 @@ const organizationJsonLd = {
 	name: 'Stride Podiatry',
 	url: 'https://www.stride-podiatry.com.au',
 	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
+	description:
+		'Mobile and home-visit podiatry clinic serving Adelaide metro — ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
+	slogan: 'Adelaide mobile & home-visit podiatrist',
 	sameAs: [
 		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
 		'https://www.instagram.com/stride.podiatry/',
 	],
+	areaServed: {
+		'@type': 'City',
+		name: 'Adelaide',
+	},
+	serviceType: 'Mobile podiatry and home visit podiatrist services',
 };
 
 export const metadata: Metadata = {
@@ -40,13 +48,20 @@ export const metadata: Metadata = {
 		template: '%s | Stride Podiatry',
 	},
 	description:
-		'Mobile podiatry across Adelaide. Home-visit foot care, ingrown toenails, heel and arch pain, diabetes foot assessments, orthotics and more.',
+		'Mobile and home-visit podiatrist across Adelaide. Foot care for ingrown toenails, heel pain, diabetes assessments, orthotics, aged care and more.',
+	keywords: [
+		'home visit podiatrist Adelaide',
+		'home visit podiatry Adelaide',
+		'mobile podiatrist Adelaide',
+		'mobile podiatry Adelaide',
+		'home care podiatrist Adelaide',
+	],
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',
-		title: 'Stride Podiatry',
+		title: 'Stride Podiatry | Mobile & Home Visit Podiatrist Adelaide',
 		description:
-			'Mobile podiatry across Adelaide. Home-visit foot care, ingrown toenails, heel and arch pain, diabetes foot assessments, orthotics and more.',
+			'Stride Podiatry provides mobile and home visit podiatry across Adelaide for heel pain, ingrown toenails, diabetic assessments, orthotics and more.',
 		url: 'https://www.stride-podiatry.com.au',
 		images: [
 			{

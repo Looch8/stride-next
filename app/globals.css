@@ -701,12 +701,49 @@ textarea:focus-visible {
   margin-top: 1rem;
 }
 
+.home-visit-section,
 .services-preview,
 .coverage-section,
 .faq-preview {
   width: 100%;
   padding: 4rem 2rem;
   margin: 2rem 0;
+}
+
+.home-visit-section {
+  background: #ffffff;
+}
+
+.home-visit-section .section-content {
+  max-width: 900px;
+  text-align: left;
+}
+
+.home-visit-section h2 {
+  margin-bottom: 1rem;
+}
+
+.home-visit-section p {
+  font-size: 1.05rem;
+  color: #334155;
+}
+
+.home-visit-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.home-visit-benefits li {
+  background: #f4f9fd;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e0e9f1;
+  font-weight: 600;
+  color: #445e6c;
 }
 
 .services-preview,

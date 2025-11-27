@@ -19,6 +19,33 @@ const orgLD = {
     'Adelaide CBD',
   ],
   priceRange: '$$',
+  description:
+    'Stride Podiatry delivers home visit and mobile podiatry services across Adelaide including ingrown toenail care, heel pain treatment, orthotics and diabetic foot care.',
+  slogan: 'Home visit podiatry Adelaide',
+  serviceType: [
+    'Home visit podiatrist Adelaide',
+    'Mobile podiatrist Adelaide',
+    'Home visit podiatry Adelaide',
+  ],
+  availableService: [
+    {
+      '@type': 'MedicalTherapy',
+      name: 'Home visit podiatrist Adelaide',
+      areaServed: 'Greater Adelaide',
+      serviceAudience: 'Residents needing podiatry care at home',
+    },
+    {
+      '@type': 'MedicalTherapy',
+      name: 'Home visit podiatry Adelaide',
+      areaServed: 'Adelaide Metro',
+      serviceAudience: 'Aged care residents, NDIS, private patients',
+    },
+  ],
+  keywords: [
+    'home visit podiatrist Adelaide',
+    'home visit podiatry Adelaide',
+    'mobile podiatrist Adelaide',
+  ],
   sameAs: [
     'https://www.facebook.com/profile.php?id=61570588927493',
     'https://www.instagram.com/stride.podiatry/',
@@ -26,9 +53,15 @@ const orgLD = {
 };
 
 export const metadata: Metadata = {
-  title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+  title: 'Mobile & Home Visit Podiatrist Adelaide | Stride Podiatry',
   description:
-    'Expert mobile podiatry across Adelaide. Home-visit foot care, ingrown toenails, heel pain, diabetic assessments, orthotics and more. No referral needed—book online.',
+    'Stride Podiatry is Adelaide’s mobile and home-visit podiatrist. We treat ingrown toenails, heel pain, diabetes, orthotics and more—book a podiatry home visit today.',
+  keywords: [
+    'home visit podiatrist Adelaide',
+    'home visit podiatry Adelaide',
+    'mobile podiatrist Adelaide',
+    'mobile podiatry Adelaide',
+  ],
   alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
 };
 
@@ -43,8 +76,8 @@ export default function HomePage() {
 
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="title">Mobile Podiatrist in Adelaide</h1>
-          <h2 className="subtitle">Stride Podiatry — We Come to You</h2>
+          <h1 className="title">Mobile & Home Visit Podiatrist in Adelaide</h1>
+          <h2 className="subtitle">Stride Podiatry — Trusted Home Podiatry Care</h2>
           <Link
             href="/booking"
             className="hero-cta-button"
@@ -52,6 +85,29 @@ export default function HomePage() {
           >
             Book Your Home Visit
           </Link>
+        </div>
+      </section>
+
+      <section className="home-visit-section">
+        <div className="section-content">
+          <h2>Need a Home Visit Podiatrist in Adelaide?</h2>
+          <p>
+            We are a dedicated <strong>home visit podiatry service for Adelaide</strong>, helping busy families, aged care
+            residents, NDIS participants and anyone who prefers podiatry at home. From routine nail and skin care through
+            to complex biomechanical assessments, we bring the complete clinic experience to your front door anywhere in
+            the metro area.
+          </p>
+          <p>
+            Every appointment includes a full assessment plus personalised treatment plan. We travel with sterilised
+            instruments, mobile treatment chairs and the equipment needed to manage <strong>ingrown toenails</strong>,{' '}
+            <strong>diabetic foot checks</strong>, <strong>heel pain</strong> and <strong>orthotic reviews</strong> without
+            you needing to leave home.
+          </p>
+          <ul className="home-visit-benefits">
+            <li>Same-week availability for Adelaide home visits</li>
+            <li>Private, CDM/Medicare, DVA, NDIS and Home Care Package patients welcome</li>
+            <li>We visit houses, retirement villages, work sites and residential aged care</li>
+          </ul>
         </div>
       </section>
 
