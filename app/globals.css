@@ -558,6 +558,7 @@ textarea:focus-visible {
 .hero-cta-button:hover {
   background: var(--brand-primary-700);
   transform: translateY(-2px);
+  color: #ffffff;
 }
 
 .home-container {
