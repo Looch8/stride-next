@@ -98,34 +98,35 @@ export default function HomePage() {
 					<p>
 						We are a dedicated{' '}
 						<strong>
-							home visit podiatry service for Adelaide
+							home visit podiatry service for Adelaide and
+							surrounding regions
 						</strong>
 						, helping busy families, aged care residents, NDIS
 						participants and anyone who prefers podiatry at home.
 						From routine nail and skin care through to complex
 						biomechanical assessments, we bring the complete clinic
-						experience to your front door anywhere in the metro
-						area.
+						experience to your front door anywhere in South
+						Australia.
 					</p>
 					<p>
 						Every appointment includes a full assessment plus
 						personalised treatment plan. We travel with sterilised
-						instruments, mobile treatment chairs and the equipment
-						needed to manage <strong>ingrown toenails</strong>,{' '}
+						instruments, and the equipment needed to manage{' '}
+						<strong>ingrown toenails</strong>,{' '}
 						<strong>diabetic foot checks</strong>,{' '}
 						<strong>heel pain</strong> and{' '}
-						<strong>orthotic reviews</strong> without you needing to
+						<strong>custom orthotics</strong> without you needing to
 						leave home.
 					</p>
 					<ul className="home-visit-benefits">
 						<li>Same-week availability for Adelaide home visits</li>
 						<li>
-							Private, CDM/Medicare, DVA, NDIS and Home Care
-							Package patients welcome
+							Private, CDM/Medicare, DVA, NDIS and Support at Home
+							patients welcome
 						</li>
 						<li>
-							We visit houses, retirement villages, work sites and
-							residential aged care
+							We visit houses, retirement villages, and
+							residential aged care facilities.
 						</li>
 					</ul>
 				</div>

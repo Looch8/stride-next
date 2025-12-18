@@ -28,7 +28,7 @@ const organizationJsonLd = {
 	url: 'https://www.stride-podiatry.com.au',
 	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
 	description:
-		'Mobile and home-visit podiatry clinic serving Adelaide metro — ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
+		'Mobile and home-visit podiatry clinic serving Adelaide metro — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	slogan: 'Adelaide mobile & home-visit podiatrist',
 	sameAs: [
 		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
