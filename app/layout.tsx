@@ -1,3 +1,4 @@
+// layout.tsx
 import type { Metadata } from 'next';
 import { Nunito, Poppins } from 'next/font/google';
 import type { ReactNode } from 'react';
@@ -76,7 +77,6 @@ export const metadata: Metadata = {
 		icon: [
 			{ url: '/favicon.ico' },
 			{ url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-			{ url: '/favicon.svg', type: 'image/svg+xml' },
 		],
 		apple: {
 			url: '/apple-touch-icon.png',
