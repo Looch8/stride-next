@@ -10,18 +10,19 @@ const orgLD = {
 	telephone: '+61468518993',
 	email: 'luke@stride-podiatry.com.au',
 	image: 'https://www.stride-podiatry.com.au/images/logo.png',
-	areaServed: [
-		'Adelaide Metro',
-		'Northern Adelaide',
-		'Southern Adelaide',
-		'Eastern Adelaide',
-		'Western Adelaide',
-		'Adelaide CBD',
-	],
-	priceRange: '$$',
+	areaServed: {
+		'@type': 'AdministrativeArea',
+		name: 'Adelaide Metropolitan Area',
+		address: {
+			'@type': 'PostalAddress',
+			addressRegion: 'SA',
+			addressCountry: 'AU',
+		},
+	},
+	priceRange: '$$$',
 	description:
-		'Stride Podiatry delivers home visit and mobile podiatry services across Adelaide including ingrown toenail care, heel pain treatment, orthotics and diabetic foot care.',
-	slogan: 'Home visit podiatry Adelaide',
+		'Stride Podiatry delivers home visit and mobile podiatry services across Adelaide including ingrown toenail care, heel pain treatment, orthotics, diabetic foot care and aged care.',
+	slogan: 'Home visit podiatry in Adelaide',
 	serviceType: [
 		'Home visit podiatrist Adelaide',
 		'Mobile podiatrist Adelaide',
@@ -30,15 +31,17 @@ const orgLD = {
 	availableService: [
 		{
 			'@type': 'MedicalTherapy',
-			name: 'Home visit podiatrist Adelaide',
+			name: 'Home Visit Podiatry',
 			areaServed: 'Greater Adelaide',
-			serviceAudience: 'Residents needing podiatry care at home',
+			serviceAudience:
+				'Residents needing in-home care, NDIS participants, Support at Home clients',
 		},
 		{
 			'@type': 'MedicalTherapy',
-			name: 'Home visit podiatry Adelaide',
+			name: 'Mobile Podiatry for Aged Care & Chronic Conditions',
 			areaServed: 'Adelaide Metro',
-			serviceAudience: 'Aged care residents, NDIS, private patients',
+			serviceAudience:
+				'Aged care residents, NDIS participants, private patients, Support at Home clients',
 		},
 	],
 	keywords: [
@@ -55,7 +58,7 @@ const orgLD = {
 export const metadata: Metadata = {
 	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
-		'Stride Podiatry is Adelaide’s mobile and home-visit podiatrist. We treat ingrown toenails, heel pain, diabetes, orthotics and more—book a podiatry home visit today.',
+		'Mobile home-visit podiatry Adelaide – NDIS, Support at Home, Medicare CDM, DVA & private. Expert care for ingrown toenails, heel pain, diabetes, orthotics. Book now.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
