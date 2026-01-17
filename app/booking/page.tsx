@@ -6,7 +6,13 @@ export const metadata: Metadata = {
 	title: 'Book a Mobile Podiatrist | Stride Podiatry Adelaide',
 	description:
 		'Request a mobile podiatry home visit in Adelaide. No referral needed. We accept Medicare CDM (GPMP/TCA), NDIS and private patients.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking/' },
+	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking' },
+	openGraph: {
+		title: 'Book a Mobile Podiatrist | Stride Podiatry Adelaide',
+		description:
+			'Request a mobile podiatry home visit in Adelaide. No referral needed. We accept Medicare CDM (GPMP/TCA), NDIS and private patients.',
+		url: 'https://www.stride-podiatry.com.au/booking',
+	},
 };
 
 export default function BookingPage() {

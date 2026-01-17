@@ -29,7 +29,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'General Podiatry Care | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'General foot & nail care at home across Adelaide — nails, corns, calluses and cracked heels. Comfortable, convenient podiatry care.',
-    canonical: `${siteUrl}/services/general-podiatry/`,
+    canonical: `${siteUrl}/services/general-podiatry`,
     overview:
       'We keep nails, corns and calluses under control so your feet stay healthy and comfortable.',
     sections: [
@@ -68,7 +68,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Ingrown Toenail Treatment | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Fast, effective relief for ingrown toenails — conservative care, bracing and minor procedures when indicated.',
-    canonical: `${siteUrl}/services/ingrown-toenail/`,
+    canonical: `${siteUrl}/services/ingrown-toenail`,
     overview:
       'We treat painful or infected ingrown nails to relieve pain quickly and help prevent recurrence.',
     sections: [
@@ -108,7 +108,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Diabetes Foot Care | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Diabetes foot assessments at home — neurological & vascular screening, risk reduction and education to prevent ulcers.',
-    canonical: `${siteUrl}/services/diabetes-foot-care/`,
+    canonical: `${siteUrl}/services/diabetes-foot-care`,
     overview:
       'Diabetes can affect circulation and sensation. Regular podiatry helps detect issues early and lower the risk of ulcers and infection.',
     sections: [
@@ -149,7 +149,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Biomechanics & Gait | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Assessment of foot mechanics and gait — load management, strength and orthotic options to reduce pain and improve function.',
-    canonical: `${siteUrl}/services/biomechanics-gait/`,
+    canonical: `${siteUrl}/services/biomechanics-gait`,
     overview:
       'We assess how your feet and legs move during daily life and exercise. Optimising load and mechanics helps reduce pain and prevent recurrence.',
     sections: [
@@ -188,7 +188,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Custom Orthotics | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Custom orthotics prescribed from detailed assessment to support foot mechanics, reduce pain and improve comfort.',
-    canonical: `${siteUrl}/services/custom-orthotics/`,
+    canonical: `${siteUrl}/services/custom-orthotics`,
     overview:
       'Orthotics can support your feet, optimise mechanics and reduce pain when prescribed from a thorough biomechanical assessment.',
     sections: [
@@ -229,7 +229,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Heel & Arch Pain | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Diagnosis and treatment for heel and arch pain — plantar fasciitis, heel spurs and Achilles issues managed at home.',
-    canonical: `${siteUrl}/services/heel-arch-pain/`,
+    canonical: `${siteUrl}/services/heel-arch-pain`,
     overview: 'We diagnose and treat heel and arch pain so you can move comfortably again.',
     sections: [
       {
@@ -268,7 +268,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Footwear Advice | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Get footwear recommendations matched to your foot shape, support needs and activity — comfort and injury prevention.',
-    canonical: `${siteUrl}/services/footwear-advice/`,
+    canonical: `${siteUrl}/services/footwear-advice`,
     overview:
       'The right shoes can dramatically improve comfort and reduce injury risk. We help you choose footwear that suits your feet and activity.',
     sections: [
@@ -299,7 +299,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Sports Podiatry | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
       'Sport-specific assessments, injury prevention and treatment plans for active people — delivered at home.',
-    canonical: `${siteUrl}/services/sports-podiatry/`,
+    canonical: `${siteUrl}/services/sports-podiatry`,
     overview:
       'We help active people stay active — assessing mechanics, managing load and building resilience for your sport.',
     sections: [
@@ -338,7 +338,7 @@ export const services: ServiceContent[] = [
     metaTitle: 'Forefoot Pain | Bunions, Morton’s Neuroma, Hammer Toes | Stride Podiatry',
     metaDescription:
       'Assessment and home-visit treatment for forefoot pain including bunions, Morton’s neuroma and hammer toes. Mobile podiatry across Adelaide.',
-    canonical: `${siteUrl}/services/forefoot-pain/`,
+    canonical: `${siteUrl}/services/forefoot-pain`,
     overview:
       'Forefoot pain can stem from joint irritation, nerve compression or altered toe mechanics. We identify the drivers—load, footwear and gait—and create a plan to reduce pain and keep you active.',
     sections: [

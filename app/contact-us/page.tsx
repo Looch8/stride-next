@@ -21,7 +21,13 @@ export const metadata: Metadata = {
   title: 'Contact Stride Podiatry | Mobile Podiatrist Adelaide',
   description:
     'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
-  alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us/' },
+  alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us' },
+  openGraph: {
+    title: 'Contact Stride Podiatry | Mobile Podiatrist Adelaide',
+    description:
+      'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+    url: 'https://www.stride-podiatry.com.au/contact-us',
+  },
 };
 
 export default function ContactPage() {

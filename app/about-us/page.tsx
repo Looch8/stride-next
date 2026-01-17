@@ -5,7 +5,13 @@ export const metadata: Metadata = {
 	title: 'About Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
 		'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/about-us/' },
+	alternates: { canonical: 'https://www.stride-podiatry.com.au/about-us' },
+	openGraph: {
+		title: 'About Stride Podiatry | Mobile Podiatrist Adelaide',
+		description:
+			'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
+		url: 'https://www.stride-podiatry.com.au/about-us',
+	},
 };
 
 export default function AboutPage() {

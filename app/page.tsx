@@ -21,7 +21,7 @@ const orgLD = {
 	},
 	priceRange: '$$$',
 	description:
-		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
+		'Mobile and home-visit podiatrists serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	slogan: 'Home visit podiatry in Adelaide',
 	serviceType: [
 		'Home visit podiatrist Adelaide',
@@ -66,6 +66,12 @@ export const metadata: Metadata = {
 		'mobile podiatry Adelaide',
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
+	openGraph: {
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		description:
+			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+		url: 'https://www.stride-podiatry.com.au/',
+	},
 };
 
 export default function HomePage() {
