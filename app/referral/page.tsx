@@ -10,12 +10,12 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Refer a Patient | Stride Podiatry Adelaide',
 	description:
-		'Referral information for GPs and coordinators. We accept Medicare CDM, NDIS, Support at Home and aged care referrals for mobile podiatry across Adelaide.',
+		'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/referral' },
 	openGraph: {
 		title: 'Refer a Patient | Stride Podiatry Adelaide',
 		description:
-			'Referral information for GPs and coordinators. We accept GPMP/TCA (Medicare CDM), NDIS and aged care referrals for mobile podiatry across Adelaide.',
+			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
 		url: 'https://www.stride-podiatry.com.au/referral',
 	},
 };

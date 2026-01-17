@@ -67,10 +67,10 @@ export const services: ServiceContent[] = [
     heroAlt: 'Ingrown toenail care',
     metaTitle: 'Ingrown Toenail Treatment | Mobile Podiatrist Adelaide | Stride Podiatry',
     metaDescription:
-      'Fast, effective relief for ingrown toenails — conservative care, bracing and minor procedures when indicated.',
+      'Prompt care for ingrown toenails — conservative care, bracing and minor procedures when indicated.',
     canonical: `${siteUrl}/services/ingrown-toenail`,
     overview:
-      'We treat painful or infected ingrown nails to relieve pain quickly and help prevent recurrence.',
+      'We treat painful or infected ingrown nails to help reduce pain and lower recurrence risk.',
     sections: [
       {
         heading: 'Common issues',

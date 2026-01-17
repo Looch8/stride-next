@@ -34,8 +34,6 @@ export default function HomePage() {
 					</h2>
 					<p className="hero-subtitle">
 						We come to you across Adelaide metro and regional SA.
-						Private, Support at Home, NDIS, DVA and Medicare CDM
-						welcome.
 					</p>
 					<div className="hero-cta-group">
 						<Link
@@ -77,10 +75,9 @@ export default function HomePage() {
 						</strong>
 						, helping busy families, aged care residents, NDIS
 						participants and anyone who prefers podiatry at home.
-						From routine nail and skin care through to complex
-						biomechanical assessments, we bring the complete clinic
-						experience to your front door anywhere in South
-						Australia.
+						From routine nail and skin care through to biomechanical
+						assessments, we provide comprehensive mobile care across
+						Adelaide metro and surrounding regions.
 					</p>
 					<p>
 						Every appointment includes a full assessment plus
@@ -93,10 +90,12 @@ export default function HomePage() {
 						leave home.
 					</p>
 					<ul className="home-visit-benefits">
-						<li>Same-week availability for Adelaide home visits</li>
 						<li>
-							Private, CDM/Medicare, DVA, NDIS and Support at Home
-							patients welcome
+							Appointments available — call for current openings
+						</li>
+						<li>
+							Private bookings welcome; Medicare CDM requires a GP
+							referral. NDIS plan and self-managed accepted
 						</li>
 						<li>
 							We visit houses, retirement villages, and
@@ -121,7 +120,7 @@ export default function HomePage() {
 					<div className="welcome-card">
 						<h2>Professional Mobile Podiatry Across Adelaide</h2>
 						<p className="highlight-text">
-							No referral is necessary to see a podiatrist—
+							No referral is required for private bookings—
 							<strong>
 								book a podiatry home visit directly with us
 								today!
@@ -235,7 +234,7 @@ export default function HomePage() {
 
 			<section className="coverage-section">
 				<div className="section-content">
-					<h2>We Accept All Major Funding Schemes</h2>
+					<h2>We Work With Major Funding Schemes</h2>
 					<ul className="insurance-list">
 						<li>
 							<strong>
@@ -260,9 +259,10 @@ export default function HomePage() {
 						</li>
 					</ul>
 					<p className="insurance-note">
-						Documentation from your provider helps us process claims
-						quickly. Private patients are always welcome—no referral
-						needed.
+						Medicare CDM requires a GP referral. NDIS plan- and
+						self-managed accepted. Support at Home is via providers.
+						Private patients are always welcome—no referral
+						required.
 					</p>
 				</div>
 			</section>

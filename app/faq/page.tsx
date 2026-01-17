@@ -11,7 +11,7 @@ const breadcrumbsLd = buildBreadcrumbList([
 const faqData: FAQItem[] = [
 	{
 		question: 'Do I need a referral to see a podiatrist?',
-		answer: 'No, Stride Podiatry home visits can be booked directly. We welcome private bookings as well as clients using Medicare CDM plans (with GP referral), Support at Home packages, NDIS plans, DVA and private health insurance.',
+		answer: 'No referral is required for private bookings. Medicare CDM requires a GP referral. We also see NDIS plan- and self-managed clients, Support at Home clients, DVA patients where applicable, and private health insurance patients.',
 	},
 	{
 		question: 'What time will you arrive for my appointment?',
@@ -23,7 +23,7 @@ const faqData: FAQItem[] = [
 	},
 	{
 		question: 'Do you accept Medicare, NDIS, and DVA clients?',
-		answer: 'Yes. We work with Medicare CDM referrals, Support at Home (SaH), Department of Veterans’ Affairs, NDIS plans (where eligible) and private health insurance.',
+		answer: 'We work with Medicare CDM referrals, NDIS plan- and self-managed clients, Support at Home, and private health insurance. We may see DVA patients where applicable.',
 	},
 	{
 		question: 'Where do you provide mobile podiatry services?',
@@ -72,7 +72,9 @@ export default function FAQPage() {
 			<script
 				key="breadcrumb-schema"
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(breadcrumbsLd),
+				}}
 			/>
 			<script
 				key="faq-schema"
