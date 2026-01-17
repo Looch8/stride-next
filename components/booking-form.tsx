@@ -153,7 +153,9 @@ export default function BookingForm() {
       </form>
 
       {message.type && (
-        <div className={`${message.type}-message`}>{message.text}</div>
+        <div className={`${message.type}-message`} role="status" aria-live="polite">
+          {message.text}
+        </div>
       )}
     </>
   );

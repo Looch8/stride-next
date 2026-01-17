@@ -75,35 +75,35 @@ export default function ContactForm() {
     <>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Your Name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your name"
+            placeholder="Full name"
             value={formData.name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="you@email.com"
             value={formData.email}
             onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Your Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="How can we help you?"
+            placeholder="Tell us about the visit you need"
             rows={5}
             value={formData.message}
             onChange={handleChange}
@@ -120,7 +120,13 @@ export default function ContactForm() {
       </form>
 
       {status.type && (
-        <div className={`message ${status.type}-message`}>{status.text}</div>
+        <div
+          className={`message ${status.type}-message`}
+          role="status"
+          aria-live="polite"
+        >
+          {status.text}
+        </div>
       )}
     </>
   );
