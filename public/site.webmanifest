@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Stride Podiatry",
+  "short_name": "Stride",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
