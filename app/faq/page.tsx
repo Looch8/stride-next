@@ -1,6 +1,12 @@
 import type { Metadata } from 'next';
 
 import FAQList, { type FAQItem } from '@/components/faq-list';
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'FAQ', url: 'https://www.stride-podiatry.com.au/faq' },
+]);
 
 const faqData: FAQItem[] = [
 	{
@@ -63,6 +69,11 @@ export const metadata: Metadata = {
 export default function FAQPage() {
 	return (
 		<section className="faq">
+			<script
+				key="breadcrumb-schema"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+			/>
 			<script
 				key="faq-schema"
 				type="application/ld+json"

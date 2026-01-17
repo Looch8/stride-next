@@ -2,59 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
-const orgLD = {
-	'@context': 'https://schema.org',
-	'@type': 'MedicalBusiness',
-	name: 'Stride Podiatry',
-	url: 'https://www.stride-podiatry.com.au/',
-	telephone: '+61468518993',
-	email: 'luke@stride-podiatry.com.au',
-	image: 'https://www.stride-podiatry.com.au/images/logo.png',
-	areaServed: {
-		'@type': 'AdministrativeArea',
-		name: 'Adelaide Metropolitan Area',
-		address: {
-			'@type': 'PostalAddress',
-			addressRegion: 'SA',
-			addressCountry: 'AU',
-		},
-	},
-	priceRange: '$$$',
-	description:
-		'Mobile and home-visit podiatrists serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
-	slogan: 'Home visit podiatry in Adelaide',
-	serviceType: [
-		'Home visit podiatrist Adelaide',
-		'Mobile podiatrist Adelaide',
-		'Home visit podiatry Adelaide',
-	],
-	availableService: [
-		{
-			'@type': 'MedicalTherapy',
-			name: 'Home Visit Podiatry',
-			areaServed: 'Greater Adelaide',
-			serviceAudience:
-				'Residents needing in-home care, NDIS participants, Support at Home clients',
-		},
-		{
-			'@type': 'MedicalTherapy',
-			name: 'Mobile Podiatry for Aged Care & Chronic Conditions',
-			areaServed: 'Adelaide Metro',
-			serviceAudience:
-				'Aged care residents, NDIS participants, private patients, Support at Home clients',
-		},
-	],
-	keywords: [
-		'home visit podiatrist Adelaide',
-		'home visit podiatry Adelaide',
-		'mobile podiatrist Adelaide',
-	],
-	sameAs: [
-		'https://www.facebook.com/profile.php?id=61570588927493',
-		'https://www.instagram.com/stride.podiatry/',
-	],
-};
-
 export const metadata: Metadata = {
 	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
@@ -77,12 +24,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
 	return (
 		<>
-			<script
-				key="org-schema"
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLD) }}
-			/>
-
 			<section className="hero-section">
 				<div className="hero-content">
 					<h1 className="title">

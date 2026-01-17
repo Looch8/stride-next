@@ -3,6 +3,12 @@ import type { Metadata } from 'next';
 import ContactForm from '@/components/contact-form';
 import SocialIcon from '@/components/social-icon';
 import { socialLinks } from '@/content/social-links';
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+  { name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+  { name: 'Contact', url: 'https://www.stride-podiatry.com.au/contact-us' },
+]);
 
 const contactLD = {
   '@context': 'https://schema.org',
@@ -33,6 +39,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="contact">
+      <script
+        key="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+      />
       <script
         key="contact-schema"
         type="application/ld+json"

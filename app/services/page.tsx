@@ -3,6 +3,83 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 import { services } from '@/content/services';
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+  { name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+  { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
+]);
+
+const servicesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'Service',
+        name: 'Ingrown Toenail Treatment',
+        url: 'https://www.stride-podiatry.com.au/services/ingrown-toenail',
+        serviceType: 'Ingrown toenail treatment',
+        areaServed: 'Adelaide and regional South Australia',
+        provider: {
+          '@type': 'MedicalBusiness',
+          name: 'Stride Podiatry',
+          url: 'https://www.stride-podiatry.com.au/',
+        },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'Service',
+        name: 'Diabetic Foot Care',
+        url: 'https://www.stride-podiatry.com.au/services/diabetes-foot-care',
+        serviceType: 'Diabetic foot care',
+        areaServed: 'Adelaide and regional South Australia',
+        provider: {
+          '@type': 'MedicalBusiness',
+          name: 'Stride Podiatry',
+          url: 'https://www.stride-podiatry.com.au/',
+        },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      item: {
+        '@type': 'Service',
+        name: 'Custom Orthotics',
+        url: 'https://www.stride-podiatry.com.au/services/custom-orthotics',
+        serviceType: 'Custom orthotics',
+        areaServed: 'Adelaide and regional South Australia',
+        provider: {
+          '@type': 'MedicalBusiness',
+          name: 'Stride Podiatry',
+          url: 'https://www.stride-podiatry.com.au/',
+        },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 4,
+      item: {
+        '@type': 'Service',
+        name: 'Heel & Arch Pain',
+        url: 'https://www.stride-podiatry.com.au/services/heel-arch-pain',
+        serviceType: 'Heel and arch pain treatment',
+        areaServed: 'Adelaide and regional South Australia',
+        provider: {
+          '@type': 'MedicalBusiness',
+          name: 'Stride Podiatry',
+          url: 'https://www.stride-podiatry.com.au/',
+        },
+      },
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: 'Podiatry Services in Adelaide | Home Visits',
@@ -20,6 +97,16 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <section className="services">
+      <script
+        key="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+      />
+      <script
+        key="services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }}
+      />
       <div className="services-container">
         <div className="services-header">
           <h1>Our Podiatry Services</h1>

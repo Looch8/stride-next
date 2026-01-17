@@ -1,5 +1,12 @@
 import type { Metadata } from 'next';
 
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'Referral', url: 'https://www.stride-podiatry.com.au/referral' },
+]);
+
 export const metadata: Metadata = {
 	title: 'Refer a Patient | Stride Podiatry Adelaide',
 	description:
@@ -16,6 +23,11 @@ export const metadata: Metadata = {
 export default function ReferralPage() {
 	return (
 		<div className="referral-container">
+			<script
+				key="breadcrumb-schema"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+			/>
 			<h1>Refer a Patient</h1>
 			<p>
 				If you&apos;re a care coordinator, GP or provider, you can refer

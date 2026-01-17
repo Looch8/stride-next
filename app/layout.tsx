@@ -22,24 +22,38 @@ const poppins = Poppins({
 	display: 'swap',
 });
 
-const organizationJsonLd = {
+const medicalBusinessJsonLd = {
 	'@context': 'https://schema.org',
-	'@type': 'Organization',
+	'@type': 'MedicalBusiness',
 	name: 'Stride Podiatry',
 	url: 'https://www.stride-podiatry.com.au',
 	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
+	image: 'https://www.stride-podiatry.com.au/images/logo.png',
+	telephone: '+61468518993',
 	description:
 		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
-	slogan: 'Adelaide mobile & home-visit podiatrist',
+	areaServed: [
+		{
+			'@type': 'AdministrativeArea',
+			name: 'Adelaide Metropolitan Area',
+		},
+		{
+			'@type': 'AdministrativeArea',
+			name: 'Regional South Australia',
+		},
+	],
+	openingHoursSpecification: [
+		{
+			'@type': 'OpeningHoursSpecification',
+			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+			opens: '08:00',
+			closes: '17:00',
+		},
+	],
 	sameAs: [
 		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
 		'https://www.instagram.com/stride.podiatry/',
 	],
-	areaServed: {
-		'@type': 'City',
-		name: 'Adelaide',
-	},
-	serviceType: 'Mobile podiatry and home visit podiatrist services',
 };
 
 export const metadata: Metadata = {
@@ -107,7 +121,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					type="application/ld+json"
 					suppressHydrationWarning
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(organizationJsonLd),
+						__html: JSON.stringify(medicalBusinessJsonLd),
 					}}
 				/>
 			</body>

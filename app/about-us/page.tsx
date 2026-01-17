@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'About Us', url: 'https://www.stride-podiatry.com.au/about-us' },
+]);
+
 export const metadata: Metadata = {
 	title: 'About Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
@@ -17,6 +24,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
 	return (
 		<div className="about-container">
+			<script
+				key="breadcrumb-schema"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+			/>
 			<div className="about-section">
 				<div className="about-text">
 					<h1>About Stride Podiatry</h1>

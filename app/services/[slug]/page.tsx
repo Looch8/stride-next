@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
 import { services } from '@/content/services';
+import { buildBreadcrumbList } from '@/lib/structured-data';
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -45,9 +46,19 @@ export default async function ServiceDetailPage({
   }
 
   const currentService = service;
+  const breadcrumbsLd = buildBreadcrumbList([
+    { name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+    { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
+    { name: currentService.title, url: currentService.canonical },
+  ]);
 
   return (
     <section className="services service-detail">
+      <script
+        key="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+      />
       <div className="services-container">
         <div className="services-header">
           <h1>{currentService.title}</h1>
