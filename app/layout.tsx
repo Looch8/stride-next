@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 
 import SiteFooter from '@/components/site-footer';
 import SiteHeader from '@/components/site-header';
+import MobileCtaBar from '@/components/mobile-cta-bar';
 
 import './globals.css';
 
@@ -117,18 +118,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					{children}
 				</main>
 				<SiteFooter />
-				<div
-					className="mobile-cta-bar"
-					role="region"
-					aria-label="Quick actions"
-				>
-					<a href="tel:+61468518993" className="mobile-cta phone">
-						Call
-					</a>
-					<a href="/booking" className="mobile-cta book">
-						Book
-					</a>
-				</div>
+				<MobileCtaBar />
 				<script
 					type="application/ld+json"
 					suppressHydrationWarning
