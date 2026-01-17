@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 
+import { blogPosts } from '@/content/blog-posts';
 import { servicePaths, siteUrl } from '@/content/services';
 
 const baseRoutes = [
@@ -10,10 +11,13 @@ const baseRoutes = [
 	'/contact-us',
 	'/referral',
 	'/faq',
+	'/blog',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-	return [...baseRoutes, ...servicePaths].map((path) => ({
+	const blogPaths = blogPosts.map((post) => `/blog/${post.slug}`);
+
+	return [...baseRoutes, ...servicePaths, ...blogPaths].map((path) => ({
 		url: `${siteUrl}${path === '/' ? '' : path}`,
 		lastModified: new Date(),
 	}));

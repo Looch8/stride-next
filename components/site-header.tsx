@@ -26,6 +26,7 @@ const NAV_LINKS: readonly NavLink[] = [
   { href: '/contact-us', label: 'Contact Us' },
   { href: '/referral', label: 'Referrals' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 const dropdownServices = [
