@@ -32,13 +32,37 @@ export default function HomePage() {
 					<h2 className="subtitle">
 						Stride Podiatry — Trusted Home Podiatry Care
 					</h2>
-					<Link
-						href="/booking"
-						className="hero-cta-button"
-						aria-label="Book a home visit with Stride Podiatry"
-					>
-						Book Your Home Visit
-					</Link>
+					<p className="hero-subtitle">
+						We come to you across Adelaide metro and regional SA.
+						Private, Support at Home, NDIS, DVA and Medicare CDM
+						welcome.
+					</p>
+					<div className="hero-cta-group">
+						<Link
+							href="/booking"
+							className="hero-cta-button"
+							aria-label="Book a home visit with Stride Podiatry"
+						>
+							Book Your Home Visit
+						</Link>
+						<a
+							href="tel:+61468518993"
+							className="hero-cta-secondary"
+							aria-label="Call Stride Podiatry"
+						>
+							Call 0468 518 993
+						</a>
+					</div>
+					<p className="hero-trust">
+						Registered Podiatrist (AHPRA). 8+ years experience.
+						Fully insured.
+					</p>
+				</div>
+			</section>
+			<section className="hero-notice">
+				<div className="hero-notice-content">
+					<strong>Call now</strong> for current availability and
+					home-visit options.
 				</div>
 			</section>
 

@@ -117,6 +117,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					{children}
 				</main>
 				<SiteFooter />
+				<div
+					className="mobile-cta-bar"
+					role="region"
+					aria-label="Quick actions"
+				>
+					<a href="tel:+61468518993" className="mobile-cta phone">
+						Call
+					</a>
+					<a href="/booking" className="mobile-cta book">
+						Book
+					</a>
+				</div>
 				<script
 					type="application/ld+json"
 					suppressHydrationWarning

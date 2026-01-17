@@ -24,14 +24,19 @@ export default function FAQList({ items }: FAQListProps) {
         <div
           key={item.question}
           className={`faq-item ${openIndex === index ? 'open' : ''}`}
-          onClick={() => toggleFAQ(index)}
         >
-          <div className="faq-item-header">
-            <h2 className="faq-question">{item.question}</h2>
+          <button
+            className="faq-item-header"
+            type="button"
+            aria-expanded={openIndex === index}
+            aria-controls={`faq-answer-${index}`}
+            onClick={() => toggleFAQ(index)}
+          >
+            <span className="faq-question">{item.question}</span>
             <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
-          </div>
+          </button>
           {openIndex === index && (
-            <div className="faq-answer">
+            <div className="faq-answer" id={`faq-answer-${index}`}>
               <p>{item.answer}</p>
             </div>
           )}

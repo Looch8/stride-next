@@ -553,6 +553,20 @@ textarea:focus-visible {
 	color: #f0f4f8;
 }
 
+.hero-subtitle {
+	font-size: clamp(1rem, 2.2vw, 1.35rem);
+	margin: 0 0 1.75rem;
+	color: #eef4f9;
+}
+
+.hero-cta-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
 .hero-cta-button {
 	display: inline-block;
 	padding: 1rem 2rem;
@@ -569,6 +583,42 @@ textarea:focus-visible {
 	background: var(--brand-primary-700);
 	transform: translateY(-2px);
 	color: #ffffff;
+}
+
+.hero-cta-secondary {
+	display: inline-block;
+	padding: 0.95rem 1.8rem;
+	font-size: 1.1rem;
+	color: #ffffff;
+	border: 2px solid rgba(255, 255, 255, 0.75);
+	border-radius: 8px;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.hero-cta-secondary:hover {
+	background: rgba(255, 255, 255, 0.16);
+	color: #ffffff;
+}
+
+.hero-trust {
+	margin-top: 1.5rem;
+	font-size: 1rem;
+	color: #e3edf5;
+}
+
+.hero-notice {
+	background: #ffffff;
+	padding: 0.85rem 1.5rem;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+	text-align: center;
+}
+
+.hero-notice-content {
+	max-width: 900px;
+	margin: 0 auto;
+	color: #445e6c;
+	font-size: 1.05rem;
 }
 
 .home-container {
@@ -1498,6 +1548,12 @@ textarea:focus-visible {
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
+	width: 100%;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	text-align: left;
+	padding: 0;
 }
 
 .faq-item {
@@ -1540,6 +1596,50 @@ textarea:focus-visible {
 	background: #ffffff;
 	border-radius: 16px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-cta-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	background: rgba(255, 255, 255, 0.96);
+	backdrop-filter: blur(12px);
+	box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.12);
+	z-index: 1200;
+}
+
+.mobile-cta {
+	flex: 1;
+	text-align: center;
+	padding: 0.85rem 0.5rem;
+	border-radius: 999px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.mobile-cta.phone {
+	background: #ffffff;
+	color: var(--brand-primary-800);
+	border: 2px solid var(--brand-primary);
+}
+
+.mobile-cta.book {
+	background: var(--brand-primary);
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.mobile-cta-bar {
+		display: flex;
+	}
+
+	body {
+		padding-bottom: 72px;
+	}
 }
 
 /* Referral */
