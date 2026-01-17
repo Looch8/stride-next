@@ -21,7 +21,7 @@ const orgLD = {
 	},
 	priceRange: '$$$',
 	description:
-		'Stride Podiatry delivers home visit and mobile podiatry services across Adelaide including ingrown toenail care, heel pain treatment, orthotics, diabetic foot care and aged care.',
+		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	slogan: 'Home visit podiatry in Adelaide',
 	serviceType: [
 		'Home visit podiatrist Adelaide',
@@ -58,7 +58,7 @@ const orgLD = {
 export const metadata: Metadata = {
 	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
-		'Mobile home-visit podiatry Adelaide – NDIS, Support at Home, Medicare CDM, DVA & private. Expert care for ingrown toenails, heel pain, diabetes, orthotics. Book now.',
+		'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',

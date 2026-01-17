@@ -29,7 +29,7 @@ const organizationJsonLd = {
 	url: 'https://www.stride-podiatry.com.au',
 	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
 	description:
-		'Mobile and home-visit podiatry clinic serving Adelaide metro — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
+		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	slogan: 'Adelaide mobile & home-visit podiatrist',
 	sameAs: [
 		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 		siteName: 'Stride Podiatry',
 		title: 'Stride Podiatry | Mobile & Home Visit Podiatrist Adelaide',
 		description:
-			'Stride Podiatry provides mobile and home visit podiatry across Adelaide for heel pain, ingrown toenails, diabetic assessments, orthotics and more.',
+			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
 		url: 'https://www.stride-podiatry.com.au',
 		images: [
 			{
