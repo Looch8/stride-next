@@ -103,6 +103,11 @@ export const metadata: Metadata = {
       'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
     url: 'https://www.stride-podiatry.com.au/services',
   },
+  twitter: {
+    title: 'Services | Stride Podiatry',
+    description:
+      'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
+  },
 };
 
 export default function ServicesPage() {

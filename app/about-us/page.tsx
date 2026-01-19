@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 			'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
 		url: 'https://www.stride-podiatry.com.au/about-us',
 	},
+	twitter: {
+		title: 'About Us | Stride Podiatry',
+		description:
+			'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
+	},
 };
 
 export default function AboutPage() {

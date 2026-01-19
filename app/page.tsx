@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+	title: { absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide' },
 	description:
 		'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
 	keywords: [
@@ -14,10 +14,15 @@ export const metadata: Metadata = {
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
 	openGraph: {
-		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
 		url: 'https://www.stride-podiatry.com.au/',
+	},
+	twitter: {
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		description:
+			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
 	},
 };
 

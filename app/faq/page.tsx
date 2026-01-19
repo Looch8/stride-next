@@ -64,6 +64,11 @@ export const metadata: Metadata = {
 			'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
 		url: 'https://www.stride-podiatry.com.au/faq',
 	},
+	twitter: {
+		title: 'FAQs | Stride Podiatry',
+		description:
+			'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
+	},
 };
 
 export default function FAQPage() {

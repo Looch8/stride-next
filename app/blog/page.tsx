@@ -21,6 +21,11 @@ export const metadata: Metadata = {
 			'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
 		url: 'https://www.stride-podiatry.com.au/blog',
 	},
+	twitter: {
+		title: 'Blog | Stride Podiatry',
+		description:
+			'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
+	},
 };
 
 export default function BlogIndexPage() {

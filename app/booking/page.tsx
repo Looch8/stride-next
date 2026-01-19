@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 		url: 'https://www.stride-podiatry.com.au/booking',
 	},
+	twitter: {
+		title: 'Book a Home Visit | Stride Podiatry',
+		description:
+			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+	},
 };
 
 export default function BookingPage() {

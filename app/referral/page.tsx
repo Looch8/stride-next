@@ -18,6 +18,11 @@ export const metadata: Metadata = {
 			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
 		url: 'https://www.stride-podiatry.com.au/referral',
 	},
+	twitter: {
+		title: 'Referrals | Stride Podiatry',
+		description:
+			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
+	},
 };
 
 export default function ReferralPage() {
