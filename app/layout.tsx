@@ -43,14 +43,6 @@ const medicalBusinessJsonLd = {
 			name: 'Regional South Australia',
 		},
 	],
-	openingHoursSpecification: [
-		{
-			'@type': 'OpeningHoursSpecification',
-			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-			opens: '08:00',
-			closes: '17:00',
-		},
-	],
 	sameAs: [
 		'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
 		'https://www.instagram.com/stride.podiatry/',
