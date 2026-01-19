@@ -57,6 +57,14 @@ const medicalBusinessJsonLd = {
 	],
 };
 
+const websiteJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: 'Stride Podiatry',
+	alternateName: 'Stride Podiatry Adelaide',
+	url: 'https://www.stride-podiatry.com.au',
+};
+
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.stride-podiatry.com.au'),
 	title: {
@@ -109,6 +117,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
+			<head>
+				<script
+					type="application/ld+json"
+					suppressHydrationWarning
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(websiteJsonLd),
+					}}
+				/>
+				<script
+					type="application/ld+json"
+					suppressHydrationWarning
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(medicalBusinessJsonLd),
+					}}
+				/>
+			</head>
 			<body className={`${nunito.variable} ${poppins.variable}`}>
 				<a href="#main-content" className="skip-link">
 					Skip to content
@@ -119,13 +143,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				</main>
 				<SiteFooter />
 				<MobileCtaBar />
-				<script
-					type="application/ld+json"
-					suppressHydrationWarning
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(medicalBusinessJsonLd),
-					}}
-				/>
 			</body>
 		</html>
 	);
