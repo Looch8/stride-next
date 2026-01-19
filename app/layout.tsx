@@ -31,6 +31,12 @@ const medicalBusinessJsonLd = {
 	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
 	image: 'https://www.stride-podiatry.com.au/images/logo.png',
 	telephone: '+61468518993',
+	address: {
+		'@type': 'PostalAddress',
+		addressCountry: 'AU',
+		addressRegion: 'SA',
+		addressLocality: 'Adelaide',
+	},
 	description:
 		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	areaServed: [

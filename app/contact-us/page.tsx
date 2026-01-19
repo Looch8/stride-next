@@ -19,6 +19,12 @@ const contactLD = {
 	mainEntity: {
 		'@type': 'MedicalBusiness',
 		name: 'Stride Podiatry',
+		address: {
+			'@type': 'PostalAddress',
+			addressCountry: 'AU',
+			addressRegion: 'SA',
+			addressLocality: 'Adelaide',
+		},
 		telephone: '+61468518993',
 		email: 'luke@stride-podiatry.com.au',
 		areaServed: 'Adelaide',

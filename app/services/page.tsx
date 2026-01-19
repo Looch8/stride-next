@@ -10,6 +10,13 @@ const breadcrumbsLd = buildBreadcrumbList([
   { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
 ]);
 
+const businessAddress = {
+  '@type': 'PostalAddress',
+  addressCountry: 'AU',
+  addressRegion: 'SA',
+  addressLocality: 'Adelaide',
+};
+
 const servicesLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -27,6 +34,7 @@ const servicesLd = {
           '@type': 'MedicalBusiness',
           name: 'Stride Podiatry',
           url: 'https://www.stride-podiatry.com.au/',
+          address: businessAddress,
         },
       },
     },
@@ -43,6 +51,7 @@ const servicesLd = {
           '@type': 'MedicalBusiness',
           name: 'Stride Podiatry',
           url: 'https://www.stride-podiatry.com.au/',
+          address: businessAddress,
         },
       },
     },
@@ -59,6 +68,7 @@ const servicesLd = {
           '@type': 'MedicalBusiness',
           name: 'Stride Podiatry',
           url: 'https://www.stride-podiatry.com.au/',
+          address: businessAddress,
         },
       },
     },
@@ -75,6 +85,7 @@ const servicesLd = {
           '@type': 'MedicalBusiness',
           name: 'Stride Podiatry',
           url: 'https://www.stride-podiatry.com.au/',
+          address: businessAddress,
         },
       },
     },
