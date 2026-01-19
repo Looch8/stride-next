@@ -54,12 +54,12 @@ const faqLD = {
 };
 
 export const metadata: Metadata = {
-	title: 'Podiatry FAQs | Stride Podiatry Adelaide',
+	title: 'FAQs | Stride Podiatry',
 	description:
 		'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/faq' },
 	openGraph: {
-		title: 'Podiatry FAQs | Stride Podiatry Adelaide',
+		title: 'FAQs | Stride Podiatry',
 		description:
 			'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
 		url: 'https://www.stride-podiatry.com.au/faq',

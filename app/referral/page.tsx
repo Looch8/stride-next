@@ -8,12 +8,12 @@ const breadcrumbsLd = buildBreadcrumbList([
 ]);
 
 export const metadata: Metadata = {
-	title: 'Refer a Patient | Stride Podiatry Adelaide',
+	title: 'Referrals | Stride Podiatry',
 	description:
 		'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/referral' },
 	openGraph: {
-		title: 'Refer a Patient | Stride Podiatry Adelaide',
+		title: 'Referrals | Stride Podiatry',
 		description:
 			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
 		url: 'https://www.stride-podiatry.com.au/referral',

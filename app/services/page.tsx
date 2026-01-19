@@ -93,12 +93,12 @@ const servicesLd = {
 };
 
 export const metadata: Metadata = {
-  title: 'Podiatry Services in Adelaide | Home Visits',
+  title: 'Services | Stride Podiatry',
   description:
     'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
   alternates: { canonical: 'https://www.stride-podiatry.com.au/services' },
   openGraph: {
-    title: 'Podiatry Services in Adelaide | Home Visits',
+    title: 'Services | Stride Podiatry',
     description:
       'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
     url: 'https://www.stride-podiatry.com.au/services',

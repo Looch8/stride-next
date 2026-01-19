@@ -15,7 +15,7 @@ const breadcrumbsLd = buildBreadcrumbList([
 const contactLD = {
 	'@context': 'https://schema.org',
 	'@type': 'ContactPage',
-	url: 'https://www.stride-podiatry.com.au/contact-us/',
+	url: 'https://www.stride-podiatry.com.au/contact-us',
 	mainEntity: {
 		'@type': 'MedicalBusiness',
 		name: 'Stride Podiatry',
@@ -32,12 +32,12 @@ const contactLD = {
 };
 
 export const metadata: Metadata = {
-	title: 'Contact Stride Podiatry | Mobile Podiatrist Adelaide',
+	title: 'Contact Us | Stride Podiatry',
 	description:
 		'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us' },
 	openGraph: {
-		title: 'Contact Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Contact Us | Stride Podiatry',
 		description:
 			'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
 		url: 'https://www.stride-podiatry.com.au/contact-us',

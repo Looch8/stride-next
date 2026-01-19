@@ -10,24 +10,8 @@ import {
   type MouseEvent as ReactMouseEvent,
 } from 'react';
 
+import { primaryNavItems } from '@/content/navigation';
 import { serviceNavItems } from '@/content/services';
-
-type NavLink = {
-  href: string;
-  label: string;
-  dropdown?: boolean;
-};
-
-const NAV_LINKS: readonly NavLink[] = [
-  { href: '/', label: 'Home' },
-  { href: '/about-us', label: 'About' },
-  { href: '/services', label: 'Services', dropdown: true },
-  { href: '/booking', label: 'Booking' },
-  { href: '/contact-us', label: 'Contact Us' },
-  { href: '/referral', label: 'Referrals' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/blog', label: 'Blog' },
-];
 
 const dropdownServices = [
   { href: '/services', label: 'All Services' },
@@ -132,7 +116,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
           className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={handleNavClick}
         >
-          {NAV_LINKS.map((link) => {
+          {primaryNavItems.map((link) => {
             if (link.dropdown) {
               return (
                 <li

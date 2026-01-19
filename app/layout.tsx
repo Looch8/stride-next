@@ -6,6 +6,8 @@ import type { ReactNode } from 'react';
 import SiteFooter from '@/components/site-footer';
 import SiteHeader from '@/components/site-header';
 import MobileCtaBar from '@/components/mobile-cta-bar';
+import { primaryNavItems } from '@/content/navigation';
+import { siteUrl } from '@/content/services';
 
 import './globals.css';
 
@@ -26,10 +28,11 @@ const poppins = Poppins({
 const medicalBusinessJsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'MedicalBusiness',
+	'@id': `${siteUrl}/#business`,
 	name: 'Stride Podiatry',
-	url: 'https://www.stride-podiatry.com.au',
-	logo: 'https://www.stride-podiatry.com.au/images/logo.png',
-	image: 'https://www.stride-podiatry.com.au/images/logo.png',
+	url: siteUrl,
+	logo: `${siteUrl}/images/logo.png`,
+	image: `${siteUrl}/images/logo.png`,
 	telephone: '+61468518993',
 	address: {
 		'@type': 'PostalAddress',
@@ -58,12 +61,22 @@ const medicalBusinessJsonLd = {
 const websiteJsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'WebSite',
+	'@id': `${siteUrl}/#website`,
 	name: 'Stride Podiatry',
-	url: 'https://www.stride-podiatry.com.au',
+	url: siteUrl,
+};
+
+const siteNavigationJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'SiteNavigationElement',
+	name: primaryNavItems.map((item) => item.label),
+	url: primaryNavItems.map((item) =>
+		`${siteUrl}${item.href === '/' ? '' : item.href}`,
+	),
 };
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://www.stride-podiatry.com.au'),
+	metadataBase: new URL(siteUrl),
 	title: {
 		default: 'Stride Podiatry',
 		template: '%s | Stride Podiatry',
@@ -80,10 +93,10 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',
-		title: 'Stride Podiatry | Mobile & Home Visit Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
 			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
-		url: 'https://www.stride-podiatry.com.au',
+		url: siteUrl,
 		images: [
 			{
 				url: '/images/logo.png',
@@ -120,6 +133,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					suppressHydrationWarning
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(websiteJsonLd),
+					}}
+				/>
+				<script
+					type="application/ld+json"
+					suppressHydrationWarning
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(siteNavigationJsonLd),
 					}}
 				/>
 				<script

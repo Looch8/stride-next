@@ -9,12 +9,12 @@ const breadcrumbsLd = buildBreadcrumbList([
 ]);
 
 export const metadata: Metadata = {
-	title: 'Book a Mobile Podiatrist | Stride Podiatry Adelaide',
+	title: 'Book a Home Visit | Stride Podiatry',
 	description:
 		'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking' },
 	openGraph: {
-		title: 'Book a Mobile Podiatrist | Stride Podiatry Adelaide',
+		title: 'Book a Home Visit | Stride Podiatry',
 		description:
 			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 		url: 'https://www.stride-podiatry.com.au/booking',
