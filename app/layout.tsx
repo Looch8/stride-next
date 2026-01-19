@@ -59,7 +59,6 @@ const websiteJsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'WebSite',
 	name: 'Stride Podiatry',
-	alternateName: 'Stride Podiatry Adelaide',
 	url: 'https://www.stride-podiatry.com.au',
 };
 
