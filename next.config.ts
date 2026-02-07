@@ -13,6 +13,21 @@ const nextConfig: NextConfig = {
 				permanent: true,
 			},
 			{
+				source: '/services/mobile-home-visit-podiatry-adelaide',
+				destination: '/services/home-visit-podiatry',
+				permanent: true,
+			},
+			{
+				source: '/services/ndis-podiatry-adelaide',
+				destination: '/services/ndis-podiatry',
+				permanent: true,
+			},
+			{
+				source: '/services/aged-care-podiatry-adelaide',
+				destination: '/services/aged-care-podiatry',
+				permanent: true,
+			},
+			{
 				source: '/services/ingrown-toenails',
 				destination: '/services/ingrown-toenail',
 				permanent: true,

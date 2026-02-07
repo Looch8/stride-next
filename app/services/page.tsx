@@ -126,7 +126,20 @@ export default function ServicesPage() {
       <div className="services-container">
         <div className="services-header">
           <h1>Our Podiatry Services</h1>
-          <p>Comprehensive foot care solutions tailored to you. Select a service to learn more.</p>
+          <p>
+            Home visit podiatry across Adelaide metro and regional South Australia by arrangement.
+            Learn more about{' '}
+            <Link href="/services/home-visit-podiatry">
+              mobile home visits
+            </Link>
+            ,{' '}
+            <Link href="/services/ndis-podiatry">NDIS podiatry</Link>
+            , and{' '}
+            <Link href="/services/aged-care-podiatry">
+              aged care podiatry
+            </Link>
+            .
+          </p>
         </div>
 
         <div className="services-grid">

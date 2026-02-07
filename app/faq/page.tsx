@@ -27,7 +27,7 @@ const faqData: FAQItem[] = [
 	},
 	{
 		question: 'Where do you provide mobile podiatry services?',
-		answer: 'Across the Adelaide metro area. If you’re outside this region, contact us to discuss options.',
+		answer: 'Across all Adelaide metro suburbs and regional South Australia by arrangement. If you’re unsure, contact us to confirm coverage.',
 	},
 	{
 		question: 'What conditions do you treat?',

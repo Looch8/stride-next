@@ -12,6 +12,7 @@ const baseRoutes = [
 	'/referral',
 	'/faq',
 	'/blog',
+	'/service-areas',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

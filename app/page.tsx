@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
 	title: { absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide' },
 	description:
-		'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+		'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+			'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
 		url: 'https://www.stride-podiatry.com.au/',
 	},
 	twitter: {
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+			'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
 	},
 };
 
@@ -78,8 +78,15 @@ export default function HomePage() {
 							home visit podiatry service for Adelaide and
 							surrounding regions
 						</strong>
-						, helping busy families, aged care residents, NDIS
-						participants and anyone who prefers podiatry at home.
+						, helping busy families,{' '}
+						<Link href="/services/aged-care-podiatry">
+							aged care residents
+						</Link>
+						,{' '}
+						<Link href="/services/ndis-podiatry">
+							NDIS participants
+						</Link>{' '}
+						and anyone who prefers podiatry at home.
 						From routine nail and skin care through to biomechanical
 						assessments, we provide comprehensive mobile care across
 						Adelaide metro and surrounding regions.
@@ -165,6 +172,12 @@ export default function HomePage() {
 								We cover ALL of Adelaide Metro including:
 							</strong>
 						</p>
+						<p>
+							Prefer a quick check? See our{' '}
+							<Link href="/service-areas">full service areas</Link>{' '}
+							list, including regional South Australia by
+							arrangement.
+						</p>
 
 						<ul className="location-list">
 							<li>
@@ -200,7 +213,10 @@ export default function HomePage() {
 
 						<p className="contact-note">
 							Outside Adelaide Metro?{' '}
-							<em>Contact us — we may still be able to help.</em>
+							<em>
+								We cover regional South Australia by
+								arrangement.
+							</em>
 						</p>
 					</div>
 

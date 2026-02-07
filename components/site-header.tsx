@@ -58,7 +58,27 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     return () => document.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      setServicesOpen(false);
+    }
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', isMobileMenuOpen);
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMobileMenuOpen]);
+
+  const toggleMobileMenu = () =>
+    setIsMobileMenuOpen((prev) => {
+      const next = !prev;
+      if (!next) {
+        setServicesOpen(false);
+      }
+      return next;
+    });
 
   const toggleServices = (event: ReactMouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
@@ -111,65 +131,98 @@ function HeaderContent({ pathname }: HeaderContentProps) {
           <span className="bar" />
         </button>
 
-        <ul
-          id="primary-navigation"
-          className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}
-          onClick={handleNavClick}
+        <div
+          className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}
+          onClick={isMobileMenuOpen ? toggleMobileMenu : undefined}
         >
-          {primaryNavItems.map((link) => {
-            if (link.dropdown) {
-              return (
-                <li
-                  key={link.href}
-                  className={`has-dropdown ${servicesOpen ? 'open' : ''}`}
-                >
-                  <button
-                    className="dropdown-trigger"
-                    type="button"
-                    aria-haspopup="true"
-                    aria-expanded={servicesOpen}
-                    onClick={toggleServices}
-                  >
-                    Services <span className="chev">▾</span>
-                  </button>
-                  <ul className="dropdown-menu" role="menu">
-                    {dropdownServices.map((service) => (
-                      <li key={service.href}>
-                        <Link
-                          href={service.href}
-                          className={
-                            pathname === service.href ? 'active' : undefined
-                          }
-                        >
-                          {service.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              );
-            }
+          <div
+            className="mobile-menu-panel"
+            role="dialog"
+            aria-modal="true"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="mobile-menu-header">
+              <Link href="/" className="logo" aria-label="Stride Podiatry home">
+                <Image
+                  src="/images/logo.png"
+                  alt="Stride Podiatry logo"
+                  className="logo-image"
+                  width={160}
+                  height={44}
+                  priority
+                />
+              </Link>
+              <button
+                className="mobile-menu-close"
+                type="button"
+                onClick={toggleMobileMenu}
+                aria-label="Close navigation menu"
+              >
+                ×
+              </button>
+            </div>
 
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={
-                    link.href === '/services'
-                      ? isActive('/services', { startsWith: '/services' })
-                        ? 'active'
-                        : undefined
-                      : isActive(link.href)
-                        ? 'active'
-                        : undefined
-                  }
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+            <ul
+              id="primary-navigation"
+              className="nav-links"
+              onClick={handleNavClick}
+            >
+              {primaryNavItems.map((link) => {
+                if (link.dropdown) {
+                  return (
+                    <li
+                      key={link.href}
+                      className={`has-dropdown ${servicesOpen ? 'open' : ''}`}
+                    >
+                      <button
+                        className="dropdown-trigger"
+                        type="button"
+                        aria-haspopup="true"
+                        aria-expanded={servicesOpen}
+                        onClick={toggleServices}
+                      >
+                        Services <span className="chev">▾</span>
+                      </button>
+                      <ul className="dropdown-menu" role="menu">
+                        {dropdownServices.map((service) => (
+                          <li key={service.href}>
+                            <Link
+                              href={service.href}
+                              className={
+                                pathname === service.href ? 'active' : undefined
+                              }
+                            >
+                              {service.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={
+                        link.href === '/services'
+                          ? isActive('/services', { startsWith: '/services' })
+                            ? 'active'
+                            : undefined
+                          : isActive(link.href)
+                            ? 'active'
+                            : undefined
+                      }
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
   );
