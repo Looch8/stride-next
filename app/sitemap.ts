@@ -13,6 +13,7 @@ const baseRoutes = [
 	'/faq',
 	'/blog',
 	'/service-areas',
+	'/privacy',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

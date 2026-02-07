@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import SocialIcon from '@/components/social-icon';
 import { socialLinks } from '@/content/social-links';
 
@@ -30,6 +32,10 @@ export default function SiteFooter() {
               <SocialIcon name={link.icon} />
             </a>
           ))}
+        </div>
+
+        <div className="footer-links">
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
 
         <p className="copyright">© {currentYear} Stride Podiatry. All rights reserved.</p>
