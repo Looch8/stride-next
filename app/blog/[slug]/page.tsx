@@ -40,7 +40,9 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Stride Podiatry`,
     description: post.description,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: {
+      canonical: `https://www.stride-podiatry.com.au/blog/${post.slug}`,
+    },
     openGraph: {
       type: 'article',
       title: `${post.title} | Stride Podiatry`,

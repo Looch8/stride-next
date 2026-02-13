@@ -159,6 +159,7 @@ export default function ServicesPage() {
                   alt={service.title}
                   width={640}
                   height={420}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
                 />
               </div>
             </Link>

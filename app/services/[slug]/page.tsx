@@ -71,6 +71,7 @@ export default async function ServiceDetailPage({
               alt={currentService.heroAlt}
               width={960}
               height={480}
+              sizes="(max-width: 1024px) 100vw, 960px"
             />
           </div>
         ) : null}

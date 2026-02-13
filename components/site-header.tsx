@@ -32,8 +32,11 @@ function HeaderContent({ pathname }: HeaderContentProps) {
   const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      const nextIsScrolled = window.scrollY > 50;
+      setIsScrolled((prev) => (prev === nextIsScrolled ? prev : nextIsScrolled));
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -57,12 +60,6 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
   }, []);
-
-  useEffect(() => {
-    if (!isMobileMenuOpen) {
-      setServicesOpen(false);
-    }
-  }, [isMobileMenuOpen]);
 
   useEffect(() => {
     document.body.classList.toggle('menu-open', isMobileMenuOpen);
@@ -115,6 +112,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
             width={180}
             height={48}
             priority
+            sizes="(max-width: 768px) 160px, 180px"
           />
         </Link>
 
@@ -149,7 +147,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                   className="logo-image"
                   width={160}
                   height={44}
-                  priority
+                  sizes="160px"
                 />
               </Link>
               <button

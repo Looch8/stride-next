@@ -1,4 +1,8 @@
 :root {
+	--font-body: 'Nunito', 'Avenir Next', 'Segoe UI', Roboto, 'Helvetica Neue',
+		Arial, sans-serif;
+	--font-heading: 'Poppins', 'Avenir Next', 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
 	--brand-primary: #6d899d;
 	--brand-primary-700: #567283;
 	--brand-primary-800: #445e6c;

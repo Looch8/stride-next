@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	title: 'Blog | Stride Podiatry',
 	description:
 		'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
-	alternates: { canonical: '/blog' },
+	alternates: { canonical: 'https://www.stride-podiatry.com.au/blog' },
 	openGraph: {
 		title: 'Blog | Stride Podiatry',
 		description:

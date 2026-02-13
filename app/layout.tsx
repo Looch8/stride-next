@@ -130,8 +130,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en-AU">
 			<head>
+				<link rel="preload" as="image" href="/images/hero-bg.jpg" />
 				<script
 					type="application/ld+json"
 					suppressHydrationWarning

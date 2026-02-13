@@ -5,6 +5,21 @@ const nextConfig: NextConfig = {
 	images: { unoptimized: true },
 	async redirects() {
 		return [
+			{
+				source: '/:path*',
+				has: [
+					{ type: 'host', value: 'stride-podiatry.com.au' },
+					{ type: 'header', key: 'x-forwarded-proto', value: 'http' },
+				],
+				destination: 'https://www.stride-podiatry.com.au/:path*',
+				permanent: true,
+			},
+			{
+				source: '/:path*',
+				has: [{ type: 'host', value: 'stride-podiatry.com.au' }],
+				destination: 'https://www.stride-podiatry.com.au/:path*',
+				permanent: true,
+			},
 			{ source: '/about', destination: '/about-us', permanent: true },
 			{ source: '/contact', destination: '/contact-us', permanent: true },
 			{
