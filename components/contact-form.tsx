@@ -54,6 +54,8 @@ export default function ContactForm() {
     }
 
     try {
+      // Contact form submissions are transmitted via third-party providers and may be
+      // processed by provider infrastructure; handle submitted data securely.
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       setStatus({
         type: 'success',
