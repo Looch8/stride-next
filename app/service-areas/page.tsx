@@ -87,14 +87,14 @@ export default function ServiceAreasPage() {
 
 				<div className="service-areas-cta">
 					<p>Not sure if we service your suburb?</p>
-					<div>
-						<Link href="/booking" className="book-now-button">
-							Book a Home Visit
-						</Link>
-						<a href="tel:+61468518993" className="hero-cta-secondary">
-							Call 0468 518 993
-						</a>
-					</div>
+						<div>
+							<Link href="/contact-us" className="book-now-button">
+								Send Enquiry
+							</Link>
+							<a href="tel:+61468518993" className="hero-cta-secondary">
+								Call 0468 518 993
+							</a>
+						</div>
 				</div>
 			</div>
 		</section>

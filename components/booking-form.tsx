@@ -143,13 +143,13 @@ export default function BookingForm() {
           />
         </div>
 
-        <button
-          type="submit"
-          className={`submit-button ${isLoading ? 'loading' : ''}`}
-          disabled={isLoading}
-        >
-          {isLoading ? 'Sending…' : 'Book Appointment'}
-        </button>
+				<button
+					type="submit"
+					className={`submit-button ${isLoading ? 'loading' : ''}`}
+					disabled={isLoading}
+				>
+					{isLoading ? 'Sending…' : 'Request Booking'}
+				</button>
       </form>
 
       {message.type && (
