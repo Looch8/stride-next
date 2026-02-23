@@ -89,12 +89,12 @@ export default function ContactPage() {
 									quick question.
 								</p>
 							</div>
-							<a
-								className="contact-call-button"
-								href="tel:+61468518993"
-							>
-								Call now
-							</a>
+								<a
+									className="contact-call-button"
+									href="tel:+61468518993"
+								>
+									Call 0468 518 993
+								</a>
 						</div>
 					</div>
 

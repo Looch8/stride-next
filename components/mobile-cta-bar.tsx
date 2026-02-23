@@ -50,7 +50,7 @@ export default function MobileCtaBar() {
         className="mobile-cta phone"
         tabIndex={isHidden ? -1 : undefined}
       >
-        Call
+        Call 0468 518 993
       </a>
       <a
         href="/booking"

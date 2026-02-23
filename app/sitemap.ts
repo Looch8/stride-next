@@ -13,6 +13,12 @@ const baseRoutes = [
 	'/faq',
 	'/blog',
 	'/service-areas',
+	'/service-areas/northern-adelaide',
+	'/service-areas/southern-adelaide',
+	'/service-areas/eastern-adelaide',
+	'/service-areas/western-adelaide',
+	'/service-areas/central-adelaide',
+	'/service-areas/regional-south-australia',
 	'/privacy',
 ];
 

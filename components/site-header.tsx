@@ -21,6 +21,25 @@ const dropdownServices = [
   })),
 ];
 
+const dropdownAbout = [
+  { href: '/about-us', label: 'About Stride Podiatry' },
+  { href: '/referral', label: 'Referrals' },
+  { href: '/blog', label: 'Blog' },
+];
+
+const dropdownServiceAreas = [
+  { href: '/service-areas', label: 'All Service Areas' },
+  { href: '/service-areas/northern-adelaide', label: 'Northern Adelaide' },
+  { href: '/service-areas/southern-adelaide', label: 'Southern Adelaide' },
+  { href: '/service-areas/eastern-adelaide', label: 'Eastern Adelaide' },
+  { href: '/service-areas/western-adelaide', label: 'Western Adelaide' },
+  { href: '/service-areas/central-adelaide', label: 'Central Adelaide' },
+  {
+    href: '/service-areas/regional-south-australia',
+    label: 'Regional South Australia',
+  },
+];
+
 type HeaderContentProps = {
   pathname: string;
 };
@@ -28,6 +47,8 @@ type HeaderContentProps = {
 function HeaderContent({ pathname }: HeaderContentProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [serviceAreasOpen, setServiceAreasOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -44,6 +65,8 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     const onDocClick = (event: MouseEvent) => {
       if (!navRef.current?.contains(event.target as Node)) {
         setServicesOpen(false);
+        setAboutOpen(false);
+        setServiceAreasOpen(false);
       }
     };
     document.addEventListener('mousedown', onDocClick);
@@ -55,6 +78,8 @@ function HeaderContent({ pathname }: HeaderContentProps) {
       if (event.key === 'Escape') {
         setIsMobileMenuOpen(false);
         setServicesOpen(false);
+        setAboutOpen(false);
+        setServiceAreasOpen(false);
       }
     };
     document.addEventListener('keydown', onKeyDown);
@@ -73,13 +98,31 @@ function HeaderContent({ pathname }: HeaderContentProps) {
       const next = !prev;
       if (!next) {
         setServicesOpen(false);
+        setAboutOpen(false);
+        setServiceAreasOpen(false);
       }
       return next;
     });
 
   const toggleServices = (event: ReactMouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
+    setAboutOpen(false);
+    setServiceAreasOpen(false);
     setServicesOpen((prev) => !prev);
+  };
+
+  const toggleAbout = (event: ReactMouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    setServicesOpen(false);
+    setServiceAreasOpen(false);
+    setAboutOpen((prev) => !prev);
+  };
+
+  const toggleServiceAreas = (event: ReactMouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    setServicesOpen(false);
+    setAboutOpen(false);
+    setServiceAreasOpen((prev) => !prev);
   };
 
   const handleNavClick = (event: ReactMouseEvent<HTMLUListElement>) => {
@@ -87,6 +130,8 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     if (target.closest('a')) {
       setIsMobileMenuOpen(false);
       setServicesOpen(false);
+      setAboutOpen(false);
+      setServiceAreasOpen(false);
     }
   };
 
@@ -160,13 +205,21 @@ function HeaderContent({ pathname }: HeaderContentProps) {
               </button>
             </div>
 
+            <Link
+              href="/booking"
+              className="mobile-booking-button"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Book a Home Visit
+            </Link>
+
             <ul
               id="primary-navigation"
               className="nav-links"
               onClick={handleNavClick}
             >
               {primaryNavItems.map((link) => {
-                if (link.dropdown) {
+                if (link.dropdown === 'services') {
                   return (
                     <li
                       key={link.href}
@@ -199,6 +252,78 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                   );
                 }
 
+                if (link.dropdown === 'about') {
+                  return (
+                    <li
+                      key={link.href}
+                      className={`has-dropdown ${aboutOpen ? 'open' : ''}`}
+                    >
+                      <button
+                        className="dropdown-trigger"
+                        type="button"
+                        aria-haspopup="true"
+                        aria-expanded={aboutOpen}
+                        onClick={toggleAbout}
+                      >
+                        About <span className="chev">▾</span>
+                      </button>
+                      <ul className="dropdown-menu" role="menu">
+                        {dropdownAbout.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              className={
+                                pathname === item.href ? 'active' : undefined
+                              }
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+
+                if (link.dropdown === 'serviceAreas') {
+                  return (
+                    <li
+                      key={link.href}
+                      className={`has-dropdown ${serviceAreasOpen ? 'open' : ''}`}
+                    >
+                      <button
+                        className="dropdown-trigger"
+                        type="button"
+                        aria-haspopup="true"
+                        aria-expanded={serviceAreasOpen}
+                        onClick={toggleServiceAreas}
+                      >
+                        Service Areas <span className="chev">▾</span>
+                      </button>
+                      <ul className="dropdown-menu" role="menu">
+                        {dropdownServiceAreas.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              className={
+                                item.href === '/service-areas'
+                                  ? pathname === '/service-areas'
+                                    ? 'active'
+                                    : undefined
+                                  : pathname.startsWith(item.href)
+                                    ? 'active'
+                                    : undefined
+                              }
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+
                 return (
                   <li key={link.href}>
                     <Link
@@ -221,6 +346,10 @@ function HeaderContent({ pathname }: HeaderContentProps) {
             </ul>
           </div>
         </div>
+
+        <Link href="/booking" className="header-booking-button">
+          Book a Home Visit
+        </Link>
       </nav>
     </header>
   );

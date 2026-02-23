@@ -14,20 +14,20 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Service Areas | Stride Podiatry',
 	description:
-		'Mobile podiatry across all Adelaide metro suburbs and regional South Australia by arrangement. Home visit podiatrist serving Adelaide.',
+		'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
 	alternates: {
 		canonical: 'https://www.stride-podiatry.com.au/service-areas',
 	},
 	openGraph: {
 		title: 'Service Areas | Stride Podiatry',
 		description:
-			'Mobile podiatry across all Adelaide metro suburbs and regional South Australia by arrangement. Home visit podiatrist serving Adelaide.',
+			'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
 		url: 'https://www.stride-podiatry.com.au/service-areas',
 	},
 	twitter: {
 		title: 'Service Areas | Stride Podiatry',
 		description:
-			'Mobile podiatry across all Adelaide metro suburbs and regional South Australia by arrangement. Home visit podiatrist serving Adelaide.',
+			'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
 	},
 };
 
@@ -44,57 +44,67 @@ export default function ServiceAreasPage() {
 			<div className="service-areas-container">
 				<h1>Service Areas</h1>
 				<p>
-					Stride Podiatry provides mobile and home-visit podiatry
-					across <strong>all Adelaide metro suburbs</strong> and
-					<strong> regional South Australia</strong> by arrangement.
+					Stride Podiatry provides mobile and home-visit podiatry across{' '}
+					<strong>Adelaide metro suburbs</strong> and{' '}
+					<strong>regional South Australia</strong> by arrangement.
 				</p>
 
-				<h2>Adelaide Metro Coverage</h2>
+				<h2>Browse By Area</h2>
 				<ul>
 					<li>
-						<strong>Northern Adelaide:</strong> Elizabeth, Salisbury,
-						Modbury, Tea Tree Gully, Golden Grove, Mawson Lakes,
-						Parafield Gardens, Gawler, Pooraka, Para Hills
+						<strong>
+							<Link href="/service-areas/northern-adelaide">
+								Northern Adelaide
+							</Link>
+						</strong>
 					</li>
 					<li>
-						<strong>Southern Adelaide:</strong> Noarlunga, Marion,
-						Brighton, Glenelg, Hallett Cove, Morphett Vale,
-						Reynella, Seaford, Christies Beach, Aldinga
+						<strong>
+							<Link href="/service-areas/southern-adelaide">
+								Southern Adelaide
+							</Link>
+						</strong>
 					</li>
 					<li>
-						<strong>Eastern Adelaide:</strong> Norwood, Burnside,
-						Unley, Glen Osmond, Magill, Kensington, Payneham,
-						Campbelltown, Rostrevor, Athelstone
+						<strong>
+							<Link href="/service-areas/eastern-adelaide">
+								Eastern Adelaide
+							</Link>
+						</strong>
 					</li>
 					<li>
-						<strong>Western Adelaide:</strong> Henley Beach, West
-						Lakes, Port Adelaide, Seaton, Findon, Woodville, Grange,
-						Fulham, Semaphore, Largs Bay
+						<strong>
+							<Link href="/service-areas/western-adelaide">
+								Western Adelaide
+							</Link>
+						</strong>
 					</li>
 					<li>
-						<strong>Central Adelaide:</strong> Adelaide CBD, North
-						Adelaide, Prospect, Walkerville, Kent Town, Mile End,
-						Bowden, Thebarton, Goodwood, Parkside
+						<strong>
+							<Link href="/service-areas/central-adelaide">
+								Central Adelaide
+							</Link>
+						</strong>
+					</li>
+					<li>
+						<strong>
+							<Link href="/service-areas/regional-south-australia">
+								Regional South Australia
+							</Link>
+						</strong>
 					</li>
 				</ul>
 
-				<h2>Regional South Australia</h2>
-				<p>
-					We regularly travel beyond metro Adelaide. If you are in a
-					regional area, contact us and we will confirm availability
-					for your location.
-				</p>
-
 				<div className="service-areas-cta">
 					<p>Not sure if we service your suburb?</p>
-						<div>
-							<Link href="/contact-us" className="book-now-button">
-								Send Enquiry
-							</Link>
-							<a href="tel:+61468518993" className="hero-cta-secondary">
-								Call 0468 518 993
-							</a>
-						</div>
+					<div>
+						<Link href="/contact-us" className="book-now-button">
+							Send Enquiry
+						</Link>
+						<a href="tel:+61468518993" className="hero-cta-secondary">
+							Call 0468 518 993
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>

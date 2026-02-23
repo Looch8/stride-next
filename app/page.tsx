@@ -30,44 +30,43 @@ export default function HomePage() {
 	return (
 		<>
 			<section className="hero-section">
-				<div className="hero-content">
-					<h1 className="title">
-						Mobile & Home Visit Podiatrist in Adelaide
-					</h1>
-					<h2 className="subtitle">
-						Stride Podiatry — Trusted Home Podiatry Care
-					</h2>
-					<p className="hero-subtitle">
-						We come to you across Adelaide metro and regional SA.
-					</p>
-					<div className="hero-cta-group">
-						<Link
-							href="/booking"
-							className="hero-cta-button"
+					<div className="hero-content">
+						<h1 className="title">
+							Mobile & Home Visit Podiatrist in Adelaide
+						</h1>
+						<h2 className="subtitle">
+							Stride Podiatry — Trusted Home Podiatry Care
+						</h2>
+						<p className="hero-subtitle">
+							We come to you across Adelaide metro and regional SA.
+						</p>
+						<div className="hero-cta-group">
+							<Link
+								href="/booking"
+								className="hero-cta-button"
 							aria-label="Book a home visit with Stride Podiatry"
 						>
 							Book Your Home Visit
 						</Link>
-						<a
-							href="tel:+61468518993"
-							className="hero-cta-secondary"
-							aria-label="Call Stride Podiatry"
-						>
-							Call 0468 518 993
-						</a>
+							<a
+								href="tel:+61468518993"
+								className="hero-cta-secondary"
+								aria-label="Call Stride Podiatry"
+							>
+								Call 0468 518 993
+							</a>
+						</div>
 					</div>
-					<p className="hero-trust">
-						Registered Podiatrist (AHPRA). 8+ years experience.
-						Fully insured.
-					</p>
-				</div>
-			</section>
-			<section className="hero-notice">
-				<div className="hero-notice-content">
-					<strong>Call now</strong> for current availability and
-					home-visit options.
-				</div>
-			</section>
+				</section>
+				<section className="hero-notice">
+					<div className="hero-notice-content">
+						<strong>
+							<a href="tel:+61468518993">Call 0468 518 993</a>
+						</strong>{' '}
+						for current availability, or{' '}
+						<Link href="/booking">book your home visit online</Link>.
+					</div>
+				</section>
 
 			<section className="home-visit-section">
 				<div className="section-content">
@@ -91,16 +90,27 @@ export default function HomePage() {
 						assessments, we provide comprehensive mobile care across
 						Adelaide metro and surrounding regions.
 					</p>
-					<p>
-						Every appointment includes a full assessment plus
-						personalised treatment plan. We travel with sterilised
-						instruments, and the equipment needed to manage{' '}
-						<strong>ingrown toenails</strong>,{' '}
-						<strong>diabetic foot checks</strong>,{' '}
-						<strong>heel pain</strong> and{' '}
-						<strong>custom orthotics</strong> without you needing to
-						leave home.
-					</p>
+						<p>
+							Every appointment includes a full assessment plus
+							personalised treatment plan. We travel with sterilised
+							instruments, and the equipment needed to manage{' '}
+							<Link href="/services/ingrown-toenail">
+								<strong>ingrown toenails</strong>
+							</Link>
+							,{' '}
+							<Link href="/services/diabetes-foot-care">
+								<strong>diabetic foot checks</strong>
+							</Link>
+							,{' '}
+							<Link href="/services/heel-arch-pain">
+								<strong>heel pain</strong>
+							</Link>{' '}
+							and{' '}
+							<Link href="/services/custom-orthotics">
+								<strong>custom orthotics</strong>
+							</Link>{' '}
+							without you needing to leave home.
+						</p>
 					<ul className="home-visit-benefits">
 						<li>
 							Appointments available — call for current openings
@@ -146,22 +156,22 @@ export default function HomePage() {
 							care, bringing the same services you receive in a
 							clinic to your home, workplace or aged care
 							facility. That includes{' '}
-							<Link href="/services#ingrown-toenails">
-								ingrown toenail care
-							</Link>
-							,{' '}
-							<Link href="/services#heel-pain">
-								heel pain treatment
-							</Link>
-							,{' '}
-							<Link href="/services#diabetic-assessments">
-								diabetic foot assessments
-							</Link>
-							,{' '}
-							<Link href="/services#orthotics">
-								custom orthotics
-							</Link>
-							, and more.
+								<Link href="/services/ingrown-toenail">
+									ingrown toenail care
+								</Link>
+								,{' '}
+								<Link href="/services/heel-arch-pain">
+									heel pain treatment
+								</Link>
+								,{' '}
+								<Link href="/services/diabetes-foot-care">
+									diabetic foot assessments
+								</Link>
+								,{' '}
+								<Link href="/services/custom-orthotics">
+									custom orthotics
+								</Link>
+								, and more.
 						</p>
 					</div>
 
@@ -179,7 +189,7 @@ export default function HomePage() {
 							arrangement.
 						</p>
 
-						<ul className="location-list">
+							<ul className="location-list">
 							<li>
 								<strong>Northern Adelaide:</strong> Elizabeth,
 								Salisbury, Modbury, Tea Tree Gully, Golden
@@ -209,9 +219,8 @@ export default function HomePage() {
 								Town, Mile End, Bowden, Thebarton, Goodwood,
 								Parkside
 							</li>
-						</ul>
-
-						<p className="contact-note">
+							</ul>
+							<p className="contact-note">
 							Outside Adelaide Metro?{' '}
 							<em>
 								We cover regional South Australia by
@@ -241,12 +250,32 @@ export default function HomePage() {
 			<section className="services-preview">
 				<div className="section-content">
 					<h2>Our Mobile Podiatry Services</h2>
-					<p>
-						General foot care, custom orthotics, foot pain
-						treatment, ingrown toenail care, diabetes management,
-						biomechanical assessment and more — delivered at your
-						home.
-					</p>
+						<p>
+							<Link href="/services/general-podiatry">
+								General foot care
+							</Link>
+							,{' '}
+							<Link href="/services/custom-orthotics">
+								custom orthotics
+							</Link>
+							,{' '}
+							<Link href="/services/heel-arch-pain">
+								foot pain treatment
+							</Link>
+							,{' '}
+							<Link href="/services/ingrown-toenail">
+								ingrown toenail care
+							</Link>
+							,{' '}
+							<Link href="/services/diabetes-foot-care">
+								diabetes management
+							</Link>
+							,{' '}
+							<Link href="/services/biomechanics-gait">
+								biomechanical assessment
+							</Link>{' '}
+							and more delivered at your home.
+						</p>
 					<Link href="/services" className="view-all-services">
 						View All Services
 					</Link>

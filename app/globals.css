@@ -103,6 +103,10 @@ p {
 
 a {
 	color: var(--brand-primary-800);
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 2px;
+	transition: color 0.2s ease;
 }
 
 a:hover {
@@ -199,7 +203,7 @@ textarea:focus-visible {
 	padding: 0 var(--space-4);
 	width: 100%;
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: auto 1fr auto auto;
 	gap: var(--space-4);
 	align-items: center;
 }
@@ -226,8 +230,34 @@ textarea:focus-visible {
 	transform: translateY(-1px);
 }
 
-.nav-links {
+.header-booking-button {
 	grid-column: 3;
+	justify-self: end;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.6rem 1rem;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: var(--text-sm);
+	background: #d4eaff;
+	color: #173a55;
+	border: 1px solid #b5d8f8;
+	box-shadow: 0 8px 16px rgba(23, 58, 85, 0.12);
+}
+
+.header-booking-button:hover {
+	background: #c3e0fb;
+	color: #102f46;
+}
+
+.mobile-booking-button {
+	display: none;
+}
+
+.nav-links {
+	grid-column: 2;
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
@@ -377,7 +407,7 @@ textarea:focus-visible {
 }
 
 .hamburger {
-	grid-column: 3;
+	grid-column: 4;
 	justify-self: end;
 	display: none;
 	flex-direction: column;
@@ -469,6 +499,10 @@ textarea:focus-visible {
 		display: inline-flex;
 	}
 
+	.header-booking-button {
+		display: none;
+	}
+
 	.mobile-menu {
 		display: none;
 	}
@@ -500,6 +534,19 @@ textarea:focus-visible {
 		padding: var(--space-3) var(--space-4);
 		border-bottom: 1px solid rgba(91, 115, 134, 0.14);
 		background: #ffffff;
+	}
+
+	.mobile-booking-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: var(--tapY) var(--tapX);
+		margin: var(--space-2) var(--space-3) var(--space-1);
+		border-radius: var(--radius-sm);
+		background: #d4eaff;
+		color: #173a55;
+		font-weight: 700;
+		text-decoration: none;
 	}
 
 	.mobile-menu-close {
@@ -817,8 +864,9 @@ textarea:focus-visible {
 	display: inline-block;
 	padding: var(--space-4) var(--space-6);
 	font-size: var(--text-lg);
-	color: #ffffff;
-	background: var(--brand-primary);
+	color: #173a55;
+	background: #cfe8ff;
+	border: 1px solid #a8cff5;
 	border-radius: var(--radius-sm);
 	text-decoration: none;
 	transition: all 0.2s;
@@ -826,9 +874,9 @@ textarea:focus-visible {
 }
 
 .hero-cta-button:hover {
-	background: var(--brand-primary-700);
+	background: #b6dbff;
 	transform: translateY(-1px);
-	color: #ffffff;
+	color: #102f46;
 }
 
 .hero-cta-secondary {
@@ -923,13 +971,11 @@ textarea:focus-visible {
 	font-weight: 600;
 	color: var(--brand-primary-800);
 	text-decoration: none;
-	border-bottom: 2px solid transparent;
-	transition: color 0.2s ease, border-bottom-color 0.2s ease;
+	transition: color 0.2s ease;
 }
 
 .home-text a:hover {
 	color: var(--brand-primary-700);
-	border-bottom-color: currentColor;
 }
 
 .home-text h3,
@@ -2457,13 +2503,15 @@ textarea:focus-visible {
 	font-weight: 600;
 	color: var(--brand-primary-800);
 	text-decoration: none;
-	border-bottom: 2px solid transparent;
-	transition: color 0.2s ease, border-bottom-color 0.2s ease;
+	transition: color 0.2s ease;
 }
 
 .faq-preview a:hover {
 	color: var(--brand-primary-700);
-	border-bottom-color: currentColor;
+}
+
+.service-areas-container a {
+	font-weight: 600;
 }
 .service-highlight p {
 	font-size: var(--text-lg);
