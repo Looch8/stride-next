@@ -210,7 +210,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
               className="mobile-booking-button"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Book a Home Visit
+              Request a Home Visit
             </Link>
 
             <ul
@@ -348,7 +348,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
         </div>
 
         <Link href="/booking" className="header-booking-button">
-          Book a Home Visit
+          Request a Home Visit
         </Link>
       </nav>
     </header>

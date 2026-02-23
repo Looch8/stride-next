@@ -44,10 +44,10 @@ export default function HomePage() {
 							<Link
 								href="/booking"
 								className="hero-cta-button"
-							aria-label="Book a home visit with Stride Podiatry"
-						>
-							Book Your Home Visit
-						</Link>
+								aria-label="Request a home visit with Stride Podiatry"
+							>
+								Request a Home Visit
+							</Link>
 							<a
 								href="tel:+61468518993"
 								className="hero-cta-secondary"
@@ -58,17 +58,7 @@ export default function HomePage() {
 						</div>
 					</div>
 				</section>
-				<section className="hero-notice">
-					<div className="hero-notice-content">
-						<strong>
-							<a href="tel:+61468518993">Call 0468 518 993</a>
-						</strong>{' '}
-						for current availability, or{' '}
-						<Link href="/booking">book your home visit online</Link>.
-					</div>
-				</section>
-
-			<section className="home-visit-section">
+				<section className="home-visit-section">
 				<div className="section-content">
 					<h2>Need a Home Visit Podiatrist in Adelaide?</h2>
 					<p>

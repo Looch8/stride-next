@@ -97,7 +97,7 @@ export default async function ServiceDetailPage({
 
           <div className="detail-cta">
             <Link href="/booking" className="book-now-button">
-              Book a Home Visit
+              Request a Home Visit
             </Link>
           </div>
         </div>
