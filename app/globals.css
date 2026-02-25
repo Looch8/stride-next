@@ -736,6 +736,16 @@ textarea:focus-visible {
 }
 
 @media (max-width: 768px) {
+	.contact-panel--details .social-links {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.contact-panel--details .social-links a {
+		width: 100%;
+		justify-content: center;
+	}
+
 	.footer-top {
 		grid-template-columns: 1fr;
 		gap: var(--space-5);
