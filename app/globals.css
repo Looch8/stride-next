@@ -2023,6 +2023,7 @@ textarea:focus-visible {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
 	padding: var(--space-4);
 	border: 1.5px solid #d6e0e8;
@@ -2033,11 +2034,13 @@ textarea:focus-visible {
 }
 
 .contact-form input:hover,
+.contact-form select:hover,
 .contact-form textarea:hover {
 	border-color: rgba(95, 126, 146, 0.7);
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
 	outline: none;
 	border-color: var(--brand-primary);

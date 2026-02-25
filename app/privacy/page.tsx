@@ -143,8 +143,8 @@ export default function PrivacyPage() {
                 billing contacts where applicable.
               </li>
               <li>
-                Website contact form information: name, email address, and
-                message content.
+                Website contact form information: name, email address, optional
+                phone number, preferred contact method, and message content.
               </li>
             </ul>
           </section>

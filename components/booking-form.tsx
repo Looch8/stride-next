@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, type ChangeEvent, type FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
 
 type BookingForm = {
   fullName: string;
@@ -9,6 +8,7 @@ type BookingForm = {
   email: string;
   suburb: string;
   reason: string;
+  website: string;
 };
 
 type MessageState = { type: 'success' | 'error' | ''; text: string };
@@ -19,6 +19,7 @@ const initialForm: BookingForm = {
   email: '',
   suburb: '',
   reason: '',
+  website: '',
 };
 
 export default function BookingForm() {
@@ -39,29 +40,17 @@ export default function BookingForm() {
     setIsLoading(true);
     setMessage({ type: '', text: '' });
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_BOOKING_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      setMessage({
-        type: 'error',
-        text: 'Online bookings are temporarily unavailable. Please call or email us directly.',
-      });
-      setIsLoading(false);
-      return;
-    }
-
-    const templateParams = {
-      from_full_name: formData.fullName,
-      from_phone: formData.phone,
-      from_email: formData.email,
-      from_suburb: formData.suburb,
-      reason_for_visit: formData.reason,
-    };
-
     try {
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const response = await fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Booking API request failed');
+      }
+
       setMessage({
         type: 'success',
         text: "Your booking request has been sent successfully! We'll contact you shortly to schedule your appointment.",
@@ -80,7 +69,7 @@ export default function BookingForm() {
 
   return (
     <>
-      <form className="booking-form" onSubmit={handleSubmit}>
+      <form className="booking-form" onSubmit={handleSubmit} autoComplete="off">
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
           <input
@@ -140,6 +129,28 @@ export default function BookingForm() {
             value={formData.reason}
             onChange={handleChange}
             placeholder="Foot pain, orthotic review, nail care, etc."
+          />
+        </div>
+        <div
+          className="form-group"
+          style={{
+            position: 'absolute',
+            left: '-10000px',
+            width: '1px',
+            height: '1px',
+            overflow: 'hidden',
+          }}
+          aria-hidden="true"
+        >
+          <label htmlFor="website">Website</label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete="nope"
           />
         </div>
 

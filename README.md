@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-Promote to production
-
 First, run the development server:
 
 ```bash
@@ -20,7 +18,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contact Form Email Setup (Resend)
+
+This project sends contact and booking form submissions through server-side API routes using Resend.
+
+1. Copy environment variables:
+
+```bash
+cp .env.example .env.local
+```
+
+2. Set the values in `.env.local`:
+- `RESEND_API_KEY`: your Resend API key
+- `RESEND_FROM_EMAIL`: verified sender, e.g. `Stride Podiatry <contact@your-domain.com>`
+- `CONTACT_INBOX_EMAIL`: inbox to receive form submissions
+
+3. In your deployment platform (for example Vercel), add the same environment variables.
+
+When configured, replies in your inbox will go to the submitter email via the `Reply-To` header.
 
 ## Learn More
 

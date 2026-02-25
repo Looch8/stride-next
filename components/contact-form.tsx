@@ -1,34 +1,34 @@
 'use client';
 
-import { useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 type MessageState = { type: 'success' | 'error' | ''; text: string };
 
 type FormState = {
   name: string;
   email: string;
+  phone: string;
+  preferredContactMethod: 'email' | 'phone' | 'either';
   message: string;
+  website: string;
 };
 
-const initialForm: FormState = { name: '', email: '', message: '' };
+const initialForm: FormState = {
+  name: '',
+  email: '',
+  phone: '',
+  preferredContactMethod: 'either',
+  message: '',
+  website: '',
+};
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormState>(initialForm);
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<MessageState>({ type: '', text: '' });
 
-  const templateParams = useMemo(
-    () => ({
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
-    }),
-    [formData],
-  );
-
   const handleChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -40,23 +40,17 @@ export default function ContactForm() {
     setIsLoading(true);
     setStatus({ type: '', text: '' });
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      setStatus({
-        type: 'error',
-        text: 'Email is temporarily unavailable. Please call or email us directly.',
-      });
-      setIsLoading(false);
-      return;
-    }
-
     try {
-      // Contact form submissions are transmitted via third-party providers and may be
-      // processed by provider infrastructure; handle submitted data securely.
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Contact API request failed');
+      }
+
       setStatus({
         type: 'success',
         text: "Your message has been sent successfully! We'll get back to you soon.",
@@ -75,7 +69,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -101,15 +95,62 @@ export default function ContactForm() {
           />
         </div>
         <div className="form-group">
+          <label htmlFor="phone">Phone (optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="0468 518 993"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="preferredContactMethod">Preferred Contact Method</label>
+          <select
+            id="preferredContactMethod"
+            name="preferredContactMethod"
+            value={formData.preferredContactMethod}
+            onChange={handleChange}
+            required
+          >
+            <option value="either">Either</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+          </select>
+        </div>
+        <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Tell us about the visit you need"
+            placeholder="How can we help? Ask us any question and we’ll get back to you."
             rows={5}
             value={formData.message}
             onChange={handleChange}
             required
+          />
+        </div>
+        <div
+          className="form-group"
+          style={{
+            position: 'absolute',
+            left: '-10000px',
+            width: '1px',
+            height: '1px',
+            overflow: 'hidden',
+          }}
+          aria-hidden="true"
+        >
+          <label htmlFor="website">Website</label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete="nope"
           />
         </div>
         <button
