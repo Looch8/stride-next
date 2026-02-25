@@ -151,8 +151,10 @@ export default function ContactPage() {
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label={link.label}
+										className="contact-social-link"
 									>
 										<SocialIcon name={link.icon} />
+										<span>{link.label}</span>
 									</a>
 								))}
 							</div>
