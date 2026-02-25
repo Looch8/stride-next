@@ -76,7 +76,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            placeholder="Full name"
+            placeholder="Enter your full name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -88,7 +88,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            placeholder="you@email.com"
+            placeholder="Enter your email"
             value={formData.email}
             onChange={handleChange}
             required
@@ -100,7 +100,7 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            placeholder="0468 518 993"
+            placeholder="Enter your phone number"
             value={formData.phone}
             onChange={handleChange}
           />
