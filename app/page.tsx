@@ -58,65 +58,6 @@ export default function HomePage() {
 						</div>
 					</div>
 				</section>
-				<section className="home-visit-section">
-				<div className="section-content">
-					<h2>Need a Home Visit Podiatrist in Adelaide?</h2>
-					<p>
-						We are a dedicated{' '}
-						<strong>
-							home visit podiatry service for Adelaide and
-							surrounding regions
-						</strong>
-						, helping busy families,{' '}
-						<Link href="/services/aged-care-podiatry">
-							aged care residents
-						</Link>
-						,{' '}
-						<Link href="/services/ndis-podiatry">
-							NDIS participants
-						</Link>{' '}
-						and anyone who prefers podiatry at home.
-						From routine nail and skin care through to biomechanical
-						assessments, we provide comprehensive mobile care across
-						Adelaide metro and surrounding regions.
-					</p>
-						<p>
-							Every appointment includes a full assessment plus
-							personalised treatment plan. We travel with sterilised
-							instruments, and the equipment needed to manage{' '}
-							<Link href="/services/ingrown-toenail">
-								<strong>ingrown toenails</strong>
-							</Link>
-							,{' '}
-							<Link href="/services/diabetes-foot-care">
-								<strong>diabetic foot checks</strong>
-							</Link>
-							,{' '}
-							<Link href="/services/heel-arch-pain">
-								<strong>heel pain</strong>
-							</Link>{' '}
-							and{' '}
-							<Link href="/services/custom-orthotics">
-								<strong>custom orthotics</strong>
-							</Link>{' '}
-							without you needing to leave home.
-						</p>
-					<ul className="home-visit-benefits">
-						<li>
-							Appointments available — call for current openings
-						</li>
-						<li>
-							Private bookings welcome; Medicare CDM requires a GP
-							referral. NDIS plan and self-managed accepted
-						</li>
-						<li>
-							We visit houses, retirement villages, and
-							residential aged care facilities.
-						</li>
-					</ul>
-				</div>
-			</section>
-
 			<section className="home-container">
 				<div className="profile-image">
 					<Image
