@@ -32,7 +32,9 @@ export default function AboutPage() {
 			<script
 				key="breadcrumb-schema"
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(breadcrumbsLd),
+				}}
 			/>
 			<div className="about-section">
 				<div className="about-text">
@@ -41,8 +43,8 @@ export default function AboutPage() {
 						Stride Podiatry is a home-visit service dedicated to
 						providing high-quality podiatry care in the comfort of
 						your home. We support private patients as well as
-						Medicare Chronic Disease Management (CDM/EPC), DVA and
-						NDIS participants.
+						Medicare Chronic Disease Management (CDM/EPC), Support
+						at Home, DVA and NDIS participants.
 					</p>
 					<p>
 						We regularly work with older adults, people with
@@ -84,15 +86,17 @@ export default function AboutPage() {
 				<div className="about-text">
 					<h2>About Luke</h2>
 					<p>
-						Hi, I’m Luke Wheldale. I’m passionate about delivering
-						quality podiatry care and serving the Adelaide
-						community. I’m a family man and an active member of my
-						local church.
+						Luke Wheldale completed his Bachelor of Podiatry at the
+						University of South Australia in 2020. He has since
+						worked across private practice, community care, and aged
+						care, building a broad clinical foundation and a
+						reputation for thoughtful, outcomes-focused treatment.
+						He is especially passionate about community podiatry and
+						helping people maintain mobility and independence.
 					</p>
 					<p>
-						When I’m not helping patients, you’ll find me with my
-						family, playing guitar, reading or travelling. Finding
-						balance helps me bring my best to both work and home.
+						Outside of work, Luke enjoys time with his family,
+						playing guitar, reading, and travelling.
 					</p>
 				</div>
 			</div>

@@ -68,13 +68,6 @@ export async function POST(request: Request) {
     );
   }
 
-  if (preferredContactMethod === 'phone' && !phone) {
-    return NextResponse.json(
-      { error: 'Phone is required when phone contact is preferred.' },
-      { status: 400 },
-    );
-  }
-
   const text = [
     'New contact enquiry',
     '',
