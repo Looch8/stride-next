@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { blogPosts } from '@/content/blog-posts';
@@ -45,6 +46,22 @@ export default function BlogIndexPage() {
 				<div className="blog-grid">
 					{posts.map((post) => (
 						<article key={post.slug} className="blog-card">
+							{post.image ? (
+								<Link
+									href={`/blog/${post.slug}`}
+									className="blog-card-image-link"
+									aria-label={`Read ${post.title}`}
+								>
+									<Image
+										src={post.image.src}
+										alt={post.image.alt}
+										className="blog-card-image"
+										width={post.image.width}
+										height={post.image.height}
+										sizes="(max-width: 900px) 100vw, 33vw"
+									/>
+								</Link>
+							) : null}
 							<p className="blog-date">{formatDate(post.date)}</p>
 							<h2>{post.title}</h2>
 							<p className="blog-excerpt">{post.excerpt}</p>

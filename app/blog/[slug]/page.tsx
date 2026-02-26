@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { blogPosts } from '@/content/blog-posts';
@@ -50,10 +51,10 @@ export async function generateMetadata({
       url: `https://www.stride-podiatry.com.au/blog/${post.slug}`,
       images: [
         {
-          url: '/images/logo.png',
-          width: 512,
-          height: 512,
-          alt: 'Stride Podiatry',
+          url: post.image?.src ?? '/images/logo.png',
+          width: post.image?.width ?? 512,
+          height: post.image?.height ?? 512,
+          alt: post.image?.alt ?? 'Stride Podiatry',
         },
       ],
     },
@@ -80,6 +81,17 @@ export default async function BlogPostPage({
           <p className="blog-post-date">{formatDate(post.date)}</p>
           <h1>{post.title}</h1>
           <p className="blog-post-intro">{post.intro}</p>
+          {post.image ? (
+            <Image
+              src={post.image.src}
+              alt={post.image.alt}
+              className="blog-post-image"
+              width={post.image.width}
+              height={post.image.height}
+              sizes="(max-width: 900px) 100vw, 720px"
+              priority
+            />
+          ) : null}
         </header>
 
         <div className="blog-post-body">
