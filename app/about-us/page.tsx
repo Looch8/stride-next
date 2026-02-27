@@ -70,7 +70,8 @@ export default function AboutPage() {
 					className="profile-photo"
 					width={420}
 					height={630}
-					sizes="(max-width: 768px) 100vw, 420px"
+					sizes="(max-width: 480px) 200px, (max-width: 768px) 250px, 300px"
+					quality={72}
 				/>
 			</div>
 
@@ -81,7 +82,8 @@ export default function AboutPage() {
 					className="profile-photo"
 					width={420}
 					height={310}
-					sizes="(max-width: 768px) 100vw, 420px"
+					sizes="(max-width: 480px) 200px, (max-width: 768px) 250px, 300px"
+					quality={76}
 				/>
 				<div className="about-text">
 					<h2>About Luke</h2>

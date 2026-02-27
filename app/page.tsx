@@ -65,7 +65,8 @@ export default function HomePage() {
 						alt="Luke Wheldale — Mobile Podiatrist in Adelaide"
 						width={350}
 						height={525}
-						sizes="(max-width: 768px) 100vw, 350px"
+						sizes="(max-width: 480px) 200px, (max-width: 768px) 250px, (max-width: 900px) 280px, 350px"
+						quality={72}
 					/>
 				</div>
 

@@ -151,12 +151,13 @@ function HeaderContent({ pathname }: HeaderContentProps) {
       >
         <Link href="/" className="logo" aria-label="Stride Podiatry home">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Stride Podiatry logo"
             className="logo-image"
-            width={163}
-            height={55}
-            sizes="(max-width: 768px) 160px, 180px"
+            width={640}
+            height={214}
+            sizes="(max-width: 768px) 132px, 180px"
+            quality={80}
           />
         </Link>
 
@@ -186,12 +187,13 @@ function HeaderContent({ pathname }: HeaderContentProps) {
             <div className="mobile-menu-header">
               <Link href="/" className="logo" aria-label="Stride Podiatry home">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.webp"
                   alt="Stride Podiatry logo"
                   className="logo-image"
-                  width={160}
-                  height={54}
-                  sizes="160px"
+                  width={640}
+                  height={214}
+                  sizes="132px"
+                  quality={80}
                 />
               </Link>
               <button

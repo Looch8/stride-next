@@ -97,8 +97,8 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: '/images/logo.png',
-				width: 512,
-				height: 512,
+				width: 640,
+				height: 214,
 				alt: 'Stride Podiatry',
 			},
 		],
@@ -132,7 +132,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en-AU">
 			<head>
-				<link rel="preload" as="image" href="/images/hero-bg.jpg" />
 				<script
 					type="application/ld+json"
 					suppressHydrationWarning
