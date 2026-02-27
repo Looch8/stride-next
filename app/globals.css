@@ -171,7 +171,8 @@ textarea:focus-visible {
 	--tapX: 0.85rem;
 	--mobile-cta-button-height: 44px;
 	--mobile-cta-bar-pad: 8px;
-	--mobile-cta-bar-reserve: 60px;
+	--mobile-cta-bar-height: 60px;
+	--mobile-cta-bar-reserve: var(--mobile-cta-bar-height);
 }
 
 .header {
@@ -189,7 +190,6 @@ textarea:focus-visible {
 }
 
 .header.scrolled {
-	min-height: var(--header-height-scrolled);
 	box-shadow: var(--shadow-raise);
 }
 
@@ -216,10 +216,6 @@ textarea:focus-visible {
 	width: auto;
 	display: block;
 	transition: transform 0.2s ease;
-}
-
-.header.scrolled .logo-image {
-	height: clamp(var(--logo-min-h-scrolled), 7vw, var(--logo-max-h-scrolled));
 }
 
 .logo-image:hover {
@@ -469,11 +465,11 @@ textarea:focus-visible {
 @media (max-width: 768px) {
 	:root {
 		--header-height: 64px;
-		--header-height-scrolled: 52px;
+		--header-height-scrolled: var(--header-height);
 		--logo-min-h: 36px;
 		--logo-max-h: 44px;
-		--logo-min-h-scrolled: 30px;
-		--logo-max-h-scrolled: 38px;
+		--logo-min-h-scrolled: var(--logo-min-h);
+		--logo-max-h-scrolled: var(--logo-max-h);
 	}
 
 	body {
@@ -1222,7 +1218,7 @@ textarea:focus-visible {
 
 .not-found h1 {
 	font-size: clamp(3rem, 8vw, 6rem);
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--brand-primary);
 	margin-bottom: var(--space-2);
 }
@@ -1279,6 +1275,7 @@ textarea:focus-visible {
 	left: 0;
 	right: 0;
 	display: none;
+	height: calc(var(--mobile-cta-bar-height) + env(safe-area-inset-bottom));
 	gap: var(--space-3);
 	padding: var(--mobile-cta-bar-pad) var(--space-4);
 	padding-bottom: calc(
@@ -1321,6 +1318,12 @@ textarea:focus-visible {
 @media (max-width: 768px) {
 	.mobile-cta-bar {
 		display: flex;
+	}
+
+	body {
+		padding-bottom: calc(
+			var(--mobile-cta-bar-reserve) + env(safe-area-inset-bottom)
+		);
 	}
 
 	.footer {

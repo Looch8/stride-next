@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
   type MouseEvent as ReactMouseEvent,
@@ -51,6 +52,10 @@ function HeaderContent({ pathname }: HeaderContentProps) {
   const [serviceAreasOpen, setServiceAreasOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
+
+  useLayoutEffect(() => {
+    setIsScrolled(window.scrollY > 50);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
