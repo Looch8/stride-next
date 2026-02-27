@@ -777,11 +777,8 @@ textarea:focus-visible {
 
 .hero-section {
 	width: 100%;
-	background: linear-gradient(
-			rgba(68, 94, 108, 0.86),
-			rgba(68, 94, 108, 0.86)
-		),
-		url('/images/hero-bg.webp') center/cover;
+	position: relative;
+	overflow: hidden;
 	min-height: clamp(340px, 60svh, 620px);
 	display: flex;
 	align-items: center;
@@ -791,7 +788,26 @@ textarea:focus-visible {
 	padding: var(--space-8) var(--space-5);
 }
 
+.hero-background {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.hero-background img {
+	object-fit: cover;
+}
+
+.hero-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(rgba(68, 94, 108, 0.86), rgba(68, 94, 108, 0.86));
+}
+
 .hero-content {
+	position: relative;
+	z-index: 2;
 	max-width: var(--content-sm);
 	width: 100%;
 	padding: 0 var(--space-4);

@@ -25,7 +25,7 @@ const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['500', '600', '700'],
 	variable: '--font-heading',
-	display: 'optional',
+	display: 'swap',
 	preload: true,
 	fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial'],
 	adjustFontFallback: true,
@@ -136,7 +136,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="en-AU">
+		<html lang="en-AU" className={`${nunito.variable} ${poppins.variable}`}>
 			<head>
 				<script
 					type="application/ld+json"
@@ -160,7 +160,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					}}
 				/>
 			</head>
-			<body className={`${nunito.variable} ${poppins.variable}`}>
+			<body>
 				<a href="#main-content" className="skip-link">
 					Skip to content
 				</a>

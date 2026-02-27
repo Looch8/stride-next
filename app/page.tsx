@@ -30,34 +30,46 @@ export default function HomePage() {
 	return (
 		<>
 			<section className="hero-section">
-					<div className="hero-content">
-						<h1 className="title">
-							Mobile & Home Visit Podiatrist in Adelaide
-						</h1>
-						<h2 className="subtitle">
-							Stride Podiatry — Trusted Home Podiatry Care
-						</h2>
-						<p className="hero-subtitle">
-							We come to you across Adelaide metro and regional SA.
-						</p>
-						<div className="hero-cta-group">
-							<Link
-								href="/booking"
-								className="hero-cta-button"
-								aria-label="Request a home visit with Stride Podiatry"
-							>
-								Request a Home Visit
-							</Link>
-							<a
-								href="tel:+61468518993"
-								className="hero-cta-secondary"
-								aria-label="Call Stride Podiatry"
-							>
-								Call 0468 518 993
-							</a>
-						</div>
+				<div className="hero-background" aria-hidden="true">
+					<Image
+						src="/images/hero-bg.webp"
+						alt=""
+						fill
+						priority
+						fetchPriority="high"
+						sizes="100vw"
+						quality={72}
+					/>
+				</div>
+				<div className="hero-overlay" aria-hidden="true" />
+				<div className="hero-content">
+					<h1 className="title">
+						Mobile & Home Visit Podiatrist in Adelaide
+					</h1>
+					<h2 className="subtitle">
+						Stride Podiatry — Trusted Home Podiatry Care
+					</h2>
+					<p className="hero-subtitle">
+						We come to you across Adelaide metro and regional SA.
+					</p>
+					<div className="hero-cta-group">
+						<Link
+							href="/booking"
+							className="hero-cta-button"
+							aria-label="Request a home visit with Stride Podiatry"
+						>
+							Request a Home Visit
+						</Link>
+						<a
+							href="tel:+61468518993"
+							className="hero-cta-secondary"
+							aria-label="Call Stride Podiatry"
+						>
+							Call 0468 518 993
+						</a>
 					</div>
-				</section>
+				</div>
+			</section>
 			<section className="home-container">
 				<div className="profile-image">
 					<Image
