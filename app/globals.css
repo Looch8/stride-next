@@ -1282,7 +1282,9 @@ textarea:focus-visible {
 		var(--mobile-cta-bar-pad) + env(safe-area-inset-bottom)
 	);
 	background: rgba(255, 255, 255, 0.96);
-	backdrop-filter: blur(12px);
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 	box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.12);
 	z-index: 1200;
 	transition: transform 0.25s ease, opacity 0.2s ease;
