@@ -16,13 +16,19 @@ const nunito = Nunito({
 	weight: ['400', '500', '600', '700'],
 	variable: '--font-body',
 	display: 'swap',
+	preload: true,
+	fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial'],
+	adjustFontFallback: true,
 });
 
 const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['500', '600', '700'],
 	variable: '--font-heading',
-	display: 'swap',
+	display: 'optional',
+	preload: true,
+	fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial'],
+	adjustFontFallback: true,
 });
 
 const medicalBusinessJsonLd = {
