@@ -11,7 +11,7 @@ import {
 } from 'react';
 
 import { primaryNavItems } from '@/content/navigation';
-import { serviceNavItems } from '@/content/services';
+import { serviceNavItems } from '@/content/service-nav-items';
 
 const dropdownServices = [
   { href: '/services', label: 'All Services' },
@@ -154,9 +154,8 @@ function HeaderContent({ pathname }: HeaderContentProps) {
             src="/images/logo.png"
             alt="Stride Podiatry logo"
             className="logo-image"
-            width={180}
-            height={48}
-            priority
+            width={163}
+            height={55}
             sizes="(max-width: 768px) 160px, 180px"
           />
         </Link>
@@ -191,7 +190,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                   alt="Stride Podiatry logo"
                   className="logo-image"
                   width={160}
-                  height={44}
+                  height={54}
                   sizes="160px"
                 />
               </Link>

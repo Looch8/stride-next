@@ -3,12 +3,12 @@
 		Arial, sans-serif;
 	--font-heading: 'Poppins', 'Avenir Next', 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
-	--brand-primary: #6d899d;
-	--brand-primary-700: #567283;
-	--brand-primary-800: #445e6c;
+	--brand-primary: #5f7d91;
+	--brand-primary-700: #4d697c;
+	--brand-primary-800: #3f5768;
 	--brand-accent: #aacbe3;
 	--brand-ink: #1f2a33;
-	--brand-muted: #4b5a67;
+	--brand-muted: #3f5060;
 	--bg-50: #f5f9fc;
 	--bg-100: #f0f5fa;
 	--surface: #ffffff;
@@ -164,8 +164,8 @@ textarea:focus-visible {
 :root {
 	--header-height: 108px;
 	--header-height-scrolled: var(--header-height);
-	--logo-min-h: 56px;
-	--logo-max-h: 84px;
+	--logo-min-h: 54px;
+	--logo-max-h: 72px;
 	--logo-min-h-scrolled: var(--logo-min-h);
 	--logo-max-h-scrolled: var(--logo-max-h);
 	--container-max: 1200px;
@@ -2490,10 +2490,9 @@ textarea:focus-visible {
 
 .profile-photo {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	border-radius: var(--radius-lg);
 	box-shadow: var(--shadow-sm);
-	object-fit: cover;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	border: 4px solid var(--surface);
 }
@@ -2607,7 +2606,7 @@ textarea:focus-visible {
 
 	.profile-photo {
 		width: 250px;
-		height: 250px;
+		height: auto;
 	}
 }
 
@@ -2624,7 +2623,7 @@ textarea:focus-visible {
 
 	.profile-photo {
 		width: 200px;
-		height: 200px;
+		height: auto;
 	}
 }
 .faq-preview a {

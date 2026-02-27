@@ -69,7 +69,7 @@ export default function AboutPage() {
 					alt="Stride Podiatry — home-visit podiatry in Adelaide"
 					className="profile-photo"
 					width={420}
-					height={420}
+					height={630}
 					sizes="(max-width: 768px) 100vw, 420px"
 				/>
 			</div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
 					alt="Luke Wheldale, Podiatrist"
 					className="profile-photo"
 					width={420}
-					height={420}
+					height={310}
 					sizes="(max-width: 768px) 100vw, 420px"
 				/>
 				<div className="about-text">

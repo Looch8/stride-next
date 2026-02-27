@@ -64,7 +64,7 @@ export default function HomePage() {
 						src="/images/profile-pic.webp"
 						alt="Luke Wheldale — Mobile Podiatrist in Adelaide"
 						width={350}
-						height={420}
+						height={525}
 						sizes="(max-width: 768px) 100vw, 350px"
 					/>
 				</div>
