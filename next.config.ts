@@ -14,7 +14,7 @@ const contentSecurityPolicy = [
 	"font-src 'self' data:",
 	"connect-src 'self' https:",
 	"manifest-src 'self'",
-	"frame-src 'self'",
+	"frame-src 'self' https://stride-podiatry.splose.com",
 	"trusted-types default",
 	...(isProduction ? ["upgrade-insecure-requests"] : []),
 ].join('; ');
