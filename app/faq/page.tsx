@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import FAQList, { type FAQItem } from '@/components/faq-list';
 import { buildBreadcrumbList } from '@/lib/structured-data';
@@ -88,6 +89,7 @@ export default function FAQPage() {
 			/>
 			<div className="faq-container">
 				<div className="faq-header">
+					<p className="faq-eyebrow">FAQ</p>
 					<h1>Frequently Asked Questions</h1>
 					<p className="faq-intro">
 						Find answers about our mobile podiatry services,
@@ -98,8 +100,13 @@ export default function FAQPage() {
 				<FAQList items={faqData} />
 
 				<div className="faq-contact">
-					<p>Still have questions?</p>
-					<p>Contact us for more information about our services.</p>
+					<p className="faq-contact-eyebrow">Still need help?</p>
+					<h2>Need more information before booking?</h2>
+					<p>
+						Visit our <Link href="/contact-us">contact page</Link>{' '}
+						if you&apos;d like to ask about services, service areas
+						or appointment availability.
+					</p>
 				</div>
 			</div>
 		</section>
