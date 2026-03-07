@@ -961,19 +961,24 @@ textarea:focus-visible {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--space-3);
+	display: grid;
+	gap: var(--space-2);
+	max-width: 42rem;
 }
 
 .hero-trust-list li {
-	padding: 0.7rem 1rem;
-	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.12);
-	border: 1px solid rgba(255, 255, 255, 0.14);
+	padding: 0;
 	color: #eef9f7;
-	font-weight: 700;
-	backdrop-filter: blur(4px);
+	font-weight: 600;
+	font-size: 1.02rem;
+	line-height: 1.5;
+}
+
+.hero-trust-list li::before {
+	content: '•';
+	display: inline-block;
+	margin-right: 0.65rem;
+	color: var(--brand-accent);
 }
 
 .hero-panel {
@@ -1406,8 +1411,7 @@ textarea:focus-visible {
 	}
 
 	.hero-trust-list {
-		flex-direction: column;
-		align-items: flex-start;
+		max-width: none;
 	}
 
 	.contact-card-inline,

@@ -66,97 +66,114 @@ export default function ContactPage() {
 			/>
 			<div className="contact-container">
 				<div className="contact-header">
+					<p className="contact-eyebrow">Contact</p>
 					<h1>Contact Stride Podiatry</h1>
 					<p>
-						Have a question? Need more information? We&apos;re here
-						to help!
+						Call, email or send a quick message to arrange mobile
+						podiatry care across Adelaide.
 					</p>
 				</div>
 
 				<div className="contact-grid contact-grid--single">
 					<div className="contact-panel contact-panel--hero">
-						<div className="contact-hero-actions">
+						<div className="contact-hero-copy">
 							<div>
-								<h2>Call or text</h2>
-								<a
-									className="contact-link-primary"
-									href="tel:+61468518993"
-								>
-									0468 518 993
-								</a>
-								<p className="contact-muted">
-									Fastest way to confirm availability or ask a
-									quick question.
+								<p className="contact-eyebrow">Fastest option</p>
+								<h2>Call or text for availability</h2>
+								<p className="contact-lead">
+									We can quickly confirm suburbs, funding pathways
+									and suitable appointment times.
 								</p>
 							</div>
-								<a
-									className="contact-call-button"
-									href="tel:+61468518993"
-								>
-									Call 0468 518 993
-								</a>
+							<div className="contact-hero-actions">
+								<div className="contact-stat-card">
+									<span className="contact-stat-label">Phone</span>
+									<a
+										className="contact-link-primary"
+										href="tel:+61468518993"
+									>
+										0468 518 993
+									</a>
+									<p className="contact-muted">
+										Fastest way to organise a visit.
+									</p>
+								</div>
+								<div className="contact-stat-card">
+									<span className="contact-stat-label">Email</span>
+									<a
+										className="contact-link-primary"
+										href="mailto:luke@stride-podiatry.com.au"
+									>
+										luke@stride-podiatry.com.au
+									</a>
+									<p className="contact-muted">
+										Useful for referrals or longer enquiries.
+									</p>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div className="contact-panel contact-panel--form">
-						<h2>Send a quick message</h2>
-						<p className="contact-muted">
-							Prefer email? Share your details and we&apos;ll be
-							in touch.
-						</p>
-						<ContactForm />
-					</div>
-
-					<div className="contact-panel contact-panel--details">
-						<div className="contact-block">
-							<h3>Email</h3>
+						<div className="contact-hero-cta">
 							<a
-								className="contact-link-primary"
-								href="mailto:luke@stride-podiatry.com.au"
+								className="contact-call-button"
+								href="tel:+61468518993"
 							>
-								luke@stride-podiatry.com.au
+								Call 0468 518 993
 							</a>
 						</div>
+					</div>
 
-						<div className="contact-block">
-							<h3>Service area</h3>
-							<p>Adelaide metro and regional South Australia.</p>
+					<div className="contact-content-grid">
+						<div className="contact-panel contact-panel--form">
+							<p className="contact-eyebrow">Message</p>
+							<h2>Send a quick message</h2>
 							<p className="contact-muted">
-								Not sure if we cover your suburb? Call and
-								we&apos;ll confirm.
+								Prefer email? Share your details and we&apos;ll be
+								in touch.
 							</p>
+							<ContactForm />
 						</div>
 
-						<div className="contact-block">
-							<h3>Hours</h3>
-							<p>Monday to Friday, 8:00am–5:00pm</p>
-						</div>
+						<div className="contact-panel contact-panel--details">
+							<div className="contact-block">
+								<h3>Service area</h3>
+								<p>Adelaide metro and regional South Australia by arrangement.</p>
+								<p className="contact-muted">
+									Not sure if we cover your suburb? Call and
+									we&apos;ll confirm.
+								</p>
+							</div>
 
-						<div className="contact-block">
-							<h3>FAQs</h3>
-							<p>
-								Before you call, visit our{' '}
-								<Link href="/faq">FAQ page</Link> for quick
-								answers.
-							</p>
-						</div>
+							<div className="contact-block">
+								<h3>Hours</h3>
+								<p>Monday to Friday, 8:00am to 5:00pm</p>
+							</div>
 
-						<div className="contact-block">
-							<h3>Social</h3>
-							<div className="social-links">
-								{socialLinks.map((link) => (
-									<a
-										key={link.href}
-										href={link.href}
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label={link.label}
-										className="contact-social-link"
-									>
-										<SocialIcon name={link.icon} />
-										<span>{link.label}</span>
-									</a>
-								))}
+							<div className="contact-block">
+								<h3>Helpful links</h3>
+								<p>
+									Read our <Link href="/faq">FAQ page</Link> for quick
+									answers, or use the booking form if you&apos;re ready to
+									request an appointment.
+								</p>
+							</div>
+
+							<div className="contact-block">
+								<h3>Social</h3>
+								<div className="social-links">
+									{socialLinks.map((link) => (
+										<a
+											key={link.href}
+											href={link.href}
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label={link.label}
+											className="contact-social-link"
+										>
+											<SocialIcon name={link.icon} />
+											<span>{link.label}</span>
+										</a>
+									))}
+								</div>
 							</div>
 						</div>
 					</div>
