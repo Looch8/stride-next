@@ -56,9 +56,9 @@ export default function HomePage() {
 						<Link
 							href="/booking"
 							className="hero-cta-button"
-							aria-label="Request a home visit with Stride Podiatry"
+							aria-label="Request an appointment with Stride Podiatry"
 						>
-							Request a Home Visit
+							Request Appointment
 						</Link>
 						<a
 							href="tel:+61468518993"

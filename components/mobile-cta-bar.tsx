@@ -16,7 +16,7 @@ export default function MobileCtaBar() {
         href="/booking"
         className="mobile-cta book"
       >
-        Book
+        Request Appointment
       </a>
     </div>
   );

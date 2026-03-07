@@ -9,18 +9,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 ]);
 
 export const metadata: Metadata = {
-	title: 'Book a Home Visit | Stride Podiatry',
+	title: 'Request Appointment | Stride Podiatry',
 	description:
 		'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking' },
 	openGraph: {
-		title: 'Book a Home Visit | Stride Podiatry',
+		title: 'Request Appointment | Stride Podiatry',
 		description:
 			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 		url: 'https://www.stride-podiatry.com.au/booking',
 	},
 	twitter: {
-		title: 'Book a Home Visit | Stride Podiatry',
+		title: 'Request Appointment | Stride Podiatry',
 		description:
 			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 	},
@@ -34,7 +34,7 @@ export default function BookingPage() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
 			/>
-			<h1>Request a Home Visit</h1>
+			<h1>Request Appointment</h1>
 			<p>
 				We&apos;ll contact you to confirm a suitable time and answer any
 				questions before your appointment.

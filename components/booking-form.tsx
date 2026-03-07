@@ -159,7 +159,7 @@ export default function BookingForm() {
 					className={`submit-button ${isLoading ? 'loading' : ''}`}
 					disabled={isLoading}
 				>
-					{isLoading ? 'Sending…' : 'Request Booking'}
+					{isLoading ? 'Sending…' : 'Request Appointment'}
 				</button>
       </form>
 
