@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
 	return (
-		<div className="about-container">
+		<section className="about">
 			<script
 				key="breadcrumb-schema"
 				type="application/ld+json"
@@ -36,72 +36,92 @@ export default function AboutPage() {
 					__html: JSON.stringify(breadcrumbsLd),
 				}}
 			/>
-			<div className="about-section">
-				<div className="about-text">
-					<h1>About Stride Podiatry</h1>
+			<div className="about-container">
+				<div className="about-header">
+					<p className="about-eyebrow">About</p>
+					<h1>Meet Stride Podiatry</h1>
 					<p>
-						Stride Podiatry is a home-visit service dedicated to
-						providing high-quality podiatry care in the comfort of
-						your home. We support private patients as well as
-						Medicare Chronic Disease Management (CDM/EPC), Support
-						at Home, DVA and NDIS participants.
-					</p>
-					<p>
-						We regularly work with older adults, people with
-						mobility limitations and those managing chronic
-						conditions, and we are experienced coordinating care
-						with GPs, support coordinators and families when needed.
-					</p>
-					<p>
-						Our mission is to make foot care accessible and
-						comprehensive for people who prefer or require in-home
-						visits, from routine care to chronic conditions and
-						mobility support.
-					</p>
-					<p>
-						If you’re looking for a trusted, reliable podiatrist in
-						Adelaide who comes to you, Stride Podiatry is here to
-						help.
+						Home-visit podiatry across Adelaide with a calm,
+						practical approach for private patients, aged care,
+						Support at Home and NDIS clients.
 					</p>
 				</div>
-				<Image
-					src="/images/profile-pic.webp"
-					alt="Stride Podiatry — home-visit podiatry in Adelaide"
-					className="profile-photo"
-					width={420}
-					height={630}
-					sizes="(max-width: 480px) 200px, (max-width: 768px) 250px, 300px"
-					quality={72}
-				/>
-			</div>
 
-			<div className="about-section">
-				<Image
-					src="/images/me-casual.jpg"
-					alt="Luke Wheldale, Podiatrist"
-					className="profile-photo"
-					width={420}
-					height={310}
-					sizes="(max-width: 480px) 200px, (max-width: 768px) 250px, 300px"
-					quality={76}
-				/>
-				<div className="about-text">
-					<h2>About Luke</h2>
-					<p>
-						Luke Wheldale completed his Bachelor of Podiatry at the
-						University of South Australia in 2020. He has since
-						worked across private practice, community care, and aged
-						care, building a broad clinical foundation and a
-						reputation for thoughtful, outcomes-focused treatment.
-						He is especially passionate about community podiatry and
-						helping people maintain mobility and independence.
-					</p>
-					<p>
-						Outside of work, Luke enjoys time with his family,
-						playing guitar, reading, and travelling.
-					</p>
+				<div className="about-grid">
+					<div className="about-photo-card">
+						<Image
+							src="/images/profile-pic.webp"
+							alt="Stride Podiatry — home-visit podiatry in Adelaide"
+							className="about-photo about-photo--portrait"
+							width={420}
+							height={630}
+							sizes="(max-width: 768px) 100vw, 420px"
+							quality={72}
+						/>
+					</div>
+
+					<div className="about-card">
+						<p className="about-card-eyebrow">The practice</p>
+						<h2>Mobile podiatry built around accessibility</h2>
+						<p>
+							Stride Podiatry is a home-visit service dedicated to
+							providing high-quality podiatry care in the comfort of
+							your home. We support private patients as well as
+							Medicare Chronic Disease Management, Support at Home,
+							DVA and NDIS participants where applicable.
+						</p>
+						<p>
+							We regularly work with older adults, people with
+							mobility limitations and those managing chronic
+							conditions, and we are experienced coordinating care
+							with GPs, support coordinators, providers and families
+							when needed.
+						</p>
+						<p>
+							Our goal is to make foot care more accessible for
+							people who prefer or require in-home visits, from
+							routine treatment through to chronic condition
+							management and mobility support.
+						</p>
+					</div>
+				</div>
+
+				<div className="about-grid about-grid--reverse">
+					<div className="about-card">
+						<p className="about-card-eyebrow">About Luke</p>
+						<h2>Thoughtful, outcomes-focused care</h2>
+						<p>
+							Luke Wheldale completed his Bachelor of Podiatry at
+							the University of South Australia in 2020. Since then
+							he has worked across private practice, community care
+							and aged care, building a broad clinical foundation in
+							home-visit podiatry.
+						</p>
+						<p>
+							He is especially passionate about community podiatry
+							and helping people maintain mobility, comfort and
+							independence through practical treatment and clear
+							advice.
+						</p>
+						<p>
+							Outside of work, Luke enjoys time with his family,
+							playing guitar, reading and travelling.
+						</p>
+					</div>
+
+					<div className="about-photo-card">
+						<Image
+							src="/images/me-casual.jpg"
+							alt="Luke Wheldale, Podiatrist"
+							className="about-photo"
+							width={420}
+							height={310}
+							sizes="(max-width: 768px) 100vw, 420px"
+							quality={76}
+						/>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

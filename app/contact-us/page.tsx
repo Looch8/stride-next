@@ -67,7 +67,7 @@ export default function ContactPage() {
 			<div className="contact-container">
 				<div className="contact-header">
 					<p className="contact-eyebrow">Contact</p>
-					<h1>Contact Stride Podiatry</h1>
+					<h1>Get in touch</h1>
 					<p>
 						Call, email or send a quick message to arrange mobile
 						podiatry care across Adelaide.

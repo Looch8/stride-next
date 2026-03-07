@@ -90,7 +90,7 @@ export default function FAQPage() {
 			<div className="faq-container">
 				<div className="faq-header">
 					<p className="faq-eyebrow">FAQ</p>
-					<h1>Frequently Asked Questions</h1>
+					<h1>Common questions</h1>
 					<p className="faq-intro">
 						Find answers about our mobile podiatry services,
 						bookings and treatments.
