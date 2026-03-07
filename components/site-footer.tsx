@@ -28,7 +28,7 @@ export default function SiteFooter() {
             <div className="footer-links-group">
               <p className="footer-eyebrow">Quick Links</p>
               <div className="footer-links">
-                <Link href="/about">About</Link>
+                <Link href="/about-us">About</Link>
                 <Link href="/services">Services</Link>
                 <Link href="/referral">Referrals</Link>
                 <Link href="/contact-us">Contact Us</Link>
