@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
+import { serviceAreas } from '@/content/service-areas';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
@@ -42,64 +43,44 @@ export default function ServiceAreasPage() {
 				}}
 			/>
 			<div className="service-areas-container">
-				<h1>Service Areas</h1>
-				<p>
-					Stride Podiatry provides mobile and home-visit podiatry across{' '}
-					<strong>Adelaide metro suburbs</strong> and{' '}
-					<strong>regional South Australia</strong> by arrangement.
-				</p>
+				<div className="service-areas-header">
+					<p className="service-areas-eyebrow">Service areas</p>
+					<h1>Areas we service across Adelaide and beyond</h1>
+					<p className="service-areas-intro">
+						Stride Podiatry provides mobile podiatry across Adelaide metro
+						suburbs, with regional South Australia visits available by
+						arrangement. Browse by area to check local coverage, suburbs and
+						the types of home visits we commonly provide.
+					</p>
+				</div>
 
-				<h2>Browse By Area</h2>
-				<ul>
-					<li>
-						<strong>
-							<Link href="/service-areas/northern-adelaide">
-								Northern Adelaide
+				<div className="service-areas-grid">
+					{serviceAreas.map((area) => (
+						<article key={area.slug} className="service-area-index-card">
+							<p className="service-area-card-eyebrow">{area.eyebrow}</p>
+							<h2 className="service-area-index-title">{area.name}</h2>
+							<p className="service-area-index-copy">{area.localContext}</p>
+							<Link
+								href={`/service-areas/${area.slug}`}
+								className="service-area-index-link"
+							>
+								View area details
 							</Link>
-						</strong>
-					</li>
-					<li>
-						<strong>
-							<Link href="/service-areas/southern-adelaide">
-								Southern Adelaide
-							</Link>
-						</strong>
-					</li>
-					<li>
-						<strong>
-							<Link href="/service-areas/eastern-adelaide">
-								Eastern Adelaide
-							</Link>
-						</strong>
-					</li>
-					<li>
-						<strong>
-							<Link href="/service-areas/western-adelaide">
-								Western Adelaide
-							</Link>
-						</strong>
-					</li>
-					<li>
-						<strong>
-							<Link href="/service-areas/central-adelaide">
-								Central Adelaide
-							</Link>
-						</strong>
-					</li>
-					<li>
-						<strong>
-							<Link href="/service-areas/regional-south-australia">
-								Regional South Australia
-							</Link>
-						</strong>
-					</li>
-				</ul>
+						</article>
+					))}
+				</div>
 
-				<div className="service-areas-cta">
-					<p>Not sure if we service your suburb?</p>
-					<div>
+				<div className="service-area-card service-area-index-cta">
+					<p className="service-area-card-eyebrow">Need help?</p>
+					<h2>Not sure which area fits your suburb?</h2>
+					<p>
+						If you are near the edge of metro coverage or want to confirm a
+						regional visit, contact us and we can point you in the right
+						direction.
+					</p>
+					<div className="service-area-actions">
 						<Link href="/contact-us" className="book-now-button">
-							Send Enquiry
+							Contact us
 						</Link>
 						<a href="tel:+61468518993" className="hero-cta-secondary">
 							Call 0468 518 993
