@@ -201,19 +201,6 @@ export default function HomePage() {
 							be arranged case by case.
 						</p>
 					</div>
-
-					<div className="contact-card contact-card-inline">
-						<div>
-							<p className="section-kicker">Contact</p>
-							<h2>Need to confirm an area or funding option?</h2>
-						</div>
-						<div className="contact-info">
-							<a href="tel:+61468518993">0468 518 993</a>
-							<a href="mailto:luke@stride-podiatry.com.au">
-								luke@stride-podiatry.com.au
-							</a>
-						</div>
-					</div>
 				</div>
 			</section>
 

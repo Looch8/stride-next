@@ -11,12 +11,8 @@ export default function SiteFooter() {
       <div className="footer-content">
         <div className="footer-top">
           <div className="footer-brand">
-            <p className="footer-eyebrow">Stride Podiatry</p>
-            <h2 className="footer-title">Mobile podiatry that feels clear, calm and professional.</h2>
-            <p className="footer-description">
-              Home visits across Adelaide for routine foot care, painful conditions,
-              diabetic assessments, aged care and supported care arrangements.
-            </p>
+            <h2 className="footer-title">Stride Podiatry</h2>
+            <p className="footer-description">Mobile podiatry home visits across Adelaide</p>
             <div className="footer-contact">
               <a href="tel:+61468518993" className="contact-link">
                 <span>0468 518 993</span>
@@ -24,12 +20,6 @@ export default function SiteFooter() {
               <a href="mailto:luke@stride-podiatry.com.au" className="contact-link">
                 <span>luke@stride-podiatry.com.au</span>
               </a>
-            </div>
-            <div className="footer-tags" aria-label="Funding and care options">
-              <Link href="/services/home-visit-podiatry">Private bookings</Link>
-              <Link href="/services/ndis-podiatry">NDIS</Link>
-              <Link href="/services/aged-care-podiatry">Aged care</Link>
-              <Link href="/services/support-at-home-podiatry">Support at Home</Link>
             </div>
           </div>
 

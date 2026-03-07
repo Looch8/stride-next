@@ -645,13 +645,12 @@ textarea:focus-visible {
 }
 
 .footer-title {
-	font-size: clamp(1.65rem, 2.8vw, 2.3rem);
-	max-width: 14ch;
+	font-size: clamp(1.65rem, 2.8vw, 2.1rem);
 	color: var(--brand-primary-800);
 }
 
 .footer-description {
-	max-width: 34rem;
+	max-width: 26rem;
 	color: var(--brand-muted);
 	margin: 0;
 }
@@ -685,33 +684,6 @@ textarea:focus-visible {
 
 .contact-link:hover {
 	color: #0f2430;
-	transform: translateY(-1px);
-}
-
-.footer-tags {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--space-2);
-}
-
-.footer-tags a {
-	display: inline-flex;
-	align-items: center;
-	padding: 0.55rem 0.9rem;
-	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.66);
-	border: 1px solid rgba(20, 49, 58, 0.08);
-	font-size: 0.88rem;
-	font-weight: 700;
-	color: var(--brand-primary-800);
-	text-decoration: none;
-	transition: background-color 0.2s ease, color 0.2s ease,
-		transform 0.2s ease;
-}
-
-.footer-tags a:hover {
-	background: rgba(255, 255, 255, 0.92);
-	color: var(--brand-primary-700);
 	transform: translateY(-1px);
 }
 
@@ -975,8 +947,7 @@ textarea:focus-visible {
 }
 
 .profile-image {
-	position: sticky;
-	top: calc(var(--header-height) + 2rem);
+	position: static;
 }
 
 .profile-image img {
