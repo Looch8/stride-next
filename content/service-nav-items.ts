@@ -7,6 +7,7 @@ export const serviceNavItems: ServiceNavItem[] = [
   { slug: 'home-visit-podiatry', title: 'Home Visit Podiatry' },
   { slug: 'ndis-podiatry', title: 'NDIS Podiatry' },
   { slug: 'aged-care-podiatry', title: 'Aged Care Podiatry' },
+  { slug: 'support-at-home-podiatry', title: 'Support at Home Podiatry' },
   { slug: 'general-podiatry', title: 'General Podiatry Care' },
   { slug: 'ingrown-toenail', title: 'Ingrown Toenail Treatment' },
   { slug: 'diabetes-foot-care', title: 'Diabetic Foot Care' },

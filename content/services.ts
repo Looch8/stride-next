@@ -23,7 +23,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'home-visit-podiatry',
     title: 'Home Visit Podiatry',
-    summary: 'Mobile podiatry care delivered to homes, workplaces, and aged care.',
+    summary: 'Mobile podiatry care for private patients at home, work, or aged care.',
     heroImage: '/images/homevisit.png',
     heroAlt: 'Podiatrist arriving for a home visit and greeting a patient',
     metaTitle: 'Home Visit Podiatry | Stride Podiatry',
@@ -81,53 +81,54 @@ export const services: ServiceContent[] = [
   {
     slug: 'ndis-podiatry',
     title: 'NDIS Podiatry',
-    summary: 'NDIS podiatry services delivered at home across Adelaide.',
+    summary: 'Podiatry for NDIS participants, with home visits and support-team coordination.',
     heroImage: '/images/ndispodiatry.png',
     heroAlt: 'Podiatrist treating a client using a wheelchair during an NDIS visit',
     metaTitle: 'NDIS Podiatry | Stride Podiatry',
     metaDescription:
-      'NDIS podiatry in Adelaide with mobile home visits. Plan and self-managed participants supported with assessments and treatment.',
+      'NDIS podiatry in Adelaide with mobile home visits for plan- and self-managed participants needing assessments, treatment and ongoing foot care support.',
     canonical: `${siteUrl}/services/ndis-podiatry`,
     overview:
-      'We provide NDIS podiatry home visits across Adelaide and regional South Australia. We work with plan-managed and self-managed participants and support coordinators.',
+      'Stride Podiatry provides NDIS podiatry home visits across Adelaide and regional South Australia by arrangement. We work with plan-managed and self-managed participants, along with support coordinators, families and support teams, to provide practical podiatry care in the places clients feel most comfortable.',
     sections: [
       {
-        heading: 'NDIS podiatry support',
+        heading: 'How Stride supports NDIS clients',
         items: [
           'Foot care, pain management and mobility support',
           'Assessments, treatment plans and progress notes',
-          'Clear communication with coordinators and families',
+          'Clear communication with coordinators, families and support workers',
         ],
       },
       {
-        heading: 'Plan and self-managed',
+        heading: 'Plan- and self-managed participants',
         items: [
           'Invoices aligned to NDIS requirements',
           'Flexible scheduling for in-home appointments',
-          'We can coordinate with your support team',
+          'We can coordinate directly with your support team where needed',
         ],
       },
       {
-        heading: 'What to expect',
+        heading: 'Where we see NDIS participants',
         items: [
-          'Initial assessment and goal setting',
-          'Treatment tailored to your needs and environment',
-          'Follow-up care and practical advice',
+          'Private homes and supported accommodation',
+          'Residential settings and community-based living arrangements',
+          'Appointments shaped around the client environment and access needs',
         ],
       },
       {
-        heading: 'Service area',
+        heading: 'What to expect from visits',
         items: [
-          'All Adelaide metro suburbs',
-          'Regional South Australia by arrangement',
+          'Initial assessment and treatment tailored to the client goals and daily needs',
+          'Ongoing foot care, pain management and practical advice',
+          'A calm, straightforward approach that works well for participants needing regular support',
         ],
       },
       {
-        heading: 'Getting started',
+        heading: 'Service area and getting started',
         items: [
-          'Call or book online to discuss availability',
-          'Share your plan details or coordinator contact',
-          'We confirm appointment time and next steps',
+          'All Adelaide metro suburbs, with regional South Australia by arrangement',
+          'Call or book online to discuss availability and service needs',
+          'Share your plan details or coordinator contact and we can help organise the next steps',
         ],
       },
     ],
@@ -135,39 +136,93 @@ export const services: ServiceContent[] = [
   {
     slug: 'aged-care-podiatry',
     title: 'Aged Care Podiatry',
-    summary: 'In-home and residential aged care podiatry across Adelaide.',
+    summary: 'Regular podiatry for older adults in residential aged care and retirement living.',
     heroImage: '/images/agedcarepodiatry.png',
     heroAlt: 'Podiatrist walking alongside an older client using a four-wheel walker',
     metaTitle: 'Aged Care Podiatry | Stride Podiatry',
     metaDescription:
-      'Aged care podiatry home visits across Adelaide. Foot care for older adults in homes and residential facilities.',
+      'Aged care podiatry home visits across Adelaide for older adults in private homes, retirement living and residential aged care facilities.',
     canonical: `${siteUrl}/services/aged-care-podiatry`,
     overview:
-      'We provide podiatry care for older adults in private homes and residential aged care facilities across Adelaide and regional South Australia.',
+      'Stride Podiatry provides podiatry care for older adults in private homes, retirement living and residential aged care facilities across Adelaide, with regional South Australia by arrangement. We work with residents, families, carers and facilities to provide regular foot care and practical ongoing support.',
     sections: [
       {
-        heading: 'Common aged care needs',
+        heading: 'How Stride supports aged care clients',
         items: [
           'Nail and skin care, corns and calluses',
           'Foot pain, balance concerns and footwear issues',
-          'Diabetes foot checks and risk monitoring',
+          'Diabetes foot checks and risk monitoring for older clients',
         ],
       },
       {
-        heading: 'In-home and facility visits',
+        heading: 'Where we provide aged care podiatry',
         items: [
-          'Home visits for seniors and carers',
-          'Visits to retirement villages and facilities',
-          'Flexible scheduling to suit routines',
+          'Private homes for older adults living independently or with family support',
+          'Retirement villages and residential aged care facilities',
+          'Appointments arranged around resident routines, carers and facility processes',
         ],
       },
       {
-        heading: 'Funding and referrals',
+        heading: 'Working with residents, families and facilities',
         items: [
-          'Private bookings welcome',
-          'Medicare CDM with GP referral',
-          'Support at Home via providers',
-          'NDIS plan and self-managed where applicable',
+          'Clear communication with family members, carers and site staff',
+          'Regular podiatry scheduling for residents who need ongoing care',
+          'A practical, respectful approach suited to older adults with complex needs',
+        ],
+      },
+      {
+        heading: 'Funding, referrals and service area',
+        items: [
+          'Private bookings welcome, with Medicare CDM, Support at Home and NDIS available where applicable',
+          'All Adelaide metro suburbs, with regional South Australia by arrangement',
+          'Call to discuss your location, facility or care arrangement',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'support-at-home-podiatry',
+    title: 'Support at Home Podiatry',
+    summary: 'Funded in-home podiatry for older adults using Support at Home services.',
+    heroImage: '/images/regular-podiatry-older-adults-home-visits-adelaide.png',
+    heroAlt: 'Home visit podiatry care for an older adult receiving in-home support',
+    metaTitle: 'Support at Home Podiatry | Stride Podiatry',
+    metaDescription:
+      'Support at Home podiatry services across Adelaide with mobile home visits for older adults using funded in-home support for regular foot care and treatment.',
+    canonical: `${siteUrl}/services/support-at-home-podiatry`,
+    overview:
+      'Stride Podiatry provides in-home podiatry for older adults receiving Support at Home services across Adelaide. Support at Home replaces the previous Home Care Packages model, and can help eligible clients access funded podiatry as part of the services that keep them safe, mobile and comfortable at home.',
+    sections: [
+      {
+        heading: 'What Support at Home means',
+        items: [
+          'Support at Home is the in-home aged care program that follows the previous Home Care Packages model',
+          'Eligible older adults may have funding available for services that support independence, mobility and day-to-day wellbeing',
+          'Podiatry may form part of that support when regular foot care or treatment is clinically appropriate',
+        ],
+      },
+      {
+        heading: 'How podiatry can help',
+        items: [
+          'Routine nail and skin care, corns and calluses',
+          'Foot pain management and mobility-focused treatment',
+          'Diabetes foot checks and ongoing monitoring where needed',
+        ],
+      },
+      {
+        heading: 'How Stride works with Support at Home providers',
+        items: [
+          'Stride Podiatry works with multiple aged care and in-home support businesses to deliver podiatry to their clients',
+          'We can coordinate with providers, case managers and families around appointments and ongoing care needs',
+          'This helps clients receive podiatry in the home without the stress of travelling to a clinic',
+        ],
+      },
+      {
+        heading: 'Funding and home visits',
+        items: [
+          'Clients may be able to use Support at Home funding for podiatry where it is included in their care arrangements',
+          'We are happy to work alongside providers to confirm service details and scheduling',
+          'Private appointments are also available if a client wants to book directly',
         ],
       },
       {
