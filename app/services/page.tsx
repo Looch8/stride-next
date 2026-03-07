@@ -125,20 +125,12 @@ export default function ServicesPage() {
       />
       <div className="services-container">
         <div className="services-header">
-          <h1>Our Podiatry Services</h1>
-          <p>
-            Home visit podiatry across Adelaide metro and regional South Australia by arrangement.
-            Learn more about{' '}
-            <Link href="/services/home-visit-podiatry">
-              mobile home visits
-            </Link>
-            ,{' '}
-            <Link href="/services/ndis-podiatry">NDIS podiatry</Link>
-            , and{' '}
-            <Link href="/services/aged-care-podiatry">
-              aged care podiatry
-            </Link>
-            .
+          <p className="services-eyebrow">Services</p>
+          <h1>Mobile podiatry services across Adelaide</h1>
+          <p className="services-intro">
+            Explore home-visit podiatry for private patients, NDIS participants,
+            aged care, Support at Home and common foot concerns treated in the
+            comfort of home.
           </p>
         </div>
 
@@ -151,16 +143,19 @@ export default function ServicesPage() {
               className="service-card"
               aria-label={`${service.title} details`}
             >
-              <h2>{service.title}</h2>
-              <p>{service.summary}</p>
               <div className="service-image">
                 <Image
                   src={service.heroImage}
-                  alt={service.title}
+                  alt={service.heroAlt}
                   width={640}
                   height={420}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
                 />
+              </div>
+              <div className="service-card-body">
+                <h2>{service.title}</h2>
+                <p>{service.summary}</p>
+                <span className="service-card-link">Learn more</span>
               </div>
             </Link>
           ))}

@@ -80,9 +80,6 @@ export default function BookingPage() {
 						<div className="booking-panel booking-panel--contact">
 							<p className="booking-panel-eyebrow">Prefer to call?</p>
 							<h2>Fastest way to book</h2>
-							<a href="tel:+61468518993" className="booking-phone-link">
-								0468 518 993
-							</a>
 							<p className="booking-muted">
 								Call if you want to check suburb coverage, discuss
 								funding options or ask a quick question before
