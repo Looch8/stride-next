@@ -136,7 +136,12 @@ export default function ContactPage() {
 						<div className="contact-panel contact-panel--details">
 							<div className="contact-block">
 								<h3>Service area</h3>
-								<p>Adelaide metro and regional South Australia by arrangement.</p>
+								<p>
+									Adelaide metro and regional South Australia by
+									arrangement. View our{' '}
+									<Link href="/service-areas">service areas</Link>{' '}
+									page for more detail.
+								</p>
 								<p className="contact-muted">
 									Not sure if we cover your suburb? Call and
 									we&apos;ll confirm.

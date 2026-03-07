@@ -97,11 +97,6 @@ export default function HomePage() {
 								Call 0468 518 993
 							</a>
 						</div>
-						<ul className="hero-trust-list" aria-label="Key benefits">
-							<li>No referral needed for private bookings</li>
-							<li>Adelaide metro coverage with regional visits by arrangement</li>
-							<li>NDIS, aged care and Support at Home services</li>
-						</ul>
 					</div>
 				</div>
 			</section>

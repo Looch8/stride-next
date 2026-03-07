@@ -889,12 +889,13 @@ textarea:focus-visible {
 
 .hero-eyebrow {
 	color: var(--brand-accent);
+	margin-bottom: var(--space-4);
 }
 
 .title {
 	font-size: clamp(2.6rem, 5vw, 4.6rem);
 	font-weight: 700;
-	margin-bottom: var(--space-4);
+	margin-bottom: var(--space-5);
 	color: #ffffff;
 	max-width: 9ch;
 	line-height: 1.04;
@@ -902,9 +903,9 @@ textarea:focus-visible {
 
 .hero-subtitle {
 	font-size: clamp(1.05rem, 2vw, 1.35rem);
-	margin: 0 0 var(--space-5);
+	margin: 0 0 var(--space-7);
 	color: rgba(240, 249, 248, 0.92);
-	max-width: 34rem;
+	max-width: 39rem;
 }
 
 .hero-cta-group {
@@ -913,7 +914,6 @@ textarea:focus-visible {
 	gap: var(--space-4);
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: var(--space-5);
 }
 
 .hero-cta-button {
@@ -957,30 +957,6 @@ textarea:focus-visible {
 	color: #ffffff;
 }
 
-.hero-trust-list {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: grid;
-	gap: var(--space-2);
-	max-width: 42rem;
-}
-
-.hero-trust-list li {
-	padding: 0;
-	color: #eef9f7;
-	font-weight: 600;
-	font-size: 1.02rem;
-	line-height: 1.5;
-}
-
-.hero-trust-list li::before {
-	content: '•';
-	display: inline-block;
-	margin-right: 0.65rem;
-	color: var(--brand-accent);
-}
-
 .home-container {
 	display: grid;
 	grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
@@ -995,6 +971,7 @@ textarea:focus-visible {
 .intro-profile {
 	display: grid;
 	gap: var(--space-5);
+	justify-items: center;
 }
 
 .profile-image {
@@ -1320,6 +1297,7 @@ textarea:focus-visible {
 	.profile-image {
 		position: static;
 		max-width: 320px;
+		margin: 0 auto;
 	}
 
 	.profile-image img {
@@ -1333,12 +1311,13 @@ textarea:focus-visible {
 
 @media (max-width: 768px) {
 	.hero-section {
-		padding: var(--space-6) var(--space-4);
-		min-height: auto;
+		padding: calc(var(--space-6) + 0.5rem) var(--space-4) calc(var(--space-8) + 0.5rem);
+		min-height: calc(100svh - var(--header-height));
+		align-items: center;
 	}
 
 	.home-container {
-		margin-top: var(--space-5);
+		margin-top: var(--space-8);
 		padding: 0 var(--space-4);
 	}
 
@@ -1350,8 +1329,34 @@ textarea:focus-visible {
 		padding: var(--space-5);
 	}
 
-	.hero-trust-list {
+	.hero-copy {
 		max-width: none;
+	}
+
+	.hero-eyebrow {
+		margin-bottom: var(--space-5);
+	}
+
+	.title {
+		margin-bottom: var(--space-6);
+	}
+
+	.hero-subtitle {
+		margin-bottom: var(--space-7);
+		max-width: none;
+		line-height: 1.75;
+	}
+
+	.hero-cta-group {
+		gap: var(--space-4);
+	}
+
+	.intro-profile {
+		gap: var(--space-6);
+	}
+
+	.profile-image {
+		width: 100%;
 	}
 
 	.contact-card-inline,
@@ -1365,7 +1370,8 @@ textarea:focus-visible {
 	}
 
 	.profile-image img {
-		width: 100%;
+		width: min(100%, 360px);
+		margin: 0 auto;
 	}
 }
 
@@ -1374,9 +1380,15 @@ textarea:focus-visible {
 		max-width: none;
 	}
 
+	.hero-section {
+		padding-top: calc(var(--space-6) + 0.25rem);
+		padding-bottom: calc(var(--space-8) + var(--space-5));
+	}
+
 	.hero-cta-group {
 		flex-direction: column;
 		align-items: stretch;
+		margin-top: var(--space-7);
 	}
 
 	.hero-cta-button,
