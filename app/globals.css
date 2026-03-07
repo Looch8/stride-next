@@ -860,14 +860,10 @@ textarea:focus-visible {
 }
 
 .hero-shell {
-	display: grid;
-	grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.82fr);
-	gap: var(--space-7);
-	align-items: center;
+	display: block;
 }
 
 .hero-copy,
-.hero-panel-card,
 .profile-card,
 .welcome-card,
 .service-highlight,
@@ -876,6 +872,10 @@ textarea:focus-visible {
 .area-card,
 .insurance-pill {
 	animation: fade-up 0.7s ease both;
+}
+
+.hero-copy {
+	max-width: 52rem;
 }
 
 .hero-eyebrow,
@@ -979,65 +979,6 @@ textarea:focus-visible {
 	display: inline-block;
 	margin-right: 0.65rem;
 	color: var(--brand-accent);
-}
-
-.hero-panel {
-	display: flex;
-	justify-content: flex-end;
-	align-self: start;
-	padding-top: var(--space-6);
-}
-
-.hero-panel-card {
-	width: min(100%, 390px);
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 252, 250, 0.82));
-	border: 1px solid rgba(255, 255, 255, 0.45);
-	backdrop-filter: blur(14px);
-	border-radius: var(--radius-xl);
-	padding: var(--space-6);
-	box-shadow: 0 28px 60px rgba(7, 35, 46, 0.22);
-	color: var(--brand-ink);
-}
-
-.hero-panel-label {
-	margin: 0 0 var(--space-2);
-	font-size: 0.82rem;
-	font-weight: 800;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	color: var(--brand-primary);
-}
-
-.hero-panel-title {
-	font-size: clamp(1.5rem, 3vw, 2rem);
-	color: var(--brand-primary-800);
-	margin-bottom: var(--space-5);
-}
-
-.hero-metrics {
-	display: grid;
-	gap: var(--space-3);
-}
-
-.hero-metric {
-	padding: var(--space-4);
-	border-radius: 20px;
-	background: rgba(255, 255, 255, 0.64);
-	border: 1px solid rgba(20, 49, 58, 0.08);
-}
-
-.hero-metric-value {
-	display: block;
-	font-size: 1.1rem;
-	font-weight: 800;
-	color: var(--brand-primary-800);
-	margin-bottom: 0.2rem;
-}
-
-.hero-metric-label {
-	display: block;
-	color: var(--brand-muted);
-	font-size: 0.94rem;
 }
 
 .home-container {
@@ -1367,7 +1308,6 @@ textarea:focus-visible {
 		padding: 0 var(--space-5);
 	}
 
-	.hero-shell,
 	.value-grid,
 	.service-preview-grid {
 		grid-template-columns: 1fr;

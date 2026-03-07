@@ -97,40 +97,11 @@ export default function HomePage() {
 								Call 0468 518 993
 							</a>
 						</div>
-							<ul className="hero-trust-list" aria-label="Key benefits">
-								<li>No referral needed for private bookings</li>
-								<li>Adelaide metro coverage with regional visits by arrangement</li>
-								<li>NDIS, aged care and Support at Home services</li>
-							</ul>
-					</div>
-
-					<div className="hero-panel">
-						<div className="hero-panel-card">
-							<p className="hero-panel-label">Care that fits real life</p>
-							<h2 className="hero-panel-title">
-								Clinic-level podiatry without the clinic trip
-							</h2>
-							<div className="hero-metrics">
-								<div className="hero-metric">
-									<span className="hero-metric-value">Home</span>
-									<span className="hero-metric-label">
-										Visits to homes, workplaces and facilities
-									</span>
-								</div>
-								<div className="hero-metric">
-									<span className="hero-metric-value">5 Days</span>
-									<span className="hero-metric-label">
-										Weekday mobile appointments across Adelaide
-									</span>
-								</div>
-								<div className="hero-metric">
-									<span className="hero-metric-value">Direct</span>
-									<span className="hero-metric-label">
-										Clear communication with patients, carers and families
-									</span>
-								</div>
-							</div>
-						</div>
+						<ul className="hero-trust-list" aria-label="Key benefits">
+							<li>No referral needed for private bookings</li>
+							<li>Adelaide metro coverage with regional visits by arrangement</li>
+							<li>NDIS, aged care and Support at Home services</li>
+						</ul>
 					</div>
 				</div>
 			</section>
