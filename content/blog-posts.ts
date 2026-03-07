@@ -30,6 +30,101 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
 	{
+		slug: 'can-a-podiatrist-treat-thick-toenails-during-a-home-visit',
+		title: 'Can a Podiatrist Treat Thick Toenails During a Home Visit?',
+		date: '2026-03-07',
+		excerpt:
+			'Yes. Thick toenails can usually be treated during a home visit using the same professional tools and approach you would expect in a clinic.',
+		description:
+			'Learn how thick toenails are treated during a podiatry home visit, including assessment, reduction with domiciliary drills, and when further care may be needed.',
+		intro: 'Yes. In most cases, thick toenails can be treated safely and effectively during a podiatry home visit. The treatment is very similar to what you would expect in a clinic setting. We bring professional equipment with us, including domiciliary drills and podiatry instruments, so nails can be reduced carefully and comfortably in your home.',
+		image: {
+			src: '/images/podiatry-drill-gryphotic-toenail-blog.png',
+			alt: 'Podiatrist reducing a thick toenail with a drill during treatment',
+			width: 1536,
+			height: 1024,
+		},
+		sections: [
+			{
+				heading: 'Why thick toenails need proper treatment',
+				paragraphs: [
+					'Thick toenails are common, especially in older adults and people who have had long-term nail trauma, fungal nail changes, circulation issues, or difficulty reaching their feet safely.',
+					'When nails become very thick, they can press on footwear, cause pain, trap debris, and become difficult to manage at home. Trying to cut them yourself can also be risky if the nails are hard, curved, or close to the skin.',
+				],
+				list: [
+					'Pain or pressure in shoes',
+					'Difficulty trimming nails safely',
+					'Nails that are curved, brittle, or crumbly',
+					'Reduced mobility or difficulty reaching the feet',
+					'Concerns about skin injury, bleeding, or infection',
+				],
+			},
+			{
+				heading: 'How treatment works during a home visit',
+				paragraphs: [
+					'Home-visit treatment is designed to mirror the standard of care you would expect in a clinic. After assessing the nails and surrounding skin, we use professional podiatry tools to reduce nail thickness and improve comfort.',
+					'We bring domiciliary drills and appropriate instruments with us, which allow us to gently file down thickened nails in a controlled way. This helps reduce bulk, smooth rough edges, and make the nails easier to maintain between visits.',
+				],
+				list: [
+					'Assessment of the nail, skin, and circulation',
+					'Careful trimming and reduction of thickened nail plate',
+					'Use of domiciliary drills to gently debulk the nail',
+					'Smoothing sharp or rough edges',
+					'Advice on ongoing care and when to book again',
+				],
+			},
+			{
+				heading: 'Is the treatment similar to a clinic appointment?',
+				paragraphs: [
+					'Yes. For routine management of thick toenails, the overall treatment is very similar to a clinic appointment. The main difference is simply that we bring the equipment to you.',
+					'For many patients, a home visit is more practical and less stressful than travelling to a clinic, especially when mobility, transport, or caring responsibilities make appointments harder to arrange.',
+				],
+				list: [
+					'Professional podiatry instruments brought to your home',
+					'Clinical assessment before treatment begins',
+					'Care tailored to your comfort, mobility, and medical history',
+					'Clear explanation of what is being done and why',
+				],
+			},
+			{
+				heading: 'When extra care or referral may be needed',
+				paragraphs: [
+					'Some thick nails are linked to fungal infection, repeated trauma, or significant nail deformity such as gryphotic nails. In these cases, ongoing treatment may be recommended rather than a once-off trim.',
+					'If there are signs of infection, skin breakdown, significant pain, or concerns relating to circulation or diabetes, we may recommend additional management or liaise with your GP or other healthcare providers where appropriate.',
+				],
+				list: [
+					'Very curved or gryphotic nails',
+					'Suspected fungal nail changes',
+					'Painful pressure on adjacent toes or skin',
+					'Redness, swelling, or signs of infection',
+					'High-risk foot concerns such as diabetes or poor circulation',
+				],
+			},
+			{
+				heading: 'Who home treatment is especially helpful for',
+				paragraphs: [
+					'Home visits are particularly helpful for people who cannot safely manage nail care on their own or who find it difficult to attend a clinic.',
+					'They are also useful for family members and carers arranging support for an older parent or someone with limited mobility.',
+				],
+				list: [
+					'Older adults living at home',
+					'People with reduced mobility or balance concerns',
+					'NDIS participants and Support at Home clients',
+					'People recovering from illness or surgery',
+					'Family members organising care for a loved one',
+				],
+			},
+		],
+		cta: {
+			heading: 'Need help with thick toenails at home?',
+			body: 'Request an appointment online or call us to arrange a home visit for yourself or a family member.',
+			primaryLabel: 'Request appointment',
+			primaryHref: '/booking',
+			secondaryLabel: 'Call 0468 518 993',
+			secondaryHref: 'tel:+61468518993',
+		},
+	},
+	{
 		slug: 'mobile-home-visit-podiatry-adelaide',
 		title: "Home visit podiatry: What to Expect (and who it's for)",
 		date: '2026-01-17',
