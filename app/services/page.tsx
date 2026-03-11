@@ -20,93 +20,40 @@ const businessAddress = {
 const servicesLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      item: {
-        '@type': 'Service',
-        name: 'Ingrown Toenail Treatment',
-        url: 'https://www.stride-podiatry.com.au/services/ingrown-toenail',
-        serviceType: 'Ingrown toenail treatment',
-        areaServed: 'Adelaide and regional South Australia',
-        provider: {
-          '@type': 'MedicalBusiness',
-          name: 'Stride Podiatry',
-          url: 'https://www.stride-podiatry.com.au/',
-          address: businessAddress,
-        },
+  itemListElement: services.map((service, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Service',
+      name: service.title,
+      url: service.canonical,
+      serviceType: service.title,
+      areaServed: 'Adelaide and regional South Australia',
+      provider: {
+        '@type': 'MedicalBusiness',
+        name: 'Stride Podiatry',
+        url: 'https://www.stride-podiatry.com.au/',
+        address: businessAddress,
       },
     },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      item: {
-        '@type': 'Service',
-        name: 'Diabetic Foot Care',
-        url: 'https://www.stride-podiatry.com.au/services/diabetes-foot-care',
-        serviceType: 'Diabetic foot care',
-        areaServed: 'Adelaide and regional South Australia',
-        provider: {
-          '@type': 'MedicalBusiness',
-          name: 'Stride Podiatry',
-          url: 'https://www.stride-podiatry.com.au/',
-          address: businessAddress,
-        },
-      },
-    },
-    {
-      '@type': 'ListItem',
-      position: 3,
-      item: {
-        '@type': 'Service',
-        name: 'Custom Orthotics',
-        url: 'https://www.stride-podiatry.com.au/services/custom-orthotics',
-        serviceType: 'Custom orthotics',
-        areaServed: 'Adelaide and regional South Australia',
-        provider: {
-          '@type': 'MedicalBusiness',
-          name: 'Stride Podiatry',
-          url: 'https://www.stride-podiatry.com.au/',
-          address: businessAddress,
-        },
-      },
-    },
-    {
-      '@type': 'ListItem',
-      position: 4,
-      item: {
-        '@type': 'Service',
-        name: 'Heel & Arch Pain',
-        url: 'https://www.stride-podiatry.com.au/services/heel-arch-pain',
-        serviceType: 'Heel and arch pain treatment',
-        areaServed: 'Adelaide and regional South Australia',
-        provider: {
-          '@type': 'MedicalBusiness',
-          name: 'Stride Podiatry',
-          url: 'https://www.stride-podiatry.com.au/',
-          address: businessAddress,
-        },
-      },
-    },
-  ],
+  })),
 };
 
 export const metadata: Metadata = {
-  title: 'Services | Stride Podiatry',
+  title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
   description:
-    'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
+    'Mobile podiatry services in Adelaide, including home visit podiatry, NDIS podiatry, Support at Home, DVA, aged care, foot pain treatment and routine foot care.',
   alternates: { canonical: 'https://www.stride-podiatry.com.au/services' },
   openGraph: {
-    title: 'Services | Stride Podiatry',
+    title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
     description:
-      'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
+      'Mobile podiatry services in Adelaide, including home visit podiatry, NDIS podiatry, Support at Home, DVA, aged care, foot pain treatment and routine foot care.',
     url: 'https://www.stride-podiatry.com.au/services',
   },
   twitter: {
-    title: 'Services | Stride Podiatry',
+    title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
     description:
-      'Mobile podiatry in Adelaide: general foot & nail care, heel and arch pain, ingrown toenails, diabetes assessments, biomechanics, custom orthotics, footwear advice and sports podiatry.',
+      'Mobile podiatry services in Adelaide, including home visit podiatry, NDIS podiatry, Support at Home, DVA, aged care, foot pain treatment and routine foot care.',
   },
 };
 
@@ -129,7 +76,7 @@ export default function ServicesPage() {
           <h1>Mobile podiatry services across Adelaide</h1>
           <p className="services-intro">
             Explore home-visit podiatry for private patients, NDIS participants,
-            aged care, Support at Home and common foot concerns treated in the
+            aged care, DVA clients, Support at Home and common foot concerns treated in the
             comfort of home.
           </p>
         </div>

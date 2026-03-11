@@ -5,9 +5,11 @@ import type { Metadata } from 'next';
 import { services } from '@/content/services';
 
 export const metadata: Metadata = {
-	title: { absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide' },
+	title: {
+		absolute: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
+	},
 	description:
-		'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
+		'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -15,16 +17,16 @@ export const metadata: Metadata = {
 		'mobile podiatry Adelaide',
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
-	openGraph: {
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		openGraph: {
+		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
 		description:
-			'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
+			'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 		url: 'https://www.stride-podiatry.com.au/',
 	},
 	twitter: {
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
 		description:
-			'Mobile podiatry across Adelaide and regional South Australia. Home visits for ingrown toenails, diabetes care, heel pain, orthotics, NDIS and aged care.',
+			'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 	},
 };
 
@@ -123,7 +125,15 @@ export default function HomePage() {
 						</p>
 						<p>
 							Private patients can book directly, and visits are
-							also available for aged care, NDIS and other funded
+							also available for{' '}
+							<Link href="/services/aged-care-podiatry">
+								aged care
+							</Link>
+							, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+							<Link href="/services/dva-podiatry">DVA</Link> and{' '}
+							<Link href="/services/support-at-home-podiatry">
+								Support at Home
+							</Link>{' '}
 							arrangements where applicable.
 						</p>
 					</div>
@@ -170,15 +180,22 @@ export default function HomePage() {
 									that patients and carers can easily follow.
 								</p>
 							</div>
-							<div className="value-card">
-								<h3>Flexible support</h3>
-								<p>
-									Available for private appointments plus a
-									range of funded care pathways.
-								</p>
+								<div className="value-card">
+									<h3>Flexible support</h3>
+									<p>
+										Available for private appointments plus a
+										range of funded care pathways including{' '}
+										<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+										<Link href="/services/dva-podiatry">DVA</Link>{' '}
+										and{' '}
+										<Link href="/services/support-at-home-podiatry">
+											Support at Home
+										</Link>
+										.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
 					<div className="service-highlight">
 						<p className="section-kicker">Coverage</p>

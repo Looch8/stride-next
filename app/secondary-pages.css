@@ -308,6 +308,27 @@
 	text-align: center;
 }
 
+.service-detail .detail-cta .book-now-button {
+	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	color: #ffffff;
+	border: 1px solid rgba(10, 69, 67, 0.16);
+	box-shadow: 0 16px 34px rgba(15, 107, 104, 0.22);
+}
+
+.service-detail .detail-cta .book-now-button:hover {
+	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	color: #ffffff;
+}
+
+.service-detail .service-related-links,
+.service-detail .service-related-links {
+	margin-top: var(--space-6);
+}
+
+.service-detail .service-related-links ul {
+	margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
 	.services {
 		padding: var(--space-8) var(--space-4);

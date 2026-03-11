@@ -969,6 +969,22 @@ textarea:focus-visible {
 	box-shadow: var(--shadow-sm);
 }
 
+.profile-card .section-kicker {
+	margin-bottom: var(--space-4);
+}
+
+.profile-card h2 {
+	margin-bottom: var(--space-5);
+}
+
+.profile-card p:last-child {
+	margin-bottom: 0;
+}
+
+.profile-card p + p {
+	margin-top: var(--space-5);
+}
+
 .home-text {
 	text-align: left;
 	max-width: 820px;

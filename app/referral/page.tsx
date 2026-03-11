@@ -11,18 +11,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Referrals | Stride Podiatry',
 	description:
-		'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
+		'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/referral' },
 	openGraph: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
+			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
 		url: 'https://www.stride-podiatry.com.au/referral',
 	},
 	twitter: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, and Support at Home through providers.',
+			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
 	},
 };
 
@@ -53,9 +53,19 @@ export default function ReferralPage() {
 						<ul className="referral-list">
 							<li>GP referrals, including Medicare CDM arrangements</li>
 							<li>NDIS plan-managed and self-managed participants</li>
+							<li>DVA clients needing podiatry home visits</li>
 							<li>Support at Home and aged care provider referrals</li>
 							<li>Residential aged care, support coordination and case management</li>
 						</ul>
+						<p>
+							Helpful pages: <Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
+							<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+							and{' '}
+							<Link href="/services/support-at-home-podiatry">
+								Support at Home podiatry
+							</Link>
+							.
+						</p>
 					</div>
 
 					<div className="referral-card referral-card--support">

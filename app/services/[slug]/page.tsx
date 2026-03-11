@@ -4,7 +4,10 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
 import { services } from '@/content/services';
-import { buildBreadcrumbList } from '@/lib/structured-data';
+import {
+  buildBreadcrumbList,
+  buildServiceSchema,
+} from '@/lib/structured-data';
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -32,6 +35,10 @@ export async function generateMetadata({
       description: service.metaDescription,
       url: service.canonical,
     },
+    twitter: {
+      title: service.metaTitle,
+      description: service.metaDescription,
+    },
   };
 }
 
@@ -51,6 +58,12 @@ export default async function ServiceDetailPage({
     { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
     { name: currentService.title, url: currentService.canonical },
   ]);
+  const serviceLd = buildServiceSchema({
+    name: currentService.title,
+    description: currentService.metaDescription,
+    url: currentService.canonical,
+    areaServed: ['Adelaide Metropolitan Area', 'Regional South Australia'],
+  });
 
   return (
     <section className="services service-detail">
@@ -59,9 +72,16 @@ export default async function ServiceDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
       />
+      <script
+        key="service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
+      />
       <div className="services-container">
         <div className="services-header">
-          <h1>{currentService.title}</h1>
+          <p className="services-eyebrow">Service</p>
+          <h1>{currentService.pageTitle ?? currentService.title}</h1>
+          <p className="services-intro">{currentService.summary}</p>
         </div>
 
         {currentService.heroImage ? (
@@ -100,6 +120,19 @@ export default async function ServiceDetailPage({
               Request Appointment
             </Link>
           </div>
+
+          {currentService.relatedLinks?.length ? (
+            <div className="service-related-links">
+              <h2>Helpful links</h2>
+              <ul>
+                {currentService.relatedLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href}>{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

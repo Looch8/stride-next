@@ -83,9 +83,9 @@ const siteNavigationJsonLd = {
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
-	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+	title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
 	description:
-		'Mobile and home-visit podiatrist across Adelaide. Foot care for ingrown toenails, heel pain, diabetes assessments, orthotics, aged care and more.',
+		'Mobile podiatrist in Adelaide providing home visits only. Foot care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -96,9 +96,9 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
 		description:
-			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+			'Mobile podiatrist in Adelaide providing home visits only. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 		url: siteUrl,
 		images: [
 			{
@@ -110,9 +110,9 @@ export const metadata: Metadata = {
 		],
 	},
 	twitter: {
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
 		description:
-			'Mobile & home-visit podiatry across Adelaide and regional SA. Expert care for ingrown toenails, heel pain, diabetes, orthotics and aged care.',
+			'Mobile podiatrist in Adelaide providing home visits only. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 	},
 	icons: {
 		icon: [

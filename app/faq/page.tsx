@@ -100,6 +100,21 @@ export default function FAQPage() {
 				<FAQList items={faqData} />
 
 				<div className="faq-contact">
+					<p className="faq-contact-eyebrow">Popular pathways</p>
+					<h2>Find the right type of home visit</h2>
+					<p>
+						Start with <Link href="/services/home-visit-podiatry">home visit podiatry</Link>,{' '}
+						<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
+						<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+						or{' '}
+						<Link href="/services/support-at-home-podiatry">
+							Support at Home podiatry
+						</Link>
+						.
+					</p>
+				</div>
+
+				<div className="faq-contact">
 					<p className="faq-contact-eyebrow">Still need help?</p>
 					<h2>Need more information before booking?</h2>
 					<p>

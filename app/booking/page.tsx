@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import BookingForm from '@/components/booking-form';
 import { buildBreadcrumbList } from '@/lib/structured-data';
@@ -43,6 +44,7 @@ export default function BookingPage() {
 						confirm a suitable time, answer questions and make sure
 						the visit is the right fit for your needs.
 					</p>
+					<p>Home visits only. No clinic appointments.</p>
 				</div>
 
 				<div className="booking-grid">
@@ -51,7 +53,13 @@ export default function BookingPage() {
 						<h2>Tell us what you need</h2>
 						<p className="booking-muted">
 							Private bookings are welcome, and we can also discuss
-							Medicare CDM, NDIS, aged care and Support at Home
+							Medicare CDM, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+							<Link href="/services/dva-podiatry">DVA</Link>,{' '}
+							<Link href="/services/aged-care-podiatry">aged care</Link>{' '}
+							and{' '}
+							<Link href="/services/support-at-home-podiatry">
+								Support at Home
+							</Link>{' '}
 							where relevant.
 						</p>
 						<BookingForm />
@@ -84,6 +92,16 @@ export default function BookingPage() {
 								Call if you want to check suburb coverage, discuss
 								funding options or ask a quick question before
 								submitting the form.
+							</p>
+							<p className="booking-muted">
+								Useful if you need{' '}
+								<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
+								<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+								or{' '}
+								<Link href="/services/support-at-home-podiatry">
+									Support at Home podiatry
+								</Link>
+								.
 							</p>
 							<a href="tel:+61468518993" className="contact-call-button">
 								Call 0468 518 993

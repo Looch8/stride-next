@@ -72,6 +72,7 @@ export default function ContactPage() {
 						Call, email or send a quick message to arrange mobile
 						podiatry care across Adelaide.
 					</p>
+					<p>Home visits only. No clinic appointments.</p>
 				</div>
 
 				<div className="contact-grid contact-grid--single">
@@ -153,14 +154,24 @@ export default function ContactPage() {
 								<p>Monday to Friday, 8:00am to 5:00pm</p>
 							</div>
 
-							<div className="contact-block">
-								<h3>Helpful links</h3>
-								<p>
-									Read our <Link href="/faq">FAQ page</Link> for quick
-									answers, or use the booking form if you&apos;re ready to
-									request an appointment.
-								</p>
-							</div>
+								<div className="contact-block">
+									<h3>Helpful links</h3>
+									<p>
+										Read our <Link href="/faq">FAQ page</Link> for quick
+										answers, or use the booking form if you&apos;re ready to
+										request an appointment.
+									</p>
+									<p>
+										You can also explore{' '}
+										<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
+										<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+										and{' '}
+										<Link href="/services/support-at-home-podiatry">
+											Support at Home podiatry
+										</Link>
+										.
+									</p>
+								</div>
 
 							<div className="contact-block">
 								<h3>Social</h3>

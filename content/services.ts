@@ -3,9 +3,20 @@ export type ServiceSection = {
   items: string[];
 };
 
+export type ServiceFaq = {
+  question: string;
+  answer: string;
+};
+
+export type ServiceRelatedLink = {
+  href: string;
+  label: string;
+};
+
 export type ServiceContent = {
   slug: string;
   title: string;
+  pageTitle?: string;
   summary: string;
   heroImage: string;
   heroAlt: string;
@@ -14,6 +25,9 @@ export type ServiceContent = {
   canonical: string;
   overview: string;
   sections: ServiceSection[];
+  faqs?: ServiceFaq[];
+  relatedLinks?: ServiceRelatedLink[];
+  homeVisitOnly?: boolean;
   anchorId?: string;
 };
 
@@ -23,12 +37,13 @@ export const services: ServiceContent[] = [
   {
     slug: 'home-visit-podiatry',
     title: 'Home Visit Podiatry',
+    pageTitle: 'Home Visit Podiatry',
     summary: 'Mobile podiatry care for private patients at home, work, or aged care.',
     heroImage: '/images/homevisit.png',
     heroAlt: 'Podiatrist arriving for a home visit and greeting a patient',
-    metaTitle: 'Home Visit Podiatry | Stride Podiatry',
+    metaTitle: 'Home Visit Podiatry Adelaide | Mobile Podiatrist | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry across Adelaide and regional South Australia. We come to you for foot care, pain and orthotics.',
+      'Home visit podiatry in Adelaide for private patients, aged care and funded care pathways. Home visits only with treatment for foot care, pain and orthotics.',
     canonical: `${siteUrl}/services/home-visit-podiatry`,
     overview:
       'Stride Podiatry provides in-home podiatry across Adelaide metro and regional South Australia. We bring the clinic to you with professional, fully equipped home visits.',
@@ -77,16 +92,41 @@ export const services: ServiceContent[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: 'Do you provide podiatry home visits across Adelaide?',
+        answer:
+          'Yes. Stride Podiatry provides home visit podiatry across Adelaide metro suburbs, with regional South Australia available by arrangement.',
+      },
+      {
+        question: 'Are you home visits only?',
+        answer:
+          'Yes. Stride Podiatry is a home-visit-only service, so appointments are provided in your home, workplace, aged care setting, or supported living environment rather than in a clinic.',
+      },
+      {
+        question: 'Who is home visit podiatry suited to?',
+        answer:
+          'Home visit podiatry is useful for older adults, people with reduced mobility, busy households, carers organising support, and anyone who prefers treatment without travel or waiting rooms.',
+      },
+    ],
+    relatedLinks: [
+      { href: '/services/ndis-podiatry', label: 'NDIS podiatry home visits' },
+      { href: '/services/support-at-home-podiatry', label: 'Support at Home podiatry' },
+      { href: '/services/dva-podiatry', label: 'DVA podiatry in Adelaide' },
+      { href: '/service-areas', label: 'Adelaide service areas' },
+    ],
+    homeVisitOnly: true,
   },
   {
     slug: 'ndis-podiatry',
     title: 'NDIS Podiatry',
+    pageTitle: 'NDIS Podiatry',
     summary: 'Podiatry for NDIS participants, with home visits and support-team coordination.',
     heroImage: '/images/ndispodiatry.png',
     heroAlt: 'Podiatrist treating a client using a wheelchair during an NDIS visit',
-    metaTitle: 'NDIS Podiatry | Stride Podiatry',
+    metaTitle: 'NDIS Podiatry Adelaide | Home Visits | Stride Podiatry',
     metaDescription:
-      'NDIS podiatry in Adelaide with mobile home visits for plan- and self-managed participants needing assessments, treatment and ongoing foot care support.',
+      'NDIS podiatry home visits in Adelaide for plan-managed and self-managed participants needing treatment, assessments and ongoing foot care support.',
     canonical: `${siteUrl}/services/ndis-podiatry`,
     overview:
       'Stride Podiatry provides NDIS podiatry home visits across Adelaide and regional South Australia by arrangement. We work with plan-managed and self-managed participants, along with support coordinators, families and support teams, to provide practical podiatry care in the places clients feel most comfortable.',
@@ -132,14 +172,40 @@ export const services: ServiceContent[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: 'Do you provide NDIS podiatry home visits in Adelaide?',
+        answer:
+          'Yes. Stride Podiatry provides NDIS podiatry home visits across Adelaide metro suburbs, with regional visits available by arrangement.',
+      },
+      {
+        question: 'Do you work with plan-managed and self-managed participants?',
+        answer:
+          'Yes. We work with both plan-managed and self-managed NDIS participants and can coordinate with support coordinators, families, and support workers where needed.',
+      },
+      {
+        question: 'Where can NDIS appointments take place?',
+        answer:
+          'Appointments can be provided in private homes, supported accommodation, and other community-based living environments where home visits are the best fit.',
+      },
+    ],
+    relatedLinks: [
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry' },
+      { href: '/services/dva-podiatry', label: 'DVA podiatry' },
+      { href: '/referral', label: 'Referral information for providers' },
+      { href: '/service-areas', label: 'Check Adelaide service areas' },
+      { href: '/booking', label: 'Request an appointment' },
+    ],
+    homeVisitOnly: true,
   },
   {
     slug: 'aged-care-podiatry',
     title: 'Aged Care Podiatry',
+    pageTitle: 'Aged Care Podiatry',
     summary: 'Regular podiatry for older adults in residential aged care and retirement living.',
     heroImage: '/images/agedcarepodiatry.png',
     heroAlt: 'Podiatrist walking alongside an older client using a four-wheel walker',
-    metaTitle: 'Aged Care Podiatry | Stride Podiatry',
+    metaTitle: 'Aged Care Podiatry Adelaide | Home Visits | Stride Podiatry',
     metaDescription:
       'Aged care podiatry home visits across Adelaide for older adults in private homes, retirement living and residential aged care facilities.',
     canonical: `${siteUrl}/services/aged-care-podiatry`,
@@ -179,16 +245,41 @@ export const services: ServiceContent[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: 'Do you provide aged care podiatry home visits in Adelaide?',
+        answer:
+          'Yes. We provide home visit podiatry for older adults across Adelaide in private homes, retirement living, and residential aged care settings.',
+      },
+      {
+        question: 'Can family members or carers help organise appointments?',
+        answer:
+          'Yes. We regularly coordinate with family members, carers, and facility staff to organise suitable appointments and ongoing care.',
+      },
+      {
+        question: 'Do you visit residential aged care facilities?',
+        answer:
+          'Yes. We can provide podiatry visits in residential aged care facilities as well as retirement villages and private homes.',
+      },
+    ],
+    relatedLinks: [
+      { href: '/services/support-at-home-podiatry', label: 'Support at Home podiatry' },
+      { href: '/services/dva-podiatry', label: 'DVA podiatry home visits' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry' },
+      { href: '/contact-us', label: 'Talk through a care arrangement' },
+    ],
+    homeVisitOnly: true,
   },
   {
     slug: 'support-at-home-podiatry',
     title: 'Support at Home Podiatry',
+    pageTitle: 'Support at Home Podiatry',
     summary: 'Funded in-home podiatry for older adults using Support at Home services.',
     heroImage: '/images/regular-podiatry-older-adults-home-visits-adelaide.png',
     heroAlt: 'Home visit podiatry care for an older adult receiving in-home support',
-    metaTitle: 'Support at Home Podiatry | Stride Podiatry',
+    metaTitle: 'Support at Home Podiatry Adelaide | Stride Podiatry',
     metaDescription:
-      'Support at Home podiatry services across Adelaide with mobile home visits for older adults using funded in-home support for regular foot care and treatment.',
+      'Support at Home podiatry in Adelaide with mobile home visits for older adults using funded in-home support for regular foot care and treatment.',
     canonical: `${siteUrl}/services/support-at-home-podiatry`,
     overview:
       'Stride Podiatry provides in-home podiatry for older adults receiving Support at Home services across Adelaide. Support at Home replaces the previous Home Care Packages model, and can help eligible clients access funded podiatry as part of the services that keep them safe, mobile and comfortable at home.',
@@ -222,7 +313,6 @@ export const services: ServiceContent[] = [
         items: [
           'Clients may be able to use Support at Home funding for podiatry where it is included in their care arrangements',
           'We are happy to work alongside providers to confirm service details and scheduling',
-          'Private appointments are also available if a client wants to book directly',
         ],
       },
       {
@@ -233,6 +323,124 @@ export const services: ServiceContent[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: 'Do you provide Support at Home podiatry in Adelaide?',
+        answer:
+          'Yes. Stride Podiatry provides Support at Home podiatry across Adelaide with appointments delivered as home visits rather than clinic appointments.',
+      },
+      {
+        question: 'Can you work with Support at Home providers and case managers?',
+        answer:
+          'Yes. We regularly coordinate with providers, case managers, and families to help organise appointments and ongoing podiatry support.',
+      },
+      {
+        question: 'Can podiatry be delivered at home under Support at Home?',
+        answer:
+          'In many cases, yes. If podiatry is included in the client care arrangements, we can provide regular home visits to help maintain comfort, mobility, and foot health.',
+      },
+    ],
+    relatedLinks: [
+      { href: '/services/aged-care-podiatry', label: 'Aged care podiatry' },
+      { href: '/services/dva-podiatry', label: 'DVA podiatry in Adelaide' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry' },
+      { href: '/referral', label: 'Referral information for providers' },
+    ],
+    homeVisitOnly: true,
+  },
+  {
+    slug: 'dva-podiatry',
+    title: 'DVA Podiatry',
+    pageTitle: 'DVA Podiatry',
+    summary: 'Home-visit podiatry for eligible DVA clients across Adelaide.',
+    heroImage: '/images/homevisit.png',
+    heroAlt: 'Podiatrist arriving for a home visit with an older client',
+    metaTitle: 'DVA Podiatry Adelaide | Home Visits | Stride Podiatry',
+    metaDescription:
+      'DVA podiatry home visits in Adelaide for eligible veterans and clients needing treatment, regular foot care and practical support at home.',
+    canonical: `${siteUrl}/services/dva-podiatry`,
+    overview:
+      'Stride Podiatry provides DVA podiatry home visits across Adelaide for eligible clients who want practical foot care, pain management and ongoing support without the need to travel to a clinic.',
+    sections: [
+      {
+        heading: 'Who DVA podiatry is for',
+        items: [
+          'Eligible DVA clients needing podiatry treatment or regular foot care',
+          'Older veterans who prefer care at home',
+          'People with mobility limitations, pain, or transport barriers',
+        ],
+      },
+      {
+        heading: 'Home visit appointments for DVA clients',
+        items: [
+          'Home visits only, with no clinic appointments',
+          'Visits to private homes, retirement living, and aged care settings where appropriate',
+          'A calm, practical appointment process shaped around the client and home environment',
+        ],
+      },
+      {
+        heading: 'Referrals and claiming process',
+        items: [
+          'We can discuss whether a referral is required for your situation',
+          'If needed, we can coordinate with your GP or referrer around the paperwork',
+          'If you are unsure about eligibility or claiming details, contact us and we can talk through the next step',
+        ],
+      },
+      {
+        heading: 'Common treatments',
+        items: [
+          'Routine nail and skin care, corns and calluses',
+          'Foot pain treatment, including heel pain and pressure-related discomfort',
+          'Diabetes foot checks, circulation concerns, and ongoing monitoring where required',
+        ],
+      },
+      {
+        heading: 'Service areas across Adelaide',
+        items: [
+          'Adelaide metro home visits',
+          'Regional South Australia by arrangement',
+          'Call to confirm suburb coverage, availability, and the most suitable appointment type',
+        ],
+      },
+      {
+        heading: 'How to book',
+        items: [
+          'Call or request an appointment online',
+          'Let us know if the booking is for a DVA client so we can guide the next step',
+          'We can also coordinate with family members, carers, or referrers where needed',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do you provide DVA podiatry home visits in Adelaide?',
+        answer:
+          'Yes. Stride Podiatry provides DVA podiatry home visits across Adelaide metro suburbs, with regional South Australia available by arrangement.',
+      },
+      {
+        question: 'Do I need a referral for DVA podiatry?',
+        answer:
+          'Referral requirements can depend on the arrangement and eligibility pathway, so the best first step is to contact us and we can explain what is needed for your situation.',
+      },
+      {
+        question: 'What treatments can be provided during a DVA home visit?',
+        answer:
+          'Common treatments include nail and skin care, corn and callus treatment, pain management, diabetic foot checks, and practical treatment plans for ongoing foot concerns.',
+      },
+      {
+        question: 'Do you visit private homes and aged care settings?',
+        answer:
+          'Yes. DVA podiatry appointments can be provided in private homes and, where appropriate, in retirement living or aged care environments.',
+      },
+    ],
+    relatedLinks: [
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry' },
+      { href: '/services/aged-care-podiatry', label: 'Aged care podiatry' },
+      { href: '/referral', label: 'Referral information for providers' },
+      { href: '/service-areas', label: 'Adelaide service areas' },
+      { href: '/booking', label: 'Request a DVA appointment' },
+    ],
+    homeVisitOnly: true,
   },
   {
     slug: 'general-podiatry',
