@@ -6,10 +6,10 @@ import { services } from '@/content/services';
 
 export const metadata: Metadata = {
 	title: {
-		absolute: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
+		absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	},
 	description:
-		'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+		'Mobile podiatrist in Adelaide providing home visits. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
 		openGraph: {
-		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+			'Mobile podiatrist in Adelaide providing home visits. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 		url: 'https://www.stride-podiatry.com.au/',
 	},
 	twitter: {
-		title: 'Mobile Podiatrist Adelaide | Home Visits | Stride Podiatry',
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Mobile podiatrist in Adelaide providing home visits only. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+			'Mobile podiatrist in Adelaide providing home visits. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
 	},
 };
 
