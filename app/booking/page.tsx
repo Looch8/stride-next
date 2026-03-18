@@ -44,7 +44,6 @@ export default function BookingPage() {
 						confirm a suitable time, answer questions and make sure
 						the visit is the right fit for your needs.
 					</p>
-					<p>Home visits only. No clinic appointments.</p>
 				</div>
 
 				<div className="booking-grid">

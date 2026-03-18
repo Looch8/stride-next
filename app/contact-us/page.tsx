@@ -72,7 +72,6 @@ export default function ContactPage() {
 						Call, email or send a quick message to arrange mobile
 						podiatry care across Adelaide.
 					</p>
-					<p>Home visits only. No clinic appointments.</p>
 				</div>
 
 				<div className="contact-grid contact-grid--single">
