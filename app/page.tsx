@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		'mobile podiatry Adelaide',
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
-		openGraph: {
+	openGraph: {
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Mobile podiatrist in Adelaide providing home visits. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
@@ -75,13 +75,11 @@ export default function HomePage() {
 						<p className="hero-eyebrow">
 							For homes, aged care and supported living
 						</p>
-						<h1 className="title">
-							Mobile Podiatry Care in Adelaide
-						</h1>
+						<h1 className="title">Mobile Podiatry Care in Adelaide</h1>
 						<p className="hero-subtitle">
-							Stride Podiatry provides professional home visits
-							for routine care, painful conditions, diabetic foot
-							assessments and ongoing support.
+							Stride Podiatry provides professional home visits for routine
+							care, painful conditions, diabetic foot assessments and ongoing
+							support.
 						</p>
 						<div className="hero-cta-group">
 							<Link
@@ -119,17 +117,15 @@ export default function HomePage() {
 						<p className="section-kicker">Your podiatrist</p>
 						<h2>Professional care with a calm, practical approach</h2>
 						<p>
-							Stride Podiatry is built around accessible care for
-							people who want expert treatment without travel,
-							waiting rooms or unnecessary friction.
+							Stride Podiatry is built around accessible care for people who
+							want expert treatment without travel, waiting rooms or
+							unnecessary friction.
 						</p>
 						<p>
-							Private patients can book directly, and visits are
-							also available for{' '}
-							<Link href="/services/aged-care-podiatry">
-								aged care
-							</Link>
-							, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+							Private patients can book directly, and visits are also
+							available for{' '}
+							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
+							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
 							<Link href="/services/dva-podiatry">DVA</Link> and{' '}
 							<Link href="/services/support-at-home-podiatry">
 								Support at Home
@@ -144,66 +140,56 @@ export default function HomePage() {
 						<p className="section-kicker">Why people choose Stride</p>
 						<h2>Home-visit podiatry designed to feel straightforward</h2>
 						<p>
-							We deliver full <strong>podiatry home visit</strong>{' '}
-							care, bringing the services you would expect in a
-							clinic to your home, workplace or aged care
-							setting. That includes{' '}
-								<Link href="/services/ingrown-toenail">
-									ingrown toenail care
-								</Link>
-								,{' '}
-								<Link href="/services/heel-arch-pain">
-									heel pain treatment
-								</Link>
-								,{' '}
-								<Link href="/services/diabetes-foot-care">
-									diabetic foot assessments
-								</Link>
-								,{' '}
-								<Link href="/services/custom-orthotics">
-									custom orthotics
-								</Link>
-								, and more.
+							We deliver full <strong>podiatry home visit</strong> care,
+							bringing the services you would expect in a clinic to your
+							home, workplace or aged care setting. That includes{' '}
+							<Link href="/services/ingrown-toenail">ingrown toenail care</Link>
+							, <Link href="/services/heel-arch-pain">heel pain treatment</Link>
+							,{' '}
+							<Link href="/services/diabetes-foot-care">
+								diabetic foot assessments
+							</Link>
+							, <Link href="/services/custom-orthotics">custom orthotics</Link>,
+							and more.
 						</p>
 						<div className="value-grid">
 							<div className="value-card">
 								<h3>Convenient care</h3>
 								<p>
-									Ideal for busy households, reduced mobility,
-									recovery periods and ongoing aged care needs.
+									Ideal for busy households, reduced mobility, recovery
+									periods and ongoing aged care needs.
 								</p>
 							</div>
 							<div className="value-card">
 								<h3>Clear treatment plans</h3>
 								<p>
-									Assessments, treatment and practical advice
-									that patients and carers can easily follow.
+									Assessments, treatment and practical advice that patients
+									and carers can easily follow.
 								</p>
 							</div>
-								<div className="value-card">
-									<h3>Flexible support</h3>
-									<p>
-										Available for private appointments plus a
-										range of funded care pathways including{' '}
-										<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
-										<Link href="/services/dva-podiatry">DVA</Link>{' '}
-										and{' '}
-										<Link href="/services/support-at-home-podiatry">
-											Support at Home
-										</Link>
-										.
-									</p>
-								</div>
+							<div className="value-card">
+								<h3>Flexible support</h3>
+								<p>
+									Available for private appointments plus a range of funded
+									care pathways including{' '}
+									<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+									<Link href="/services/dva-podiatry">DVA</Link> and{' '}
+									<Link href="/services/support-at-home-podiatry">
+										Support at Home
+									</Link>
+									.
+								</p>
 							</div>
 						</div>
+					</div>
 
 					<div className="service-highlight">
 						<p className="section-kicker">Coverage</p>
 						<h2>Across Adelaide metro, with regional SA by arrangement</h2>
 						<p>
 							Prefer a quick suburb check? View the{' '}
-							<Link href="/service-areas">full service areas</Link>{' '}
-							page for a detailed breakdown.
+							<Link href="/service-areas">full service areas</Link> page for
+							a detailed breakdown.
 						</p>
 						<div className="area-grid">
 							{serviceAreas.map((area) => (
@@ -214,8 +200,8 @@ export default function HomePage() {
 							))}
 						</div>
 						<p className="contact-note">
-							Outside metro Adelaide? Regional South Australia can
-							be arranged case by case.
+							Outside metro Adelaide? Regional South Australia can be
+							arranged case by case.
 						</p>
 					</div>
 				</div>
@@ -226,8 +212,8 @@ export default function HomePage() {
 					<p className="section-kicker">Services</p>
 					<h2>Popular mobile podiatry services</h2>
 					<p className="section-intro">
-						Treatment is delivered in-home with the same focus on
-						clinical standards, comfort and clear follow-up advice.
+						Treatment is delivered in-home with the same focus on clinical
+						standards, comfort and clear follow-up advice.
 					</p>
 					<div className="service-preview-grid">
 						{featuredServices.map((service) => (
@@ -236,15 +222,11 @@ export default function HomePage() {
 								href={`/services/${service.slug}`}
 								className="service-preview-card"
 							>
-								<span className="service-preview-title">
-									{service.title}
-								</span>
+								<span className="service-preview-title">{service.title}</span>
 								<span className="service-preview-summary">
 									{service.summary}
 								</span>
-								<span className="service-preview-link">
-									Learn more
-								</span>
+								<span className="service-preview-link">Learn more</span>
 							</Link>
 						))}
 					</div>
@@ -257,23 +239,25 @@ export default function HomePage() {
 			<section className="faq-preview">
 				<div className="section-content">
 					<p className="section-kicker">Questions</p>
-					<h2>Need more detail before booking?</h2>
+					<h2>Questions about funding, referrals or home visits?</h2>
 					<p>
-						Visit our <Link href="/faq">FAQ Page</Link> for answers
-						about services, Medicare, NDIS and more.
+						Visit our <Link href="/faq">FAQ Page</Link> for answers about
+						Medicare, NDIS, DVA, Support at Home and what to expect from an
+						appointment.
 					</p>
 				</div>
 			</section>
 
 			<section className="cta-section">
 				<div className="book-now">
-					<h2>Ready to Take the First Step?</h2>
+					<h2>Need a podiatrist to come to you?</h2>
 					<p>
-						Book your <strong>home-visit appointment</strong> today
-						and experience expert podiatry care at your convenience.
+						Request a <strong>home-visit appointment</strong> for Adelaide
+						metro, or get in touch if you need to confirm the right booking
+						pathway first.
 					</p>
 					<Link href="/booking" className="book-now-button">
-						Book Now
+						Request a Home Visit
 					</Link>
 				</div>
 			</section>
