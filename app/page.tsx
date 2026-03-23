@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 	],
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/' },
 	openGraph: {
+		siteName: 'Stride Podiatry',
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Mobile podiatrist in Adelaide providing home visits. Treatment for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',

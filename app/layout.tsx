@@ -11,6 +11,8 @@ import { siteUrl } from '@/content/services';
 
 import './globals.css';
 
+const homeUrl = `${siteUrl}/`;
+
 const nunito = Nunito({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'],
@@ -36,7 +38,7 @@ const medicalBusinessJsonLd = {
 	'@type': 'MedicalBusiness',
 	'@id': `${siteUrl}/#business`,
 	name: 'Stride Podiatry',
-	url: siteUrl,
+	url: homeUrl,
 	logo: `${siteUrl}/images/logo.png`,
 	image: `${siteUrl}/images/logo.png`,
 	telephone: '+61468518993',
@@ -69,7 +71,11 @@ const websiteJsonLd = {
 	'@type': 'WebSite',
 	'@id': `${siteUrl}/#website`,
 	name: 'Stride Podiatry',
-	url: siteUrl,
+	alternateName: ['stride-podiatry.com.au'],
+	url: homeUrl,
+	publisher: {
+		'@id': `${siteUrl}/#business`,
+	},
 };
 
 const siteNavigationJsonLd = {
@@ -83,6 +89,7 @@ const siteNavigationJsonLd = {
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
+	applicationName: 'Stride Podiatry',
 	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	description:
 		'Mobile podiatrist in Adelaide providing home visits. Foot care for private patients, NDIS, DVA, Support at Home, aged care and more.',
