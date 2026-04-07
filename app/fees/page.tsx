@@ -76,9 +76,14 @@ export default function FeesPage() {
               </article>
             ))}
           </div>
+        </div>
+
+        <div className="fees-notes" aria-label="Additional fee information">
+          <p className="fees-note">GST will be applied where applicable.</p>
           <p className="fees-note">
-            All prices are inclusive of consumables. GST will be applied where
-            applicable.
+            NDIS appointments may be billed in accordance with current NDIS
+            Pricing Arrangements and Price Limits. This may include separate
+            provider travel where applicable.
           </p>
         </div>
 

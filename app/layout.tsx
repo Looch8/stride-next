@@ -5,7 +5,6 @@ import type { ReactNode } from 'react';
 
 import SiteFooter from '@/components/site-footer';
 import SiteHeader from '@/components/site-header';
-import MobileCtaBar from '@/components/mobile-cta-bar';
 import { primaryNavItems } from '@/content/navigation';
 import { siteUrl } from '@/content/services';
 
@@ -176,7 +175,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					{children}
 				</main>
 				<SiteFooter />
-				<MobileCtaBar />
 			</body>
 		</html>
 	);

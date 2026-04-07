@@ -19,6 +19,11 @@ const faqData: FAQItem[] = [
 		answer: 'As a mobile service, appointments are booked within an approximate 2-hour arrival window. This allows flexibility for travel time, traffic and individual patient needs. We’ll confirm your appointment window in advance and do our best to keep you updated if there are any delays.',
 	},
 	{
+		question: 'What is your cancellation and no-show policy?',
+		answer:
+			'We require at least 2 clear business days’ notice for appointment cancellations or changes. If less notice is given, or if an appointment is missed, the full consultation fee may apply. This reflects the time and travel involved in providing in-home podiatry visits.',
+	},
+	{
 		question: 'How do orthotics work as a mobile podiatry service?',
 		answer: 'We can complete a thorough biomechanical assessment in your home, similar to what you would receive in a clinic. This includes clinical assessment, muscle and joint testing, gait analysis and diagnosis where required. If custom orthotics are indicated, we use a mobile scanning system during the appointment. Your orthotics are then manufactured, and we book a follow-up home visit to fit and adjust them to your footwear, ensuring comfort and correct function.',
 	},
@@ -37,11 +42,6 @@ const faqData: FAQItem[] = [
 	{
 		question: 'How do I book an appointment?',
 		answer: 'Call us, email us, or use our online booking form.',
-	},
-	{
-		question: 'What is your cancellation and no-show policy?',
-		answer:
-			'We require at least 2 clear business days’ notice for appointment cancellations or changes. If less notice is given, or if an appointment is missed, the full consultation fee will apply. This reflects the time and travel involved in providing in-home podiatry visits.',
 	},
 	{
 		question: 'What should I expect during a home visit?',

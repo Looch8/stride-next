@@ -46,6 +46,24 @@ export default function ReferralPage() {
 					</p>
 				</div>
 
+				<section className="referral-card referral-card--form">
+					<p className="referral-card-eyebrow">Online form</p>
+					<h2>Submit a referral securely online</h2>
+					<p>
+						Complete the form below and it will be sent directly to Stride
+						Podiatry through our secure system.
+					</p>
+					<div className="referral-form-container">
+						<iframe
+							src="https://stride-podiatry.splose.com/public-form/fcd1208d-e801-454b-a248-4ae9d65fd4dd"
+							name="embeddableForm"
+							scrolling="auto"
+							loading="lazy"
+							title="Stride Podiatry Referral Form"
+						/>
+					</div>
+				</section>
+
 				<div className="referral-grid">
 					<div className="referral-card">
 						<p className="referral-card-eyebrow">Who we work with</p>
@@ -86,24 +104,6 @@ export default function ReferralPage() {
 						</div>
 					</div>
 				</div>
-
-				<section className="referral-card referral-card--form">
-					<p className="referral-card-eyebrow">Online form</p>
-					<h2>Submit a referral securely online</h2>
-					<p>
-						Complete the form below and it will be sent directly to Stride
-						Podiatry through our secure system.
-					</p>
-					<div className="referral-form-container">
-						<iframe
-							src="https://stride-podiatry.splose.com/public-form/fcd1208d-e801-454b-a248-4ae9d65fd4dd"
-							name="embeddableForm"
-							scrolling="auto"
-							loading="lazy"
-							title="Stride Podiatry Referral Form"
-						/>
-					</div>
-				</section>
 
 				<section className="referral-card referral-card--download">
 					<p className="referral-card-eyebrow">PDF option</p>

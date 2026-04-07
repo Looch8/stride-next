@@ -24,7 +24,6 @@ const dropdownServices = [
 
 const dropdownAbout = [
   { href: '/about-us', label: 'About Stride Podiatry' },
-  { href: '/referral', label: 'Referrals' },
   { href: '/blog', label: 'Blog' },
 ];
 

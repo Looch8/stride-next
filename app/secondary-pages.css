@@ -1498,10 +1498,21 @@
 
 .fees-note {
 	margin: 0;
-	padding: 0 var(--space-6) var(--space-6);
 	text-align: center;
 	font-size: var(--text-sm);
 	color: var(--brand-muted);
+}
+
+.fees-notes {
+	display: grid;
+	gap: var(--space-3);
+	max-width: 52rem;
+	margin: 0 auto;
+	padding: var(--space-5) var(--space-6);
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid rgba(20, 49, 58, 0.08);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-sm);
 }
 
 .fees-rebates {
@@ -1858,6 +1869,18 @@
 	flex-wrap: wrap;
 	gap: var(--space-3);
 	margin-top: var(--space-5);
+}
+
+.referral-actions .book-now-button {
+	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	color: #ffffff;
+	border: 1px solid rgba(10, 69, 67, 0.16);
+	box-shadow: 0 16px 34px rgba(15, 107, 104, 0.22);
+}
+
+.referral-actions .book-now-button:hover {
+	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	color: #ffffff;
 }
 
 .referral-card--form,
