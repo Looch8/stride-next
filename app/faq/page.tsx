@@ -39,6 +39,11 @@ const faqData: FAQItem[] = [
 		answer: 'Call us, email us, or use our online booking form.',
 	},
 	{
+		question: 'What is your cancellation and no-show policy?',
+		answer:
+			'We require at least 2 clear business days’ notice for appointment cancellations or changes. If less notice is given, or if an appointment is missed, the full consultation fee will apply. This reflects the time and travel involved in providing in-home podiatry visits.',
+	},
+	{
 		question: 'What should I expect during a home visit?',
 		answer: 'Assessment, treatment as needed, and advice on footwear and mobility to keep your feet healthy.',
 	},
@@ -98,22 +103,6 @@ export default function FAQPage() {
 				</div>
 
 				<FAQList items={faqData} />
-
-				<div className="faq-contact">
-					<p className="faq-contact-eyebrow">Popular pathways</p>
-					<h2>Find the right type of home visit</h2>
-					<p>
-						Start with <Link href="/services/home-visit-podiatry">home visit podiatry</Link>,{' '}
-						<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
-						<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
-						or{' '}
-						<Link href="/services/support-at-home-podiatry">
-							Support at Home podiatry
-						</Link>
-						.
-					</p>
-				</div>
-
 				<div className="faq-contact">
 					<p className="faq-contact-eyebrow">Still need help?</p>
 					<h2>Need more information before booking?</h2>

@@ -29,6 +29,7 @@ export default function SiteFooter() {
               <div className="footer-links">
                 <Link href="/about-us">About</Link>
                 <Link href="/services">Services</Link>
+                <Link href="/fees">Fees</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/referral">Referrals</Link>
                 <Link href="/contact-us">Contact Us</Link>

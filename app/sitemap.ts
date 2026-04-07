@@ -7,6 +7,7 @@ const baseRoutes = [
 	'/',
 	'/about-us',
 	'/services',
+	'/fees',
 	'/booking',
 	'/contact-us',
 	'/referral',

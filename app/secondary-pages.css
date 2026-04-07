@@ -1404,6 +1404,206 @@
 	}
 }
 
+/* Fees */
+.fees {
+	padding: var(--space-8) var(--space-5);
+	background:
+		radial-gradient(circle at 12% 12%, rgba(132, 214, 204, 0.12), transparent 24%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(238, 245, 244, 0.92));
+	min-height: 100vh;
+}
+
+.fees-container {
+	max-width: var(--content-md);
+	margin: 0 auto;
+	display: grid;
+	gap: var(--space-7);
+}
+
+.fees-header,
+.fees-rebates-header {
+	text-align: center;
+}
+
+.fees-eyebrow,
+.fees-rebate-eyebrow {
+	margin: 0 0 var(--space-3);
+	font-size: 0.82rem;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--brand-primary);
+}
+
+.fees-header h1 {
+	font-size: clamp(2.4rem, 5vw, 4rem);
+	margin-bottom: var(--space-3);
+	color: var(--brand-primary-800);
+}
+
+.fees-intro {
+	max-width: 38rem;
+	margin: 0 auto;
+	font-size: clamp(1rem, 1.5vw, 1.15rem);
+	color: var(--brand-muted);
+	line-height: 1.7;
+}
+
+.fees-pricing-card {
+	background: rgba(255, 255, 255, 0.92);
+	border-radius: 36px;
+	border: 1px solid rgba(20, 49, 58, 0.08);
+	box-shadow: var(--shadow-sm);
+	overflow: hidden;
+}
+
+.fees-list {
+	display: grid;
+}
+
+.fee-item {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: var(--space-4);
+	align-items: center;
+	padding: var(--space-6);
+}
+
+.fee-item + .fee-item {
+	border-top: 1px solid rgba(20, 49, 58, 0.08);
+}
+
+.fee-item-copy h2 {
+	margin: 0 0 var(--space-2);
+	font-size: clamp(1.35rem, 2vw, 1.75rem);
+	color: var(--brand-primary-800);
+}
+
+.fee-item-copy p {
+	margin: 0;
+	font-size: clamp(1rem, 1.4vw, 1.1rem);
+	color: var(--brand-muted);
+	line-height: 1.6;
+}
+
+.fee-item-price {
+	margin: 0;
+	font-family: var(--font-heading), system-ui, sans-serif;
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+	line-height: 1;
+	color: var(--brand-primary-800);
+	white-space: nowrap;
+}
+
+.fees-note {
+	margin: 0;
+	padding: 0 var(--space-6) var(--space-6);
+	text-align: center;
+	font-size: var(--text-sm);
+	color: var(--brand-muted);
+}
+
+.fees-rebates {
+	display: grid;
+	gap: var(--space-5);
+}
+
+.fees-rebates h2 {
+	font-size: clamp(2rem, 3vw, 2.8rem);
+	color: var(--brand-primary-800);
+}
+
+.fees-rebates-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-5);
+}
+
+.fees-rebate-card {
+	background: rgba(255, 255, 255, 0.92);
+	border-radius: var(--radius-xl);
+	border: 1px solid rgba(20, 49, 58, 0.08);
+	box-shadow: var(--shadow-sm);
+	padding: var(--space-6);
+}
+
+.fees-rebate-card--soft {
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 249, 248, 0.98));
+}
+
+.fees-rebate-card h3 {
+	margin: 0 0 var(--space-3);
+	font-size: clamp(1.4rem, 2vw, 1.7rem);
+	color: var(--brand-primary-800);
+}
+
+.fees-rebate-card p {
+	margin: 0 0 var(--space-4);
+	color: var(--brand-muted);
+	line-height: 1.7;
+}
+
+.fees-rebate-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: var(--space-3);
+}
+
+.fees-rebate-list li {
+	position: relative;
+	padding-left: 1.2rem;
+	color: var(--brand-muted);
+	line-height: 1.7;
+}
+
+.fees-rebate-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.72rem;
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 999px;
+	background: rgba(24, 139, 136, 0.72);
+}
+
+@media (max-width: 900px) {
+	.fees {
+		padding: var(--space-8) var(--space-4);
+	}
+
+	.fees-rebates-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.fees {
+		padding: var(--space-7) var(--space-4);
+	}
+
+	.fee-item {
+		grid-template-columns: 1fr;
+		padding: var(--space-5);
+	}
+
+	.fee-item-price {
+		font-size: clamp(2rem, 9vw, 2.6rem);
+	}
+
+	.fees-note {
+		padding: 0 var(--space-5) var(--space-5);
+	}
+
+	.fees-rebate-card {
+		padding: var(--space-5);
+	}
+}
+
 /* FAQ */
 .faq {
 	padding: var(--space-8) var(--space-5);
