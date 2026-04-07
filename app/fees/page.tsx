@@ -58,8 +58,7 @@ export default function FeesPage() {
           <p className="fees-eyebrow">Fees</p>
           <h1>Home visit podiatry fees</h1>
           <p className="fees-intro">
-            Clear pricing for private home-visit appointments and custom
-            orthotics.
+            Clear pricing for home-visit appointments.
           </p>
         </header>
 
