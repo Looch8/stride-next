@@ -12,7 +12,7 @@ export default function SiteFooter() {
         <div className="footer-top">
           <div className="footer-brand">
             <h2 className="footer-title">Stride Podiatry</h2>
-            <p className="footer-description">Mobile podiatry home visits across Adelaide</p>
+            <p className="footer-description">Mobile podiatry across Adelaide</p>
             <div className="footer-contact">
               <a href="tel:+61468518993" className="contact-link">
                 <span>0468 518 993</span>

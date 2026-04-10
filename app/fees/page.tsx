@@ -28,18 +28,18 @@ const pricingItems = [
 export const metadata: Metadata = {
   title: 'Fees | Stride Podiatry',
   description:
-    'Home visit podiatry fees in Adelaide, including initial consultations, follow-up consultations, custom foot orthotics and Medicare GP Care Plan rebate information.',
+    'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
   alternates: { canonical: 'https://www.stride-podiatry.com.au/fees' },
   openGraph: {
     title: 'Fees | Stride Podiatry',
     description:
-      'Home visit podiatry fees in Adelaide, including initial consultations, follow-up consultations, custom foot orthotics and Medicare GP Care Plan rebate information.',
+      'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
     url: 'https://www.stride-podiatry.com.au/fees',
   },
   twitter: {
     title: 'Fees | Stride Podiatry',
     description:
-      'Home visit podiatry fees in Adelaide, including initial consultations, follow-up consultations, custom foot orthotics and Medicare GP Care Plan rebate information.',
+      'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
   },
 };
 
@@ -58,7 +58,7 @@ export default function FeesPage() {
           <p className="fees-eyebrow">Fees</p>
           <h1>Home visit podiatry fees</h1>
           <p className="fees-intro">
-            Clear pricing for home-visit appointments.
+            Straightforward pricing for home visits.
           </p>
         </header>
 
@@ -98,8 +98,8 @@ export default function FeesPage() {
               <p className="fees-rebate-eyebrow">Medicare GP Care Plan</p>
               <h3>Check eligibility with your GP</h3>
               <p>
-                Speak with your GP to see whether you are eligible for a GP
-                Chronic Condition Management Plan.
+                Ask your GP if you are eligible for a GP Chronic Condition
+                Management Plan.
               </p>
               <ul className="fees-rebate-list">
                 <li>
@@ -120,8 +120,8 @@ export default function FeesPage() {
               <p className="fees-rebate-eyebrow">Private health</p>
               <h3>Private health rebates</h3>
               <p>
-                Private health rebates may also be available, depending on your
-                level of cover.
+                You may also be able to claim through private health, depending
+                on your cover.
               </p>
               <ul className="fees-rebate-list">
                 <li>Consultations are paid in full on the day of the appointment.</li>

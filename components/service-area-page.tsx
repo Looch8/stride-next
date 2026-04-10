@@ -28,13 +28,13 @@ export default function ServiceAreaPage({
         <div className="service-area-detail-grid">
           <div className="service-area-card">
             <p className="service-area-card-eyebrow">Local context</p>
-            <h2>How mobile podiatry fits this area</h2>
+            <h2>How this area is covered</h2>
             <p>{area.localContext}</p>
           </div>
 
           <div className="service-area-card">
             <p className="service-area-card-eyebrow">Appointments</p>
-            <h2>Where and how we help</h2>
+            <h2>Common visit types</h2>
             <ul className="service-area-checks">
               {area.visitTypes.map((item) => (
                 <li key={item}>{item}</li>
@@ -56,7 +56,7 @@ export default function ServiceAreaPage({
         <div className="service-area-detail-grid">
           <div className="service-area-card">
             <p className="service-area-card-eyebrow">Popular services</p>
-            <h2>Useful links for this area</h2>
+            <h2>Useful links</h2>
             <div className="service-area-links">
               {area.popularServices.map((service) => (
                 <Link key={service.href} href={service.href}>

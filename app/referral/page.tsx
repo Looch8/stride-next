@@ -11,18 +11,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Referrals | Stride Podiatry',
 	description:
-		'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
+		'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/referral' },
 	openGraph: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
+			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
 		url: 'https://www.stride-podiatry.com.au/referral',
 	},
 	twitter: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators. We work with Medicare CDM referrals, NDIS plan- and self-managed clients, DVA clients, and Support at Home through providers.',
+			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
 	},
 };
 
@@ -39,19 +39,19 @@ export default function ReferralPage() {
 					<p className="referral-eyebrow">Referral</p>
 					<h1>Refer a patient</h1>
 					<p className="referral-intro">
-						Stride Podiatry accepts referrals from GPs, aged care providers,
-						NDIS coordinators, case managers and other health professionals.
-						Use the secure online form below or send through the PDF version if
-						that better suits your workflow.
+						We accept referrals from GPs, aged care providers, NDIS
+						coordinators, case managers and other health professionals.
+						Use the secure online form below, or send the PDF if that
+						suits your workflow better.
 					</p>
 				</div>
 
 				<section className="referral-card referral-card--form">
 					<p className="referral-card-eyebrow">Online form</p>
-					<h2>Submit a referral securely online</h2>
+					<h2>Submit a referral online</h2>
 					<p>
-						Complete the form below and it will be sent directly to Stride
-						Podiatry through our secure system.
+						Complete the form below and it will be sent directly to
+						Stride Podiatry.
 					</p>
 					<div className="referral-form-container">
 						<iframe
@@ -67,7 +67,7 @@ export default function ReferralPage() {
 				<div className="referral-grid">
 					<div className="referral-card">
 						<p className="referral-card-eyebrow">Who we work with</p>
-						<h2>Referral pathways we commonly support</h2>
+						<h2>Common referral pathways</h2>
 						<ul className="referral-list">
 							<li>GP referrals, including Medicare CDM arrangements</li>
 							<li>NDIS plan-managed and self-managed participants</li>
@@ -88,11 +88,10 @@ export default function ReferralPage() {
 
 					<div className="referral-card referral-card--support">
 						<p className="referral-card-eyebrow">Need help first?</p>
-						<h2>Questions before sending a referral?</h2>
+						<h2>Questions before you refer?</h2>
 						<p>
-							If you want to confirm service areas, referral suitability or the
-							best pathway for a client, contact us and we can point you in the
-							right direction.
+							If you want to confirm service areas, referral
+							suitability or the best pathway for a client, contact us.
 						</p>
 						<div className="referral-actions">
 							<Link href="/contact-us" className="book-now-button">
@@ -109,8 +108,8 @@ export default function ReferralPage() {
 					<p className="referral-card-eyebrow">PDF option</p>
 					<h2>Prefer to send a form manually?</h2>
 					<p>
-						Download the referral form, complete it, then email it through if
-						that better fits your current process.
+						Download the referral form, complete it, then email it
+						through if that fits your process better.
 					</p>
 					<div className="referral-links">
 						<a href="/referral-form.pdf">Download referral form (PDF)</a>

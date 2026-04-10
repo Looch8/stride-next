@@ -38,56 +38,57 @@ export const services: ServiceContent[] = [
     slug: 'home-visit-podiatry',
     title: 'Home Visit Podiatry',
     pageTitle: 'Home Visit Podiatry',
-    summary: 'Mobile podiatry care for private patients at home, work, or aged care.',
+    summary: 'Podiatry home visits across Adelaide for private, aged care and funded clients.',
     heroImage: '/images/homevisit.png',
     heroAlt: 'Podiatrist arriving for a home visit and greeting a patient',
     metaTitle: 'Home Visit Podiatry Adelaide | Mobile Podiatrist | Stride Podiatry',
     metaDescription:
-      'Home visit podiatry in Adelaide for private patients, aged care and funded care pathways. Home visits only with treatment for foot care, pain and orthotics.',
+      'Home visit podiatry in Adelaide for private patients, aged care and funded care, including routine foot care, pain treatment and orthotics.',
     canonical: `${siteUrl}/services/home-visit-podiatry`,
     overview:
-      'Stride Podiatry provides in-home podiatry across Adelaide metro and regional South Australia. We bring the clinic to you with professional, fully equipped home visits.',
+      'We provide podiatry at home across Adelaide metro, with regional South Australia by arrangement.',
     sections: [
       {
-        heading: 'Why choose home visits',
+        heading: 'Why book a home visit',
         items: [
-          'Comfort and convenience in your own home',
           'No travel, parking or waiting rooms',
-          'Ideal for seniors, busy families and mobility limitations',
+          'Useful for reduced mobility, recovery, busy households and aged care',
+          'Appointments at home, in supported living or in aged care',
         ],
       },
       {
-        heading: 'Who we help',
+        heading: 'Who we see',
         items: [
-          'NDIS plan and self-managed participants',
-          'Aged care residents and older adults at home',
+          'Private patients',
+          'Older adults at home or in aged care',
+          'NDIS plan-managed and self-managed participants',
           'People recovering from surgery or injury',
-          'Anyone who prefers a home visit podiatrist',
+          'Anyone who prefers care at home',
         ],
       },
       {
-        heading: 'What we treat',
+        heading: 'Common reasons for a visit',
         items: [
-          'Nail and skin care, corns and calluses',
+          'Nail care, corns, calluses and skin care',
           'Ingrown toenails and diabetic foot checks',
           'Heel, arch and forefoot pain',
           'Custom orthotics and footwear advice',
         ],
       },
       {
-        heading: 'Service area',
+        heading: 'Coverage',
         items: [
-          'All Adelaide metro suburbs',
+          'Adelaide metro suburbs',
           'Regional South Australia by arrangement',
-          'Call to confirm availability for your area',
+          'Call to check your suburb',
         ],
       },
       {
-        heading: 'Funding options',
+        heading: 'Funding',
         items: [
           'Private bookings (no referral required)',
           'Medicare CDM with GP referral',
-          'NDIS plan and self-managed clients accepted',
+          'NDIS plan-managed and self-managed clients',
           'Support at Home and DVA where applicable',
         ],
       },
@@ -96,17 +97,17 @@ export const services: ServiceContent[] = [
       {
         question: 'Do you provide podiatry home visits across Adelaide?',
         answer:
-          'Yes. Stride Podiatry provides home visit podiatry across Adelaide metro suburbs, with regional South Australia available by arrangement.',
+          'Yes. We provide home visits across Adelaide metro, with regional South Australia by arrangement.',
       },
       {
         question: 'Are you home visits only?',
         answer:
-          'Yes. Stride Podiatry is a home-visit-only service, so appointments are provided in your home, workplace, aged care setting, or supported living environment rather than in a clinic.',
+          'Yes. We are a home-visit-only service. Appointments are provided at home, in aged care or in supported living settings.',
       },
       {
         question: 'Who is home visit podiatry suited to?',
         answer:
-          'Home visit podiatry is useful for older adults, people with reduced mobility, busy households, carers organising support, and anyone who prefers treatment without travel or waiting rooms.',
+          'Home visits suit older adults, people with reduced mobility, carers organising support and anyone who would rather avoid clinic travel.',
       },
     ],
     relatedLinks: [
@@ -121,18 +122,18 @@ export const services: ServiceContent[] = [
     slug: 'ndis-podiatry',
     title: 'NDIS Podiatry',
     pageTitle: 'NDIS Podiatry',
-    summary: 'Podiatry for NDIS participants, with home visits and support-team coordination.',
+    summary: 'Podiatry home visits for NDIS participants across Adelaide.',
     heroImage: '/images/ndispodiatry.png',
     heroAlt: 'Podiatrist treating a client using a wheelchair during an NDIS visit',
     metaTitle: 'NDIS Podiatry Adelaide | Home Visits | Stride Podiatry',
     metaDescription:
-      'NDIS podiatry home visits in Adelaide for plan-managed and self-managed participants needing treatment, assessments and ongoing foot care support.',
+      'NDIS podiatry home visits in Adelaide for plan-managed and self-managed participants needing treatment, assessments and ongoing foot care.',
     canonical: `${siteUrl}/services/ndis-podiatry`,
     overview:
-      'Stride Podiatry provides NDIS podiatry home visits across Adelaide and regional South Australia by arrangement. We work with plan-managed and self-managed participants, along with support coordinators, families and support teams, to provide practical podiatry care in the places clients feel most comfortable.',
+      'We provide NDIS podiatry home visits across Adelaide, with regional visits by arrangement. We work with participants, families and support teams to keep care simple.',
     sections: [
       {
-        heading: 'How Stride supports NDIS clients',
+        heading: 'How we help',
         items: [
           'Foot care, pain management and mobility support',
           'Assessments, treatment plans and progress notes',
@@ -140,35 +141,35 @@ export const services: ServiceContent[] = [
         ],
       },
       {
-        heading: 'Plan- and self-managed participants',
+        heading: 'Plan-managed and self-managed participants',
         items: [
-          'Invoices aligned to NDIS requirements',
-          'Flexible scheduling for in-home appointments',
-          'We can coordinate directly with your support team where needed',
+          'Invoices that match NDIS requirements',
+          'Home visits across Adelaide metro',
+          'Direct coordination with your support team where needed',
         ],
       },
       {
-        heading: 'Where we see NDIS participants',
+        heading: 'Where visits can happen',
         items: [
           'Private homes and supported accommodation',
-          'Residential settings and community-based living arrangements',
-          'Appointments shaped around the client environment and access needs',
+          'Residential settings and community living arrangements',
+          'Appointments shaped around access needs',
         ],
       },
       {
-        heading: 'What to expect from visits',
+        heading: 'What to expect',
         items: [
-          'Initial assessment and treatment tailored to the client goals and daily needs',
+          'Assessment and treatment based on the client’s goals and daily needs',
           'Ongoing foot care, pain management and practical advice',
-          'A calm, straightforward approach that works well for participants needing regular support',
+          'A calm, straightforward approach for regular support',
         ],
       },
       {
-        heading: 'Service area and getting started',
+        heading: 'Getting started',
         items: [
-          'All Adelaide metro suburbs, with regional South Australia by arrangement',
-          'Call or book online to discuss availability and service needs',
-          'Share your plan details or coordinator contact and we can help organise the next steps',
+          'Adelaide metro, with regional South Australia by arrangement',
+          'Call or book online to discuss availability',
+          'Share your plan details or coordinator contact and we can help with the next step',
         ],
       },
     ],
@@ -176,17 +177,17 @@ export const services: ServiceContent[] = [
       {
         question: 'Do you provide NDIS podiatry home visits in Adelaide?',
         answer:
-          'Yes. Stride Podiatry provides NDIS podiatry home visits across Adelaide metro suburbs, with regional visits available by arrangement.',
+          'Yes. We provide NDIS podiatry home visits across Adelaide metro, with regional visits by arrangement.',
       },
       {
         question: 'Do you work with plan-managed and self-managed participants?',
         answer:
-          'Yes. We work with both plan-managed and self-managed NDIS participants and can coordinate with support coordinators, families, and support workers where needed.',
+          'Yes. We work with both plan-managed and self-managed participants, and can coordinate with support teams where needed.',
       },
       {
         question: 'Where can NDIS appointments take place?',
         answer:
-          'Appointments can be provided in private homes, supported accommodation, and other community-based living environments where home visits are the best fit.',
+          'Appointments can take place in private homes, supported accommodation and other community living settings.',
       },
     ],
     relatedLinks: [
@@ -202,7 +203,7 @@ export const services: ServiceContent[] = [
     slug: 'aged-care-podiatry',
     title: 'Aged Care Podiatry',
     pageTitle: 'Aged Care Podiatry',
-    summary: 'Regular podiatry for older adults in residential aged care and retirement living.',
+    summary: 'Regular podiatry for older adults at home, in retirement living and in residential aged care.',
     heroImage: '/images/agedcarepodiatry.png',
     heroAlt: 'Podiatrist walking alongside an older client using a four-wheel walker',
     metaTitle: 'Aged Care Podiatry Adelaide | Home Visits | Stride Podiatry',
@@ -210,38 +211,38 @@ export const services: ServiceContent[] = [
       'Aged care podiatry home visits across Adelaide for older adults in private homes, retirement living and residential aged care facilities.',
     canonical: `${siteUrl}/services/aged-care-podiatry`,
     overview:
-      'Stride Podiatry provides podiatry care for older adults in private homes, retirement living and residential aged care facilities across Adelaide, with regional South Australia by arrangement. We work with residents, families, carers and facilities to provide regular foot care and practical ongoing support.',
+      'We provide podiatry for older adults across Adelaide, including private homes, retirement living and residential aged care.',
     sections: [
       {
-        heading: 'How Stride supports aged care clients',
+        heading: 'Common care needs',
         items: [
           'Nail and skin care, corns and calluses',
           'Foot pain, balance concerns and footwear issues',
-          'Diabetes foot checks and risk monitoring for older clients',
+          'Diabetes foot checks and risk monitoring',
         ],
       },
       {
-        heading: 'Where we provide aged care podiatry',
+        heading: 'Where we visit',
         items: [
-          'Private homes for older adults living independently or with family support',
+          'Private homes',
           'Retirement villages and residential aged care facilities',
-          'Appointments arranged around resident routines, carers and facility processes',
+          'Appointments arranged around resident routines and carers',
         ],
       },
       {
-        heading: 'Working with residents, families and facilities',
+        heading: 'How we work',
         items: [
-          'Clear communication with family members, carers and site staff',
-          'Regular podiatry scheduling for residents who need ongoing care',
-          'A practical, respectful approach suited to older adults with complex needs',
+          'Clear communication with family members, carers and staff',
+          'Regular scheduling for residents who need ongoing care',
+          'A respectful, practical approach',
         ],
       },
       {
-        heading: 'Funding, referrals and service area',
+        heading: 'Funding and coverage',
         items: [
-          'Private bookings welcome, with Medicare CDM, Support at Home and NDIS available where applicable',
-          'All Adelaide metro suburbs, with regional South Australia by arrangement',
-          'Call to discuss your location, facility or care arrangement',
+          'Private bookings, Medicare CDM, Support at Home and NDIS where applicable',
+          'Adelaide metro, with regional South Australia by arrangement',
+          'Call to discuss your location or care arrangement',
         ],
       },
     ],
@@ -249,17 +250,17 @@ export const services: ServiceContent[] = [
       {
         question: 'Do you provide aged care podiatry home visits in Adelaide?',
         answer:
-          'Yes. We provide home visit podiatry for older adults across Adelaide in private homes, retirement living, and residential aged care settings.',
+          'Yes. We provide home visits for older adults across Adelaide in private homes, retirement living and residential aged care.',
       },
       {
         question: 'Can family members or carers help organise appointments?',
         answer:
-          'Yes. We regularly coordinate with family members, carers, and facility staff to organise suitable appointments and ongoing care.',
+          'Yes. We regularly coordinate with family members, carers and facility staff.',
       },
       {
         question: 'Do you visit residential aged care facilities?',
         answer:
-          'Yes. We can provide podiatry visits in residential aged care facilities as well as retirement villages and private homes.',
+          'Yes. We visit residential aged care facilities, retirement villages and private homes.',
       },
     ],
     relatedLinks: [
@@ -274,7 +275,7 @@ export const services: ServiceContent[] = [
     slug: 'support-at-home-podiatry',
     title: 'Support at Home Podiatry',
     pageTitle: 'Support at Home Podiatry',
-    summary: 'Funded in-home podiatry for older adults using Support at Home services.',
+    summary: 'In-home podiatry for older adults using Support at Home funding.',
     heroImage: '/images/regular-podiatry-older-adults-home-visits-adelaide.png',
     heroAlt: 'Home visit podiatry care for an older adult receiving in-home support',
     metaTitle: 'Support at Home Podiatry Adelaide | Stride Podiatry',
@@ -282,44 +283,38 @@ export const services: ServiceContent[] = [
       'Support at Home podiatry in Adelaide with mobile home visits for older adults using funded in-home support for regular foot care and treatment.',
     canonical: `${siteUrl}/services/support-at-home-podiatry`,
     overview:
-      'Stride Podiatry provides in-home podiatry for older adults receiving Support at Home services across Adelaide. Support at Home replaces the previous Home Care Packages model, and can help eligible clients access funded podiatry as part of the services that keep them safe, mobile and comfortable at home.',
+      'We provide in-home podiatry for older adults receiving Support at Home services across Adelaide.',
     sections: [
       {
-        heading: 'What Support at Home means',
+        heading: 'About Support at Home',
         items: [
-          'Support at Home is the in-home aged care program that follows the previous Home Care Packages model',
-          'Eligible older adults may have funding available for services that support independence, mobility and day-to-day wellbeing',
-          'Podiatry may form part of that support when regular foot care or treatment is clinically appropriate',
+          'Support at Home is the in-home aged care program that follows Home Care Packages',
+          'Eligible clients may be able to use funding for podiatry',
+          'Podiatry can be part of regular foot care and mobility support',
         ],
       },
       {
         heading: 'How podiatry can help',
         items: [
           'Routine nail and skin care, corns and calluses',
-          'Foot pain management and mobility-focused treatment',
+          'Foot pain treatment and mobility support',
           'Diabetes foot checks and ongoing monitoring where needed',
         ],
       },
       {
-        heading: 'How Stride works with Support at Home providers',
+        heading: 'How we work with providers',
         items: [
-          'Stride Podiatry works with multiple aged care and in-home support businesses to deliver podiatry to their clients',
-          'We can coordinate with providers, case managers and families around appointments and ongoing care needs',
-          'This helps clients receive podiatry in the home without the stress of travelling to a clinic',
+          'We work with providers, case managers and families',
+          'We can coordinate appointments and ongoing care',
+          'Care is delivered at home rather than in a clinic',
         ],
       },
       {
-        heading: 'Funding and home visits',
+        heading: 'Funding and coverage',
         items: [
-          'Clients may be able to use Support at Home funding for podiatry where it is included in their care arrangements',
-          'We are happy to work alongside providers to confirm service details and scheduling',
-        ],
-      },
-      {
-        heading: 'Service area',
-        items: [
-          'All Adelaide metro suburbs',
-          'Regional South Australia by arrangement',
+          'Support at Home funding may cover podiatry where included in the care plan',
+          'Adelaide metro, with regional South Australia by arrangement',
+          'We can confirm service details and scheduling with providers',
         ],
       },
     ],
@@ -327,17 +322,17 @@ export const services: ServiceContent[] = [
       {
         question: 'Do you provide Support at Home podiatry in Adelaide?',
         answer:
-          'Yes. Stride Podiatry provides Support at Home podiatry across Adelaide with appointments delivered as home visits rather than clinic appointments.',
+          'Yes. We provide Support at Home podiatry across Adelaide as home visits.',
       },
       {
         question: 'Can you work with Support at Home providers and case managers?',
         answer:
-          'Yes. We regularly coordinate with providers, case managers, and families to help organise appointments and ongoing podiatry support.',
+          'Yes. We regularly coordinate with providers, case managers and families.',
       },
       {
         question: 'Can podiatry be delivered at home under Support at Home?',
         answer:
-          'In many cases, yes. If podiatry is included in the client care arrangements, we can provide regular home visits to help maintain comfort, mobility, and foot health.',
+          'In many cases, yes. If podiatry is included in the care arrangements, we can provide regular home visits.',
       },
     ],
     relatedLinks: [
@@ -360,30 +355,30 @@ export const services: ServiceContent[] = [
       'DVA podiatry home visits in Adelaide for eligible veterans and clients needing treatment, regular foot care and practical support at home.',
     canonical: `${siteUrl}/services/dva-podiatry`,
     overview:
-      'Stride Podiatry provides DVA podiatry home visits across Adelaide for eligible clients who want practical foot care, pain management and ongoing support without the need to travel to a clinic.',
+      'We provide DVA podiatry home visits across Adelaide for eligible clients who prefer to be seen at home.',
     sections: [
       {
-        heading: 'Who DVA podiatry is for',
+        heading: 'Who this service suits',
         items: [
-          'Eligible DVA clients needing podiatry treatment or regular foot care',
+          'Eligible DVA clients needing treatment or regular foot care',
           'Older veterans who prefer care at home',
-          'People with mobility limitations, pain, or transport barriers',
+          'People with mobility issues, pain or transport barriers',
         ],
       },
       {
-        heading: 'Home visit appointments for DVA clients',
+        heading: 'How visits work',
         items: [
-          'Home visits only, with no clinic appointments',
-          'Visits to private homes, retirement living, and aged care settings where appropriate',
-          'A calm, practical appointment process shaped around the client and home environment',
+          'Home visits only',
+          'Visits to private homes, retirement living and aged care where appropriate',
+          'Straightforward appointments shaped around the client and home environment',
         ],
       },
       {
-        heading: 'Referrals and claiming process',
+        heading: 'Referrals and claiming',
         items: [
-          'We can discuss whether a referral is required for your situation',
+          'We can explain whether a referral is required',
           'If needed, we can coordinate with your GP or referrer around the paperwork',
-          'If you are unsure about eligibility or claiming details, contact us and we can talk through the next step',
+          'If you are unsure about eligibility or claiming, contact us first',
         ],
       },
       {
@@ -391,23 +386,23 @@ export const services: ServiceContent[] = [
         items: [
           'Routine nail and skin care, corns and calluses',
           'Foot pain treatment, including heel pain and pressure-related discomfort',
-          'Diabetes foot checks, circulation concerns, and ongoing monitoring where required',
+          'Diabetes foot checks, circulation concerns and ongoing monitoring',
         ],
       },
       {
-        heading: 'Service areas across Adelaide',
+        heading: 'Coverage',
         items: [
           'Adelaide metro home visits',
           'Regional South Australia by arrangement',
-          'Call to confirm suburb coverage, availability, and the most suitable appointment type',
+          'Call to check suburb coverage and availability',
         ],
       },
       {
         heading: 'How to book',
         items: [
           'Call or request an appointment online',
-          'Let us know if the booking is for a DVA client so we can guide the next step',
-          'We can also coordinate with family members, carers, or referrers where needed',
+          'Let us know the booking is for a DVA client',
+          'We can coordinate with family members, carers or referrers where needed',
         ],
       },
     ],
@@ -415,22 +410,22 @@ export const services: ServiceContent[] = [
       {
         question: 'Do you provide DVA podiatry home visits in Adelaide?',
         answer:
-          'Yes. Stride Podiatry provides DVA podiatry home visits across Adelaide metro suburbs, with regional South Australia available by arrangement.',
+          'Yes. We provide DVA podiatry home visits across Adelaide metro, with regional South Australia by arrangement.',
       },
       {
         question: 'Do I need a referral for DVA podiatry?',
         answer:
-          'Referral requirements can depend on the arrangement and eligibility pathway, so the best first step is to contact us and we can explain what is needed for your situation.',
+          'Referral requirements can depend on the arrangement, so contact us and we can explain what is needed.',
       },
       {
         question: 'What treatments can be provided during a DVA home visit?',
         answer:
-          'Common treatments include nail and skin care, corn and callus treatment, pain management, diabetic foot checks, and practical treatment plans for ongoing foot concerns.',
+          'Common treatments include nail and skin care, corn and callus treatment, pain management and diabetic foot checks.',
       },
       {
         question: 'Do you visit private homes and aged care settings?',
         answer:
-          'Yes. DVA podiatry appointments can be provided in private homes and, where appropriate, in retirement living or aged care environments.',
+          'Yes. Appointments can be provided in private homes and, where appropriate, in retirement living or aged care settings.',
       },
     ],
     relatedLinks: [
@@ -445,7 +440,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'general-podiatry',
     title: 'General Podiatry Care',
-    summary: 'Nails, corns and calluses — keep your feet healthy and comfortable.',
+    summary: 'Treatment for nails, corns, calluses and other routine foot care needs.',
     heroImage: '/images/general-foot-care.jpg',
     heroAlt: 'General podiatry care at home',
     metaTitle: 'General Podiatry Care | Stride Podiatry',
@@ -453,7 +448,7 @@ export const services: ServiceContent[] = [
       'General foot and nail care at home across Adelaide. Mobile podiatry for nails, corns, calluses and cracked heels.',
     canonical: `${siteUrl}/services/general-podiatry`,
     overview:
-      'We keep nails, corns and calluses under control so your feet stay healthy and comfortable.',
+      'We treat common foot and nail problems so you can stay comfortable and mobile.',
     sections: [
       {
         heading: 'Common issues',
@@ -467,8 +462,8 @@ export const services: ServiceContent[] = [
         heading: 'How we treat',
         items: [
           'Gentle nail reduction and debridement',
-          'Safe removal of corns/callus',
-          'Moisturising & footwear advice to prevent recurrence',
+          'Safe removal of corns and callus',
+          'Moisturising and footwear advice to help prevent recurrence',
         ],
       },
       {
@@ -484,7 +479,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'ingrown-toenail',
     title: 'Ingrown Toenail Treatment',
-    summary: 'Relief for painful or infected ingrown toenails.',
+    summary: 'Treatment for painful or infected ingrown toenails.',
     heroImage: '/images/ingrown-nail.jpg',
     heroAlt: 'Ingrown toenail care',
     metaTitle: 'Ingrown Toenail Treatment | Stride Podiatry',
@@ -507,7 +502,7 @@ export const services: ServiceContent[] = [
         items: [
           'Conservative nail edge clearing',
           'Minor procedures under local anaesthetic if indicated',
-          'Tailored advice to reduce recurrence',
+          'Practical advice to help prevent recurrence',
         ],
       },
       {
@@ -524,7 +519,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'diabetes-foot-care',
     title: 'Diabetes Foot Care',
-    summary: 'Assessments and care to prevent complications.',
+    summary: 'Diabetic foot checks and care to help prevent complications.',
     heroImage: '/images/diabetesCare2.png',
     heroAlt: 'Diabetes foot assessment',
     metaTitle: 'Diabetes Foot Care | Stride Podiatry',
@@ -537,7 +532,7 @@ export const services: ServiceContent[] = [
       {
         heading: 'Assessment includes',
         items: [
-          'Neurological & vascular screening',
+          'Neurological and vascular screening',
           'Footwear and risk evaluation',
           'Skin/nail care and education',
         ],
@@ -547,7 +542,7 @@ export const services: ServiceContent[] = [
         items: [
           'Regular care to lower risk',
           'Pressure offloading and footwear updates',
-          'Care plans and education tailored to you',
+          'Care plans and practical advice',
         ],
       },
       {
@@ -556,7 +551,7 @@ export const services: ServiceContent[] = [
           'New wounds or skin breakdown',
           'Colour or temperature changes',
           'Swelling or pain with diabetes',
-          'Newly diagnosed diabetics',
+          'A new diabetes diagnosis',
         ],
       },
     ],
@@ -565,7 +560,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'biomechanics-gait',
     title: 'Biomechanics & Gait',
-    summary: 'Analyse movement and address imbalances.',
+    summary: 'Assess movement and address the causes of pain or overload.',
     heroImage: '/images/biomechanicsImg.jpg',
     heroAlt: 'Biomechanics and gait assessment',
     metaTitle: 'Biomechanics & Gait | Stride Podiatry',
@@ -573,7 +568,7 @@ export const services: ServiceContent[] = [
       'Biomechanics and gait assessment at home in Adelaide. Load management, strength and orthotic options to reduce pain.',
     canonical: `${siteUrl}/services/biomechanics-gait`,
     overview:
-      'We assess how your feet and legs move during daily life and exercise. Optimising load and mechanics helps reduce pain and prevent recurrence.',
+      'We assess how your feet and legs move during daily life and exercise to find the cause of pain or overload.',
     sections: [
       {
         heading: 'Common issues',
@@ -586,8 +581,8 @@ export const services: ServiceContent[] = [
       {
         heading: 'How we treat',
         items: [
-          'Functional tests and gait analysis',
-          'Strength/mobility programming',
+          'Functional testing and gait analysis',
+          'Strength and mobility programs',
           'Custom orthotic prescription when indicated',
         ],
       },
@@ -595,7 +590,7 @@ export const services: ServiceContent[] = [
         heading: 'When to seek care',
         items: [
           'Ongoing pain with walking/exercise or everyday tasks',
-          'Frequent “niggles” or setbacks',
+          'Frequent flare-ups or setbacks',
           'Difficulty returning to activity',
         ],
       },
@@ -604,7 +599,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'custom-orthotics',
     title: 'Custom Orthotics',
-    summary: 'Personalised devices to support and relieve pain.',
+    summary: 'Custom orthotics prescribed to support foot mechanics and reduce pain.',
     heroImage: '/images/orthoticsImg.jpg',
     heroAlt: 'Custom foot orthotics',
     metaTitle: 'Custom Orthotics | Stride Podiatry',
@@ -612,7 +607,7 @@ export const services: ServiceContent[] = [
       'Custom orthotics prescribed at home in Adelaide to support foot mechanics, reduce pain and improve comfort.',
     canonical: `${siteUrl}/services/custom-orthotics`,
     overview:
-      'Orthotics can support your feet, optimise mechanics and reduce pain when prescribed from a thorough biomechanical assessment.',
+      'Orthotics can reduce strain and improve comfort when they are prescribed from a proper assessment.',
     sections: [
       {
         heading: 'Common reasons for orthotics',
@@ -627,7 +622,7 @@ export const services: ServiceContent[] = [
         heading: 'What we do',
         items: [
           'Detailed lower limb assessment',
-          'Orthotic design and prescription tailored to your individual needs',
+          'Orthotic design and prescription based on your needs',
           'Fit checks and adjustment plan',
         ],
       },
@@ -636,7 +631,7 @@ export const services: ServiceContent[] = [
         items: [
           'Persistent pain despite footwear changes',
           'Recurrent injuries with activity',
-          'Fatigue or soreness with standing/walking',
+          'Fatigue or soreness with standing or walking',
         ],
       },
     ],
@@ -645,14 +640,14 @@ export const services: ServiceContent[] = [
   {
     slug: 'heel-arch-pain',
     title: 'Heel & Arch Pain',
-    summary: 'Diagnosis and treatment plans that get you moving.',
+    summary: 'Assessment and treatment for heel and arch pain.',
     heroImage: '/images/foot-pain.jpg',
     heroAlt: 'Heel and arch pain treatment',
     metaTitle: 'Heel & Arch Pain | Stride Podiatry',
     metaDescription:
       'Home-visit treatment for heel and arch pain in Adelaide. Plantar fasciitis, heel spurs and Achilles issues managed at home.',
     canonical: `${siteUrl}/services/heel-arch-pain`,
-    overview: 'We diagnose and treat heel and arch pain so you can move comfortably again.',
+    overview: 'We assess heel and arch pain and put a treatment plan in place to settle it down.',
     sections: [
       {
         heading: 'Common conditions',
@@ -665,7 +660,7 @@ export const services: ServiceContent[] = [
       {
         heading: 'How we treat',
         items: [
-          'Loading and activity plans',
+          'Load and activity plans',
           'Footwear and orthotic options',
           'Mobility and strengthening exercises',
         ],
@@ -684,7 +679,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'footwear-advice',
     title: 'Footwear Advice',
-    summary: 'Shoes that fit your feet and your life.',
+    summary: 'Advice on shoes that suit your feet, symptoms and day-to-day needs.',
     heroImage: '/images/shoewear.jpg',
     heroAlt: 'Footwear advice session',
     metaTitle: 'Footwear Advice | Stride Podiatry',
@@ -692,7 +687,7 @@ export const services: ServiceContent[] = [
       'Footwear advice at home in Adelaide. Get recommendations matched to your foot shape, support needs and activity.',
     canonical: `${siteUrl}/services/footwear-advice`,
     overview:
-      'The right shoes can dramatically improve comfort and reduce injury risk. We help you choose footwear that suits your feet and activity.',
+      'The right shoes can make a big difference. We help you choose footwear that suits your feet and how you use them.',
     sections: [
       {
         heading: 'What we consider',
@@ -715,7 +710,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'sports-podiatry',
     title: 'Sports Podiatry',
-    summary: 'Prevent and treat sport-related foot/ankle issues.',
+    summary: 'Assessment and treatment for sport-related foot and ankle problems.',
     heroImage: '/images/sportsPodiatryImg.jpeg',
     heroAlt: 'Sports podiatry assessment',
     metaTitle: 'Sports Podiatry | Stride Podiatry',
@@ -723,7 +718,7 @@ export const services: ServiceContent[] = [
       'Sports podiatry at home in Adelaide. Assessments, injury prevention and treatment plans for active people.',
     canonical: `${siteUrl}/services/sports-podiatry`,
     overview:
-      'We help active people stay active — assessing mechanics, managing load and building resilience for your sport.',
+      'We assess mechanics, manage load and build a plan that helps you keep training.',
     sections: [
       {
         heading: 'Common issues',
@@ -737,7 +732,7 @@ export const services: ServiceContent[] = [
         heading: 'How we treat',
         items: [
           'Sport-specific assessment and gait review',
-          'Progressive loading & strength programs',
+          'Progressive loading and strength programs',
           'Footwear and orthotic options as needed',
         ],
       },
@@ -754,7 +749,7 @@ export const services: ServiceContent[] = [
   {
     slug: 'forefoot-pain',
     title: 'Forefoot Pain',
-    summary: 'Bunions, Morton’s neuroma, hammertoes and more.',
+    summary: 'Assessment and treatment for bunions, Morton’s neuroma, hammertoes and other forefoot problems.',
     heroImage: '/images/bunion.jpg',
     heroAlt: 'Forefoot pain assessment and treatment',
     metaTitle: 'Forefoot Pain | Stride Podiatry',
@@ -762,14 +757,14 @@ export const services: ServiceContent[] = [
       'Assessment and home-visit treatment for forefoot pain in Adelaide including bunions, neuroma and hammer toes.',
     canonical: `${siteUrl}/services/forefoot-pain`,
     overview:
-      'Forefoot pain can stem from joint irritation, nerve compression or altered toe mechanics. We identify the drivers—load, footwear and gait—and create a plan to reduce pain and keep you active.',
+      'Forefoot pain can come from joint irritation, nerve compression or toe alignment issues. We assess the cause and make a plan to reduce pain.',
     sections: [
       {
         heading: 'Common conditions',
         items: [
           'Bunions (hallux valgus)',
-          'Morton’s neuroma / interdigital nerve irritation',
-          'Hammer toes / claw toes',
+          'Morton’s neuroma or interdigital nerve irritation',
+          'Hammer toes or claw toes',
           'Capsulitis or synovitis of the lesser toe joints',
           'Metatarsalgia (ball-of-foot pain)',
           'Sesamoiditis (big toe joint)',
@@ -781,8 +776,8 @@ export const services: ServiceContent[] = [
           'Detailed assessment of gait, load and footwear',
           'Pressure offloading and padding for sensitive areas',
           'Toe props, spacers and taping to improve alignment',
-          'Strength & mobility exercises for forefoot stability',
-          'Footwear updates (wider toe box, forefoot rocker if needed)',
+          'Strength and mobility exercises for forefoot stability',
+          'Footwear updates, including a wider toe box where needed',
           'Custom or prefabricated orthotics when indicated',
         ],
       },
@@ -790,8 +785,8 @@ export const services: ServiceContent[] = [
         heading: 'When to seek care',
         items: [
           'Pain during walking, standing or push-off',
-          'Burning or tingling between toes / under the forefoot',
-          'Visible toe deviation, rubbing, or recurrent corns/callus',
+          'Burning or tingling between the toes or under the forefoot',
+          'Visible toe changes, rubbing or recurrent corns and callus',
         ],
       },
     ],

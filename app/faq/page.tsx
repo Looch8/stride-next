@@ -12,40 +12,40 @@ const breadcrumbsLd = buildBreadcrumbList([
 const faqData: FAQItem[] = [
 	{
 		question: 'Do I need a referral to see a podiatrist?',
-		answer: 'No referral is required for private bookings. Medicare CDM requires a GP referral. We also see NDIS plan- and self-managed clients, Support at Home clients, DVA patients where applicable, and private health insurance patients.',
+		answer: 'No referral is needed for private bookings. Medicare CDM requires a GP referral. We also see NDIS plan- and self-managed clients, Support at Home clients and DVA clients where applicable.',
 	},
 	{
 		question: 'What time will you arrive for my appointment?',
-		answer: 'As a mobile service, appointments are booked within an approximate 2-hour arrival window. This allows flexibility for travel time, traffic and individual patient needs. We’ll confirm your appointment window in advance and do our best to keep you updated if there are any delays.',
+		answer: 'Appointments are booked within an approximate 2-hour arrival window. This allows for travel time, traffic and the needs of earlier patients. We’ll confirm the window in advance and keep you updated if there is a delay.',
 	},
 	{
 		question: 'What is your cancellation and no-show policy?',
 		answer:
-			'We require at least 2 clear business days’ notice for appointment cancellations or changes. If less notice is given, or if an appointment is missed, the full consultation fee may apply. This reflects the time and travel involved in providing in-home podiatry visits.',
+			'We require at least 2 clear business days’ notice for cancellations or changes. If less notice is given, or an appointment is missed, the full consultation fee may apply.',
 	},
 	{
 		question: 'How do orthotics work as a mobile podiatry service?',
-		answer: 'We can complete a thorough biomechanical assessment in your home, similar to what you would receive in a clinic. This includes clinical assessment, muscle and joint testing, gait analysis and diagnosis where required. If custom orthotics are indicated, we use a mobile scanning system during the appointment. Your orthotics are then manufactured, and we book a follow-up home visit to fit and adjust them to your footwear, ensuring comfort and correct function.',
+		answer: 'We can complete a biomechanical assessment in your home, including gait analysis and testing where needed. If custom orthotics are suitable, we use a mobile scanning system during the visit, then return for fitting and adjustments once they are made.',
 	},
 	{
 		question: 'Do you accept Medicare, NDIS, and DVA clients?',
-		answer: 'We work with Medicare CDM referrals, NDIS plan- and self-managed clients, Support at Home, and private health insurance. We may see DVA patients where applicable.',
+		answer: 'We work with Medicare CDM referrals, NDIS plan- and self-managed clients, Support at Home and DVA where applicable.',
 	},
 	{
 		question: 'Where do you provide mobile podiatry services?',
-		answer: 'Across all Adelaide metro suburbs and regional South Australia by arrangement. If you’re unsure, contact us to confirm coverage.',
+		answer: 'Across Adelaide metro, with regional South Australia by arrangement. If you’re unsure, contact us to check your suburb.',
 	},
 	{
 		question: 'What conditions do you treat?',
-		answer: 'Foot pain, general footcare, ingrown toenails, diabetic foot care, corns, calluses, plantar fasciitis, footwear assessments and more.',
+		answer: 'Foot pain, general foot care, ingrown toenails, diabetic foot care, corns, calluses, plantar fasciitis and footwear issues.',
 	},
 	{
 		question: 'How do I book an appointment?',
-		answer: 'Call us, email us, or use our online booking form.',
+		answer: 'Call, email or use the online booking form.',
 	},
 	{
 		question: 'What should I expect during a home visit?',
-		answer: 'Assessment, treatment as needed, and advice on footwear and mobility to keep your feet healthy.',
+		answer: 'We assess the problem, provide treatment and give clear advice on what to do next.',
 	},
 ];
 
@@ -62,18 +62,18 @@ const faqLD = {
 export const metadata: Metadata = {
 	title: 'FAQs | Stride Podiatry',
 	description:
-		'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
+		'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/faq' },
 	openGraph: {
 		title: 'FAQs | Stride Podiatry',
 		description:
-			'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
+			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
 		url: 'https://www.stride-podiatry.com.au/faq',
 	},
 	twitter: {
 		title: 'FAQs | Stride Podiatry',
 		description:
-			'Answers to common questions about mobile podiatry in Adelaide: Medicare CDM, NDIS, DVA, service areas, conditions treated, and what to expect.',
+			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
 	},
 };
 
@@ -97,19 +97,18 @@ export default function FAQPage() {
 					<p className="faq-eyebrow">FAQ</p>
 					<h1>Common questions</h1>
 					<p className="faq-intro">
-						Find answers about our mobile podiatry services,
-						bookings and treatments.
+						Quick answers about bookings, funding and home visits.
 					</p>
 				</div>
 
 				<FAQList items={faqData} />
 				<div className="faq-contact">
 					<p className="faq-contact-eyebrow">Still need help?</p>
-					<h2>Need more information before booking?</h2>
+					<h2>Need more information?</h2>
 					<p>
 						Visit our <Link href="/contact-us">contact page</Link>{' '}
-						if you&apos;d like to ask about services, service areas
-						or appointment availability.
+						if you&apos;d like to ask about services, service areas or
+						availability.
 					</p>
 				</div>
 			</div>

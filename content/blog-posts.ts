@@ -34,10 +34,10 @@ export const blogPosts: BlogPost[] = [
 		title: 'Can a Podiatrist Treat Thick Toenails During a Home Visit?',
 		date: '2026-03-07',
 		excerpt:
-			'Yes. Thick toenails can usually be treated during a home visit using the same professional tools and approach you would expect in a clinic.',
+			'Yes. Thick toenails can usually be treated during a home visit with the same tools used in clinic.',
 		description:
-			'Learn how thick toenails are treated during a podiatry home visit, including assessment, reduction with domiciliary drills, and when further care may be needed.',
-		intro: 'Yes. In most cases, thick toenails can be treated safely and effectively during a podiatry home visit. The treatment is very similar to what you would expect in a clinic setting. We bring professional equipment with us, including domiciliary drills and podiatry instruments, so nails can be reduced carefully and comfortably in your home.',
+			'How thick toenails are treated during a podiatry home visit, including nail reduction and when extra care may be needed.',
+		intro: 'Yes. Thick toenails can usually be treated during a home visit. We bring the same equipment used for routine clinic care, including drills and podiatry instruments, so nails can be reduced safely at home.',
 		image: {
 			src: '/images/podiatry-drill-gryphotic-toenail-blog.png',
 			alt: 'Podiatrist reducing a thick toenail with a drill during treatment',
@@ -48,8 +48,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Why thick toenails need proper treatment',
 				paragraphs: [
-					'Thick toenails are common, especially in older adults and people who have had long-term nail trauma, fungal nail changes, circulation issues, or difficulty reaching their feet safely.',
-					'When nails become very thick, they can press on footwear, cause pain, trap debris, and become difficult to manage at home. Trying to cut them yourself can also be risky if the nails are hard, curved, or close to the skin.',
+					'Thick toenails are common, especially in older adults and in people with long-term nail trauma, fungal nail changes, circulation issues or difficulty reaching their feet.',
+					'When nails become very thick, they can press on shoes, cause pain and become hard to manage safely at home.',
 				],
 				list: [
 					'Pain or pressure in shoes',
@@ -62,8 +62,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'How treatment works during a home visit',
 				paragraphs: [
-					'Home-visit treatment is designed to mirror the standard of care you would expect in a clinic. After assessing the nails and surrounding skin, we use professional podiatry tools to reduce nail thickness and improve comfort.',
-					'We bring domiciliary drills and appropriate instruments with us, which allow us to gently file down thickened nails in a controlled way. This helps reduce bulk, smooth rough edges, and make the nails easier to maintain between visits.',
+					'After checking the nails, skin and circulation, we use podiatry tools to reduce the nail thickness and improve comfort.',
+					'Portable drills and instruments let us file thick nails down in a controlled way, smooth rough edges and make them easier to manage between visits.',
 				],
 				list: [
 					'Assessment of the nail, skin, and circulation',
@@ -76,8 +76,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Is the treatment similar to a clinic appointment?',
 				paragraphs: [
-					'Yes. For routine management of thick toenails, the overall treatment is very similar to a clinic appointment. The main difference is simply that we bring the equipment to you.',
-					'For many patients, a home visit is more practical and less stressful than travelling to a clinic, especially when mobility, transport, or caring responsibilities make appointments harder to arrange.',
+					'Yes. For routine thick toenail care, treatment is much the same as it would be in clinic. The main difference is that we bring the equipment to you.',
+					'For many people, a home visit is easier than organising transport or getting to a clinic.',
 				],
 				list: [
 					'Professional podiatry instruments brought to your home',
@@ -89,8 +89,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'When extra care or referral may be needed',
 				paragraphs: [
-					'Some thick nails are linked to fungal infection, repeated trauma, or significant nail deformity such as gryphotic nails. In these cases, ongoing treatment may be recommended rather than a once-off trim.',
-					'If there are signs of infection, skin breakdown, significant pain, or concerns relating to circulation or diabetes, we may recommend additional management or liaise with your GP or other healthcare providers where appropriate.',
+					'Some thick nails are linked to fungal infection, repeated trauma or marked nail deformity such as gryphotic nails. In these cases, ongoing treatment may be better than a once-off trim.',
+					'If there are signs of infection, skin breakdown, significant pain, or concerns related to circulation or diabetes, extra care or referral may be needed.',
 				],
 				list: [
 					'Very curved or gryphotic nails',
@@ -103,8 +103,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Who home treatment is especially helpful for',
 				paragraphs: [
-					'Home visits are particularly helpful for people who cannot safely manage nail care on their own or who find it difficult to attend a clinic.',
-					'They are also useful for family members and carers arranging support for an older parent or someone with limited mobility.',
+					'Home visits are particularly helpful for people who cannot safely manage nail care on their own or who find clinic visits difficult.',
+					'They also make things easier for family members and carers organising support.',
 				],
 				list: [
 					'Older adults living at home',
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
 		],
 		cta: {
 			heading: 'Need help with thick toenails at home?',
-			body: 'Request an appointment online or call us to arrange a home visit for yourself or a family member.',
+			body: 'Request an appointment online or call to arrange a home visit for yourself or a family member.',
 			primaryLabel: 'Request appointment',
 			primaryHref: '/booking',
 			secondaryLabel: 'Call 0468 518 993',
@@ -129,10 +129,10 @@ export const blogPosts: BlogPost[] = [
 		title: "Home visit podiatry: What to Expect (and who it's for)",
 		date: '2026-01-17',
 		excerpt:
-			'Home-visit podiatry keeps care accessible when travel is tough. Here’s who it suits, what happens in a visit, and how to prepare.',
+			'Home-visit podiatry helps when getting to a clinic is hard. Here’s who it suits, what happens and how to prepare.',
 		description:
-			'Learn who podiatry home visits are suited to, what happens during an appointment, how to prepare, and how to book.',
-		intro: 'Home-visit podiatry brings professional foot care to your door. It’s designed for people who find clinic visits difficult or inconvenient, while maintaining the same clinical standards you’d expect in a podiatry practice.',
+			'Who podiatry home visits suit, what happens during an appointment, how to prepare and how to book.',
+		intro: 'Home-visit podiatry brings foot care to your door. It suits people who find clinic visits difficult, tiring or inconvenient.',
 		image: {
 			src: '/images/mobile-podiatrist-home-visit-adelaide.png',
 			alt: 'Podiatrist providing a home visit appointment in Adelaide',
@@ -143,7 +143,7 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Who home visits are suited to',
 				paragraphs: [
-					'Home visits are a good option when getting to a clinic is hard, uncomfortable, or unsafe. They can also help carers who need appointments that fit around busy schedules.',
+					'Home visits are a good option when getting to a clinic is hard, uncomfortable or unsafe. They also help carers who need appointments to fit around the day.',
 				],
 				list: [
 					'Older adults who prefer care at home',
@@ -156,7 +156,7 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'What happens in a typical visit',
 				paragraphs: [
-					'We complete an assessment, provide treatment, and leave you with clear, practical advice. If orthotics or follow-up care are needed, we organise everything with minimal disruption. Each visit is tailored to the individual, and the focus may vary depending on medical history, mobility, and current concerns.',
+					'We assess the problem, provide treatment and leave you with clear advice. If orthotics or follow-up care are needed, we explain the next step.',
 				],
 				list: [
 					'Health history review and goal setting',
@@ -169,7 +169,7 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'How to prepare for your appointment',
 				paragraphs: [
-					'A well-lit space is usually all that’s needed. We bring the necessary equipment with us. If you have health information or care plans, keep them nearby.',
+					'A well-lit space is usually all that is needed. We bring the equipment. If you have health information or care plans, keep them nearby.',
 				],
 				list: [
 					'A chair with good lighting and enough space for us to work',
@@ -180,13 +180,13 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Service area notes',
 				paragraphs: [
-					'We provide mobile podiatry across the Adelaide metro area. Regional South Australia may be available by arrangement — feel free to get in touch if you’re unsure whether we service your area.',
+					'We provide mobile podiatry across Adelaide metro. Regional South Australia may be available by arrangement if needed.',
 				],
 			},
 		],
 		cta: {
 			heading: 'Ready to book a home visit?',
-			body: 'Call us for current availability or book online and we will confirm the next suitable time.',
+			body: 'Call for availability or book online and we will confirm the next suitable time.',
 			primaryLabel: 'Book online',
 			primaryHref: '/booking',
 			secondaryLabel: 'Call 0468 518 993',
@@ -198,10 +198,10 @@ export const blogPosts: BlogPost[] = [
 		title: 'Why Regular Podiatry Is Important for Older Adults Living at Home',
 		date: '2026-02-26',
 		excerpt:
-			'Regular podiatry helps older adults stay mobile, stable, and independent at home by preventing small foot issues from becoming bigger health risks.',
+			'Regular podiatry helps older adults stay mobile and comfortable at home by picking up small problems early.',
 		description:
-			'Learn why ongoing podiatry care matters for older adults at home, including falls prevention, comfort, and independence.',
-		intro: 'Foot health plays an important role in mobility, balance, and independence. As we age, changes in circulation, skin integrity, joint health, and sensation can increase the risk of pain, wounds, and falls. Regular podiatry helps identify small problems early, before they become larger issues that affect safety and quality of life.',
+			'Why ongoing podiatry care matters for older adults at home, including comfort, mobility and falls prevention.',
+		intro: 'Foot health affects comfort, mobility and balance. As we age, changes in circulation, skin, joints and sensation can increase the risk of pain, wounds and falls. Regular podiatry helps pick up small problems before they get harder to manage.',
 		image: {
 			src: '/images/regular-podiatry-older-adults-home-visits-adelaide.png',
 			alt: 'Mobile podiatrist treating an older adult at home in Adelaide',
@@ -212,8 +212,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Why Foot Health Matters More With Age',
 				paragraphs: [
-					'Ageing affects the feet in several ways. Skin often becomes thinner, nails can thicken, joints may stiffen, and circulation can reduce over time.',
-					'Conditions such as diabetes, arthritis, and peripheral vascular disease can further increase risk, especially when changes in feet are not picked up early.',
+					'Ageing changes the feet in several ways. Skin often becomes thinner, nails can thicken, joints may stiffen and circulation can reduce.',
+					'Conditions such as diabetes, arthritis and peripheral vascular disease can increase that risk further.',
 				],
 				list: [
 					'Thickened or fungal nails',
@@ -226,8 +226,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Falls Risk and Foot Health',
 				paragraphs: [
-					'Falls are one of the most significant health risks for older Australians. While strength and balance are key factors, foot pain and poor footwear are often overlooked contributors.',
-					'Podiatry treatment can reduce painful pressure points, improve gait comfort, and support safer movement day to day.',
+					'Falls are a major health risk for older Australians. Foot pain and poor footwear are common contributors.',
+					'Podiatry can reduce painful pressure points, improve comfort and support safer day-to-day movement.',
 				],
 				list: [
 					'Reducing painful pressure points',
@@ -240,8 +240,8 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'Benefits of Regular Home Visits',
 				paragraphs: [
-					'For many older adults, travelling to a clinic can be tiring or impractical. Mobile podiatry delivers care in a familiar home environment, reducing disruption and stress.',
-					'Regular visits also support ongoing monitoring of skin, circulation, and nail health so changes can be managed early.',
+					'For many older adults, clinic travel is tiring or impractical. Home visits keep care simple and reduce disruption.',
+					'Regular visits also help monitor skin, circulation and nail health so changes can be managed early.',
 				],
 				list: [
 					'People with reduced mobility or balance concerns',
@@ -253,7 +253,7 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'What Ongoing Care May Involve',
 				paragraphs: [
-					'Each appointment is tailored to the individual. The goal is to maintain comfort, prevent complications, and support independence at home.',
+					'The aim is to maintain comfort, prevent complications and support independence at home.',
 				],
 				list: [
 					'Nail trimming and management of thickened nails',
@@ -267,7 +267,7 @@ export const blogPosts: BlogPost[] = [
 			{
 				heading: 'When to Consider Booking',
 				paragraphs: [
-					'Early intervention can prevent more complex problems down the track. Consider booking if you notice pain, skin changes, nail changes, or reduced confidence when walking.',
+					'Consider booking if you notice pain, skin changes, nail changes or reduced confidence when walking.',
 				],
 				list: [
 					'New or increasing foot pain',

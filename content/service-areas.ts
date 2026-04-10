@@ -32,13 +32,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/central-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry provides mobile and home-visit podiatry across Central Adelaide, including Adelaide CBD and surrounding inner-metro suburbs close to the city.',
+      'Mobile podiatry across Central Adelaide, including the CBD and nearby inner suburbs.',
     localContext:
-      'Central Adelaide visits cover Adelaide CBD, North Adelaide and the surrounding inner suburbs. They are especially helpful for apartment residents, older adults, people with limited mobility, and clients in high-density areas where parking, traffic or public transport can make clinic visits harder.',
+      'Central Adelaide visits cover the CBD, North Adelaide and surrounding inner suburbs. Home visits suit apartment residents, older adults and anyone who would rather avoid parking, traffic or public transport.',
     visitTypes: [
-      'Home visits for Adelaide CBD, inner-metro households and apartment living',
-      'Aged care and retirement living appointments',
-      'Regular podiatry care for clients wanting a convenient local service',
+      'Home visits across the CBD and inner suburbs',
+      'Aged care and retirement living visits',
+      'Routine podiatry without clinic travel',
     ],
     suburbs: [
       'Adelaide CBD',
@@ -64,7 +64,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/heel-arch-pain', label: 'Heel and arch pain treatment' },
     ],
     closingNote:
-      'If you are in Adelaide CBD or the surrounding inner suburbs and want to confirm access, parking or the right appointment type, contact us and we can point you in the right direction.',
+      'If you are in the CBD or inner suburbs and want to check access, parking or appointment options, contact us.',
   },
   {
     slug: 'eastern-adelaide',
@@ -76,13 +76,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/eastern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry provides mobile and home-visit podiatry across Eastern Adelaide, with visits available to homes, retirement living and supported care settings.',
+      'Mobile podiatry across Eastern Adelaide for homes, retirement living and supported care settings.',
     localContext:
-      'Eastern Adelaide includes a mix of established residential suburbs, family homes and older residents wanting to stay active and independent. Home visits can make ongoing podiatry care much easier when travelling to a clinic becomes inconvenient.',
+      'Eastern Adelaide includes family homes, older residents and people who want regular care without the trip to a clinic.',
     visitTypes: [
-      'Routine foot care and pain management at home',
-      'Appointments for older adults and supported living clients',
-      'Practical podiatry care without travel or waiting rooms',
+      'Routine foot care and foot pain treatment at home',
+      'Visits for older adults and supported living clients',
+      'Care without travel or waiting rooms',
     ],
     suburbs: [
       'Norwood',
@@ -108,7 +108,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/custom-orthotics', label: 'Custom orthotics' },
     ],
     closingNote:
-      'If you are in the eastern suburbs and want to check appointment availability for your location, call and we can confirm the best next step.',
+      'If you are in the eastern suburbs and want to check availability, call and we\'ll confirm.',
   },
   {
     slug: 'northern-adelaide',
@@ -120,13 +120,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/northern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry provides mobile and home-visit podiatry across Northern Adelaide suburbs, helping clients access care without needing to travel into clinic settings.',
+      'Mobile podiatry across Northern Adelaide, with home visits instead of clinic travel.',
     localContext:
-      'Northern Adelaide covers a broad spread of residential suburbs, family homes, retirement communities and supported living arrangements. Mobile visits can be especially useful where transport, mobility, time constraints or travel distance make clinic appointments harder to manage.',
+      'Northern Adelaide covers a wide area of homes, retirement communities and supported living settings. Home visits are often the easier option when transport, mobility or distance make clinic visits harder.',
     visitTypes: [
       'Home visits for private patients and older adults',
-      'Appointments for NDIS and supported living clients',
-      'Regular podiatry care across a wide northern-metro area',
+      'Visits for NDIS and supported living clients',
+      'Regular podiatry across the northern suburbs',
     ],
     suburbs: [
       'Elizabeth',
@@ -147,7 +147,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/ingrown-toenail', label: 'Ingrown toenail treatment' },
     ],
     closingNote:
-      'If you are located in the far northern suburbs or near the edge of metro coverage, contact us to confirm the best appointment options.',
+      'If you are in the far northern suburbs or near the edge of metro coverage, contact us to check your options.',
   },
   {
     slug: 'regional-south-australia',
@@ -159,13 +159,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/regional-south-australia`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry regularly travels beyond metro Adelaide for home-visit podiatry. Regional South Australia visits are available by arrangement depending on location, scheduling and travel requirements.',
+      'Regional South Australia visits are available by arrangement, depending on location and scheduling.',
     localContext:
-      'Regional appointments can be a practical option for clients who need ongoing podiatry but have limited local access, whether that is for older adults at home, supported care clients, or people needing regular treatment in towns outside metro Adelaide.',
+      'Regional visits can help when regular podiatry is needed and local options are limited, including for older adults at home and supported care clients.',
     visitTypes: [
       'Regional home visits by arrangement',
-      'Support for clients who need ongoing care outside metro Adelaide',
-      'Coordination around travel planning and appointment timing',
+      'Regular care outside metro Adelaide where available',
+      'Planning around travel and timing',
     ],
     suburbs: [
       'Whyalla',
@@ -201,7 +201,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/contact-us', label: 'Contact us to confirm availability' },
     ],
     closingNote:
-      'Regional coverage depends on your town and the current travel schedule, so calling first is the best way to confirm whether we can assist.',
+      'Regional coverage depends on your town and the current travel schedule, so call first to check availability.',
   },
   {
     slug: 'southern-adelaide',
@@ -213,13 +213,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/southern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry provides mobile and home-visit podiatry across Southern Adelaide suburbs, including coastal communities and surrounding residential areas.',
+      'Mobile podiatry across Southern Adelaide, including coastal and surrounding suburbs.',
     localContext:
-      'Southern Adelaide includes a wide spread of homes, coastal suburbs, retirement living and supported care settings. Home visits are often helpful for clients who want ongoing podiatry without the travel involved in getting to a clinic.',
+      'Southern Adelaide includes homes, coastal suburbs, retirement living and supported care settings. Home visits make regular podiatry simpler when clinic travel is a hassle.',
     visitTypes: [
-      'Home visits for coastal and southern-metro suburbs',
-      'Appointments for older adults, families and supported care clients',
-      'Practical in-home treatment for regular podiatry needs',
+      'Home visits across coastal and southern suburbs',
+      'Visits for older adults, families and supported care clients',
+      'Regular podiatry at home',
     ],
     suburbs: [
       'Noarlunga',
@@ -240,7 +240,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/support-at-home-podiatry', label: 'Support at Home Podiatry' },
     ],
     closingNote:
-      'If you are in the southern suburbs and want to confirm whether your address is covered, call and we can talk it through.',
+      'If you are in the southern suburbs and want to check your address, call and we\'ll confirm.',
   },
   {
     slug: 'western-adelaide',
@@ -252,13 +252,13 @@ export const serviceAreas: ServiceAreaContent[] = [
     canonical: `${baseUrl}/western-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Stride Podiatry provides mobile and home-visit podiatry across Western Adelaide suburbs, including coastal locations, established residential areas and communities around Port Adelaide.',
+      'Mobile podiatry across Western Adelaide, including coastal suburbs and the Port Adelaide area.',
     localContext:
-      'Western Adelaide home visits are useful for clients in beachside suburbs, retirement living, busy family homes and older adults who want treatment at home rather than travelling across the western corridor for appointments.',
+      'Western Adelaide visits suit beachside suburbs, retirement living, family homes and older adults who would rather be seen at home.',
     visitTypes: [
-      'Mobile podiatry for homes across western suburbs',
+      'Home visits across the western suburbs',
       'Visits to retirement living, residential care and supported settings',
-      'Care suited to clients who want convenience and continuity',
+      'Regular podiatry without clinic travel',
     ],
     suburbs: [
       'Henley Beach',
@@ -284,7 +284,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/custom-orthotics', label: 'Custom orthotics' },
     ],
     closingNote:
-      'If you are in the western suburbs and need help confirming the right service or appointment type, get in touch and we can guide you.',
+      'If you are in the western suburbs and want to check the right service or appointment type, get in touch.',
   },
 ];
 

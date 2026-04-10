@@ -11,18 +11,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'About Us | Stride Podiatry',
 	description:
-		'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
+		'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/about-us' },
 	openGraph: {
 		title: 'About Us | Stride Podiatry',
 		description:
-			'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
+			'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
 		url: 'https://www.stride-podiatry.com.au/about-us',
 	},
 	twitter: {
 		title: 'About Us | Stride Podiatry',
 		description:
-			'Meet Luke Wheldale of Stride Podiatry. Expert mobile podiatry care with a friendly, patient-first approach across Adelaide.',
+			'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
 	},
 };
 
@@ -41,9 +41,8 @@ export default function AboutPage() {
 					<p className="about-eyebrow">About</p>
 					<h1>Meet Stride Podiatry</h1>
 					<p>
-						Home-visit podiatry across Adelaide with a calm,
-						practical approach for private patients, aged care,
-						Support at Home and NDIS clients.
+						Home-visit podiatry across Adelaide for private
+						patients, aged care, Support at Home and NDIS clients.
 					</p>
 				</div>
 
@@ -62,26 +61,22 @@ export default function AboutPage() {
 
 					<div className="about-card">
 						<p className="about-card-eyebrow">The practice</p>
-						<h2>Mobile podiatry built around accessibility</h2>
+						<h2>Podiatry that comes to you</h2>
 						<p>
-							Stride Podiatry is a home-visit service dedicated to
-							providing high-quality podiatry care in the comfort of
-							your home. We support private patients as well as
-							Medicare Chronic Disease Management, Support at Home,
-							DVA and NDIS participants where applicable.
+							Stride Podiatry is a home-visit service. We see
+							private patients and also work with Medicare Chronic
+							Disease Management, Support at Home, DVA and NDIS
+							where applicable.
 						</p>
 						<p>
 							We regularly work with older adults, people with
-							mobility limitations and those managing chronic
-							conditions, and we are experienced coordinating care
-							with GPs, support coordinators, providers and families
-							when needed.
+							mobility issues and people managing chronic
+							conditions. We also coordinate with GPs, support
+							coordinators, providers and families when needed.
 						</p>
 						<p>
-							Our goal is to make foot care more accessible for
-							people who prefer or require in-home visits, from
-							routine treatment through to chronic condition
-							management and mobility support.
+							The focus is simple: good podiatry care without the
+							hassle of getting to a clinic.
 						</p>
 					</div>
 				</div>
@@ -89,19 +84,17 @@ export default function AboutPage() {
 				<div className="about-grid about-grid--reverse">
 					<div className="about-card">
 						<p className="about-card-eyebrow">About Luke</p>
-						<h2>Thoughtful, outcomes-focused care</h2>
+						<h2>About Luke Wheldale</h2>
 						<p>
 							Luke Wheldale completed his Bachelor of Podiatry at
 							the University of South Australia in 2020. Since then
 							he has worked across private practice, community care
-							and aged care, building a broad clinical foundation in
-							home-visit podiatry.
+							and aged care.
 						</p>
 						<p>
-							He is especially passionate about community podiatry
-							and helping people maintain mobility, comfort and
-							independence through practical treatment and clear
-							advice.
+							He has a strong interest in community podiatry and
+							helping people stay comfortable, mobile and
+							independent.
 						</p>
 						<p>
 							Outside of work, Luke enjoys time with his family,

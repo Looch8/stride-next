@@ -53,14 +53,14 @@ export default function BookingForm() {
 
       setMessage({
         type: 'success',
-        text: "Your booking request has been sent successfully! We'll contact you shortly to schedule your appointment.",
+        text: "Appointment request sent. We'll contact you shortly.",
       });
       setFormData(initialForm);
     } catch (error) {
       console.error('Error sending booking request', error);
       setMessage({
         type: 'error',
-        text: 'Failed to send your booking request. Please try again later or contact us directly.',
+        text: 'Appointment request failed to send. Please try again later or contact us directly.',
       });
     } finally {
       setIsLoading(false);
@@ -78,7 +78,7 @@ export default function BookingForm() {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            placeholder="Enter your full name"
+            placeholder="Your full name"
             required
           />
         </div>
@@ -91,7 +91,7 @@ export default function BookingForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Enter your phone number"
+            placeholder="Your phone number"
             required
           />
         </div>
@@ -104,7 +104,7 @@ export default function BookingForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your email address"
+            placeholder="Your email address"
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function BookingForm() {
             name="suburb"
             value={formData.suburb}
             onChange={handleChange}
-            placeholder="Enter your suburb"
+            placeholder="Your suburb"
           />
         </div>
 
@@ -159,7 +159,7 @@ export default function BookingForm() {
 					className={`submit-button ${isLoading ? 'loading' : ''}`}
 					disabled={isLoading}
 				>
-					{isLoading ? 'Sending…' : 'Request Appointment'}
+					{isLoading ? 'Sending…' : 'Request appointment'}
 				</button>
       </form>
 

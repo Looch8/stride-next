@@ -34,18 +34,18 @@ const contactLD = {
 export const metadata: Metadata = {
 	title: 'Contact Us | Stride Podiatry',
 	description:
-		'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+		'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us' },
 	openGraph: {
 		title: 'Contact Us | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+			'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
 		url: 'https://www.stride-podiatry.com.au/contact-us',
 	},
 	twitter: {
 		title: 'Contact Us | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to arrange a mobile podiatry visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+			'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
 	},
 };
 
@@ -69,8 +69,8 @@ export default function ContactPage() {
 					<p className="contact-eyebrow">Contact</p>
 					<h1>Get in touch</h1>
 					<p>
-						Call, email or send a quick message to arrange mobile
-						podiatry care across Adelaide.
+						Call, email or send a message to book a home visit or
+						ask a question.
 					</p>
 				</div>
 
@@ -81,8 +81,8 @@ export default function ContactPage() {
 								<p className="contact-eyebrow">Fastest option</p>
 								<h2>Call or text for availability</h2>
 								<p className="contact-lead">
-									We can quickly confirm suburbs, funding pathways
-									and suitable appointment times.
+									We can confirm your suburb, funding options and
+									next available times.
 								</p>
 							</div>
 							<div className="contact-hero-actions">
@@ -95,7 +95,7 @@ export default function ContactPage() {
 										0468 518 993
 									</a>
 									<p className="contact-muted">
-										Fastest way to organise a visit.
+										The quickest way to book.
 									</p>
 								</div>
 								<div className="contact-stat-card">
@@ -107,7 +107,7 @@ export default function ContactPage() {
 										luke@stride-podiatry.com.au
 									</a>
 									<p className="contact-muted">
-										Useful for referrals or longer enquiries.
+										Best for referrals or longer messages.
 									</p>
 								</div>
 							</div>
@@ -127,8 +127,8 @@ export default function ContactPage() {
 							<p className="contact-eyebrow">Message</p>
 							<h2>Send a quick message</h2>
 							<p className="contact-muted">
-								Prefer email? Share your details and we&apos;ll be
-								in touch.
+								Prefer email? Send your details and we&apos;ll get
+								back to you.
 							</p>
 							<ContactForm />
 						</div>
@@ -138,13 +138,13 @@ export default function ContactPage() {
 								<h3>Service area</h3>
 								<p>
 									Adelaide metro and regional South Australia by
-									arrangement. View our{' '}
+									arrangement. See our{' '}
 									<Link href="/service-areas">service areas</Link>{' '}
-									page for more detail.
+									page for details.
 								</p>
 								<p className="contact-muted">
-									Not sure if we cover your suburb? Call and
-									we&apos;ll confirm.
+									Not sure if we cover your suburb? Call and we&apos;ll
+									check.
 								</p>
 							</div>
 
@@ -156,9 +156,9 @@ export default function ContactPage() {
 								<div className="contact-block">
 									<h3>Helpful links</h3>
 									<p>
-										Read our <Link href="/faq">FAQ page</Link> for quick
-										answers, or use the booking form if you&apos;re ready to
-										request an appointment.
+										Read the <Link href="/faq">FAQ page</Link> for quick
+										answers, or use the booking form if you&apos;re ready
+										to request an appointment.
 									</p>
 									<p>
 										You can also explore{' '}

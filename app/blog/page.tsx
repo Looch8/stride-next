@@ -14,18 +14,18 @@ const formatDate = (value: string) =>
 export const metadata: Metadata = {
 	title: 'Blog | Stride Podiatry',
 	description:
-		'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
+		'Practical podiatry advice from Stride Podiatry, including home visits, foot pain and foot care in Adelaide.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/blog' },
 	openGraph: {
 		title: 'Blog | Stride Podiatry',
 		description:
-			'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
+			'Practical podiatry advice from Stride Podiatry, including home visits, foot pain and foot care in Adelaide.',
 		url: 'https://www.stride-podiatry.com.au/blog',
 	},
 	twitter: {
 		title: 'Blog | Stride Podiatry',
 		description:
-			'Practical tips and updates from Stride Podiatry. Learn about mobile podiatry care, home visits, and foot health in Adelaide.',
+			'Practical podiatry advice from Stride Podiatry, including home visits, foot pain and foot care in Adelaide.',
 	},
 };
 
@@ -38,8 +38,8 @@ export default function BlogIndexPage() {
 				<div className="blog-header">
 					<h1>Blog</h1>
 					<p>
-						Advice and insights on podiatry, home visits, industry
-						and aged care.
+						Practical advice on foot care, home visits and related
+						podiatry topics.
 					</p>
 				</div>
 

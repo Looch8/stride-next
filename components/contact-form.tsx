@@ -53,14 +53,14 @@ export default function ContactForm() {
 
       setStatus({
         type: 'success',
-        text: "Your message has been sent successfully! We'll get back to you soon.",
+        text: "Message sent. We'll get back to you soon.",
       });
       setFormData(initialForm);
     } catch (error) {
       console.error('Error sending contact message', error);
       setStatus({
         type: 'error',
-        text: 'Failed to send your message. Please try again later or contact us directly.',
+        text: 'Message failed to send. Please try again later or contact us directly.',
       });
     } finally {
       setIsLoading(false);
@@ -76,7 +76,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your full name"
+            placeholder="Your full name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -88,7 +88,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
             required
@@ -100,7 +100,7 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Enter your phone number"
+            placeholder="Your phone number"
             value={formData.phone}
             onChange={handleChange}
           />
@@ -124,7 +124,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            placeholder="How can we help? Ask us any question and we’ll get back to you."
+            placeholder="How can we help?"
             rows={5}
             value={formData.message}
             onChange={handleChange}
@@ -158,7 +158,7 @@ export default function ContactForm() {
           className={`submit-button ${isLoading ? 'loading' : ''}`}
           disabled={isLoading}
         >
-          {isLoading ? 'Sending…' : 'Send Message'}
+          {isLoading ? 'Sending…' : 'Send message'}
         </button>
       </form>
 

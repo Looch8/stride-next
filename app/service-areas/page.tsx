@@ -15,20 +15,20 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Service Areas | Stride Podiatry',
 	description:
-		'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
+		'Mobile podiatry across Adelaide metro and regional South Australia. Check service areas for suburb coverage and home-visit availability.',
 	alternates: {
 		canonical: 'https://www.stride-podiatry.com.au/service-areas',
 	},
 	openGraph: {
 		title: 'Service Areas | Stride Podiatry',
 		description:
-			'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
+			'Mobile podiatry across Adelaide metro and regional South Australia. Check service areas for suburb coverage and home-visit availability.',
 		url: 'https://www.stride-podiatry.com.au/service-areas',
 	},
 	twitter: {
 		title: 'Service Areas | Stride Podiatry',
 		description:
-			'Mobile podiatry across Adelaide metro and regional South Australia. View our area pages for Northern, Southern, Eastern, Western, Central Adelaide, and Regional South Australia coverage.',
+			'Mobile podiatry across Adelaide metro and regional South Australia. Check service areas for suburb coverage and home-visit availability.',
 	},
 };
 
@@ -45,12 +45,11 @@ export default function ServiceAreasPage() {
 			<div className="service-areas-container">
 				<div className="service-areas-header">
 					<p className="service-areas-eyebrow">Service areas</p>
-					<h1>Areas we service across Adelaide and beyond</h1>
+					<h1>Where we visit</h1>
 					<p className="service-areas-intro">
-						Stride Podiatry provides mobile podiatry across Adelaide metro
-						suburbs, with regional South Australia visits available by
-						arrangement. Browse by area to check local coverage, suburbs and
-						the types of home visits we commonly provide.
+						Stride Podiatry covers Adelaide metro, with regional South
+						Australia by arrangement. Browse by area to check suburb
+						coverage.
 					</p>
 				</div>
 
@@ -74,9 +73,8 @@ export default function ServiceAreasPage() {
 					<p className="service-area-card-eyebrow">Need help?</p>
 					<h2>Not sure which area fits your suburb?</h2>
 					<p>
-						If you are near the edge of metro coverage or want to confirm a
-						regional visit, contact us and we can point you in the right
-						direction.
+						If you are near the edge of metro coverage, or need a
+						regional visit, contact us and we&apos;ll check.
 					</p>
 					<div className="service-area-actions">
 						<Link href="/contact-us" className="book-now-button">

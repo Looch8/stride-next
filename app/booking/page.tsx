@@ -12,18 +12,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Request Appointment | Stride Podiatry',
 	description:
-		'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+		'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking' },
 	openGraph: {
 		title: 'Request Appointment | Stride Podiatry',
 		description:
-			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+			'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 		url: 'https://www.stride-podiatry.com.au/booking',
 	},
 	twitter: {
 		title: 'Request Appointment | Stride Podiatry',
 		description:
-			'Request a mobile podiatry home visit in Adelaide. No referral required for private bookings. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+			'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
 	},
 };
 
@@ -40,9 +40,8 @@ export default function BookingPage() {
 					<p className="booking-eyebrow">Booking</p>
 					<h1>Request an appointment</h1>
 					<p>
-						Send through your details and we&apos;ll contact you to
-						confirm a suitable time, answer questions and make sure
-						the visit is the right fit for your needs.
+						Send your details and we&apos;ll contact you to confirm a
+						time and answer any questions.
 					</p>
 				</div>
 
@@ -51,7 +50,7 @@ export default function BookingPage() {
 						<p className="booking-panel-eyebrow">Appointment Request form</p>
 						<h2>Tell us what you need</h2>
 						<p className="booking-muted">
-							Private bookings are welcome, and we can also discuss
+							Private bookings are welcome. We can also help with
 							Medicare CDM, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
 							<Link href="/services/dva-podiatry">DVA</Link>,{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>{' '}
@@ -67,19 +66,19 @@ export default function BookingPage() {
 					<div className="booking-sidebar">
 						<div className="booking-panel booking-panel--info">
 							<p className="booking-panel-eyebrow">What happens next</p>
-							<h2>Simple next steps</h2>
+							<h2>What happens next</h2>
 							<div className="booking-info-list">
 								<div className="booking-info-item">
 									<span className="booking-info-step">1</span>
-									<p>We review the request.</p>
+									<p>We review your request.</p>
 								</div>
 								<div className="booking-info-item">
 									<span className="booking-info-step">2</span>
-									<p>We contact you to gather any further information required and arrange a suitable appointment.</p>
+									<p>We contact you if we need more details and offer a time.</p>
 								</div>
 								<div className="booking-info-item">
 									<span className="booking-info-step">3</span>
-									<p>You receive clear next-step information before the home visit.</p>
+									<p>You get the details before the visit.</p>
 								</div>
 							</div>
 						</div>
@@ -88,9 +87,8 @@ export default function BookingPage() {
 							<p className="booking-panel-eyebrow">Prefer to call?</p>
 							<h2>Fastest way to book</h2>
 							<p className="booking-muted">
-								Call if you want to check suburb coverage, discuss
-								funding options or ask a quick question before
-								submitting the form.
+								Call if you want to check suburb coverage, talk
+								through funding, or ask a quick question first.
 							</p>
 							<p className="booking-muted">
 								Useful if you need{' '}
