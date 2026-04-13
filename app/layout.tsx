@@ -70,7 +70,6 @@ const websiteJsonLd = {
 	'@type': 'WebSite',
 	'@id': `${siteUrl}/#website`,
 	name: 'Stride Podiatry',
-	alternateName: ['stride-podiatry.com.au'],
 	url: homeUrl,
 	publisher: {
 		'@id': `${siteUrl}/#business`,
@@ -135,6 +134,9 @@ export const metadata: Metadata = {
 				type: 'image/png',
 			},
 		],
+	},
+	appleWebApp: {
+		title: 'Stride Podiatry',
 	},
 
 	manifest: '/site.webmanifest',
