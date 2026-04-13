@@ -5,7 +5,7 @@ import FAQList, { type FAQItem } from '@/components/faq-list';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
 	{ name: 'FAQ', url: 'https://www.stride-podiatry.com.au/faq' },
 ]);
 

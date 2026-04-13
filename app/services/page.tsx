@@ -6,7 +6,7 @@ import { services } from '@/content/services';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-  { name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+  { name: 'Home', url: 'https://www.stride-podiatry.com.au' },
   { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
 ]);
 
@@ -32,7 +32,7 @@ const servicesLd = {
       provider: {
         '@type': 'MedicalBusiness',
         name: 'Stride Podiatry',
-        url: 'https://www.stride-podiatry.com.au/',
+        url: 'https://www.stride-podiatry.com.au',
         address: businessAddress,
       },
     },

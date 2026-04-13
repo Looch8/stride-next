@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-  { name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+  { name: 'Home', url: 'https://www.stride-podiatry.com.au' },
   { name: 'Fees', url: 'https://www.stride-podiatry.com.au/fees' },
 ]);
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
 	{ name: 'Referral', url: 'https://www.stride-podiatry.com.au/referral' },
 ]);
 

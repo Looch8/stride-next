@@ -8,7 +8,7 @@ import { socialLinks } from '@/content/social-links';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
 	{ name: 'Contact', url: 'https://www.stride-podiatry.com.au/contact-us' },
 ]);
 

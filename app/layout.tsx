@@ -10,7 +10,7 @@ import { siteUrl } from '@/content/services';
 
 import './globals.css';
 
-const homeUrl = `${siteUrl}/`;
+const homeUrl = siteUrl;
 
 const nunito = Nunito({
 	subsets: ['latin'],

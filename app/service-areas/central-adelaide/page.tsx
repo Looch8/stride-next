@@ -9,7 +9,7 @@ const area = getRequiredServiceAreaBySlug('central-adelaide');
 const canonical = area.canonical;
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au/' },
+	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
 	{
 		name: 'Service Areas',
 		url: 'https://www.stride-podiatry.com.au/service-areas',
