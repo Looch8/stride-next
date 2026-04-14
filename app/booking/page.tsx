@@ -10,20 +10,20 @@ const breadcrumbsLd = buildBreadcrumbList([
 ]);
 
 export const metadata: Metadata = {
-	title: 'Request Appointment | Stride Podiatry',
+	title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 	description:
-		'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+		'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/booking' },
 	openGraph: {
-		title: 'Request Appointment | Stride Podiatry',
+		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 		description:
-			'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
 		url: 'https://www.stride-podiatry.com.au/booking',
 	},
 	twitter: {
-		title: 'Request Appointment | Stride Podiatry',
+		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 		description:
-			'Request a mobile podiatry home visit in Adelaide. Private bookings welcome. Medicare CDM requires a GP referral. NDIS plan- and self-managed accepted.',
+			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
 	},
 };
 
@@ -40,8 +40,8 @@ export default function BookingPage() {
 					<p className="booking-eyebrow">Booking</p>
 					<h1>Request an appointment</h1>
 					<p>
-						Send your details and we&apos;ll contact you to confirm a
-						time and answer any questions.
+						Send your details and we&apos;ll get back to confirm timing,
+						suburb coverage and anything else we need before the visit.
 					</p>
 				</div>
 
@@ -50,8 +50,8 @@ export default function BookingPage() {
 						<p className="booking-panel-eyebrow">Appointment Request form</p>
 						<h2>Tell us what you need</h2>
 						<p className="booking-muted">
-							Private bookings are welcome. We can also help with
-							Medicare CDM, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
+							Private bookings are welcome. We can also help with Medicare
+							CDM, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
 							<Link href="/services/dva-podiatry">DVA</Link>,{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>{' '}
 							and{' '}
@@ -87,8 +87,8 @@ export default function BookingPage() {
 							<p className="booking-panel-eyebrow">Prefer to call?</p>
 							<h2>Fastest way to book</h2>
 							<p className="booking-muted">
-								Call if you want to check suburb coverage, talk
-								through funding, or ask a quick question first.
+								Call if you want to check suburb coverage, discuss funding,
+								or talk through the right type of appointment first.
 							</p>
 							<p className="booking-muted">
 								Useful if you need{' '}

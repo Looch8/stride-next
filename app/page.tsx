@@ -6,10 +6,10 @@ import { services } from '@/content/services';
 
 export const metadata: Metadata = {
 	title: {
-		absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		absolute: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 	},
 	description:
-		'Mobile podiatry home visits across Adelaide for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+		'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 	alternates: { canonical: 'https://www.stride-podiatry.com.au' },
 	openGraph: {
 		siteName: 'Stride Podiatry',
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Mobile podiatry home visits across Adelaide for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
 		url: 'https://www.stride-podiatry.com.au',
 	},
 	twitter: {
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Mobile podiatry home visits across Adelaide for private patients, NDIS, DVA, Support at Home, aged care, foot pain and routine foot care.',
+			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
 	},
 };
 
@@ -74,12 +74,12 @@ export default function HomePage() {
 				<div className="hero-content hero-shell">
 					<div className="hero-copy">
 						<p className="hero-eyebrow">
-							For homes, aged care and supported living
+							Home visits across Adelaide metro
 						</p>
-						<h1 className="title">Mobile Podiatry Care in Adelaide</h1>
+						<h1 className="title">Home-Visit Podiatry in Adelaide</h1>
 						<p className="hero-subtitle">
-							Home visits for routine foot care, foot pain, diabetic foot
-							checks and ongoing podiatry support.
+							Practical podiatry at home for routine foot care, foot pain,
+							diabetic foot checks and ongoing treatment.
 						</p>
 						<div className="hero-cta-group">
 							<Link
@@ -117,8 +117,9 @@ export default function HomePage() {
 						<p className="section-kicker">Your podiatrist</p>
 						<h2>Calm, practical podiatry at home</h2>
 						<p>
-							Stride Podiatry makes it easier to get treatment without the
-							trip to a clinic.
+							Stride Podiatry provides podiatry home visits across Adelaide,
+							so treatment is easier to organise when getting to a clinic is
+							inconvenient.
 						</p>
 						<p>
 							Private patients can book directly. Visits are also available
@@ -139,8 +140,8 @@ export default function HomePage() {
 						<p className="section-kicker">Why people choose Stride</p>
 						<h2>Home visits that are easy to organise</h2>
 						<p>
-							We provide full <strong>mobile podiatry</strong> care at home,
-							in aged care, or in supported living. That includes{' '}
+							We provide treatment at home, in aged care, and in supported
+							living. Common reasons people book include{' '}
 							<Link href="/services/ingrown-toenail">ingrown toenail care</Link>
 							, <Link href="/services/heel-arch-pain">heel pain treatment</Link>
 							,{' '}
@@ -185,7 +186,7 @@ export default function HomePage() {
 						<h2>Across Adelaide metro, with regional SA by arrangement</h2>
 						<p>
 							Check the <Link href="/service-areas">service areas</Link> page
-							if you want to confirm your suburb.
+							to confirm suburb coverage for home visits.
 						</p>
 						<div className="area-grid">
 							{serviceAreas.map((area) => (
@@ -208,7 +209,8 @@ export default function HomePage() {
 					<p className="section-kicker">Services</p>
 					<h2>Popular mobile podiatry services</h2>
 					<p className="section-intro">
-						Common reasons people book a home visit.
+						The main services people look for when they need a podiatrist to
+						come to them.
 					</p>
 					<div className="service-preview-grid">
 						{featuredServices.map((service) => (
@@ -247,7 +249,7 @@ export default function HomePage() {
 					<h2>Need a podiatrist to come to you?</h2>
 					<p>
 						Request a <strong>home visit</strong>, or get in touch first if
-						you need help with the right booking pathway.
+						you want to check your suburb, referral pathway or funding option.
 					</p>
 					<Link href="/booking" className="book-now-button">
 						Request a Home Visit

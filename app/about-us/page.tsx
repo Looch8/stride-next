@@ -9,20 +9,20 @@ const breadcrumbsLd = buildBreadcrumbList([
 ]);
 
 export const metadata: Metadata = {
-	title: 'About Us | Stride Podiatry',
+	title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',
 	description:
-		'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
+		'Meet Luke Wheldale, the podiatrist behind Stride Podiatry. Home-visit podiatry across Adelaide for private patients, aged care and funded care.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/about-us' },
 	openGraph: {
-		title: 'About Us | Stride Podiatry',
+		title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
+			'Meet Luke Wheldale, the podiatrist behind Stride Podiatry. Home-visit podiatry across Adelaide for private patients, aged care and funded care.',
 		url: 'https://www.stride-podiatry.com.au/about-us',
 	},
 	twitter: {
-		title: 'About Us | Stride Podiatry',
+		title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Meet Luke Wheldale of Stride Podiatry. Mobile podiatry home visits across Adelaide for private patients, aged care and funded care.',
+			'Meet Luke Wheldale, the podiatrist behind Stride Podiatry. Home-visit podiatry across Adelaide for private patients, aged care and funded care.',
 	},
 };
 
@@ -41,8 +41,9 @@ export default function AboutPage() {
 					<p className="about-eyebrow">About</p>
 					<h1>Meet Stride Podiatry</h1>
 					<p>
-						Home-visit podiatry across Adelaide for private
-						patients, aged care, Support at Home and NDIS clients.
+						Stride Podiatry is a mobile podiatry service based in Adelaide,
+						providing home visits for private patients, aged care and funded
+						care clients.
 					</p>
 				</div>
 
@@ -63,20 +64,19 @@ export default function AboutPage() {
 						<p className="about-card-eyebrow">The practice</p>
 						<h2>Podiatry that comes to you</h2>
 						<p>
-							Stride Podiatry is a home-visit service. We see
-							private patients and also work with Medicare Chronic
-							Disease Management, Support at Home, DVA and NDIS
-							where applicable.
+							Stride Podiatry is built around home visits. We see private
+							patients and also work with Medicare Chronic Disease
+							Management, Support at Home, DVA and NDIS where applicable.
 						</p>
 						<p>
-							We regularly work with older adults, people with
-							mobility issues and people managing chronic
-							conditions. We also coordinate with GPs, support
-							coordinators, providers and families when needed.
+							A lot of our work involves older adults, people with mobility
+							issues, and clients who need regular foot care at home. We also
+							coordinate with GPs, support coordinators, providers and
+							families when needed.
 						</p>
 						<p>
-							The focus is simple: good podiatry care without the
-							hassle of getting to a clinic.
+							The aim is straightforward treatment, clear advice and a service
+							that fits around the patient instead of the other way around.
 						</p>
 					</div>
 				</div>
@@ -92,9 +92,9 @@ export default function AboutPage() {
 							and aged care.
 						</p>
 						<p>
-							He has a strong interest in community podiatry and
-							helping people stay comfortable, mobile and
-							independent.
+							He has a strong interest in community podiatry, routine foot
+							care, painful skin and nail conditions, and helping people stay
+							comfortable and mobile at home.
 						</p>
 						<p>
 							Outside of work, Luke enjoys time with his family,

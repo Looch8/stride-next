@@ -32,20 +32,20 @@ const contactLD = {
 };
 
 export const metadata: Metadata = {
-	title: 'Contact Us | Stride Podiatry',
+	title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 	description:
-		'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+		'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
 	alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us' },
 	openGraph: {
-		title: 'Contact Us | Stride Podiatry',
+		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
 		url: 'https://www.stride-podiatry.com.au/contact-us',
 	},
 	twitter: {
-		title: 'Contact Us | Stride Podiatry',
+		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to book a mobile podiatry home visit in Adelaide. Call 0468 518 993 or email luke@stride-podiatry.com.au.',
+			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
 	},
 };
 
@@ -67,10 +67,10 @@ export default function ContactPage() {
 			<div className="contact-container">
 				<div className="contact-header">
 					<p className="contact-eyebrow">Contact</p>
-					<h1>Get in touch</h1>
+					<h1>Contact Stride Podiatry</h1>
 					<p>
-						Call, email or send a message to book a home visit or
-						ask a question.
+						Call, email or send a message if you want to book a home visit,
+						check your suburb, or ask about referrals and funding.
 					</p>
 				</div>
 
@@ -81,8 +81,8 @@ export default function ContactPage() {
 								<p className="contact-eyebrow">Fastest option</p>
 								<h2>Call or text for availability</h2>
 								<p className="contact-lead">
-									We can confirm your suburb, funding options and
-									next available times.
+									We can confirm suburb coverage, discuss the type of visit
+									you need, and let you know the next available times.
 								</p>
 							</div>
 							<div className="contact-hero-actions">
@@ -137,8 +137,8 @@ export default function ContactPage() {
 							<div className="contact-block">
 								<h3>Service area</h3>
 								<p>
-									Adelaide metro and regional South Australia by
-									arrangement. See our{' '}
+									Adelaide metro and regional South Australia by arrangement.
+									See our{' '}
 									<Link href="/service-areas">service areas</Link>{' '}
 									page for details.
 								</p>
@@ -153,24 +153,24 @@ export default function ContactPage() {
 								<p>Monday to Friday, 8:00am to 5:00pm</p>
 							</div>
 
-								<div className="contact-block">
-									<h3>Helpful links</h3>
-									<p>
-										Read the <Link href="/faq">FAQ page</Link> for quick
-										answers, or use the booking form if you&apos;re ready
-										to request an appointment.
-									</p>
-									<p>
-										You can also explore{' '}
-										<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
-										<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
-										and{' '}
-										<Link href="/services/support-at-home-podiatry">
-											Support at Home podiatry
-										</Link>
-										.
-									</p>
-								</div>
+							<div className="contact-block">
+								<h3>Helpful links</h3>
+								<p>
+									Read the <Link href="/faq">FAQ page</Link> for quick
+									answers, or use the booking form if you&apos;re ready
+									to request an appointment.
+								</p>
+								<p>
+									You can also explore{' '}
+									<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
+									<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+									and{' '}
+									<Link href="/services/support-at-home-podiatry">
+										Support at Home podiatry
+									</Link>
+									, depending on what kind of care you need.
+								</p>
+							</div>
 
 							<div className="contact-block">
 								<h3>Social</h3>

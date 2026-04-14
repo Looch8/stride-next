@@ -25,16 +25,16 @@ export const serviceAreas: ServiceAreaContent[] = [
   {
     slug: 'central-adelaide',
     name: 'Central Adelaide',
-    pageTitle: 'Central Adelaide podiatry service area',
-    metaTitle: 'Central Adelaide Podiatry | Stride Podiatry',
+    pageTitle: 'Mobile podiatrist in Central Adelaide',
+    metaTitle: 'Mobile Podiatrist Central Adelaide | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry in Central Adelaide including Adelaide CBD, North Adelaide, Prospect, Walkerville, Mile End, Goodwood and nearby inner-metro suburbs.',
+      'Home-visit podiatry in Central Adelaide, including Adelaide CBD, North Adelaide, Prospect, Walkerville, Mile End and nearby inner suburbs.',
     canonical: `${baseUrl}/central-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Mobile podiatry across Central Adelaide, including the CBD and nearby inner suburbs.',
+      'Home-visit podiatry across Central Adelaide, including the CBD and nearby inner suburbs.',
     localContext:
-      'Central Adelaide visits cover the CBD, North Adelaide and surrounding inner suburbs. Home visits suit apartment residents, older adults and anyone who would rather avoid parking, traffic or public transport.',
+      'Central Adelaide visits cover the CBD, North Adelaide and surrounding inner suburbs. These bookings often suit apartment residents, older adults and anyone who would rather avoid parking, traffic or public transport.',
     visitTypes: [
       'Home visits across the CBD and inner suburbs',
       'Aged care and retirement living visits',
@@ -64,21 +64,21 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/heel-arch-pain', label: 'Heel and arch pain treatment' },
     ],
     closingNote:
-      'If you are in the CBD or inner suburbs and want to check access, parking or appointment options, contact us.',
+      'If you are in the CBD or inner suburbs and want to check access, parking or appointment times, get in touch.',
   },
   {
     slug: 'eastern-adelaide',
     name: 'Eastern Adelaide',
-    pageTitle: 'Eastern Adelaide service area',
-    metaTitle: 'Eastern Adelaide Podiatry | Stride Podiatry',
+    pageTitle: 'Mobile podiatrist in Eastern Adelaide',
+    metaTitle: 'Mobile Podiatrist Eastern Adelaide | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry in Eastern Adelaide including Norwood, Burnside, Magill, Payneham, Campbelltown and surrounding suburbs.',
+      'Home-visit podiatry in Eastern Adelaide, including Norwood, Burnside, Magill, Payneham, Campbelltown and surrounding suburbs.',
     canonical: `${baseUrl}/eastern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Mobile podiatry across Eastern Adelaide for homes, retirement living and supported care settings.',
+      'Home-visit podiatry across Eastern Adelaide for homes, retirement living and supported care settings.',
     localContext:
-      'Eastern Adelaide includes family homes, older residents and people who want regular care without the trip to a clinic.',
+      'Eastern Adelaide visits cover established suburbs where people often want regular podiatry without adding another clinic trip to the week.',
     visitTypes: [
       'Routine foot care and foot pain treatment at home',
       'Visits for older adults and supported living clients',
@@ -108,19 +108,19 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/custom-orthotics', label: 'Custom orthotics' },
     ],
     closingNote:
-      'If you are in the eastern suburbs and want to check availability, call and we\'ll confirm.',
+      'If you are in the eastern suburbs and want to check timing or suburb coverage, call and we\'ll confirm.',
   },
   {
     slug: 'northern-adelaide',
     name: 'Northern Adelaide',
-    pageTitle: 'Northern Adelaide service area',
-    metaTitle: 'Northern Adelaide Podiatry | Stride Podiatry',
+    pageTitle: 'Mobile podiatrist in Northern Adelaide',
+    metaTitle: 'Mobile Podiatrist Northern Adelaide | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry in Northern Adelaide including Elizabeth, Salisbury, Modbury, Tea Tree Gully, Golden Grove and surrounding suburbs.',
+      'Home-visit podiatry in Northern Adelaide, including Elizabeth, Salisbury, Modbury, Tea Tree Gully, Golden Grove and surrounding suburbs.',
     canonical: `${baseUrl}/northern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Mobile podiatry across Northern Adelaide, with home visits instead of clinic travel.',
+      'Home-visit podiatry across Northern Adelaide, with treatment provided at home instead of in clinic.',
     localContext:
       'Northern Adelaide covers a wide area of homes, retirement communities and supported living settings. Home visits are often the easier option when transport, mobility or distance make clinic visits harder.',
     visitTypes: [
@@ -147,15 +147,15 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/ingrown-toenail', label: 'Ingrown toenail treatment' },
     ],
     closingNote:
-      'If you are in the far northern suburbs or near the edge of metro coverage, contact us to check your options.',
+      'If you are in the far northern suburbs or near the edge of metro coverage, contact us and we can check your options.',
   },
   {
     slug: 'regional-south-australia',
     name: 'Regional South Australia',
-    pageTitle: 'Regional South Australia service area',
-    metaTitle: 'Regional South Australia Podiatry | Stride Podiatry',
+    pageTitle: 'Podiatry home visits in Regional South Australia',
+    metaTitle: 'Regional South Australia Home-Visit Podiatry | Stride Podiatry',
     metaDescription:
-      'Mobile podiatry for regional South Australia by arrangement. Contact Stride Podiatry to confirm coverage and availability for your town.',
+      'Podiatry home visits for regional South Australia by arrangement. Contact Stride Podiatry to confirm coverage and availability for your town.',
     canonical: `${baseUrl}/regional-south-australia`,
     eyebrow: 'Service area',
     intro:
@@ -206,14 +206,14 @@ export const serviceAreas: ServiceAreaContent[] = [
   {
     slug: 'southern-adelaide',
     name: 'Southern Adelaide',
-    pageTitle: 'Southern Adelaide service area',
-    metaTitle: 'Southern Adelaide Podiatry | Stride Podiatry',
+    pageTitle: 'Mobile podiatrist in Southern Adelaide',
+    metaTitle: 'Mobile Podiatrist Southern Adelaide | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry in Southern Adelaide including Noarlunga, Marion, Brighton, Glenelg, Hallett Cove and surrounding suburbs.',
+      'Home-visit podiatry in Southern Adelaide, including Noarlunga, Marion, Brighton, Glenelg, Hallett Cove and surrounding suburbs.',
     canonical: `${baseUrl}/southern-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Mobile podiatry across Southern Adelaide, including coastal and surrounding suburbs.',
+      'Home-visit podiatry across Southern Adelaide, including coastal and surrounding suburbs.',
     localContext:
       'Southern Adelaide includes homes, coastal suburbs, retirement living and supported care settings. Home visits make regular podiatry simpler when clinic travel is a hassle.',
     visitTypes: [
@@ -240,19 +240,19 @@ export const serviceAreas: ServiceAreaContent[] = [
       { href: '/services/support-at-home-podiatry', label: 'Support at Home Podiatry' },
     ],
     closingNote:
-      'If you are in the southern suburbs and want to check your address, call and we\'ll confirm.',
+      'If you are in the southern suburbs and want to check your address or likely timing, call and we\'ll confirm.',
   },
   {
     slug: 'western-adelaide',
     name: 'Western Adelaide',
-    pageTitle: 'Western Adelaide service area',
-    metaTitle: 'Western Adelaide Podiatry | Stride Podiatry',
+    pageTitle: 'Mobile podiatrist in Western Adelaide',
+    metaTitle: 'Mobile Podiatrist Western Adelaide | Stride Podiatry',
     metaDescription:
-      'Mobile and home-visit podiatry in Western Adelaide including Henley Beach, West Lakes, Port Adelaide, Woodville, Semaphore and surrounding suburbs.',
+      'Home-visit podiatry in Western Adelaide, including Henley Beach, West Lakes, Port Adelaide, Woodville, Semaphore and surrounding suburbs.',
     canonical: `${baseUrl}/western-adelaide`,
     eyebrow: 'Service area',
     intro:
-      'Mobile podiatry across Western Adelaide, including coastal suburbs and the Port Adelaide area.',
+      'Home-visit podiatry across Western Adelaide, including coastal suburbs and the Port Adelaide area.',
     localContext:
       'Western Adelaide visits suit beachside suburbs, retirement living, family homes and older adults who would rather be seen at home.',
     visitTypes: [
