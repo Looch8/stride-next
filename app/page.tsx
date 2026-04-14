@@ -74,12 +74,12 @@ export default function HomePage() {
 				<div className="hero-content hero-shell">
 					<div className="hero-copy">
 						<p className="hero-eyebrow">
-							Home visits across Adelaide metro
+							For homes, aged care and supported living
 						</p>
-						<h1 className="title">Home-Visit Podiatry in Adelaide</h1>
+						<h1 className="title">Mobile Podiatry Care in Adelaide</h1>
 						<p className="hero-subtitle">
-							Practical podiatry at home for routine foot care, foot pain,
-							diabetic foot checks and ongoing treatment.
+							Home visits for routine foot care, foot pain, diabetic foot
+							checks and ongoing podiatry support.
 						</p>
 						<div className="hero-cta-group">
 							<Link
