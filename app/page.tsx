@@ -6,7 +6,7 @@ import { services } from '@/content/services';
 
 export const metadata: Metadata = {
 	title: {
-		absolute: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+		absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	},
 	description:
 		'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 	alternates: { canonical: 'https://www.stride-podiatry.com.au' },
 	openGraph: {
 		siteName: 'Stride Podiatry',
-		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
 		url: 'https://www.stride-podiatry.com.au',
 	},
 	twitter: {
-		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
+		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
 	},
