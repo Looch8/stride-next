@@ -78,11 +78,11 @@ const websiteJsonLd = {
 
 const siteNavigationJsonLd = {
 	'@context': 'https://schema.org',
-	'@type': 'SiteNavigationElement',
-	name: primaryNavItems.map((item) => item.label),
-	url: primaryNavItems.map((item) =>
-		`${siteUrl}${item.href === '/' ? '' : item.href}`,
-	),
+	'@graph': primaryNavItems.map((item) => ({
+		'@type': 'SiteNavigationElement',
+		name: item.label,
+		url: `${siteUrl}${item.href === '/' ? '' : item.href}`,
+	})),
 };
 
 export const metadata: Metadata = {
