@@ -122,7 +122,7 @@ export default function HomePage() {
 							when getting to a clinic is inconvenient.
 						</p>
 						<p>
-							Private patients can book directly — <Link href="/fees">see fees</Link>. Visits are also available
+							Private patients can request an appointment directly — <Link href="/fees">see fees</Link>. Visits are also available
 							for{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
 							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
