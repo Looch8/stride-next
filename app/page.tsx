@@ -117,12 +117,12 @@ export default function HomePage() {
 						<p className="section-kicker">Your podiatrist</p>
 						<h2>Calm, practical podiatry at home</h2>
 						<p>
-							Stride Podiatry provides podiatry home visits across Adelaide,
-							so treatment is easier to organise when getting to a clinic is
-							inconvenient.
+							<Link href="/about-us">Stride Podiatry</Link> provides podiatry
+							home visits across Adelaide, so treatment is easier to organise
+							when getting to a clinic is inconvenient.
 						</p>
 						<p>
-							Private patients can book directly. Visits are also available
+							Private patients can book directly — <Link href="/fees">see fees</Link>. Visits are also available
 							for{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
 							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
