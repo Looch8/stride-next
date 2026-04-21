@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 		absolute: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 	},
 	description:
-		'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
+		'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 	keywords: [
 		'home visit podiatrist Adelaide',
 		'home visit podiatry Adelaide',
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
 		siteName: 'Stride Podiatry',
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
+			'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 		url: 'https://www.stride-podiatry.com.au',
 	},
 	twitter: {
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
-			'Home-visit podiatry across Adelaide for routine care, foot pain, ingrown toenails, NDIS, DVA, aged care and Support at Home.',
+			'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 	},
 };
 
