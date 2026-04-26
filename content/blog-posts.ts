@@ -30,6 +30,94 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
 	{
+		slug: 'how-often-should-you-see-a-podiatrist',
+		title: 'How Often Should You See a Podiatrist? A Guide for Older Adults and Home-Visit Patients',
+		date: '2026-04-26',
+		excerpt:
+			'There is no single answer — how often depends on your health, foot condition and how well you can manage care between visits.',
+		description:
+			'How often older adults and home-visit patients should see a podiatrist, including guidance for routine care, ongoing conditions and knowing when to book sooner.',
+		intro: 'How often you should see a podiatrist depends on your health, mobility and what is going on with your feet. For some people, once or twice a year is enough. For others — particularly older adults, people with diabetes or those who find self-care difficult — regular visits every six to eight weeks make a noticeable difference.',
+		image: {
+			src: '/images/footcare_at_home.png',
+			alt: 'Podiatrist providing foot care at home for an older adult',
+			width: 1672,
+			height: 941,
+		},
+		sections: [
+			{
+				heading: 'Why there is no universal answer',
+				paragraphs: [
+					'Podiatry visits are not like a fixed annual check-up. The right interval depends on what your feet actually need and how well problems can be managed between appointments.',
+					'Someone with healthy feet and no difficulty reaching them may only need to come in when something changes. Someone with thickening nails, reduced sensation, or diabetes needs more consistent monitoring.',
+				],
+			},
+			{
+				heading: 'Every 6 to 8 weeks: routine care for older adults',
+				paragraphs: [
+					'For many older adults living at home, a visit every six to eight weeks works well. This allows nails to be trimmed safely, callus to be managed before it becomes painful, and any skin changes to be caught early.',
+					'This interval is also practical for people who find it difficult to manage their own feet — whether due to reduced mobility, poor eyesight or trouble bending.',
+				],
+				list: [
+					'Nails that grow quickly or thicken easily',
+					'Callus or corns that return between visits',
+					'Difficulty trimming your own nails safely',
+					'Reduced mobility or flexibility',
+					'Skin that bruises or breaks down easily',
+				],
+			},
+			{
+				heading: 'More frequent visits for ongoing conditions',
+				paragraphs: [
+					'Some conditions require closer monitoring. People with diabetes, peripheral vascular disease or peripheral neuropathy benefit from more regular checks, as small changes in the skin or circulation can progress quickly if unnoticed.',
+					'NDIS and Support at Home clients often have visit frequency built into their care plan. If you are unsure whether your plan covers regular podiatry, it is worth checking with your coordinator.',
+				],
+				list: [
+					'Diabetes with foot involvement or reduced sensation',
+					'Poor circulation or peripheral vascular disease',
+					'Active wounds, ulcers or skin breakdown',
+					'Fungal nail infection requiring ongoing treatment',
+					'Painful foot deformities affecting daily walking',
+				],
+			},
+			{
+				heading: 'Annual or as-needed visits for lower-risk patients',
+				paragraphs: [
+					'If your feet are generally healthy and you can manage routine care yourself, an annual visit or booking when something changes is often enough.',
+					'A yearly check can still be useful — it gives you a chance to ask about footwear, any new aches, or changes you have noticed but not acted on.',
+				],
+			},
+			{
+				heading: 'Signs you should book sooner rather than later',
+				paragraphs: [
+					'Do not wait for the next scheduled visit if you notice any of the following. These are worth getting looked at promptly.',
+				],
+				list: [
+					'A new wound, blister, or area of skin breakdown that has not healed in a few days',
+					'Increased pain in the heel, ball of the foot or toes',
+					'A nail that has become ingrown, infected or very painful',
+					'Numbness, tingling or a change in sensation in the feet',
+					'Redness or swelling that is getting worse',
+				],
+			},
+			{
+				heading: 'How home visits make regular care easier',
+				paragraphs: [
+					'For older adults and people with limited mobility, keeping up with regular podiatry can be the hard part. Home visits remove the need to organise transport or wait in a clinic.',
+					'Because we come to you, it is easier to keep appointments consistent — which matters more than the exact interval.',
+				],
+			},
+		],
+		cta: {
+			heading: 'Not sure how often you should be seen?',
+			body: 'Get in touch to discuss what makes sense for your situation, or request a home visit to get started.',
+			primaryLabel: 'Request a home visit',
+			primaryHref: '/booking',
+			secondaryLabel: 'Call 0468 518 993',
+			secondaryHref: 'tel:+61468518993',
+		},
+	},
+	{
 		slug: 'can-a-podiatrist-treat-thick-toenails-during-a-home-visit',
 		title: 'Can a Podiatrist Treat Thick Toenails During a Home Visit?',
 		date: '2026-03-07',
