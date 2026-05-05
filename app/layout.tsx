@@ -88,7 +88,7 @@ const siteNavigationJsonLd = {
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
 	applicationName: 'Stride Podiatry',
-	title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+	title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 	description:
 		'Mobile podiatrist in Adelaide providing home visits. Foot care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 	keywords: [
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
 			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 		url: siteUrl,
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
 		],
 	},
 	twitter: {
-		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
+		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
 			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 	},

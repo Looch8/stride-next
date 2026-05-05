@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -oE '0416[^<\"]{0,15}' /tmp/inhomepodiatry_raw.html)",
+      "Bash(grep -oE 'UA-[0-9]{5,}-[0-9]+' /tmp/inhomepodiatry_raw.html)"
+    ]
+  }
+}
