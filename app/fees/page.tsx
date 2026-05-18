@@ -11,7 +11,7 @@ const pricingItems = [
   {
     title: 'Initial consultation',
     duration: 'Up to 60 minutes',
-    price: '$225',
+    price: '$189',
   },
   {
     title: 'Subsequent consultation',
