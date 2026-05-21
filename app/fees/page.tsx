@@ -9,14 +9,9 @@ const breadcrumbsLd = buildBreadcrumbList([
 
 const pricingItems = [
   {
-    title: 'Initial consultation',
-    duration: 'Up to 60 minutes',
-    price: '$189',
-  },
-  {
-    title: 'Subsequent consultation',
-    duration: 'Up to 45 minutes',
-    price: '$168.75',
+    title: 'Home visits',
+    duration: 'Up to 30 minutes',
+    price: '$165',
   },
   {
     title: 'Custom foot orthotics',
@@ -58,7 +53,7 @@ export default function FeesPage() {
           <p className="fees-eyebrow">Fees</p>
           <h1>Home visit podiatry fees</h1>
           <p className="fees-intro">
-            Straightforward pricing for home visits.
+            Support at Home, Private, and Medicare
           </p>
         </header>
 
@@ -81,7 +76,7 @@ export default function FeesPage() {
         <div className="fees-notes" aria-label="Additional fee information">
           <p className="fees-note">GST will be applied where applicable.</p>
           <p className="fees-note">
-            NDIS appointments may be billed in accordance with current NDIS
+            NDIS appointments are billed in accordance with current NDIS
             Pricing Arrangements and Price Limits. This may include separate
             provider travel where applicable.
           </p>
