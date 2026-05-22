@@ -10,12 +10,10 @@ const breadcrumbsLd = buildBreadcrumbList([
 const pricingItems = [
   {
     title: 'Home visits',
-    duration: 'Up to 30 minutes',
     price: '$165',
   },
   {
     title: 'Custom foot orthotics',
-    duration: 'Prescription orthotic device',
     price: '$700',
   },
 ] as const;
@@ -63,7 +61,6 @@ export default function FeesPage() {
               <article key={item.title} className="fee-item" role="listitem">
                 <div className="fee-item-copy">
                   <h2>{item.title}</h2>
-                  <p>{item.duration}</p>
                 </div>
                 <p className="fee-item-price" aria-label={`${item.title} ${item.price}`}>
                   {item.price}
