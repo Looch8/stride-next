@@ -443,7 +443,7 @@ export const services: ServiceContent[] = [
     summary: 'Treatment for nails, corns, calluses and other routine foot care needs.',
     heroImage: '/images/general-foot-care.jpg',
     heroAlt: 'General podiatry care at home',
-    metaTitle: 'General Podiatry Care | Stride Podiatry',
+    metaTitle: 'General Podiatry Care Adelaide | Stride Podiatry',
     metaDescription:
       'General foot and nail care at home across Adelaide. Mobile podiatry for nails, corns, calluses and cracked heels.',
     canonical: `${siteUrl}/services/general-podiatry`,
@@ -482,7 +482,7 @@ export const services: ServiceContent[] = [
     summary: 'Treatment for painful or infected ingrown toenails.',
     heroImage: '/images/ingrown-nail.jpg',
     heroAlt: 'Ingrown toenail care',
-    metaTitle: 'Ingrown Toenail Treatment | Stride Podiatry',
+    metaTitle: 'Ingrown Toenail Treatment Adelaide | Stride Podiatry',
     metaDescription:
       'Prompt ingrown toenail care at home in Adelaide. Conservative treatment, bracing and minor procedures when needed.',
     canonical: `${siteUrl}/services/ingrown-toenail`,
@@ -522,7 +522,7 @@ export const services: ServiceContent[] = [
     summary: 'Diabetic foot checks and care to help prevent complications.',
     heroImage: '/images/diabetesCare2.png',
     heroAlt: 'Diabetes foot assessment',
-    metaTitle: 'Diabetes Foot Care | Stride Podiatry',
+    metaTitle: 'Diabetes Foot Care Adelaide | Stride Podiatry',
     metaDescription:
       'Diabetes foot assessments at home in Adelaide. Mobile podiatry for screening, risk reduction and ulcer prevention.',
     canonical: `${siteUrl}/services/diabetes-foot-care`,
@@ -602,7 +602,7 @@ export const services: ServiceContent[] = [
     summary: 'Custom orthotics prescribed to support foot mechanics and reduce pain.',
     heroImage: '/images/orthoticsImg.jpg',
     heroAlt: 'Custom foot orthotics',
-    metaTitle: 'Custom Orthotics | Stride Podiatry',
+    metaTitle: 'Custom Orthotics Adelaide | Stride Podiatry',
     metaDescription:
       'Custom orthotics prescribed at home in Adelaide to support foot mechanics, reduce pain and improve comfort.',
     canonical: `${siteUrl}/services/custom-orthotics`,
@@ -643,7 +643,7 @@ export const services: ServiceContent[] = [
     summary: 'Assessment and treatment for heel and arch pain.',
     heroImage: '/images/foot-pain.jpg',
     heroAlt: 'Heel and arch pain treatment',
-    metaTitle: 'Heel & Arch Pain | Stride Podiatry',
+    metaTitle: 'Heel & Arch Pain Adelaide | Stride Podiatry',
     metaDescription:
       'Home-visit treatment for heel and arch pain in Adelaide. Plantar fasciitis, heel spurs and Achilles issues managed at home.',
     canonical: `${siteUrl}/services/heel-arch-pain`,
@@ -713,7 +713,7 @@ export const services: ServiceContent[] = [
     summary: 'Assessment and treatment for sport-related foot and ankle problems.',
     heroImage: '/images/sportsPodiatryImg.jpeg',
     heroAlt: 'Sports podiatry assessment',
-    metaTitle: 'Sports Podiatry | Stride Podiatry',
+    metaTitle: 'Sports Podiatry Adelaide | Stride Podiatry',
     metaDescription:
       'Sports podiatry at home in Adelaide. Assessments, injury prevention and treatment plans for active people.',
     canonical: `${siteUrl}/services/sports-podiatry`,
