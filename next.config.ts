@@ -51,21 +51,6 @@ const nextConfig: NextConfig = {
 	},
 	async redirects() {
 		return [
-			{
-				source: '/:path*',
-				has: [
-					{ type: 'host', value: 'stridepodiatry.com.au' },
-					{ type: 'header', key: 'x-forwarded-proto', value: 'http' },
-				],
-				destination: 'https://www.stridepodiatry.com.au/:path*',
-				permanent: true,
-			},
-			{
-				source: '/:path*',
-				has: [{ type: 'host', value: 'stridepodiatry.com.au' }],
-				destination: 'https://www.stridepodiatry.com.au/:path*',
-				permanent: true,
-			},
 			{ source: '/about', destination: '/about-us', permanent: true },
 			{ source: '/contact', destination: '/contact-us', permanent: true },
 			{
