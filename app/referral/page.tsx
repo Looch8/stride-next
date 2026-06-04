@@ -4,20 +4,20 @@ import Link from 'next/link';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
-	{ name: 'Referral', url: 'https://www.stride-podiatry.com.au/referral' },
+	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+	{ name: 'Referral', url: 'https://www.stridepodiatry.com.au/referral' },
 ]);
 
 export const metadata: Metadata = {
 	title: 'Referrals | Stride Podiatry',
 	description:
 		'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/referral' },
+	alternates: { canonical: 'https://www.stridepodiatry.com.au/referral' },
 	openGraph: {
 		title: 'Referrals | Stride Podiatry',
 		description:
 			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
-		url: 'https://www.stride-podiatry.com.au/referral',
+		url: 'https://www.stridepodiatry.com.au/referral',
 	},
 	twitter: {
 		title: 'Referrals | Stride Podiatry',
@@ -113,8 +113,8 @@ export default function ReferralPage() {
 					</p>
 					<div className="referral-links">
 						<a href="/referral-form.pdf">Download referral form (PDF)</a>
-						<a href="mailto:luke@stride-podiatry.com.au">
-							Email completed form to luke@stride-podiatry.com.au
+						<a href="mailto:luke@stridepodiatry.com.au">
+							Email completed form to luke@stridepodiatry.com.au
 						</a>
 						<Link href="/service-areas">Check service areas</Link>
 					</div>

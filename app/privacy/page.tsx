@@ -3,10 +3,10 @@ import type { Metadata } from 'next';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
+	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
 	{
 		name: 'Privacy Policy',
-		url: 'https://www.stride-podiatry.com.au/privacy',
+		url: 'https://www.stridepodiatry.com.au/privacy',
 	},
 ]);
 
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 	title: 'Privacy Policy | Stride Podiatry',
 	description:
 		'Privacy Policy for Stride Podiatry covering how we collect, use, store, and share personal and health information for patient care in Australia.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/privacy' },
+	alternates: { canonical: 'https://www.stridepodiatry.com.au/privacy' },
 	openGraph: {
 		title: 'Privacy Policy | Stride Podiatry',
 		description:
 			'How Stride Podiatry collects, uses, stores, and shares personal and health information for care delivery in Australia.',
-		url: 'https://www.stride-podiatry.com.au/privacy',
+		url: 'https://www.stridepodiatry.com.au/privacy',
 	},
 	twitter: {
 		title: 'Privacy Policy | Stride Podiatry',
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
 							applicable regulatory requirements.
 						</p>
 						<ul className="privacy-list">
-							<li>Email: admin@stride-podiatry.com.au</li>
+							<li>Email: admin@stridepodiatry.com.au</li>
 							<li>Phone: 0468 518 993</li>
 							<li>Location: Adelaide, South Australia</li>
 						</ul>
@@ -338,7 +338,7 @@ export default function PrivacyPage() {
 						</p>
 						<p>
 							Requests should be made in writing to
-							admin@stride-podiatry.com.au. We will respond within
+							admin@stridepodiatry.com.au. We will respond within
 							a reasonable timeframe, generally within 30 days.
 						</p>
 						<p>
@@ -352,7 +352,7 @@ export default function PrivacyPage() {
 						<h2>11) Complaints</h2>
 						<p>
 							If you have a privacy concern or complaint, contact
-							us in writing at admin@stride-podiatry.com.au or by
+							us in writing at admin@stridepodiatry.com.au or by
 							phone on 0468 518 993.
 						</p>
 						<p>

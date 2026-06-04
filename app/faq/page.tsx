@@ -5,8 +5,8 @@ import FAQList, { type FAQItem } from '@/components/faq-list';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
-	{ name: 'FAQ', url: 'https://www.stride-podiatry.com.au/faq' },
+	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+	{ name: 'FAQ', url: 'https://www.stridepodiatry.com.au/faq' },
 ]);
 
 const faqData: FAQItem[] = [
@@ -63,12 +63,12 @@ export const metadata: Metadata = {
 	title: 'FAQs | Stride Podiatry',
 	description:
 		'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/faq' },
+	alternates: { canonical: 'https://www.stridepodiatry.com.au/faq' },
 	openGraph: {
 		title: 'FAQs | Stride Podiatry',
 		description:
 			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
-		url: 'https://www.stride-podiatry.com.au/faq',
+		url: 'https://www.stridepodiatry.com.au/faq',
 	},
 	twitter: {
 		title: 'FAQs | Stride Podiatry',

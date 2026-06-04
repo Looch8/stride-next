@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-  { name: 'Home', url: 'https://www.stride-podiatry.com.au' },
-  { name: 'Fees', url: 'https://www.stride-podiatry.com.au/fees' },
+  { name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+  { name: 'Fees', url: 'https://www.stridepodiatry.com.au/fees' },
 ]);
 
 const pricingItems = [
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   title: 'Fees | Stride Podiatry',
   description:
     'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
-  alternates: { canonical: 'https://www.stride-podiatry.com.au/fees' },
+  alternates: { canonical: 'https://www.stridepodiatry.com.au/fees' },
   openGraph: {
     title: 'Fees | Stride Podiatry',
     description:
       'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
-    url: 'https://www.stride-podiatry.com.au/fees',
+    url: 'https://www.stridepodiatry.com.au/fees',
   },
   twitter: {
     title: 'Fees | Stride Podiatry',

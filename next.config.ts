@@ -54,16 +54,16 @@ const nextConfig: NextConfig = {
 			{
 				source: '/:path*',
 				has: [
-					{ type: 'host', value: 'stride-podiatry.com.au' },
+					{ type: 'host', value: 'stridepodiatry.com.au' },
 					{ type: 'header', key: 'x-forwarded-proto', value: 'http' },
 				],
-				destination: 'https://www.stride-podiatry.com.au/:path*',
+				destination: 'https://www.stridepodiatry.com.au/:path*',
 				permanent: true,
 			},
 			{
 				source: '/:path*',
-				has: [{ type: 'host', value: 'stride-podiatry.com.au' }],
-				destination: 'https://www.stride-podiatry.com.au/:path*',
+				has: [{ type: 'host', value: 'stridepodiatry.com.au' }],
+				destination: 'https://www.stridepodiatry.com.au/:path*',
 				permanent: true,
 			},
 			{ source: '/about', destination: '/about-us', permanent: true },

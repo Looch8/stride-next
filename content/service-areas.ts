@@ -19,7 +19,7 @@ export type ServiceAreaContent = {
   closingNote: string;
 };
 
-const baseUrl = 'https://www.stride-podiatry.com.au/service-areas';
+const baseUrl = 'https://www.stridepodiatry.com.au/service-areas';
 
 export const serviceAreas: ServiceAreaContent[] = [
   {

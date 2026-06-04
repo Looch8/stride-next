@@ -54,8 +54,8 @@ export default async function ServiceDetailPage({
 
   const currentService = service;
   const breadcrumbsLd = buildBreadcrumbList([
-    { name: 'Home', url: 'https://www.stride-podiatry.com.au' },
-    { name: 'Services', url: 'https://www.stride-podiatry.com.au/services' },
+    { name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+    { name: 'Services', url: 'https://www.stridepodiatry.com.au/services' },
     { name: currentService.title, url: currentService.canonical },
   ]);
   const serviceLd = buildServiceSchema({

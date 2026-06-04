@@ -42,13 +42,13 @@ export async function generateMetadata({
     title: `${post.title} | Stride Podiatry`,
     description: post.description,
     alternates: {
-      canonical: `https://www.stride-podiatry.com.au/blog/${post.slug}`,
+      canonical: `https://www.stridepodiatry.com.au/blog/${post.slug}`,
     },
     openGraph: {
       type: 'article',
       title: `${post.title} | Stride Podiatry`,
       description: post.description,
-      url: `https://www.stride-podiatry.com.au/blog/${post.slug}`,
+      url: `https://www.stridepodiatry.com.au/blog/${post.slug}`,
       images: [
         {
           url: post.image?.src ?? '/images/logo.png',
