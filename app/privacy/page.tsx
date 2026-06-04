@@ -70,7 +70,7 @@ export default function PrivacyPage() {
 							applicable regulatory requirements.
 						</p>
 						<ul className="privacy-list">
-							<li>Email: admin@stridepodiatry.com.au</li>
+							<li>Email: luke@stridepodiatry.com.au</li>
 							<li>Phone: 0468 518 993</li>
 							<li>Location: Adelaide, South Australia</li>
 						</ul>
