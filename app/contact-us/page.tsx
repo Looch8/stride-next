@@ -8,14 +8,14 @@ import { socialLinks } from '@/content/social-links';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stride-podiatry.com.au' },
-	{ name: 'Contact', url: 'https://www.stride-podiatry.com.au/contact-us' },
+	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+	{ name: 'Contact', url: 'https://www.stridepodiatry.com.au/contact-us' },
 ]);
 
 const contactLD = {
 	'@context': 'https://schema.org',
 	'@type': 'ContactPage',
-	url: 'https://www.stride-podiatry.com.au/contact-us',
+	url: 'https://www.stridepodiatry.com.au/contact-us',
 	mainEntity: {
 		'@type': 'MedicalBusiness',
 		name: 'Stride Podiatry',
@@ -26,7 +26,7 @@ const contactLD = {
 			addressLocality: 'Adelaide',
 		},
 		telephone: '+61468518993',
-		email: 'luke@stride-podiatry.com.au',
+		email: 'luke@stridepodiatry.com.au',
 		areaServed: 'Adelaide',
 	},
 };
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
 	title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 	description:
 		'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
-	alternates: { canonical: 'https://www.stride-podiatry.com.au/contact-us' },
+	alternates: { canonical: 'https://www.stridepodiatry.com.au/contact-us' },
 	openGraph: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
 			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
-		url: 'https://www.stride-podiatry.com.au/contact-us',
+		url: 'https://www.stridepodiatry.com.au/contact-us',
 	},
 	twitter: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
@@ -102,9 +102,9 @@ export default function ContactPage() {
 									<span className="contact-stat-label">Email</span>
 									<a
 										className="contact-link-primary"
-										href="mailto:luke@stride-podiatry.com.au"
+										href="mailto:luke@stridepodiatry.com.au"
 									>
-										luke@stride-podiatry.com.au
+										luke@stridepodiatry.com.au
 									</a>
 									<p className="contact-muted">
 										Best for referrals or longer messages.

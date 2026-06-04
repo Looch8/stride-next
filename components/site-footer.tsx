@@ -17,8 +17,8 @@ export default function SiteFooter() {
               <a href="tel:+61468518993" className="contact-link">
                 <span>0468 518 993</span>
               </a>
-              <a href="mailto:luke@stride-podiatry.com.au" className="contact-link">
-                <span>luke@stride-podiatry.com.au</span>
+              <a href="mailto:luke@stridepodiatry.com.au" className="contact-link">
+                <span>luke@stridepodiatry.com.au</span>
               </a>
             </div>
           </div>

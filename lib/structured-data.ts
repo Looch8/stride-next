@@ -65,7 +65,7 @@ export function buildServiceSchema({
 		provider: {
 			'@type': 'MedicalBusiness',
 			name: 'Stride Podiatry',
-			url: 'https://www.stride-podiatry.com.au',
+			url: 'https://www.stridepodiatry.com.au',
 			telephone: '+61468518993',
 			address: {
 				'@type': 'PostalAddress',
