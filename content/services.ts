@@ -31,7 +31,7 @@ export type ServiceContent = {
   anchorId?: string;
 };
 
-export const siteUrl = 'https://www.stridepodiatry.com.au';
+export const siteUrl = 'https://stridepodiatry.com.au';
 
 export const services: ServiceContent[] = [
   {
