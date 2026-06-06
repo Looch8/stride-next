@@ -55,7 +55,7 @@ export default function ReferralPage() {
 					</p>
 					<div className="referral-form-container">
 						<iframe
-							src="https://stride-podiatry.splose.com/public-form/fcd1208d-e801-454b-a248-4ae9d65fd4dd"
+							src="https://stridepodiatry.splose.com/public-form/fcd1208d-e801-454b-a248-4ae9d65fd4dd"
 							name="embeddableForm"
 							scrolling="auto"
 							loading="lazy"
