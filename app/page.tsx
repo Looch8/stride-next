@@ -61,7 +61,7 @@ export default function HomePage() {
 			<section className="hero-section">
 				<div className="hero-background" aria-hidden="true">
 					<Image
-						src="/images/hero-bg.webp"
+						src="/images/hero-luke-walking.webp"
 						alt=""
 						fill
 						priority
@@ -105,7 +105,7 @@ export default function HomePage() {
 				<div className="intro-profile">
 					<div className="profile-image">
 						<Image
-							src="/images/profile-pic.webp"
+							src="/images/luke-profile-home.webp"
 							alt="Luke Wheldale — Mobile Podiatrist in Adelaide"
 							width={350}
 							height={525}
