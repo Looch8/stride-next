@@ -8,7 +8,9 @@
       "Bash(git commit *)",
       "Bash(python3 -m git_filter_repo --path public/images/photoshoot/ --path .claude/settings.local.json --invert-paths --force)",
       "Bash(git remote *)",
-      "Bash(git rev-list *)"
+      "Bash(git rev-list *)",
+      "Bash(git push *)",
+      "Bash(git check-ignore *)"
     ]
   }
 }
