@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 
 import { sendEmail } from '@/lib/email';
+import { getClientIp, rateLimit } from '@/lib/rate-limit';
 
 type ContactPayload = {
   name?: string;
@@ -22,6 +23,18 @@ function isValidEmail(value: string): boolean {
 }
 
 export async function POST(request: Request) {
+  const { ok, retryAfter } = rateLimit(
+    `contact:${getClientIp(request)}`,
+    5,
+    60_000,
+  );
+  if (!ok) {
+    return NextResponse.json(
+      { error: 'Too many requests. Please try again in a moment.' },
+      { status: 429, headers: { 'Retry-After': String(retryAfter) } },
+    );
+  }
+
   let body: ContactPayload;
 
   try {

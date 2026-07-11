@@ -1,7 +1,3 @@
-'use client';
-
-import { useState } from 'react';
-
 export type FAQItem = {
   question: string;
   answer: string;
@@ -12,35 +8,18 @@ type FAQListProps = {
 };
 
 export default function FAQList({ items }: FAQListProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
-  };
-
   return (
     <div className="faq-list">
-      {items.map((item, index) => (
-        <div
-          key={item.question}
-          className={`faq-item ${openIndex === index ? 'open' : ''}`}
-        >
-          <button
-            className="faq-item-header"
-            type="button"
-            aria-expanded={openIndex === index}
-            aria-controls={`faq-answer-${index}`}
-            onClick={() => toggleFAQ(index)}
-          >
+      {items.map((item) => (
+        <details className="faq-item" key={item.question}>
+          <summary className="faq-item-header">
             <span className="faq-question">{item.question}</span>
-            <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
-          </button>
-          {openIndex === index && (
-            <div className="faq-answer" id={`faq-answer-${index}`}>
-              <p>{item.answer}</p>
-            </div>
-          )}
-        </div>
+            <span className="faq-icon" aria-hidden="true" />
+          </summary>
+          <div className="faq-answer">
+            <p>{item.answer}</p>
+          </div>
+        </details>
       ))}
     </div>
   );

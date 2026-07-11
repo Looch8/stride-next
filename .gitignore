@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# claude code (personal permission history — keep out of public repo)
+.claude/settings.local.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

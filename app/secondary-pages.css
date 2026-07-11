@@ -1675,6 +1675,11 @@
 	cursor: pointer;
 	text-align: left;
 	padding: 0;
+	list-style: none;
+}
+
+.faq-item-header::-webkit-details-marker {
+	display: none;
 }
 
 .faq-item {
@@ -1688,7 +1693,8 @@
 	overflow: hidden;
 }
 
-.faq-item.open {
+.faq-item.open,
+.faq-item[open] {
 	box-shadow: var(--shadow-md);
 	transform: translateY(-1px);
 }
@@ -1697,6 +1703,14 @@
 	font-size: 1.6rem;
 	color: var(--brand-primary);
 	flex-shrink: 0;
+}
+
+.faq-icon::after {
+	content: '+';
+}
+
+.faq-item[open] .faq-icon::after {
+	content: '−';
 }
 
 .faq-question {
