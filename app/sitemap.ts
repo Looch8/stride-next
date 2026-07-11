@@ -6,7 +6,7 @@ import { servicePaths, siteUrl } from '@/content/services';
 // Dates reflect when each page's content was last meaningfully changed.
 // Update the relevant entry whenever a page is edited.
 const baseRoutes: Array<{ path: string; date: string }> = [
-	{ path: '/', date: '2026-04-19' },
+	{ path: '/', date: '2026-07-11' },
 	{ path: '/about-us', date: '2026-01-01' },
 	{ path: '/services', date: '2026-01-01' },
 	{ path: '/fees', date: '2026-04-19' },
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 	const serviceEntries = servicePaths.map((path) => ({
 		url: `${siteUrl}${path}`,
-		lastModified: new Date('2026-01-01'),
+		lastModified: new Date('2026-07-11'),
 	}));
 
 	const blogEntries = blogPosts.map((post) => ({

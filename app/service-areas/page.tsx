@@ -5,10 +5,10 @@ import { serviceAreas } from '@/content/service-areas';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
 	{
 		name: 'Service Areas',
-		url: 'https://www.stridepodiatry.com.au/service-areas',
+		url: 'https://stridepodiatry.com.au/service-areas',
 	},
 ]);
 
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 	description:
 		'See the Adelaide suburbs and regions covered by Stride Podiatry. Check service areas for home-visit podiatry availability.',
 	alternates: {
-		canonical: 'https://www.stridepodiatry.com.au/service-areas',
+		canonical: 'https://stridepodiatry.com.au/service-areas',
 	},
 	openGraph: {
 		title: 'Adelaide Service Areas | Stride Podiatry',
 		description:
 			'See the Adelaide suburbs and regions covered by Stride Podiatry. Check service areas for home-visit podiatry availability.',
-		url: 'https://www.stridepodiatry.com.au/service-areas',
+		url: 'https://stridepodiatry.com.au/service-areas',
 	},
 	twitter: {
 		title: 'Adelaide Service Areas | Stride Podiatry',

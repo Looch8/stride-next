@@ -3,10 +3,10 @@ import type { Metadata } from 'next';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
 	{
 		name: 'Privacy Policy',
-		url: 'https://www.stridepodiatry.com.au/privacy',
+		url: 'https://stridepodiatry.com.au/privacy',
 	},
 ]);
 
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 	title: 'Privacy Policy | Stride Podiatry',
 	description:
 		'Privacy Policy for Stride Podiatry covering how we collect, use, store, and share personal and health information for patient care in Australia.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/privacy' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/privacy' },
 	openGraph: {
 		title: 'Privacy Policy | Stride Podiatry',
 		description:
 			'How Stride Podiatry collects, uses, stores, and shares personal and health information for care delivery in Australia.',
-		url: 'https://www.stridepodiatry.com.au/privacy',
+		url: 'https://stridepodiatry.com.au/privacy',
 	},
 	twitter: {
 		title: 'Privacy Policy | Stride Podiatry',

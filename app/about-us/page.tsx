@@ -4,20 +4,20 @@ import type { Metadata } from 'next';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-	{ name: 'About Us', url: 'https://www.stridepodiatry.com.au/about-us' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
+	{ name: 'About Us', url: 'https://stridepodiatry.com.au/about-us' },
 ]);
 
 export const metadata: Metadata = {
 	title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',
 	description:
 		'Meet Luke Wheldale, the podiatrist behind Stride Podiatry. Home-visit podiatry across Adelaide for private patients, aged care and funded care.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/about-us' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/about-us' },
 	openGraph: {
 		title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',
 		description:
 			'Meet Luke Wheldale, the podiatrist behind Stride Podiatry. Home-visit podiatry across Adelaide for private patients, aged care and funded care.',
-		url: 'https://www.stridepodiatry.com.au/about-us',
+		url: 'https://stridepodiatry.com.au/about-us',
 	},
 	twitter: {
 		title: 'Luke Wheldale | Podiatrist Adelaide | Stride Podiatry',

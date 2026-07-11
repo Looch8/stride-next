@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 	title: 'Blog | Stride Podiatry',
 	description:
 		'Practical podiatry advice from Stride Podiatry, including home visits, foot pain and foot care in Adelaide.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/blog' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/blog' },
 	openGraph: {
 		title: 'Blog | Stride Podiatry',
 		description:
 			'Practical podiatry advice from Stride Podiatry, including home visits, foot pain and foot care in Adelaide.',
-		url: 'https://www.stridepodiatry.com.au/blog',
+		url: 'https://stridepodiatry.com.au/blog',
 	},
 	twitter: {
 		title: 'Blog | Stride Podiatry',

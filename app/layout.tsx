@@ -70,6 +70,7 @@ const websiteJsonLd = {
 	'@type': 'WebSite',
 	'@id': `${siteUrl}/#website`,
 	name: 'Stride Podiatry',
+	alternateName: ['Stride Podiatry Adelaide', 'stridepodiatry.com.au'],
 	url: homeUrl,
 	publisher: {
 		'@id': `${siteUrl}/#business`,

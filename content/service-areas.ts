@@ -19,7 +19,7 @@ export type ServiceAreaContent = {
   closingNote: string;
 };
 
-const baseUrl = 'https://www.stridepodiatry.com.au/service-areas';
+const baseUrl = 'https://stridepodiatry.com.au/service-areas';
 
 export const serviceAreas: ServiceAreaContent[] = [
   {
@@ -58,7 +58,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       'Rose Park',
     ],
     popularServices: [
-      { href: '/services/home-visit-podiatry', label: 'Home Visit Podiatry' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/services/aged-care-podiatry', label: 'Aged Care Podiatry' },
       { href: '/services/general-podiatry', label: 'General podiatry care' },
       { href: '/services/heel-arch-pain', label: 'Heel and arch pain treatment' },
@@ -141,7 +141,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       'Para Hills',
     ],
     popularServices: [
-      { href: '/services/home-visit-podiatry', label: 'Home Visit Podiatry' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/services/ndis-podiatry', label: 'NDIS Podiatry' },
       { href: '/services/aged-care-podiatry', label: 'Aged Care Podiatry' },
       { href: '/services/ingrown-toenail', label: 'Ingrown toenail treatment' },
@@ -195,7 +195,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       'Ceduna',
     ],
     popularServices: [
-      { href: '/services/home-visit-podiatry', label: 'Home Visit Podiatry' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/services/support-at-home-podiatry', label: 'Support at Home Podiatry' },
       { href: '/services/aged-care-podiatry', label: 'Aged Care Podiatry' },
       { href: '/contact-us', label: 'Contact us to confirm availability' },
@@ -278,7 +278,7 @@ export const serviceAreas: ServiceAreaContent[] = [
       'Croydon Park',
     ],
     popularServices: [
-      { href: '/services/home-visit-podiatry', label: 'Home Visit Podiatry' },
+      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/services/general-podiatry', label: 'General podiatry care' },
       { href: '/services/ingrown-toenail', label: 'Ingrown toenail treatment' },
       { href: '/services/custom-orthotics', label: 'Custom orthotics' },

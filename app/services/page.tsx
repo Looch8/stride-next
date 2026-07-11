@@ -6,8 +6,8 @@ import { services } from '@/content/services';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-  { name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-  { name: 'Services', url: 'https://www.stridepodiatry.com.au/services' },
+  { name: 'Home', url: 'https://stridepodiatry.com.au' },
+  { name: 'Services', url: 'https://stridepodiatry.com.au/services' },
 ]);
 
 const businessAddress = {
@@ -32,7 +32,7 @@ const servicesLd = {
       provider: {
         '@type': 'MedicalBusiness',
         name: 'Stride Podiatry',
-        url: 'https://www.stridepodiatry.com.au',
+        url: 'https://stridepodiatry.com.au',
         address: businessAddress,
       },
     },
@@ -43,12 +43,12 @@ export const metadata: Metadata = {
   title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
   description:
     'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, DVA, aged care, foot pain and routine foot care.',
-  alternates: { canonical: 'https://www.stridepodiatry.com.au/services' },
+  alternates: { canonical: 'https://stridepodiatry.com.au/services' },
   openGraph: {
     title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
     description:
       'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, DVA, aged care, foot pain and routine foot care.',
-    url: 'https://www.stridepodiatry.com.au/services',
+    url: 'https://stridepodiatry.com.au/services',
   },
   twitter: {
     title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',

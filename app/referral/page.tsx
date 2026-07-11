@@ -4,20 +4,20 @@ import Link from 'next/link';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-	{ name: 'Referral', url: 'https://www.stridepodiatry.com.au/referral' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
+	{ name: 'Referral', url: 'https://stridepodiatry.com.au/referral' },
 ]);
 
 export const metadata: Metadata = {
 	title: 'Referrals | Stride Podiatry',
 	description:
 		'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/referral' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/referral' },
 	openGraph: {
 		title: 'Referrals | Stride Podiatry',
 		description:
 			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
-		url: 'https://www.stridepodiatry.com.au/referral',
+		url: 'https://stridepodiatry.com.au/referral',
 	},
 	twitter: {
 		title: 'Referrals | Stride Podiatry',

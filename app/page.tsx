@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 		'mobile podiatrist Adelaide',
 		'mobile podiatry Adelaide',
 	],
-	alternates: { canonical: 'https://www.stridepodiatry.com.au' },
+	alternates: { canonical: 'https://stridepodiatry.com.au' },
 	openGraph: {
 		siteName: 'Stride Podiatry',
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
 		description:
 			'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
-		url: 'https://www.stridepodiatry.com.au',
+		url: 'https://stridepodiatry.com.au',
 	},
 	twitter: {
 		title: 'Stride Podiatry | Mobile Podiatrist Adelaide',
@@ -117,9 +117,12 @@ export default function HomePage() {
 						<p className="section-kicker">Your podiatrist</p>
 						<h2>Calm, practical podiatry at home</h2>
 						<p>
-							<Link href="/about-us">Stride Podiatry</Link> provides podiatry
-							home visits across Adelaide, so treatment is easier to organise
-							when getting to a clinic is inconvenient.
+							<Link href="/about-us">Stride Podiatry</Link> provides{' '}
+							<Link href="/services/home-visit-podiatry">
+								home visit podiatry across Adelaide
+							</Link>
+							, so treatment is easier to organise when getting to a clinic is
+							inconvenient.
 						</p>
 						<p>
 							Private patients can request an appointment directly — <Link href="/fees">see fees</Link>. Visits are also available

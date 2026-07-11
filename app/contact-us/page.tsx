@@ -8,14 +8,14 @@ import { socialLinks } from '@/content/social-links';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-	{ name: 'Contact', url: 'https://www.stridepodiatry.com.au/contact-us' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
+	{ name: 'Contact', url: 'https://stridepodiatry.com.au/contact-us' },
 ]);
 
 const contactLD = {
 	'@context': 'https://schema.org',
 	'@type': 'ContactPage',
-	url: 'https://www.stridepodiatry.com.au/contact-us',
+	url: 'https://stridepodiatry.com.au/contact-us',
 	mainEntity: {
 		'@type': 'MedicalBusiness',
 		name: 'Stride Podiatry',
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
 	title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 	description:
 		'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/contact-us' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/contact-us' },
 	openGraph: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
 			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
-		url: 'https://www.stridepodiatry.com.au/contact-us',
+		url: 'https://stridepodiatry.com.au/contact-us',
 	},
 	twitter: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',

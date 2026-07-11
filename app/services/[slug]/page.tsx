@@ -54,8 +54,8 @@ export default async function ServiceDetailPage({
 
   const currentService = service;
   const breadcrumbsLd = buildBreadcrumbList([
-    { name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-    { name: 'Services', url: 'https://www.stridepodiatry.com.au/services' },
+    { name: 'Home', url: 'https://stridepodiatry.com.au' },
+    { name: 'Services', url: 'https://stridepodiatry.com.au/services' },
     { name: currentService.title, url: currentService.canonical },
   ]);
   const serviceLd = buildServiceSchema({
@@ -101,7 +101,23 @@ export default async function ServiceDetailPage({
             <>
               <h2>Overview</h2>
               <p>{currentService.overview}</p>
+              {currentService.overviewDetails?.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              ))}
             </>
+          ) : null}
+
+          {currentService.bodyImage ? (
+            <div className="service-body-image">
+              <Image
+                src={currentService.bodyImage.src}
+                alt={currentService.bodyImage.alt}
+                width={860}
+                height={430}
+                sizes="(max-width: 1024px) 100vw, 860px"
+                quality={75}
+              />
+            </div>
           ) : null}
 
           {currentService.sections.map((section) => (

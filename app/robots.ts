@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 export default function robots(): MetadataRoute.Robots {
 	return {
 		rules: [{ userAgent: '*', allow: '/' }],
-		sitemap: 'https://www.stridepodiatry.com.au/sitemap.xml',
-		host: 'https://www.stridepodiatry.com.au',
+		sitemap: 'https://stridepodiatry.com.au/sitemap.xml',
+		host: 'https://stridepodiatry.com.au',
 	};
 }

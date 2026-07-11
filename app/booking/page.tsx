@@ -5,20 +5,20 @@ import BookingForm from '@/components/booking-form';
 import { buildBreadcrumbList } from '@/lib/structured-data';
 
 const breadcrumbsLd = buildBreadcrumbList([
-	{ name: 'Home', url: 'https://www.stridepodiatry.com.au' },
-	{ name: 'Booking', url: 'https://www.stridepodiatry.com.au/booking' },
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
+	{ name: 'Booking', url: 'https://stridepodiatry.com.au/booking' },
 ]);
 
 export const metadata: Metadata = {
 	title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 	description:
 		'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
-	alternates: { canonical: 'https://www.stridepodiatry.com.au/booking' },
+	alternates: { canonical: 'https://stridepodiatry.com.au/booking' },
 	openGraph: {
 		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 		description:
 			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
-		url: 'https://www.stridepodiatry.com.au/booking',
+		url: 'https://stridepodiatry.com.au/booking',
 	},
 	twitter: {
 		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',

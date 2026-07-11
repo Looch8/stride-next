@@ -273,6 +273,28 @@
 	}
 }
 
+.service-detail .service-detail-body > p,
+.service-detail .service-detail-body > div > p {
+	max-width: 720px;
+	margin: 0 auto var(--space-4);
+	text-align: left;
+	line-height: 1.7;
+}
+
+.service-body-image {
+	max-width: 720px;
+	margin: var(--space-6) auto;
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+}
+
+.service-body-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 .service-detail .service-detail-body h2 {
 	margin-top: var(--space-5);
 	margin-bottom: var(--space-3);
