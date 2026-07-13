@@ -16,7 +16,7 @@ const faqData: FAQItem[] = [
 	},
 	{
 		question: 'What time will you arrive for my appointment?',
-		answer: 'Appointments are booked within an approximate 2-hour arrival window. This allows for travel time, traffic and the needs of earlier patients. We’ll confirm the window in advance and keep you updated if there is a delay.',
+		answer: 'Appointments are booked within an approximate 1-hour arrival window. This allows for travel time, traffic and the needs of earlier patients. We’ll confirm the window in advance and keep you updated if there is a delay.',
 	},
 	{
 		question: 'What is your cancellation and no-show policy?',
