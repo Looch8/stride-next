@@ -48,7 +48,7 @@ const medicalBusinessJsonLd = {
 		addressLocality: 'Adelaide',
 	},
 	description:
-		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia — General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
+		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia. General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	areaServed: [
 		{
 			'@type': 'AdministrativeArea',

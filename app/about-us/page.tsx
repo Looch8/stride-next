@@ -51,7 +51,7 @@ export default function AboutPage() {
 					<div className="about-photo-card">
 						<Image
 							src="/images/profile-pic.webp"
-							alt="Stride Podiatry — home-visit podiatry in Adelaide"
+							alt="Stride Podiatry, home-visit podiatry in Adelaide"
 							className="about-photo about-photo--portrait"
 							width={420}
 							height={630}

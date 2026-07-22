@@ -55,10 +55,10 @@ export const services: ServiceContent[] = [
     overview:
       'We provide podiatry at home across Adelaide metro, with regional South Australia by arrangement.',
     overviewDetails: [
-      'Stride Podiatry is a fully mobile service — there is no clinic to travel to. Your podiatrist brings everything needed for the appointment, including sterilised instruments and a full podiatry kit, so the care you receive at home matches what you would expect in a clinic room.',
-      'A visit starts with a short history and an assessment of the problem, followed by treatment on the day wherever possible — nail and skin care, offloading for pressure areas, or a plan for pain that needs more than one visit. You will always finish the appointment knowing what was done and what the next step is.',
+      'Stride Podiatry is a fully mobile service: there is no clinic to travel to. Your podiatrist brings everything needed for the appointment, including sterilised instruments and a full podiatry kit, so the care you receive at home matches what you would expect in a clinic room.',
+      'A visit starts with a short history and an assessment of the problem, followed by treatment on the day wherever possible: nail and skin care, offloading for pressure areas, or a plan for pain that needs more than one visit. You will always finish the appointment knowing what was done and what the next step is.',
       'Home visits remove the parts of a podiatry appointment that are hardest for many people: arranging transport, parking, walking distances and waiting rooms. That makes them practical for older adults, people recovering from surgery or illness, carers who would otherwise need to organise an outing, and busy households where a clinic trip never quite fits.',
-      'Visits are available across the Adelaide metropolitan area, with regional South Australia by arrangement. Private patients can book directly without a referral, and funded arrangements — Medicare Chronic Disease Management, NDIS, DVA and Support at Home — are supported where applicable.',
+      'Visits are available across the Adelaide metropolitan area, with regional South Australia by arrangement. Private patients can book directly without a referral, and funded arrangements (Medicare Chronic Disease Management, NDIS, DVA and Support at Home) are supported where applicable.',
     ],
     bodyImage: {
       src: '/images/luke-home-visit-travel.webp',
@@ -149,9 +149,9 @@ export const services: ServiceContent[] = [
     overview:
       'We provide NDIS podiatry home visits across Adelaide, with regional visits by arrangement. We work with participants, families and support teams to keep care simple.',
     overviewDetails: [
-      'Podiatry under the NDIS is about more than nail care — it supports mobility, comfort and independence. For many participants, regular foot care removes a barrier to daily activity, and assessment picks up problems early, before they limit walking or cause pain.',
+      'Podiatry under the NDIS is about more than nail care: it supports mobility, comfort and independence. For many participants, regular foot care removes a barrier to daily activity, and assessment picks up problems early, before they limit walking or cause pain.',
       'We see plan-managed and self-managed participants. Invoices are formatted to NDIS requirements and sent promptly to the participant or plan manager, and progress notes or reports can be provided for plan reviews when requested.',
-      'Appointments happen where the participant is most comfortable — at home, in supported independent living or in community settings. Your podiatrist works at the participant’s pace and can coordinate directly with support coordinators, families and support workers, so appointments are easy to organise and easy to repeat.',
+      'Appointments happen where the participant is most comfortable: at home, in supported independent living or in community settings. Your podiatrist works at the participant’s pace and can coordinate directly with support coordinators, families and support workers, so appointments are easy to organise and easy to repeat.',
     ],
     bodyImage: {
       src: '/images/luke-arriving-home-visit.webp',
@@ -320,7 +320,7 @@ export const services: ServiceContent[] = [
     overview:
       'We provide in-home podiatry for older adults receiving Support at Home services across Adelaide.',
     overviewDetails: [
-      'Support at Home is the Australian Government’s in-home aged care program, replacing Home Care Packages. If podiatry is included in your care plan, your funding can generally be used for regular home visits — including routine foot care, diabetes foot checks and treatment for foot pain.',
+      'Support at Home is the Australian Government’s in-home aged care program, replacing Home Care Packages. If podiatry is included in your care plan, your funding can generally be used for regular home visits, including routine foot care, diabetes foot checks and treatment for foot pain.',
       'We work directly with providers and case managers to set services up: confirming what is covered, agreeing on a visit schedule and invoicing the provider, so there is no paperwork left with the client or family. If you are not sure whether podiatry is included in a plan, we can help you ask the right questions.',
       'Because care is delivered entirely at home, there is no transport to organise and no disruption to the routines that in-home support is designed to protect. Visits can be scheduled alongside other services and repeated on a regular cycle.',
     ],
@@ -402,7 +402,7 @@ export const services: ServiceContent[] = [
       'We provide DVA podiatry home visits across Adelaide for eligible clients who prefer to be seen at home.',
     overviewDetails: [
       'Eligible veterans can access podiatry through DVA arrangements, with care provided at home rather than in a clinic. This suits older veterans, anyone with mobility or transport barriers, and clients who simply prefer to be seen in their own home.',
-      'DVA podiatry usually requires a referral from a GP. If you are unsure about eligibility or the paperwork, call first — we can explain exactly what is needed and coordinate with your GP where appropriate, so nothing is left for you to chase.',
+      'DVA podiatry usually requires a referral from a GP. If you are unsure about eligibility or the paperwork, call first, and we can explain exactly what is needed and coordinate with your GP where appropriate, so nothing is left for you to chase.',
       'Common visit work includes routine nail and skin care, treatment for corns and calluses, foot pain management and diabetic foot monitoring. Many DVA clients are seen on a regular cycle so care stays consistent.',
     ],
     bodyImage: {
@@ -504,7 +504,7 @@ export const services: ServiceContent[] = [
       'We treat common foot and nail problems so you can stay comfortable and mobile.',
     overviewDetails: [
       'Routine care covers the everyday problems that make feet uncomfortable: thickened or hard-to-cut nails, corns, callus build-up and dry, cracked heels. These are among the most common reasons people book a home visit, and most can be treated fully in a single appointment.',
-      'Treatment is gentle and straightforward — nails are reduced and shaped, corns and callus are removed painlessly, and skin care advice is given so the results last longer between visits. Many clients book a regular cycle so problems never get the chance to build up.',
+      'Treatment is gentle and straightforward: nails are reduced and shaped, corns and callus are removed painlessly, and skin care advice is given so the results last longer between visits. Many clients book a regular cycle so problems never get the chance to build up.',
     ],
     bodyImage: {
       src: '/images/luke-ingrown-toenail-care.webp',
@@ -550,8 +550,8 @@ export const services: ServiceContent[] = [
     overview:
       'We treat painful or infected ingrown nails to help reduce pain and lower recurrence risk.',
     overviewDetails: [
-      'An ingrown toenail happens when the nail edge presses into or pierces the surrounding skin, usually on the big toe. It often starts as mild tenderness and can progress quickly to swelling, redness and infection — and because every step puts pressure on the toe, it rarely settles on its own once established.',
-      'Most ingrown nails can be treated conservatively in a single home visit: the offending nail edge is cleared, the area is dressed, and you get clear advice on trimming and footwear to reduce the chance of it coming back. For nails that keep recurring, a minor procedure under local anaesthetic may be recommended — we will explain the options and what is involved before anything goes ahead.',
+      'An ingrown toenail happens when the nail edge presses into or pierces the surrounding skin, usually on the big toe. It often starts as mild tenderness and can progress quickly to swelling, redness and infection, and because every step puts pressure on the toe, it rarely settles on its own once established.',
+      'Most ingrown nails can be treated conservatively in a single home visit: the offending nail edge is cleared, the area is dressed, and you get clear advice on trimming and footwear to reduce the chance of it coming back. For nails that keep recurring, a minor procedure under local anaesthetic may be recommended, and we will explain the options and what is involved before anything goes ahead.',
     ],
     sections: [
       {
@@ -643,8 +643,8 @@ export const services: ServiceContent[] = [
     overview:
       'We assess how your feet and legs move during daily life and exercise to find the cause of pain or overload.',
     overviewDetails: [
-      'How your feet and legs move affects everything above them. A biomechanical assessment looks at joint range, strength, alignment and walking pattern to work out why pain keeps returning — whether it shows up in the foot, ankle, shin or knee.',
-      'Assessments are done in your home, including gait analysis and functional testing. From there, treatment might involve a strengthening program, footwear changes or custom orthotics — the aim is always to address the cause of the overload, not just the symptom.',
+      'How your feet and legs move affects everything above them. A biomechanical assessment looks at joint range, strength, alignment and walking pattern to work out why pain keeps returning, whether it shows up in the foot, ankle, shin or knee.',
+      'Assessments are done in your home, including gait analysis and functional testing. From there, treatment might involve a strengthening program, footwear changes or custom orthotics. The aim is always to address the cause of the overload, not just the symptom.',
       'Children’s concerns such as flat feet, intoeing and activity-related pain are also assessed, with an emphasis on reassurance and practical guidance for parents.',
     ],
     bodyImage: {
@@ -691,7 +691,7 @@ export const services: ServiceContent[] = [
     overview:
       'Orthotics can reduce strain and improve comfort when they are prescribed from a proper assessment.',
     overviewDetails: [
-      'Custom orthotics are prescription insoles made from a scan of your feet, designed to redistribute load and support the way you move. Prescribed well, they can make a real difference to heel, arch, knee and forefoot pain — which is why the assessment matters more than the device itself.',
+      'Custom orthotics are prescription insoles made from a scan of your feet, designed to redistribute load and support the way you move. Prescribed well, they can make a real difference to heel, arch, knee and forefoot pain, which is why the assessment matters more than the device itself.',
       'The full orthotic process happens at home: a biomechanical assessment first, then a 3D scan using a mobile scanning system, and a return visit to fit and adjust the finished orthotics. We also review your footwear, because orthotics only work as well as the shoes they sit in.',
     ],
     bodyImage: {
@@ -739,7 +739,7 @@ export const services: ServiceContent[] = [
     canonical: `${siteUrl}/services/heel-arch-pain`,
     overview: 'We assess heel and arch pain and put a treatment plan in place to settle it down.',
     overviewDetails: [
-      'Heel and arch pain is one of the most common problems podiatrists treat. Plantar fasciitis — pain under the heel that is worst with the first steps of the morning — is the usual culprit, but Achilles issues, heel spurs and arch strain can present similarly and each needs slightly different management.',
+      'Heel and arch pain is one of the most common problems podiatrists treat. Plantar fasciitis (pain under the heel that is worst with the first steps of the morning) is the usual culprit, but Achilles issues, heel spurs and arch strain can present similarly and each needs slightly different management.',
       'Assessment at home covers your history, footwear, foot posture and the way you move. Treatment usually combines load management, taping or padding, footwear changes, a progressive strengthening program and orthotics where indicated. Most heel pain responds well to conservative care, though it takes consistency over weeks rather than days.',
     ],
     bodyImage: {
@@ -787,7 +787,7 @@ export const services: ServiceContent[] = [
     overview:
       'The right shoes can make a big difference. We help you choose footwear that suits your feet and how you use them.',
     overviewDetails: [
-      'The wrong shoes contribute to a surprising share of foot pain — and the right ones are often the cheapest, most effective part of treatment. What counts as “right” depends on your foot shape, symptoms and what you do in an average day, not on brand or price.',
+      'The wrong shoes contribute to a surprising share of foot pain, and the right ones are often the cheapest, most effective part of treatment. What counts as “right” depends on your foot shape, symptoms and what you do in an average day, not on brand or price.',
       'During a visit we assess your current footwear for fit, wear pattern and support, and give specific recommendations, including features and models to look for. For older adults, footwear checks also consider slip and trip risk around the home.',
     ],
     sections: [
@@ -822,7 +822,7 @@ export const services: ServiceContent[] = [
     overview:
       'We assess mechanics, manage load and build a plan that helps you keep training.',
     overviewDetails: [
-      'Sport-related foot and ankle problems usually come down to load — training that increased faster than the tissues could adapt. Shin splints, Achilles pain, plantar fasciitis and forefoot overload all tend to follow this pattern, and managing them well means adjusting load, not just resting until the pain fades and then returns.',
+      'Sport-related foot and ankle problems usually come down to load: training that increased faster than the tissues could adapt. Shin splints, Achilles pain, plantar fasciitis and forefoot overload all tend to follow this pattern, and managing them well means adjusting load, not just resting until the pain fades and then returns.',
       'Assessment covers your training history, footwear, mechanics and gait. Treatment plans are built around keeping you active where possible, using progressive loading, strength work, footwear changes and orthotics where indicated.',
     ],
     sections: [
@@ -865,7 +865,7 @@ export const services: ServiceContent[] = [
     overview:
       'Forefoot pain can come from joint irritation, nerve compression or toe alignment issues. We assess the cause and make a plan to reduce pain.',
     overviewDetails: [
-      'Pain in the ball of the foot or toes has many possible causes — bunions, Morton’s neuroma, capsulitis, hammer toes — and they are managed differently, so an accurate assessment matters. Burning or tingling usually suggests nerve involvement, while sharp pain on push-off points to joint or soft tissue overload.',
+      'Pain in the ball of the foot or toes has many possible causes, including bunions, Morton’s neuroma, capsulitis and hammer toes, and they are managed differently, so an accurate assessment matters. Burning or tingling usually suggests nerve involvement, while sharp pain on push-off points to joint or soft tissue overload.',
       'Most forefoot problems respond well to conservative care: pressure offloading with padding or toe props, footwear changes (often simply a wider toe box), and orthotics where load needs redistributing. A lot can be done before surgery ever needs to be considered.',
     ],
     bodyImage: {

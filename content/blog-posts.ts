@@ -34,10 +34,10 @@ export const blogPosts: BlogPost[] = [
 		title: 'How Often Should You See a Podiatrist? A Guide for Older Adults and Home-Visit Patients',
 		date: '2026-04-26',
 		excerpt:
-			'There is no single answer — how often depends on your health, foot condition and how well you can manage care between visits.',
+			'There is no single answer: how often depends on your health, foot condition and how well you can manage care between visits.',
 		description:
 			'How often older adults and home-visit patients should see a podiatrist, including guidance for routine care, ongoing conditions and knowing when to book sooner.',
-		intro: 'How often you should see a podiatrist depends on your health, mobility and what is going on with your feet. For some people, once or twice a year is enough. For others — particularly older adults, people with diabetes or those who find self-care difficult — regular visits every six to eight weeks make a noticeable difference.',
+		intro: 'How often you should see a podiatrist depends on your health, mobility and what is going on with your feet. For some people, once or twice a year is enough. For others, particularly older adults, people with diabetes or those who find self-care difficult, regular visits every six to eight weeks make a noticeable difference.',
 		image: {
 			src: '/images/footcare_at_home.png',
 			alt: 'Podiatrist providing foot care at home for an older adult',
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
 				heading: 'Every 6 to 8 weeks: routine care for older adults',
 				paragraphs: [
 					'For many older adults living at home, a visit every six to eight weeks works well. This allows nails to be trimmed safely, callus to be managed before it becomes painful, and any skin changes to be caught early.',
-					'This interval is also practical for people who find it difficult to manage their own feet — whether due to reduced mobility, poor eyesight or trouble bending.',
+					'This interval is also practical for people who find it difficult to manage their own feet, whether due to reduced mobility, poor eyesight or trouble bending.',
 				],
 				list: [
 					'Nails that grow quickly or thicken easily',
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
 				heading: 'Annual or as-needed visits for lower-risk patients',
 				paragraphs: [
 					'If your feet are generally healthy and you can manage routine care yourself, an annual visit or booking when something changes is often enough.',
-					'A yearly check can still be useful — it gives you a chance to ask about footwear, any new aches, or changes you have noticed but not acted on.',
+					'A yearly check can still be useful: it gives you a chance to ask about footwear, any new aches, or changes you have noticed but not acted on.',
 				],
 			},
 			{
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
 				heading: 'How home visits make regular care easier',
 				paragraphs: [
 					'For older adults and people with limited mobility, keeping up with regular podiatry can be the hard part. Home visits remove the need to organise transport or wait in a clinic.',
-					'Because we come to you, it is easier to keep appointments consistent — which matters more than the exact interval.',
+					'Because we come to you, it is easier to keep appointments consistent, which matters more than the exact interval.',
 				],
 			},
 		],

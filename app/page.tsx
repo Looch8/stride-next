@@ -106,7 +106,7 @@ export default function HomePage() {
 					<div className="profile-image">
 						<Image
 							src="/images/luke-profile-home.webp"
-							alt="Luke Wheldale — Mobile Podiatrist in Adelaide"
+							alt="Luke Wheldale, Mobile Podiatrist in Adelaide"
 							width={350}
 							height={525}
 							sizes="(max-width: 480px) 220px, (max-width: 768px) 280px, (max-width: 1200px) 320px, 350px"
@@ -125,7 +125,7 @@ export default function HomePage() {
 							inconvenient.
 						</p>
 						<p>
-							Private patients can request an appointment directly — <Link href="/fees">see fees</Link>. Visits are also available
+							Private patients can request an appointment directly: <Link href="/fees">see fees</Link>. Visits are also available
 							for{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
 							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
