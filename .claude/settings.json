@@ -11,7 +11,11 @@
       "Bash(git rev-list *)",
       "Bash(git push *)",
       "Bash(git check-ignore *)",
-      "Bash(git ls-tree *)"
+      "Bash(git ls-tree *)",
+      "Bash(sed -i '' 's/luke@stridepodiatry\\\\.com\\\\.au/info@stridepodiatry.com.au/g' app/referral/page.tsx app/privacy/page.tsx app/contact-us/page.tsx components/site-footer.tsx && grep -rn \"luke@stridepodiatry.com.au\\\\|info@stridepodiatry.com.au\" app/referral/page.tsx app/privacy/page.tsx app/contact-us/page.tsx components/site-footer.tsx)"
+    ],
+    "additionalDirectories": [
+      "/Users/luke/Desktop/stride-next/app/referral"
     ]
   }
 }

@@ -26,7 +26,7 @@ const contactLD = {
 			addressLocality: 'Adelaide',
 		},
 		telephone: '+61468518993',
-		email: 'luke@stridepodiatry.com.au',
+		email: 'info@stridepodiatry.com.au',
 		areaServed: 'Adelaide',
 	},
 };
@@ -102,9 +102,9 @@ export default function ContactPage() {
 									<span className="contact-stat-label">Email</span>
 									<a
 										className="contact-link-primary"
-										href="mailto:luke@stridepodiatry.com.au"
+										href="mailto:info@stridepodiatry.com.au"
 									>
-										luke@stridepodiatry.com.au
+										info@stridepodiatry.com.au
 									</a>
 									<p className="contact-muted">
 										Best for referrals or longer messages.

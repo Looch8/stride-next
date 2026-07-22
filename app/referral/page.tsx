@@ -113,8 +113,8 @@ export default function ReferralPage() {
 					</p>
 					<div className="referral-links">
 						<a href="/referral-form.pdf">Download referral form (PDF)</a>
-						<a href="mailto:luke@stridepodiatry.com.au">
-							Email completed form to luke@stridepodiatry.com.au
+						<a href="mailto:info@stridepodiatry.com.au">
+							Email completed form to info@stridepodiatry.com.au
 						</a>
 						<Link href="/service-areas">Check service areas</Link>
 					</div>
