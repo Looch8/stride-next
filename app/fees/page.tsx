@@ -99,7 +99,8 @@ export default function FeesPage() {
                   rebated allied health visits per calendar year.
                 </li>
                 <li>
-                  The current Medicare rebate is $61.80 per consultation.
+                  A Medicare rebate applies per consultation, in line with
+                  the current schedule fee.
                 </li>
                 <li>
                   If applicable, the rebate can be processed for you after the
