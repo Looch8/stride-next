@@ -338,7 +338,7 @@ export default function PrivacyPage() {
 						</p>
 						<p>
 							Requests should be made in writing to
-							admin@stridepodiatry.com.au. We will respond within
+							info@stridepodiatry.com.au. We will respond within
 							a reasonable timeframe, generally within 30 days.
 						</p>
 						<p>
@@ -352,7 +352,7 @@ export default function PrivacyPage() {
 						<h2>11) Complaints</h2>
 						<p>
 							If you have a privacy concern or complaint, contact
-							us in writing at admin@stridepodiatry.com.au or by
+							us in writing at info@stridepodiatry.com.au or by
 							phone on 0468 518 993.
 						</p>
 						<p>
