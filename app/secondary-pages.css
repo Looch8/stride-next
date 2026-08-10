@@ -572,6 +572,28 @@
 	justify-content: center;
 }
 
+.service-area-actions .book-now-button {
+	color: #ffffff;
+	background: var(--brand-primary);
+	border-color: var(--brand-primary);
+}
+
+.service-area-actions .book-now-button:hover {
+	background: var(--brand-primary-700);
+	color: #ffffff;
+}
+
+.service-area-actions .hero-cta-secondary {
+	color: var(--brand-primary-800);
+	border-color: rgba(15, 107, 104, 0.45);
+	background: transparent;
+}
+
+.service-area-actions .hero-cta-secondary:hover {
+	background: rgba(15, 107, 104, 0.08);
+	color: var(--brand-primary-800);
+}
+
 .service-area-note {
 	margin-top: var(--space-4);
 	font-size: var(--text-sm);
