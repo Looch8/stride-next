@@ -41,12 +41,27 @@ const medicalBusinessJsonLd = {
 	logo: `${siteUrl}/images/logo.png`,
 	image: `${siteUrl}/images/logo.png`,
 	telephone: '+61468518993',
+	email: 'info@stridepodiatry.com.au',
+	priceRange: 'From $165',
 	address: {
 		'@type': 'PostalAddress',
 		addressCountry: 'AU',
 		addressRegion: 'SA',
 		addressLocality: 'Adelaide',
 	},
+	geo: {
+		'@type': 'GeoCoordinates',
+		latitude: -34.9285,
+		longitude: 138.6007,
+	},
+	openingHoursSpecification: [
+		{
+			'@type': 'OpeningHoursSpecification',
+			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+			opens: '08:00',
+			closes: '17:00',
+		},
+	],
 	description:
 		'Mobile and home-visit podiatry clinic serving Adelaide metro and regional South Australia. General podiatry care, ingrown toenails, diabetic foot care, orthotics and musculoskeletal treatment.',
 	areaServed: [
@@ -106,14 +121,6 @@ export const metadata: Metadata = {
 		description:
 			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
 		url: siteUrl,
-		images: [
-			{
-				url: '/images/logo.png',
-				width: 640,
-				height: 214,
-				alt: 'Stride Podiatry',
-			},
-		],
 	},
 	twitter: {
 		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
@@ -138,6 +145,11 @@ export const metadata: Metadata = {
 	},
 	appleWebApp: {
 		title: 'Stride Podiatry',
+	},
+	verification: {
+		other: {
+			'msvalidate.01': '27B15F255C6B73A74A5C6440BEE8B415',
+		},
 	},
 
 	manifest: '/site.webmanifest',

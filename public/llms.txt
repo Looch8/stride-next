@@ -1,0 +1,40 @@
+# Stride Podiatry
+
+> Mobile podiatry service providing home visits across Adelaide, South Australia. There is no clinic: all care is delivered in private homes, retirement villages, residential aged care facilities and supported living settings.
+
+Stride Podiatry is run by Luke Wheldale, a podiatrist who completed his Bachelor of Podiatry at the University of South Australia in 2020.
+
+## Key facts
+
+- Service type: home-visit (mobile) podiatry only, no clinic location
+- Coverage: all Adelaide metropolitan areas (northern, southern, eastern, western and central Adelaide), with regional South Australia by arrangement
+- Hours: Monday to Friday, 8:00am to 5:00pm
+- Phone: 0468 518 993
+- Email: info@stridepodiatry.com.au
+- Booking: https://stridepodiatry.com.au/booking (no referral needed for private patients)
+- Home visit fee: from $165, with Medicare CDM, NDIS (plan- and self-managed), DVA and Support at Home funding accepted where applicable
+
+## Services
+
+- [Home Visit Podiatry](https://stridepodiatry.com.au/services/home-visit-podiatry): routine foot care, treatment and assessment at home
+- [Aged Care Podiatry](https://stridepodiatry.com.au/services/aged-care-podiatry): regular care for older adults at home and in facilities
+- [NDIS Podiatry](https://stridepodiatry.com.au/services/ndis-podiatry): home visits for plan- and self-managed participants
+- [Support at Home Podiatry](https://stridepodiatry.com.au/services/support-at-home-podiatry): funded in-home podiatry for older adults
+- [DVA Podiatry](https://stridepodiatry.com.au/services/dva-podiatry): home visits for eligible veterans
+- [General Podiatry Care](https://stridepodiatry.com.au/services/general-podiatry): nails, corns, calluses and skin care
+- [Ingrown Toenail Treatment](https://stridepodiatry.com.au/services/ingrown-toenail)
+- [Diabetes Foot Care](https://stridepodiatry.com.au/services/diabetes-foot-care): assessments, risk screening and ongoing care
+- [Custom Orthotics](https://stridepodiatry.com.au/services/custom-orthotics): assessment, 3D scanning and fitting at home
+- [Heel & Arch Pain](https://stridepodiatry.com.au/services/heel-arch-pain)
+- [Biomechanics & Gait](https://stridepodiatry.com.au/services/biomechanics-gait)
+- [Sports Podiatry](https://stridepodiatry.com.au/services/sports-podiatry)
+- [Forefoot Pain](https://stridepodiatry.com.au/services/forefoot-pain)
+- [Footwear Advice](https://stridepodiatry.com.au/services/footwear-advice)
+
+## Key pages
+
+- [Fees](https://stridepodiatry.com.au/fees)
+- [FAQ](https://stridepodiatry.com.au/faq)
+- [Service Areas](https://stridepodiatry.com.au/service-areas)
+- [Referrals for GPs and providers](https://stridepodiatry.com.au/referral)
+- [Contact](https://stridepodiatry.com.au/contact-us)

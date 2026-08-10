@@ -522,6 +522,15 @@
 	margin-top: var(--space-6);
 }
 
+.service-area-card--suburbs + .service-area-detail-grid {
+	margin-top: var(--space-6);
+}
+
+.service-area-suburbs-note {
+	margin-top: var(--space-4);
+	font-style: italic;
+}
+
 .service-area-suburbs {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -16,12 +16,12 @@ const baseRoutes: Array<{ path: string; date: string }> = [
 	{ path: '/faq', date: '2026-07-13' },
 	{ path: '/blog', date: '2026-03-07' },
 	{ path: '/service-areas', date: '2026-01-01' },
-	{ path: '/service-areas/northern-adelaide', date: '2026-01-01' },
-	{ path: '/service-areas/southern-adelaide', date: '2026-01-01' },
-	{ path: '/service-areas/eastern-adelaide', date: '2026-01-01' },
-	{ path: '/service-areas/western-adelaide', date: '2026-01-01' },
-	{ path: '/service-areas/central-adelaide', date: '2026-01-01' },
-	{ path: '/service-areas/regional-south-australia', date: '2026-01-01' },
+	{ path: '/service-areas/northern-adelaide', date: '2026-08-10' },
+	{ path: '/service-areas/southern-adelaide', date: '2026-08-10' },
+	{ path: '/service-areas/eastern-adelaide', date: '2026-08-10' },
+	{ path: '/service-areas/western-adelaide', date: '2026-08-10' },
+	{ path: '/service-areas/central-adelaide', date: '2026-08-10' },
+	{ path: '/service-areas/regional-south-australia', date: '2026-08-10' },
 	{ path: '/privacy', date: '2026-01-01' },
 ];
 

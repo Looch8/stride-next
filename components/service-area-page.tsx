@@ -51,6 +51,10 @@ export default function ServiceAreaPage({
               <li key={suburb}>{suburb}</li>
             ))}
           </ul>
+          <p className="service-area-suburbs-note">
+            …and more. If your suburb is not listed, call and we will confirm
+            coverage.
+          </p>
         </div>
 
         <div className="service-area-detail-grid">
