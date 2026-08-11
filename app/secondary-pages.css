@@ -1549,6 +1549,26 @@
 	white-space: nowrap;
 }
 
+.fees-orthotics {
+	background: rgba(255, 255, 255, 0.92);
+	border-radius: var(--radius-xl);
+	border: 1px solid rgba(20, 49, 58, 0.08);
+	box-shadow: var(--shadow-sm);
+	padding: var(--space-6);
+}
+
+.fees-orthotics h2 {
+	margin: 0 0 var(--space-3);
+	font-size: clamp(1.4rem, 2vw, 1.7rem);
+	color: var(--brand-primary-800);
+}
+
+.fees-orthotics p {
+	margin: 0;
+	color: var(--brand-muted);
+	line-height: 1.7;
+}
+
 .fees-note {
 	margin: 0;
 	text-align: center;
@@ -1663,6 +1683,7 @@
 		padding: 0 var(--space-5) var(--space-5);
 	}
 
+	.fees-orthotics,
 	.fees-rebate-card {
 		padding: var(--space-5);
 	}

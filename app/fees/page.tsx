@@ -12,10 +12,6 @@ const pricingItems = [
     title: 'Home visits',
     price: '$165',
   },
-  {
-    title: 'Custom foot orthotics',
-    price: '$700',
-  },
 ] as const;
 
 export const metadata: Metadata = {
@@ -70,12 +66,26 @@ export default function FeesPage() {
           </div>
         </div>
 
+        <section className="fees-orthotics" aria-labelledby="orthotics-heading">
+          <h2 id="orthotics-heading">Custom foot orthotics</h2>
+          <p>
+            Includes biomechanical assessment, 3D scanning, gait analysis,
+            orthotic prescription, manufacture, and fitting. Fees are quoted at
+            your assessment. Funding may be available through NDIS, Support at
+            Home or DVA.
+          </p>
+        </section>
+
         <div className="fees-notes" aria-label="Additional fee information">
           <p className="fees-note">GST will be applied where applicable.</p>
           <p className="fees-note">
             NDIS appointments are billed in accordance with current NDIS
             Pricing Arrangements and Price Limits. This may include separate
             provider travel where applicable.
+          </p>
+          <p className="fees-note">
+            Extended consultations and written reports (GP letters, NDIS or
+            funding reports) are quoted separately.
           </p>
         </div>
 
