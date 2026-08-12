@@ -100,8 +100,8 @@ export default function BookingPage() {
 								</Link>
 								.
 							</p>
-							<a href="tel:+61468518993" className="contact-call-button">
-								Call 0468 518 993
+							<a href="tel:+61881667589" className="contact-call-button">
+								Call 08 8166 7589
 							</a>
 						</div>
 					</div>

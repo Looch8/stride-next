@@ -90,11 +90,11 @@ export default function HomePage() {
 								Request Appointment
 							</Link>
 							<a
-								href="tel:+61468518993"
+								href="tel:+61881667589"
 								className="hero-cta-secondary"
 								aria-label="Call Stride Podiatry"
 							>
-								Call 0468 518 993
+								Call 08 8166 7589
 							</a>
 						</div>
 					</div>

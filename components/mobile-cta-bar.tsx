@@ -7,10 +7,10 @@ export default function MobileCtaBar() {
       aria-hidden="false"
     >
       <a
-        href="tel:+61468518993"
+        href="tel:+61881667589"
         className="mobile-cta phone"
       >
-        Call 0468 518 993
+        Call 08 8166 7589
       </a>
       <a
         href="/booking"

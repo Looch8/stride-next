@@ -1,3 +1,5 @@
+const siteUrl = 'https://stridepodiatry.com.au';
+
 export type BreadcrumbItem = {
 	name: string;
 	url: string;
@@ -6,6 +8,18 @@ export type BreadcrumbItem = {
 export type FaqItem = {
 	question: string;
 	answer: string;
+};
+
+type BlogPostingSchemaInput = {
+	title: string;
+	description: string;
+	slug: string;
+	date: string;
+	image?: {
+		src: string;
+		width: number;
+		height: number;
+	};
 };
 
 type ServiceSchemaInput = {
@@ -44,6 +58,49 @@ export function buildFaqPage(items: FaqItem[]) {
 	};
 }
 
+export function buildBlogPostingSchema({
+	title,
+	description,
+	slug,
+	date,
+	image,
+}: BlogPostingSchemaInput) {
+	const url = `${siteUrl}/blog/${slug}`;
+
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'BlogPosting',
+		'@id': `${url}#article`,
+		mainEntityOfPage: {
+			'@type': 'WebPage',
+			'@id': url,
+		},
+		url,
+		headline: title,
+		description,
+		inLanguage: 'en-AU',
+		datePublished: date,
+		dateModified: date,
+		image: image
+			? {
+					'@type': 'ImageObject',
+					url: `${siteUrl}${image.src}`,
+					width: image.width,
+					height: image.height,
+				}
+			: `${siteUrl}/images/logo.png`,
+		author: {
+			'@type': 'Person',
+			name: 'Luke Wheldale',
+			jobTitle: 'Podiatrist',
+			url: `${siteUrl}/about-us`,
+		},
+		publisher: {
+			'@id': `${siteUrl}/#business`,
+		},
+	};
+}
+
 export function buildServiceSchema({
 	name,
 	description,
@@ -66,7 +123,7 @@ export function buildServiceSchema({
 			'@type': 'MedicalBusiness',
 			name: 'Stride Podiatry',
 			url: 'https://stridepodiatry.com.au',
-			telephone: '+61468518993',
+			telephone: '+61881667589',
 			address: {
 				'@type': 'PostalAddress',
 				addressCountry: 'AU',
@@ -77,7 +134,7 @@ export function buildServiceSchema({
 		availableChannel: {
 			'@type': 'ServiceChannel',
 			serviceUrl: url,
-			servicePhone: '+61468518993',
+			servicePhone: '+61881667589',
 		},
 	};
 }

@@ -25,7 +25,7 @@ const contactLD = {
 			addressRegion: 'SA',
 			addressLocality: 'Adelaide',
 		},
-		telephone: '+61468518993',
+		telephone: '+61881667589',
 		email: 'info@stridepodiatry.com.au',
 		areaServed: 'Adelaide',
 	},
@@ -34,18 +34,18 @@ const contactLD = {
 export const metadata: Metadata = {
 	title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 	description:
-		'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
+		'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 08 8166 7589 to check suburb coverage, availability or funding options.',
 	alternates: { canonical: 'https://stridepodiatry.com.au/contact-us' },
 	openGraph: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
+			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 08 8166 7589 to check suburb coverage, availability or funding options.',
 		url: 'https://stridepodiatry.com.au/contact-us',
 	},
 	twitter: {
 		title: 'Contact a Podiatrist in Adelaide | Stride Podiatry',
 		description:
-			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 0468 518 993 to check suburb coverage, availability or funding options.',
+			'Contact Stride Podiatry to book a podiatry home visit in Adelaide. Call 08 8166 7589 to check suburb coverage, availability or funding options.',
 	},
 };
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
 						<div className="contact-hero-copy">
 							<div>
 								<p className="contact-eyebrow">Fastest option</p>
-								<h2>Call or text for availability</h2>
+								<h2>Call for availability</h2>
 								<p className="contact-lead">
 									We can confirm suburb coverage, discuss the type of visit
 									you need, and let you know the next available times.
@@ -90,9 +90,9 @@ export default function ContactPage() {
 									<span className="contact-stat-label">Phone</span>
 									<a
 										className="contact-link-primary"
-										href="tel:+61468518993"
+										href="tel:+61881667589"
 									>
-										0468 518 993
+										08 8166 7589
 									</a>
 									<p className="contact-muted">
 										The quickest way to book.
@@ -115,9 +115,9 @@ export default function ContactPage() {
 						<div className="contact-hero-cta">
 							<a
 								className="contact-call-button"
-								href="tel:+61468518993"
+								href="tel:+61881667589"
 							>
-								Call 0468 518 993
+								Call 08 8166 7589
 							</a>
 						</div>
 					</div>

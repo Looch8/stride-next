@@ -33,6 +33,7 @@ const servicesLd = {
         '@type': 'MedicalBusiness',
         name: 'Stride Podiatry',
         url: 'https://stridepodiatry.com.au',
+        telephone: '+61881667589',
         address: businessAddress,
       },
     },

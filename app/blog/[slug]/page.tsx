@@ -4,6 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { blogPosts } from '@/content/blog-posts';
+import {
+  buildBlogPostingSchema,
+  buildBreadcrumbList,
+} from '@/lib/structured-data';
 
 const formatDate = (value: string) =>
   new Date(`${value}T00:00:00`).toLocaleDateString('en-AU', {
@@ -71,8 +75,35 @@ export default async function BlogPostPage({
     notFound();
   }
 
+  const articleLd = buildBlogPostingSchema({
+    title: post.title,
+    description: post.description,
+    slug: post.slug,
+    date: post.date,
+    image: post.image,
+  });
+
+  const breadcrumbsLd = buildBreadcrumbList([
+    { name: 'Home', url: 'https://stridepodiatry.com.au' },
+    { name: 'Blog', url: 'https://stridepodiatry.com.au/blog' },
+    {
+      name: post.title,
+      url: `https://stridepodiatry.com.au/blog/${post.slug}`,
+    },
+  ]);
+
   return (
     <section className="blog-post">
+      <script
+        key="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        key="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+      />
       <article className="blog-post-container">
         <Link href="/blog" className="blog-back-link">
           ← Back to Blog

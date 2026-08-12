@@ -40,7 +40,7 @@ const medicalBusinessJsonLd = {
 	url: homeUrl,
 	logo: `${siteUrl}/images/logo.png`,
 	image: `${siteUrl}/images/logo.png`,
-	telephone: '+61468518993',
+	telephone: '+61881667589',
 	email: 'info@stridepodiatry.com.au',
 	priceRange: 'From $165',
 	address: {

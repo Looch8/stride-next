@@ -113,8 +113,8 @@ export const blogPosts: BlogPost[] = [
 			body: 'Get in touch to discuss what makes sense for your situation, or request a home visit to get started.',
 			primaryLabel: 'Request a home visit',
 			primaryHref: '/booking',
-			secondaryLabel: 'Call 0468 518 993',
-			secondaryHref: 'tel:+61468518993',
+			secondaryLabel: 'Call 08 8166 7589',
+			secondaryHref: 'tel:+61881667589',
 		},
 	},
 	{
@@ -208,8 +208,8 @@ export const blogPosts: BlogPost[] = [
 			body: 'Request an appointment online or call to arrange a home visit for yourself or a family member.',
 			primaryLabel: 'Request appointment',
 			primaryHref: '/booking',
-			secondaryLabel: 'Call 0468 518 993',
-			secondaryHref: 'tel:+61468518993',
+			secondaryLabel: 'Call 08 8166 7589',
+			secondaryHref: 'tel:+61881667589',
 		},
 	},
 	{
@@ -277,8 +277,8 @@ export const blogPosts: BlogPost[] = [
 			body: 'Call for availability or book online and we will confirm the next suitable time.',
 			primaryLabel: 'Book online',
 			primaryHref: '/booking',
-			secondaryLabel: 'Call 0468 518 993',
-			secondaryHref: 'tel:+61468518993',
+			secondaryLabel: 'Call 08 8166 7589',
+			secondaryHref: 'tel:+61881667589',
 		},
 	},
 	{

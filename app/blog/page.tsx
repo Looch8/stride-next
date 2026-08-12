@@ -3,6 +3,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { blogPosts } from '@/content/blog-posts';
+import { buildBreadcrumbList } from '@/lib/structured-data';
+
+const breadcrumbsLd = buildBreadcrumbList([
+	{ name: 'Home', url: 'https://stridepodiatry.com.au' },
+	{ name: 'Blog', url: 'https://stridepodiatry.com.au/blog' },
+]);
+
+const blogLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Blog',
+	'@id': 'https://stridepodiatry.com.au/blog#blog',
+	name: 'Stride Podiatry Blog',
+	url: 'https://stridepodiatry.com.au/blog',
+	inLanguage: 'en-AU',
+	publisher: {
+		'@id': 'https://stridepodiatry.com.au/#business',
+	},
+	blogPost: [...blogPosts]
+		.sort((a, b) => (a.date < b.date ? 1 : -1))
+		.map((post) => ({
+			'@type': 'BlogPosting',
+			'@id': `https://stridepodiatry.com.au/blog/${post.slug}#article`,
+			url: `https://stridepodiatry.com.au/blog/${post.slug}`,
+			headline: post.title,
+			description: post.description,
+			datePublished: post.date,
+		})),
+};
 
 const formatDate = (value: string) =>
 	new Date(`${value}T00:00:00`).toLocaleDateString('en-AU', {
@@ -34,6 +62,16 @@ export default function BlogIndexPage() {
 
 	return (
 		<section className="blog-page">
+			<script
+				key="blog-schema"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLd) }}
+			/>
+			<script
+				key="breadcrumb-schema"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+			/>
 			<div className="blog-container">
 				<div className="blog-header">
 					<h1>Blog</h1>

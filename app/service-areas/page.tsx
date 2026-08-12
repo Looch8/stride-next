@@ -80,8 +80,8 @@ export default function ServiceAreasPage() {
 						<Link href="/contact-us" className="book-now-button">
 							Contact us
 						</Link>
-						<a href="tel:+61468518993" className="hero-cta-secondary">
-							Call 0468 518 993
+						<a href="tel:+61881667589" className="hero-cta-secondary">
+							Call 08 8166 7589
 						</a>
 					</div>
 				</div>

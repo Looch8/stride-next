@@ -14,8 +14,8 @@ export default function SiteFooter() {
             <h2 className="footer-title">Stride Podiatry</h2>
             <p className="footer-description">Mobile podiatry across Adelaide</p>
             <div className="footer-contact">
-              <a href="tel:+61468518993" className="contact-link">
-                <span>0468 518 993</span>
+              <a href="tel:+61881667589" className="contact-link">
+                <span>08 8166 7589</span>
               </a>
               <a href="mailto:info@stridepodiatry.com.au" className="contact-link">
                 <span>info@stridepodiatry.com.au</span>

@@ -71,7 +71,7 @@ export default function PrivacyPage() {
 						</p>
 						<ul className="privacy-list">
 							<li>Email: info@stridepodiatry.com.au</li>
-							<li>Phone: 0468 518 993</li>
+							<li>Phone: 08 8166 7589</li>
 							<li>Location: Adelaide, South Australia</li>
 						</ul>
 					</section>
@@ -353,7 +353,7 @@ export default function PrivacyPage() {
 						<p>
 							If you have a privacy concern or complaint, contact
 							us in writing at info@stridepodiatry.com.au or by
-							phone on 0468 518 993.
+							phone on 08 8166 7589.
 						</p>
 						<p>
 							We will acknowledge your complaint and aim to

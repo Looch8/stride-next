@@ -78,8 +78,8 @@ export default function ServiceAreaPage({
               <Link href="/booking" className="book-now-button">
                 Request appointment
               </Link>
-              <a href="tel:+61468518993" className="hero-cta-secondary">
-                Call 0468 518 993
+              <a href="tel:+61881667589" className="hero-cta-secondary">
+                Call 08 8166 7589
               </a>
             </div>
             <p className="service-area-note">

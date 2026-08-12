@@ -36,7 +36,9 @@
       "Bash(sips -g pixelWidth -g pixelHeight verify.svg.png)",
       "Bash(python3 inkbox.py verify.svg.png)",
       "Bash(npx next *)",
-      "Bash(gzip -c public/images/logo.svg)"
+      "Bash(gzip -c public/images/logo.svg)",
+      "Bash(grep -rniE 'gtag|googletagmanager|google-analytics|AW-|GTM-|G-[A-Z0-9]{8,}|conversion|clarity|hotjar|facebook.*pixel|fbq' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.js\" --include=\"*.json\" --include=\"*.html\" --exclude-dir=node_modules --exclude-dir=.next .)",
+      "Bash(sort -k2)"
     ],
     "additionalDirectories": [
       "/Users/luke/Desktop/stride-next/app/referral"
