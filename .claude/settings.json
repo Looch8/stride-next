@@ -21,7 +21,9 @@
       "Bash(pkill -f \"next start -p 3719\")",
       "Bash(curl -s http://localhost:3719/service-areas/northern-adelaide)",
       "Bash(python3 -)",
-      "Bash(grep -rn '\\\\$700\\\\|700' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --include=\"*.json\" --include=\"*.md\" --exclude-dir=node_modules --exclude-dir=.next /Users/luke/Desktop/stride-next)"
+      "Bash(grep -rn '\\\\$700\\\\|700' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --include=\"*.json\" --include=\"*.md\" --exclude-dir=node_modules --exclude-dir=.next /Users/luke/Desktop/stride-next)",
+      "Bash(git -C /Users/luke/Desktop/stride-next diff --stat)",
+      "Bash(git -C /Users/luke/Desktop/stride-next diff -- app/fees/page.tsx)"
     ],
     "additionalDirectories": [
       "/Users/luke/Desktop/stride-next/app/referral"

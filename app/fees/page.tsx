@@ -17,18 +17,18 @@ const pricingItems = [
 export const metadata: Metadata = {
   title: 'Fees | Stride Podiatry',
   description:
-    'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
+    'Home visit podiatry fees in Adelaide, including consultation pricing, NDIS billing, and Medicare and private health rebate information.',
   alternates: { canonical: 'https://stridepodiatry.com.au/fees' },
   openGraph: {
     title: 'Fees | Stride Podiatry',
     description:
-      'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
+      'Home visit podiatry fees in Adelaide, including consultation pricing, NDIS billing, and Medicare and private health rebate information.',
     url: 'https://stridepodiatry.com.au/fees',
   },
   twitter: {
     title: 'Fees | Stride Podiatry',
     description:
-      'Home visit podiatry fees in Adelaide, including initial and follow-up consultations, custom orthotics and Medicare rebate information.',
+      'Home visit podiatry fees in Adelaide, including consultation pricing, NDIS billing, and Medicare and private health rebate information.',
   },
 };
 
@@ -66,16 +66,6 @@ export default function FeesPage() {
           </div>
         </div>
 
-        <section className="fees-orthotics" aria-labelledby="orthotics-heading">
-          <h2 id="orthotics-heading">Custom foot orthotics</h2>
-          <p>
-            Includes biomechanical assessment, 3D scanning, gait analysis,
-            orthotic prescription, manufacture, and fitting. Fees are quoted at
-            your assessment. Funding may be available through NDIS, Support at
-            Home or DVA.
-          </p>
-        </section>
-
         <div className="fees-notes" aria-label="Additional fee information">
           <p className="fees-note">GST will be applied where applicable.</p>
           <p className="fees-note">
@@ -84,8 +74,8 @@ export default function FeesPage() {
             provider travel where applicable.
           </p>
           <p className="fees-note">
-            Extended consultations and written reports (GP letters, NDIS or
-            funding reports) are quoted separately.
+            Extended consultations, custom orthotics and written reports (GP
+            letters, NDIS, or funding reports) are quoted separately.
           </p>
         </div>
 
