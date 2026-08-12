@@ -23,7 +23,20 @@
       "Bash(python3 -)",
       "Bash(grep -rn '\\\\$700\\\\|700' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --include=\"*.json\" --include=\"*.md\" --exclude-dir=node_modules --exclude-dir=.next /Users/luke/Desktop/stride-next)",
       "Bash(git -C /Users/luke/Desktop/stride-next diff --stat)",
-      "Bash(git -C /Users/luke/Desktop/stride-next diff -- app/fees/page.tsx)"
+      "Bash(git -C /Users/luke/Desktop/stride-next diff -- app/fees/page.tsx)",
+      "Bash(rm -f logo.svg.png)",
+      "Bash(qlmanage -t -s 2000 -o . /Users/luke/Desktop/stride-next/public/images/logo.svg)",
+      "Bash(sips -g pixelWidth -g pixelHeight logo.svg.png)",
+      "Bash(sips -s format png raster.png --out raster8.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight raster8.png)",
+      "Bash(python3 inkbox.py logo.svg.png raster8.png)",
+      "Bash(rm -f verify.svg.png)",
+      "Bash(cp /Users/luke/Desktop/stride-next/public/images/logo.svg verify.svg)",
+      "Bash(qlmanage -t -s 640 -o . verify.svg)",
+      "Bash(sips -g pixelWidth -g pixelHeight verify.svg.png)",
+      "Bash(python3 inkbox.py verify.svg.png)",
+      "Bash(npx next *)",
+      "Bash(gzip -c public/images/logo.svg)"
     ],
     "additionalDirectories": [
       "/Users/luke/Desktop/stride-next/app/referral"
