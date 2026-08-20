@@ -125,8 +125,8 @@ export default function HomePage() {
 							inconvenient.
 						</p>
 						<p>
-							Private patients can request an appointment directly: <Link href="/fees">see fees</Link>. Visits are also available
-							for{' '}
+							Private patients can request an appointment directly. Visits are
+							also available for{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
 							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
 							<Link href="/services/dva-podiatry">DVA</Link> and{' '}

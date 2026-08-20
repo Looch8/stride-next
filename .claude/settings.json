@@ -38,7 +38,13 @@
       "Bash(npx next *)",
       "Bash(gzip -c public/images/logo.svg)",
       "Bash(grep -rniE 'gtag|googletagmanager|google-analytics|AW-|GTM-|G-[A-Z0-9]{8,}|conversion|clarity|hotjar|facebook.*pixel|fbq' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.js\" --include=\"*.json\" --include=\"*.html\" --exclude-dir=node_modules --exclude-dir=.next .)",
-      "Bash(sort -k2)"
+      "Bash(sort -k2)",
+      "Bash(grep -rniE 'fees?|\\\\$165|price|priceRange|rebate|bulk.?bill|cost' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --include=\"*.css\" --include=\"*.json\" --exclude-dir=node_modules --exclude-dir=.next --exclude=package-lock.json .)",
+      "Bash(grep -rniE '\\\\$1?[0-9]{2,3}|priceRange|from \\\\$|per visit|out.of.pocket|gap fee|fee' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --exclude-dir=node_modules --exclude-dir=.next .)",
+      "Bash(grep -rniE 'fee|cost|price|\\\\$|rebate|charge|bulk' content/services.ts app/faq/page.tsx content/service-areas.ts components/service-area-page.tsx public/llms.txt)",
+      "Bash(node -e \"const{execSync}=require\\('child_process'\\)\")",
+      "Bash(grep -rliE 'fees|\\\\$165|priceRange' .next/server/app --include=\"*.html\")",
+      "Bash(grep -rniE '/fees|priceRange|\\\\$165' --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.txt\" --exclude-dir=node_modules --exclude-dir=.next .)"
     ],
     "additionalDirectories": [
       "/Users/luke/Desktop/stride-next/app/referral"

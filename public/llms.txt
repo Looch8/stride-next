@@ -12,7 +12,7 @@ Stride Podiatry is run by Luke Wheldale, a podiatrist who completed his Bachelor
 - Phone: 08 8166 7589
 - Email: info@stridepodiatry.com.au
 - Booking: https://stridepodiatry.com.au/booking (no referral needed for private patients)
-- Home visit fee: from $165, with Medicare CDM, NDIS (plan- and self-managed), DVA and Support at Home funding accepted where applicable
+- Funding: Medicare CDM, NDIS (plan- and self-managed), DVA and Support at Home accepted where applicable
 
 ## Services
 
@@ -33,7 +33,6 @@ Stride Podiatry is run by Luke Wheldale, a podiatrist who completed his Bachelor
 
 ## Key pages
 
-- [Fees](https://stridepodiatry.com.au/fees)
 - [FAQ](https://stridepodiatry.com.au/faq)
 - [Service Areas](https://stridepodiatry.com.au/service-areas)
 - [Referrals for GPs and providers](https://stridepodiatry.com.au/referral)

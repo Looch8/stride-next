@@ -32,7 +32,6 @@ export default function SiteFooter() {
                 <Link href="/services/home-visit-podiatry">
                   Home Visit Podiatry
                 </Link>
-                <Link href="/fees">Fees</Link>
                 <Link href="/referral">Referrals</Link>
                 <Link href="/contact-us">Contact Us</Link>
                 <Link href="/faq">FAQ</Link>

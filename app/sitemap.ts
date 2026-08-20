@@ -9,7 +9,6 @@ const baseRoutes: Array<{ path: string; date: string }> = [
 	{ path: '/', date: '2026-07-11' },
 	{ path: '/about-us', date: '2026-01-01' },
 	{ path: '/services', date: '2026-01-01' },
-	{ path: '/fees', date: '2026-04-19' },
 	{ path: '/booking', date: '2026-01-01' },
 	{ path: '/contact-us', date: '2026-01-01' },
 	{ path: '/referral', date: '2026-04-19' },

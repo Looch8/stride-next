@@ -9,7 +9,6 @@ export const primaryNavItems: readonly NavLink[] = [
   { href: '/service-areas', label: 'Service Areas', dropdown: 'serviceAreas' },
   { href: '/services', label: 'Services', dropdown: 'services' },
   { href: '/referral', label: 'Referrals' },
-  { href: '/fees', label: 'Fees' },
   { href: '/contact-us', label: 'Contact' },
   { href: '/faq', label: 'FAQ' },
 ];
