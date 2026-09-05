@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 type BookingForm = {
@@ -69,7 +70,7 @@ export default function BookingForm() {
 
   return (
     <>
-      <form className="booking-form" onSubmit={handleSubmit} autoComplete="off">
+      <form className="booking-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
           <input
@@ -79,6 +80,7 @@ export default function BookingForm() {
             value={formData.fullName}
             onChange={handleChange}
             placeholder="Your full name"
+            autoComplete="name"
             required
           />
         </div>
@@ -92,6 +94,7 @@ export default function BookingForm() {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Your phone number"
+            autoComplete="tel"
             required
           />
         </div>
@@ -105,6 +108,7 @@ export default function BookingForm() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your email address"
+            autoComplete="email"
           />
         </div>
 
@@ -117,6 +121,7 @@ export default function BookingForm() {
             value={formData.suburb}
             onChange={handleChange}
             placeholder="Your suburb"
+            autoComplete="address-level2"
           />
         </div>
 
@@ -153,6 +158,11 @@ export default function BookingForm() {
             autoComplete="nope"
           />
         </div>
+
+				<p className="form-privacy-note">
+					Your details are only used to arrange your appointment. See our{' '}
+					<Link href="/privacy">Privacy Policy</Link>.
+				</p>
 
 				<button
 					type="submit"

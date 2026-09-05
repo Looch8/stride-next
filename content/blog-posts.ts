@@ -39,10 +39,10 @@ export const blogPosts: BlogPost[] = [
 			'How often older adults and home-visit patients should see a podiatrist, including guidance for routine care, ongoing conditions and knowing when to book sooner.',
 		intro: 'How often you should see a podiatrist depends on your health, mobility and what is going on with your feet. For some people, once or twice a year is enough. For others, particularly older adults, people with diabetes or those who find self-care difficult, regular visits every six to eight weeks make a noticeable difference.',
 		image: {
-			src: '/images/footcare_at_home.png',
+			src: '/images/footcare_at_home.jpg',
 			alt: 'Podiatrist providing foot care at home for an older adult',
-			width: 1672,
-			height: 941,
+			width: 1200,
+			height: 675,
 		},
 		sections: [
 			{
@@ -127,10 +127,10 @@ export const blogPosts: BlogPost[] = [
 			'How thick toenails are treated during a podiatry home visit, including nail reduction and when extra care may be needed.',
 		intro: 'Yes. Thick toenails can usually be treated during a home visit. We bring the same equipment used for routine clinic care, including drills and podiatry instruments, so nails can be reduced safely at home.',
 		image: {
-			src: '/images/podiatry-drill-gryphotic-toenail-blog.png',
+			src: '/images/podiatry-drill-gryphotic-toenail-blog.jpg',
 			alt: 'Podiatrist reducing a thick toenail with a drill during treatment',
-			width: 1536,
-			height: 1024,
+			width: 1200,
+			height: 800,
 		},
 		sections: [
 			{
@@ -222,7 +222,7 @@ export const blogPosts: BlogPost[] = [
 			'Who podiatry home visits suit, what happens during an appointment, how to prepare and how to book.',
 		intro: 'Home-visit podiatry brings foot care to your door. It suits people who find clinic visits difficult, tiring or inconvenient.',
 		image: {
-			src: '/images/mobile-podiatrist-home-visit-adelaide.png',
+			src: '/images/mobile-podiatrist-home-visit-adelaide.jpg',
 			alt: 'Podiatrist providing a home visit appointment in Adelaide',
 			width: 1200,
 			height: 800,
@@ -291,10 +291,10 @@ export const blogPosts: BlogPost[] = [
 			'Why ongoing podiatry care matters for older adults at home, including comfort, mobility and falls prevention.',
 		intro: 'Foot health affects comfort, mobility and balance. As we age, changes in circulation, skin, joints and sensation can increase the risk of pain, wounds and falls. Regular podiatry helps pick up small problems before they get harder to manage.',
 		image: {
-			src: '/images/regular-podiatry-older-adults-home-visits-adelaide.png',
+			src: '/images/regular-podiatry-older-adults-home-visits-adelaide.jpg',
 			alt: 'Mobile podiatrist treating an older adult at home in Adelaide',
-			width: 1536,
-			height: 1024,
+			width: 1200,
+			height: 800,
 		},
 		sections: [
 			{

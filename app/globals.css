@@ -407,6 +407,31 @@ textarea:focus-visible {
 	color: var(--brand-primary-800);
 }
 
+.dropdown-menu {
+	max-height: min(72vh, 680px);
+	overflow-y: auto;
+}
+
+.dropdown-group {
+	padding-top: var(--space-1);
+}
+
+.dropdown-group-label {
+	margin: var(--space-2) 0 var(--space-1);
+	padding: 0 var(--space-3);
+	font-size: var(--text-xs);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--brand-muted);
+}
+
+.dropdown-group-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .hamburger {
 	grid-column: 4;
 	justify-self: end;
@@ -457,6 +482,12 @@ textarea:focus-visible {
 		margin-left: 0;
 		transform: none;
 		left: auto;
+		max-height: none;
+		overflow-y: visible;
+	}
+
+	.dropdown-group-label {
+		padding-left: calc(var(--tapX) * 1.2);
 	}
 
 	.has-dropdown.open .dropdown-menu {
@@ -1451,6 +1482,32 @@ textarea:focus-visible {
 .back-home-btn:hover {
 	transform: translateY(-1px);
 	box-shadow: var(--shadow-sm);
+}
+
+.not-found .not-found-suggestion {
+	margin: var(--space-6) 0 var(--space-3);
+	font-size: var(--text-md);
+}
+
+.not-found-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--space-3) var(--space-5);
+}
+
+.not-found-links a {
+	font-weight: 600;
+	color: var(--brand-primary-800);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.not-found-links a:hover {
+	color: var(--brand-primary);
 }
 
 .faq-preview a {

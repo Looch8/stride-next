@@ -53,6 +53,13 @@ const medicalBusinessJsonLd = {
 		latitude: -34.9285,
 		longitude: 138.6007,
 	},
+	medicalSpecialty: 'Podiatric',
+	founder: {
+		'@type': 'Person',
+		name: 'Luke Wheldale',
+		jobTitle: 'Podiatrist',
+		url: `${siteUrl}/about-us`,
+	},
 	openingHoursSpecification: [
 		{
 			'@type': 'OpeningHoursSpecification',
@@ -106,13 +113,6 @@ export const metadata: Metadata = {
 	title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 	description:
 		'Mobile podiatrist in Adelaide providing home visits. Foot care for private patients, NDIS, DVA, Support at Home, aged care and more.',
-	keywords: [
-		'home visit podiatrist Adelaide',
-		'home visit podiatry Adelaide',
-		'mobile podiatrist Adelaide',
-		'mobile podiatry Adelaide',
-		'home care podiatrist Adelaide',
-	],
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',

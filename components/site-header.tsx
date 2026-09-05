@@ -14,12 +14,32 @@ import {
 import { primaryNavItems } from '@/content/navigation';
 import { serviceNavItems } from '@/content/service-nav-items';
 
-const dropdownServices = [
-  { href: '/services', label: 'All Services' },
-  ...serviceNavItems.map((service) => ({
-    href: `/services/${service.slug}`,
-    label: service.title,
-  })),
+const fundingSlugs = [
+  'home-visit-podiatry',
+  'ndis-podiatry',
+  'aged-care-podiatry',
+  'support-at-home-podiatry',
+  'dva-podiatry',
+];
+
+const toNavLink = (service: { slug: string; title: string }) => ({
+  href: `/services/${service.slug}`,
+  label: service.title,
+});
+
+const dropdownServiceGroups = [
+  {
+    label: 'Funding & visit types',
+    items: serviceNavItems
+      .filter((service) => fundingSlugs.includes(service.slug))
+      .map(toNavLink),
+  },
+  {
+    label: 'Treatments & foot problems',
+    items: serviceNavItems
+      .filter((service) => !fundingSlugs.includes(service.slug))
+      .map(toNavLink),
+  },
 ];
 
 const dropdownAbout = [
@@ -51,6 +71,9 @@ function HeaderContent({ pathname }: HeaderContentProps) {
   const [serviceAreasOpen, setServiceAreasOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
+  const panelRef = useRef<HTMLDivElement | null>(null);
+  const hamburgerRef = useRef<HTMLButtonElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useLayoutEffect(() => {
     setIsScrolled(window.scrollY > 50);
@@ -94,6 +117,44 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     document.body.classList.toggle('menu-open', isMobileMenuOpen);
     return () => {
       document.body.classList.remove('menu-open');
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const hamburger = hamburgerRef.current;
+    closeButtonRef.current?.focus();
+
+    const trapFocus = (event: KeyboardEvent) => {
+      const panel = panelRef.current;
+      if (event.key !== 'Tab' || !panel) return;
+
+      const focusable = panel.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled])',
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      const active = document.activeElement;
+
+      if (event.shiftKey && (active === first || !panel.contains(active))) {
+        event.preventDefault();
+        last.focus();
+      } else if (
+        !event.shiftKey &&
+        (active === last || !panel.contains(active))
+      ) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', trapFocus);
+    return () => {
+      document.removeEventListener('keydown', trapFocus);
+      hamburger?.focus();
     };
   }, [isMobileMenuOpen]);
 
@@ -165,6 +226,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
         </Link>
 
         <button
+          ref={hamburgerRef}
           className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
           aria-label="Toggle navigation menu"
           aria-controls="primary-navigation"
@@ -182,9 +244,11 @@ function HeaderContent({ pathname }: HeaderContentProps) {
           onClick={isMobileMenuOpen ? toggleMobileMenu : undefined}
         >
           <div
+            ref={panelRef}
             className="mobile-menu-panel"
             role="dialog"
             aria-modal="true"
+            aria-label="Navigation menu"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="mobile-menu-header">
@@ -198,6 +262,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                 />
               </Link>
               <button
+                ref={closeButtonRef}
                 className="mobile-menu-close"
                 type="button"
                 onClick={toggleMobileMenu}
@@ -236,17 +301,38 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                       >
                         Services <span className="chev">▾</span>
                       </button>
-                      <ul className="dropdown-menu" role="menu">
-                        {dropdownServices.map((service) => (
-                          <li key={service.href}>
-                            <Link
-                              href={service.href}
-                              className={
-                                pathname === service.href ? 'active' : undefined
-                              }
-                            >
-                              {service.label}
-                            </Link>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <Link
+                            href="/services"
+                            className={
+                              pathname === '/services' ? 'active' : undefined
+                            }
+                          >
+                            All Services
+                          </Link>
+                        </li>
+                        {dropdownServiceGroups.map((group) => (
+                          <li key={group.label} className="dropdown-group">
+                            <p className="dropdown-group-label">
+                              {group.label}
+                            </p>
+                            <ul className="dropdown-group-list">
+                              {group.items.map((service) => (
+                                <li key={service.href}>
+                                  <Link
+                                    href={service.href}
+                                    className={
+                                      pathname === service.href
+                                        ? 'active'
+                                        : undefined
+                                    }
+                                  >
+                                    {service.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
                           </li>
                         ))}
                       </ul>
@@ -269,7 +355,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                       >
                         About <span className="chev">▾</span>
                       </button>
-                      <ul className="dropdown-menu" role="menu">
+                      <ul className="dropdown-menu">
                         {dropdownAbout.map((item) => (
                           <li key={item.href}>
                             <Link
@@ -302,7 +388,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                       >
                         Service Areas <span className="chev">▾</span>
                       </button>
-                      <ul className="dropdown-menu" role="menu">
+                      <ul className="dropdown-menu">
                         {dropdownServiceAreas.map((item) => (
                           <li key={item.href}>
                             <Link

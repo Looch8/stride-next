@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 type MessageState = { type: 'success' | 'error' | ''; text: string };
@@ -69,7 +70,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
+      <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -79,6 +80,7 @@ export default function ContactForm() {
             placeholder="Your full name"
             value={formData.name}
             onChange={handleChange}
+            autoComplete="name"
             required
           />
         </div>
@@ -91,6 +93,7 @@ export default function ContactForm() {
             placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
+            autoComplete="email"
             required
           />
         </div>
@@ -103,6 +106,7 @@ export default function ContactForm() {
             placeholder="Your phone number"
             value={formData.phone}
             onChange={handleChange}
+            autoComplete="tel"
           />
         </div>
         <div className="form-group">
@@ -153,6 +157,11 @@ export default function ContactForm() {
             autoComplete="nope"
           />
         </div>
+        <p className="form-privacy-note">
+          Your details are only used to respond to your enquiry. See our{' '}
+          <Link href="/privacy">Privacy Policy</Link>.
+        </p>
+
         <button
           type="submit"
           className={`submit-button ${isLoading ? 'loading' : ''}`}

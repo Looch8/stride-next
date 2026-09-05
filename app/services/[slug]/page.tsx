@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
+import FAQList from '@/components/faq-list';
 import { services } from '@/content/services';
 import {
   buildBreadcrumbList,
+  buildFaqPage,
   buildServiceSchema,
 } from '@/lib/structured-data';
 
@@ -64,6 +66,9 @@ export default async function ServiceDetailPage({
     url: currentService.canonical,
     areaServed: ['Adelaide Metropolitan Area', 'Regional South Australia'],
   });
+  const faqLd = currentService.faqs?.length
+    ? buildFaqPage(currentService.faqs)
+    : null;
 
   return (
     <section className="services service-detail">
@@ -77,6 +82,13 @@ export default async function ServiceDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
       />
+      {faqLd ? (
+        <script
+          key="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      ) : null}
       <div className="services-container">
         <div className="services-header">
           <p className="services-eyebrow">Service</p>
@@ -130,6 +142,13 @@ export default async function ServiceDetailPage({
               </ul>
             </div>
           ))}
+
+          {currentService.faqs?.length ? (
+            <div className="service-faqs">
+              <h2>Frequently asked questions</h2>
+              <FAQList items={currentService.faqs} />
+            </div>
+          ) : null}
 
           <div className="detail-cta">
             <Link href="/booking" className="book-now-button">

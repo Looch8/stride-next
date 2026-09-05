@@ -342,6 +342,15 @@
 	color: #ffffff;
 }
 
+.service-detail .service-faqs {
+	margin-top: var(--space-6);
+	text-align: left;
+}
+
+.service-detail .service-faqs .faq-answer p {
+	margin: 0;
+}
+
 .service-detail .service-related-links,
 .service-detail .service-related-links {
 	margin-top: var(--space-6);
@@ -1032,6 +1041,19 @@
 	background: var(--brand-primary-700);
 	cursor: not-allowed;
 	opacity: 0.9;
+}
+
+.form-privacy-note {
+	grid-column: 1 / -1;
+	margin: var(--space-2) 0 0;
+	font-size: var(--text-sm);
+	color: var(--brand-muted);
+	line-height: 1.6;
+}
+
+.form-privacy-note a {
+	color: var(--brand-primary);
+	font-weight: 600;
 }
 
 #booking-reason {

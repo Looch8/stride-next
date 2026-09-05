@@ -8,7 +8,7 @@ export type SocialLink = {
 
 export const socialLinks: SocialLink[] = [
   {
-    href: 'https://www.facebook.com/profile.php?id=61570588927493',
+    href: 'https://www.facebook.com/p/Stride-Podiatry-61570588927493/',
     label: 'Facebook',
     icon: 'facebook',
   },

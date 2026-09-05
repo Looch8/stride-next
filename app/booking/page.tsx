@@ -65,7 +65,7 @@ export default function BookingPage() {
 
 					<div className="booking-sidebar">
 						<div className="booking-panel booking-panel--info">
-							<p className="booking-panel-eyebrow">What happens next</p>
+							<p className="booking-panel-eyebrow">Process</p>
 							<h2>What happens next</h2>
 							<div className="booking-info-list">
 								<div className="booking-info-item">

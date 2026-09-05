@@ -12,6 +12,23 @@ export default function NotFound() {
 				<Link href="/" className="back-home-btn">
 					Back to Home
 				</Link>
+				<p className="not-found-suggestion">
+					You might be looking for one of these:
+				</p>
+				<ul className="not-found-links">
+					<li>
+						<Link href="/services">Our services</Link>
+					</li>
+					<li>
+						<Link href="/service-areas">Service areas</Link>
+					</li>
+					<li>
+						<Link href="/booking">Request an appointment</Link>
+					</li>
+					<li>
+						<Link href="/contact-us">Contact us</Link>
+					</li>
+				</ul>
 			</div>
 		</section>
 	);
