@@ -14,58 +14,59 @@ export default function SiteFooter() {
             <h2 className="footer-title">Stride Podiatry</h2>
             <p className="footer-description">Mobile podiatry across Adelaide</p>
             <div className="footer-contact">
-              <a href="tel:+61881667589" className="contact-link">
+              <a
+                href="tel:+61881667589"
+                className="contact-link contact-link--phone"
+              >
                 <span>08 8166 7589</span>
               </a>
               <a href="mailto:info@stridepodiatry.com.au" className="contact-link">
                 <span>info@stridepodiatry.com.au</span>
               </a>
             </div>
-          </div>
-
-          <div className="footer-link-groups">
-            <div className="footer-links-group">
-              <p className="footer-eyebrow">Quick Links</p>
-              <div className="footer-links">
-                <Link href="/about-us">About</Link>
-                <Link href="/services">Services</Link>
-                <Link href="/services/home-visit-podiatry">
-                  Home Visit Podiatry
-                </Link>
-                <Link href="/referral">Referrals</Link>
-                <Link href="/contact-us">Contact Us</Link>
-                <Link href="/faq">FAQ</Link>
-                <Link href="/privacy">Privacy Policy</Link>
-              </div>
-            </div>
-
-            <div className="footer-links-group">
-              <p className="footer-eyebrow">Service Areas</p>
-              <div className="footer-links">
-                <Link href="/service-areas">All Areas</Link>
-                <Link href="/service-areas/northern-adelaide">Northern</Link>
-                <Link href="/service-areas/southern-adelaide">Southern</Link>
-                <Link href="/service-areas/eastern-adelaide">Eastern</Link>
-                <Link href="/service-areas/western-adelaide">Western</Link>
-                <Link href="/service-areas/central-adelaide">Central</Link>
-                <Link href="/service-areas/regional-south-australia">Regional SA</Link>
-              </div>
+            <div className="footer-social-links">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={link.label}
+                >
+                  <SocialIcon name={link.icon} />
+                </a>
+              ))}
             </div>
           </div>
-        </div>
 
-        <div className="footer-social-links">
-          {socialLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={link.label}
-            >
-              <SocialIcon name={link.icon} />
-            </a>
-          ))}
+          <div className="footer-links-group">
+            <p className="footer-eyebrow">Quick Links</p>
+            <div className="footer-links">
+              <Link href="/about-us">About</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/services/home-visit-podiatry">
+                Home Visit Podiatry
+              </Link>
+              <Link href="/referral">Referrals</Link>
+              <Link href="/contact-us">Contact Us</Link>
+              <Link href="/faq">FAQ</Link>
+              <Link href="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
+
+          <div className="footer-links-group">
+            <p className="footer-eyebrow">Service Areas</p>
+            <div className="footer-links">
+              <Link href="/service-areas">All Areas</Link>
+              <Link href="/service-areas/northern-adelaide">Northern</Link>
+              <Link href="/service-areas/southern-adelaide">Southern</Link>
+              <Link href="/service-areas/eastern-adelaide">Eastern</Link>
+              <Link href="/service-areas/western-adelaide">Western</Link>
+              <Link href="/service-areas/central-adelaide">Central</Link>
+              <Link href="/service-areas/regional-south-australia">Regional SA</Link>
+            </div>
+          </div>
+
         </div>
 
         <p className="copyright">© {currentYear} Stride Podiatry. All rights reserved.</p>

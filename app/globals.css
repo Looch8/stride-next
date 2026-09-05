@@ -660,7 +660,7 @@ textarea:focus-visible {
 
 .footer-top {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+	grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr);
 	gap: var(--space-6);
 	align-items: start;
 }
@@ -714,10 +714,10 @@ textarea:focus-visible {
 	transform: translateY(-1px);
 }
 
-.footer-link-groups {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: var(--space-5);
+.contact-link--phone {
+	font-size: clamp(1.3rem, 1.9vw, 1.55rem);
+	font-weight: 800;
+	letter-spacing: 0.01em;
 }
 
 .footer-links-group {
@@ -728,7 +728,7 @@ textarea:focus-visible {
 
 .footer-links {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: 1fr;
 	gap: var(--space-2) var(--space-4);
 	font-size: clamp(0.96rem, 1.2vw, 1.08rem);
 }
@@ -747,7 +747,17 @@ textarea:focus-visible {
 	display: flex;
 	justify-content: flex-start;
 	gap: var(--space-4);
-	padding-top: var(--space-2);
+	padding-top: var(--space-3);
+}
+
+@media (max-width: 1024px) {
+	.footer-top {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.footer-brand {
+		grid-column: 1 / -1;
+	}
 }
 
 .footer-social-links a {
@@ -787,16 +797,8 @@ textarea:focus-visible {
 	}
 
 	.footer-top {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: var(--space-5);
-	}
-
-	.footer-link-groups {
-		grid-template-columns: 1fr;
-	}
-
-	.footer-links {
-		grid-template-columns: 1fr;
 	}
 
 	.footer-contact {
