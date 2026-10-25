@@ -108,7 +108,7 @@ export default function HomePage() {
 						/>
 					</div>
 					<div className="profile-card">
-						<p className="section-kicker">Your podiatrist</p>
+						<p className="section-kicker">About Stride Podiatry</p>
 						<h2>Calm, practical podiatry at home</h2>
 						<p>
 							<Link href="/about-us">Stride Podiatry</Link> provides{' '}

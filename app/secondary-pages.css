@@ -1880,7 +1880,7 @@
 	display: grid;
 	grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
 	gap: var(--space-7);
-	align-items: center;
+	align-items: stretch;
 }
 
 .about-grid--reverse {
@@ -1898,6 +1898,7 @@
 
 .about-photo-card {
 	padding: var(--space-4);
+	display: flex;
 }
 
 .about-photo {
@@ -1906,6 +1907,13 @@
 	display: block;
 	border-radius: 24px;
 	object-fit: cover;
+	/* Fill the card so the photo matches the height of the text beside it. */
+	flex: 1;
+	min-height: 320px;
+}
+
+.about-photo--portrait {
+	object-position: center top;
 }
 
 .about-photo--portrait {
@@ -1932,6 +1940,19 @@
 
 .about-card p:last-child {
 	margin-bottom: 0;
+}
+
+.about-card--wide {
+	text-align: center;
+}
+
+.about-card--wide h2 {
+	max-width: none;
+}
+
+.about-card--wide p {
+	max-width: 62ch;
+	margin-inline: auto;
 }
 
 @media (max-width: 900px) {
