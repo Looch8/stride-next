@@ -1,5 +1,8 @@
 :root {
 	--brand-primary: #0f6b68;
+	/* Gradient partner for --brand-primary. Darkened from the old #148883 so
+	   white text on the light end of CTA gradients clears WCAG AA (4.65:1). */
+	--brand-primary-600: #13827d;
 	--brand-primary-700: #0c5754;
 	--brand-primary-800: #0a4543;
 	--brand-accent: #84d6cc;
@@ -40,6 +43,16 @@
 	--content-lg: 1200px;
 	--content-md: 900px;
 	--content-sm: 800px;
+	--header-height: 108px;
+	--logo-min-h: 54px;
+	--logo-max-h: 72px;
+	--container-max: 1200px;
+	--shadow-soft: var(--shadow-sm);
+	--shadow-raise: var(--shadow-md);
+	--tapY: 0.55rem;
+	--tapX: 0.85rem;
+	/* Minimum comfortable touch target (WCAG 2.5.8). */
+	--tap-min: 44px;
 }
 
 *,
@@ -143,7 +156,7 @@ img {
 }
 
 :target {
-	scroll-margin-top: 120px;
+	scroll-margin-top: calc(var(--header-height) + var(--space-4));
 }
 
 a:focus-visible,
@@ -156,6 +169,10 @@ textarea:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
 	* {
 		transition: none !important;
 		animation: none !important;
@@ -163,20 +180,6 @@ textarea:focus-visible {
 }
 
 /* Header */
-:root {
-		--header-height: 108px;
-		--header-height-scrolled: var(--header-height);
-		--logo-min-h: 54px;
-		--logo-max-h: 72px;
-		--logo-min-h-scrolled: var(--logo-min-h);
-		--logo-max-h-scrolled: var(--logo-max-h);
-	--container-max: 1200px;
-	--shadow-soft: var(--shadow-sm);
-	--shadow-raise: var(--shadow-md);
-	--tapY: 0.55rem;
-	--tapX: 0.85rem;
-}
-
 .header {
 	position: fixed;
 	inset: 0 0 auto 0;
@@ -238,14 +241,14 @@ textarea:focus-visible {
 	text-decoration: none;
 	font-weight: 700;
 	font-size: var(--text-sm);
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	color: #ffffff;
 	border: 1px solid rgba(10, 69, 67, 0.16);
 	box-shadow: 0 14px 30px rgba(15, 107, 104, 0.2);
 }
 
 .header-booking-button:hover {
-	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	background: linear-gradient(135deg, var(--brand-primary-600), var(--brand-primary-700));
 	color: #ffffff;
 }
 
@@ -382,6 +385,8 @@ textarea:focus-visible {
 	display: none;
 	z-index: 999;
 	list-style: none;
+	max-height: min(72vh, 680px);
+	overflow-y: auto;
 }
 
 .has-dropdown.open .dropdown-menu {
@@ -405,11 +410,6 @@ textarea:focus-visible {
 .dropdown-menu li a:hover {
 	background: var(--bg-50);
 	color: var(--brand-primary-800);
-}
-
-.dropdown-menu {
-	max-height: min(72vh, 680px);
-	overflow-y: auto;
 }
 
 .dropdown-group {
@@ -468,6 +468,9 @@ textarea:focus-visible {
 	transform: translateY(-6px) rotate(-45deg);
 }
 
+/* Mobile header. Must stay in sync with the hamburger breakpoint below:
+   if dropdowns go static while the horizontal nav is still shown, they open
+   inline and blow the header open. */
 @media (max-width: 900px) {
 	.nav-links .has-dropdown {
 		width: 100%;
@@ -499,14 +502,13 @@ textarea:focus-visible {
 	}
 }
 
-@media (max-width: 768px) {
+/* Paired with the mobile-header block above — keep both at the same width.
+   The horizontal nav needs ~900px to fit six labels, the logo and the CTA. */
+@media (max-width: 900px) {
 	:root {
 		--header-height: 64px;
-		--header-height-scrolled: var(--header-height);
 		--logo-min-h: 36px;
 		--logo-max-h: 44px;
-		--logo-min-h-scrolled: var(--logo-min-h);
-		--logo-max-h-scrolled: var(--logo-max-h);
 	}
 
 	body {
@@ -575,7 +577,7 @@ textarea:focus-visible {
 		padding: var(--tapY) var(--tapX);
 		margin: var(--space-2) var(--space-3) var(--space-1);
 		border-radius: var(--radius-sm);
-		background: linear-gradient(135deg, var(--brand-primary), #148883);
+		background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 		color: #ffffff;
 		font-weight: 700;
 		text-decoration: none;
@@ -746,8 +748,10 @@ textarea:focus-visible {
 .footer-social-links {
 	display: flex;
 	justify-content: flex-start;
-	gap: var(--space-4);
-	padding-top: var(--space-3);
+	/* Icons carry a 44px hit area (WCAG 2.5.8 — the rendered glyph is ~22px),
+	   so the spacing here is pulled in to keep the visual rhythm compact. */
+	gap: 0;
+	margin-left: calc(var(--space-3) * -1);
 }
 
 @media (max-width: 1024px) {
@@ -765,6 +769,11 @@ textarea:focus-visible {
 	font-size: clamp(1.3rem, 2vw, 1.55rem);
 	transition: color 0.2s ease;
 	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: var(--tap-min);
+	min-height: var(--tap-min);
+	border-radius: var(--radius-sm);
 }
 
 .footer-social-links a svg {
@@ -811,16 +820,6 @@ textarea:focus-visible {
 }
 
 /* Home */
-.main-content {
-	padding: 0;
-	background: var(--bg-50);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	overflow-x: hidden;
-}
-
 .hero-section {
 	width: 100%;
 	position: relative;
@@ -868,10 +867,8 @@ textarea:focus-visible {
 .profile-card,
 .welcome-card,
 .service-highlight,
-.contact-card,
 .service-preview-card,
-.area-card,
-.insurance-pill {
+.area-card {
 	animation: fade-up 0.7s ease both;
 }
 
@@ -929,7 +926,8 @@ textarea:focus-visible {
 	border: 1px solid rgba(255, 255, 255, 0.65);
 	border-radius: 999px;
 	text-decoration: none;
-	transition: all 0.2s;
+	transition: background-color 0.2s ease, color 0.2s ease,
+		transform 0.2s ease, box-shadow 0.2s ease;
 	box-shadow: 0 18px 40px rgba(7, 35, 46, 0.24);
 }
 
@@ -949,7 +947,8 @@ textarea:focus-visible {
 	border: 1px solid rgba(255, 255, 255, 0.32);
 	border-radius: 999px;
 	text-decoration: none;
-	transition: all 0.2s;
+	transition: background-color 0.2s ease, color 0.2s ease,
+		transform 0.2s ease, box-shadow 0.2s ease;
 	background: rgba(255, 255, 255, 0.08);
 }
 
@@ -1029,8 +1028,7 @@ textarea:focus-visible {
 }
 
 .welcome-card,
-.service-highlight,
-.contact-card {
+.service-highlight {
 	background: var(--surface);
 	border-radius: var(--radius-xl);
 	padding: var(--space-6);
@@ -1056,9 +1054,7 @@ textarea:focus-visible {
 
 .welcome-card h2,
 .service-highlight h2,
-.contact-card h2,
 .services-preview h2,
-.coverage-section h2,
 .faq-preview h2 {
 	font-size: clamp(2rem, 3vw, 3rem);
 	margin-bottom: var(--space-3);
@@ -1071,36 +1067,15 @@ textarea:focus-visible {
 }
 
 .services-preview h2,
-.coverage-section h2,
 .faq-preview h2 {
 	max-width: 16ch;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.contact-info {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--space-4);
-}
-
-.contact-info a {
-	color: var(--brand-primary-800);
-	text-decoration: none;
-	font-weight: 800;
-	font-size: 1.05rem;
-}
-
 .contact-note {
 	color: var(--brand-muted);
 	margin-top: var(--space-4);
-}
-
-.contact-card-inline {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: var(--space-5);
 }
 
 .value-grid,
@@ -1134,7 +1109,6 @@ textarea:focus-visible {
 }
 
 .services-preview,
-.coverage-section,
 .faq-preview {
 	width: 100%;
 	padding: var(--space-8) var(--space-5);
@@ -1146,10 +1120,6 @@ textarea:focus-visible {
 	background:
 		radial-gradient(circle at 10% 20%, rgba(132, 214, 204, 0.14), transparent 24%),
 		linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(235, 243, 242, 0.9));
-}
-
-.coverage-section {
-	background: transparent;
 }
 
 .section-content {
@@ -1201,33 +1171,6 @@ textarea:focus-visible {
 	color: var(--brand-primary);
 }
 
-.insurance-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: var(--space-3);
-	margin: var(--space-5) 0 0;
-}
-
-.insurance-pill {
-	padding: 0.9rem 1.15rem;
-	border-radius: 999px;
-	background: #ffffff;
-	border: 1px solid rgba(20, 49, 58, 0.08);
-	box-shadow: var(--shadow-sm);
-	font-weight: 800;
-	color: var(--brand-primary-800);
-}
-
-.insurance-note {
-	font-style: italic;
-	color: var(--brand-muted);
-	margin-top: var(--space-5);
-	max-width: 48rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .view-all-services {
 	display: inline-flex;
 	align-items: center;
@@ -1238,7 +1181,7 @@ textarea:focus-visible {
 	font-weight: 800;
 	text-decoration: none;
 	color: #ffffff;
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	box-shadow: 0 16px 34px rgba(15, 107, 104, 0.2);
 }
 
@@ -1251,7 +1194,7 @@ textarea:focus-visible {
 	padding: var(--space-7) var(--space-5);
 	background:
 		radial-gradient(circle at 20% 10%, rgba(132, 214, 204, 0.18), transparent 26%),
-		linear-gradient(135deg, #0a4543 0%, #0f6b68 100%);
+		linear-gradient(135deg, var(--brand-primary-800) 0%, var(--brand-primary) 100%);
 	color: #ffffff;
 	text-align: center;
 }
@@ -1287,7 +1230,8 @@ textarea:focus-visible {
 	border: 1px solid rgba(255, 255, 255, 0.8);
 	border-radius: 999px;
 	text-decoration: none;
-	transition: all 0.2s;
+	transition: background-color 0.2s ease, color 0.2s ease,
+		transform 0.2s ease, box-shadow 0.2s ease;
 	box-shadow: var(--shadow-sm);
 }
 
@@ -1346,10 +1290,8 @@ textarea:focus-visible {
 		padding: 0 var(--space-4);
 	}
 
-	.hero-panel-card,
 	.welcome-card,
 	.service-highlight,
-	.contact-card,
 	.service-preview-card {
 		padding: var(--space-5);
 	}
@@ -1382,12 +1324,6 @@ textarea:focus-visible {
 
 	.profile-image {
 		width: 100%;
-	}
-
-	.contact-card-inline,
-	.contact-info {
-		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	.area-grid {
@@ -1471,12 +1407,15 @@ textarea:focus-visible {
 }
 
 .back-home-btn {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: var(--tap-min);
 	padding: var(--space-3) var(--space-5);
-	border-radius: var(--radius-md);
+	border-radius: 999px;
 	font-weight: 700;
-	background: linear-gradient(135deg, #6d899d, #567283);
-	color: #fff;
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
+	color: #ffffff;
 	text-decoration: none;
 	transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -1484,6 +1423,7 @@ textarea:focus-visible {
 .back-home-btn:hover {
 	transform: translateY(-1px);
 	box-shadow: var(--shadow-sm);
+	color: #ffffff;
 }
 
 .not-found .not-found-suggestion {

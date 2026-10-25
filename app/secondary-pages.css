@@ -146,31 +146,6 @@
 	line-height: 1.7;
 }
 
-.services-highlight-links {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: var(--space-3);
-	margin-top: var(--space-5);
-}
-
-.services-highlight-links a {
-	display: inline-flex;
-	align-items: center;
-	padding: 0.7rem 1rem;
-	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.88);
-	border: 1px solid rgba(20, 49, 58, 0.08);
-	box-shadow: var(--shadow-sm);
-	color: var(--brand-primary-800);
-	font-weight: 700;
-	text-decoration: none;
-}
-
-.services-highlight-links a:hover {
-	background: #ffffff;
-}
-
 .services-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -331,14 +306,14 @@
 }
 
 .service-detail .detail-cta .book-now-button {
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	color: #ffffff;
 	border: 1px solid rgba(10, 69, 67, 0.16);
 	box-shadow: 0 16px 34px rgba(15, 107, 104, 0.22);
 }
 
 .service-detail .detail-cta .book-now-button:hover {
-	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	background: linear-gradient(135deg, var(--brand-primary-600), var(--brand-primary-700));
 	color: #ffffff;
 }
 
@@ -371,10 +346,6 @@
 }
 
 @media (max-width: 768px) {
-	.services-highlight-links {
-		justify-content: flex-start;
-	}
-
 	.service-card-body {
 		padding: var(--space-5);
 	}
@@ -1022,7 +993,7 @@
 	padding: var(--space-4) var(--space-6);
 	font-size: var(--text-md);
 	color: #ffffff;
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	border: none;
 	border-radius: 999px;
 	cursor: pointer;
@@ -1032,7 +1003,7 @@
 	box-shadow: 0 14px 30px rgba(15, 107, 104, 0.2);
 }
 
-.booking-form button:hover {
+.booking-form button:not(:disabled):hover {
 	transform: translateY(-2px);
 	box-shadow: 0 18px 34px rgba(15, 107, 104, 0.24);
 }
@@ -1093,15 +1064,6 @@
 	margin: 0;
 	color: var(--brand-muted);
 	line-height: 1.65;
-}
-
-.booking-phone-link {
-	display: inline-block;
-	margin-bottom: var(--space-3);
-	font-size: clamp(1.45rem, 2.4vw, 2rem);
-	font-weight: 800;
-	color: var(--brand-primary-800);
-	text-decoration: none;
 }
 
 .success-message,
@@ -1272,7 +1234,7 @@
 	justify-content: center;
 	padding: 1rem 1.35rem;
 	border-radius: 999px;
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 800;
@@ -1280,7 +1242,7 @@
 }
 
 .contact-call-button:hover {
-	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	background: linear-gradient(135deg, var(--brand-primary-600), var(--brand-primary-700));
 	color: #ffffff;
 }
 
@@ -1392,7 +1354,8 @@
 	border: 1.5px solid rgba(20, 49, 58, 0.12);
 	border-radius: 18px;
 	font-size: var(--text-md);
-	transition: all 0.25s;
+	transition: border-color 0.25s ease, box-shadow 0.25s ease,
+		background-color 0.25s ease;
 	background: #f9fdfc;
 }
 
@@ -1415,7 +1378,7 @@
 	padding: var(--space-4) var(--space-6);
 	font-size: var(--text-md);
 	color: #ffffff;
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	border: none;
 	border-radius: 999px;
 	cursor: pointer;
@@ -1553,7 +1516,6 @@
 	box-shadow: var(--shadow-sm);
 	border: 1px solid rgba(20, 49, 58, 0.08);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
-	cursor: pointer;
 	overflow: hidden;
 }
 
@@ -1750,14 +1712,14 @@
 }
 
 .referral-actions .book-now-button {
-	background: linear-gradient(135deg, var(--brand-primary), #148883);
+	background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-600));
 	color: #ffffff;
 	border: 1px solid rgba(10, 69, 67, 0.16);
 	box-shadow: 0 16px 34px rgba(15, 107, 104, 0.22);
 }
 
 .referral-actions .book-now-button:hover {
-	background: linear-gradient(135deg, #148883, var(--brand-primary-700));
+	background: linear-gradient(135deg, var(--brand-primary-600), var(--brand-primary-700));
 	color: #ffffff;
 }
 
@@ -1914,9 +1876,6 @@
 
 .about-photo--portrait {
 	object-position: center top;
-}
-
-.about-photo--portrait {
 	aspect-ratio: 2 / 3;
 }
 
