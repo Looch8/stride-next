@@ -78,6 +78,12 @@ const nextConfig: NextConfig = {
 				destination: '/services/ingrown-toenail',
 				permanent: true,
 			},
+			// The referral form PDF was renamed; referrers may still hold the old link.
+			{
+				source: '/referral-form.pdf',
+				destination: '/Stride-Podiatry-Referral-Form.pdf',
+				permanent: true,
+			},
 		];
 	},
 	async headers() {
