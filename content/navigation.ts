@@ -1,7 +1,9 @@
+export type NavDropdown = 'services' | 'about' | 'serviceAreas' | 'patientInfo';
+
 export type NavLink = {
   href: string;
   label: string;
-  dropdown?: 'services' | 'about' | 'serviceAreas';
+  dropdown?: NavDropdown;
 };
 
 export const primaryNavItems: readonly NavLink[] = [
@@ -10,5 +12,5 @@ export const primaryNavItems: readonly NavLink[] = [
   { href: '/services', label: 'Services', dropdown: 'services' },
   { href: '/referral', label: 'Referrals' },
   { href: '/contact-us', label: 'Contact' },
-  { href: '/faq', label: 'FAQ' },
+  { href: '/faq', label: 'Patient Info', dropdown: 'patientInfo' },
 ];

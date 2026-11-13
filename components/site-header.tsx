@@ -11,7 +11,7 @@ import {
   type MouseEvent as ReactMouseEvent,
 } from 'react';
 
-import { primaryNavItems } from '@/content/navigation';
+import { primaryNavItems, type NavDropdown } from '@/content/navigation';
 import { serviceNavItems } from '@/content/service-nav-items';
 
 const fundingSlugs = [
@@ -47,6 +47,12 @@ const dropdownAbout = [
   { href: '/blog', label: 'Blog' },
 ];
 
+const dropdownPatientInfo = [
+  { href: '/faq', label: 'FAQ' },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/cancellation-policy', label: 'Cancellation Policy' },
+];
+
 const dropdownServiceAreas = [
   { href: '/service-areas', label: 'All Service Areas' },
   { href: '/service-areas/northern-adelaide', label: 'Northern Adelaide' },
@@ -66,9 +72,7 @@ type HeaderContentProps = {
 
 function HeaderContent({ pathname }: HeaderContentProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
-  const [serviceAreasOpen, setServiceAreasOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<NavDropdown | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
   const panelRef = useRef<HTMLDivElement | null>(null);
@@ -91,9 +95,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
   useEffect(() => {
     const onDocClick = (event: MouseEvent) => {
       if (!navRef.current?.contains(event.target as Node)) {
-        setServicesOpen(false);
-        setAboutOpen(false);
-        setServiceAreasOpen(false);
+        setOpenDropdown(null);
       }
     };
     document.addEventListener('mousedown', onDocClick);
@@ -104,9 +106,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setIsMobileMenuOpen(false);
-        setServicesOpen(false);
-        setAboutOpen(false);
-        setServiceAreasOpen(false);
+        setOpenDropdown(null);
       }
     };
     document.addEventListener('keydown', onKeyDown);
@@ -162,41 +162,27 @@ function HeaderContent({ pathname }: HeaderContentProps) {
     setIsMobileMenuOpen((prev) => {
       const next = !prev;
       if (!next) {
-        setServicesOpen(false);
-        setAboutOpen(false);
-        setServiceAreasOpen(false);
+        setOpenDropdown(null);
       }
       return next;
     });
 
-  const toggleServices = (event: ReactMouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-    setAboutOpen(false);
-    setServiceAreasOpen(false);
-    setServicesOpen((prev) => !prev);
-  };
+  const toggleDropdown =
+    (name: NavDropdown) => (event: ReactMouseEvent<HTMLButtonElement>) => {
+      event.stopPropagation();
+      setOpenDropdown((prev) => (prev === name ? null : name));
+    };
 
-  const toggleAbout = (event: ReactMouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-    setServicesOpen(false);
-    setServiceAreasOpen(false);
-    setAboutOpen((prev) => !prev);
-  };
-
-  const toggleServiceAreas = (event: ReactMouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-    setServicesOpen(false);
-    setAboutOpen(false);
-    setServiceAreasOpen((prev) => !prev);
-  };
+  const servicesOpen = openDropdown === 'services';
+  const aboutOpen = openDropdown === 'about';
+  const serviceAreasOpen = openDropdown === 'serviceAreas';
+  const patientInfoOpen = openDropdown === 'patientInfo';
 
   const handleNavClick = (event: ReactMouseEvent<HTMLUListElement>) => {
     const target = event.target as HTMLElement;
     if (target.closest('a')) {
       setIsMobileMenuOpen(false);
-      setServicesOpen(false);
-      setAboutOpen(false);
-      setServiceAreasOpen(false);
+      setOpenDropdown(null);
     }
   };
 
@@ -297,7 +283,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                         type="button"
                         aria-haspopup="true"
                         aria-expanded={servicesOpen}
-                        onClick={toggleServices}
+                        onClick={toggleDropdown('services')}
                       >
                         Services <span className="chev">▾</span>
                       </button>
@@ -351,7 +337,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                         type="button"
                         aria-haspopup="true"
                         aria-expanded={aboutOpen}
-                        onClick={toggleAbout}
+                        onClick={toggleDropdown('about')}
                       >
                         About <span className="chev">▾</span>
                       </button>
@@ -384,7 +370,7 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                         type="button"
                         aria-haspopup="true"
                         aria-expanded={serviceAreasOpen}
-                        onClick={toggleServiceAreas}
+                        onClick={toggleDropdown('serviceAreas')}
                       >
                         Service Areas <span className="chev">▾</span>
                       </button>
@@ -401,6 +387,39 @@ function HeaderContent({ pathname }: HeaderContentProps) {
                                   : pathname.startsWith(item.href)
                                     ? 'active'
                                     : undefined
+                              }
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+
+                if (link.dropdown === 'patientInfo') {
+                  return (
+                    <li
+                      key={link.href}
+                      className={`has-dropdown ${patientInfoOpen ? 'open' : ''}`}
+                    >
+                      <button
+                        className="dropdown-trigger"
+                        type="button"
+                        aria-haspopup="true"
+                        aria-expanded={patientInfoOpen}
+                        onClick={toggleDropdown('patientInfo')}
+                      >
+                        {link.label} <span className="chev">▾</span>
+                      </button>
+                      <ul className="dropdown-menu">
+                        {dropdownPatientInfo.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              className={
+                                pathname === item.href ? 'active' : undefined
                               }
                             >
                               {item.label}

@@ -21,7 +21,7 @@ const faqData: FAQItem[] = [
 	{
 		question: 'What is your cancellation and no-show policy?',
 		answer:
-			'We require at least 2 clear business days’ notice for cancellations or changes. If less notice is given, or an appointment is missed, the full consultation fee may apply.',
+			'Please give us more than 24 hours’ notice if you need to cancel or reschedule. If less than 24 hours’ notice is given, or you are not available when we arrive, a cancellation fee of 100% of the appointment cost will be charged. See our Cancellation Policy page for full details.',
 	},
 	{
 		question: 'How do orthotics work as a mobile podiatry service?',

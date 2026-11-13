@@ -12,7 +12,7 @@ const baseRoutes: Array<{ path: string; date: string }> = [
 	{ path: '/booking', date: '2026-01-01' },
 	{ path: '/contact-us', date: '2026-01-01' },
 	{ path: '/referral', date: '2026-04-19' },
-	{ path: '/faq', date: '2026-07-13' },
+	{ path: '/faq', date: '2026-11-13' },
 	{ path: '/blog', date: '2026-03-07' },
 	{ path: '/service-areas', date: '2026-01-01' },
 	{ path: '/service-areas/northern-adelaide', date: '2026-08-10' },
@@ -22,6 +22,7 @@ const baseRoutes: Array<{ path: string; date: string }> = [
 	{ path: '/service-areas/central-adelaide', date: '2026-08-10' },
 	{ path: '/service-areas/regional-south-australia', date: '2026-08-10' },
 	{ path: '/privacy', date: '2026-01-01' },
+	{ path: '/cancellation-policy', date: '2026-11-13' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

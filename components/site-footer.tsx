@@ -51,6 +51,7 @@ export default function SiteFooter() {
               <Link href="/contact-us">Contact Us</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/cancellation-policy">Cancellation Policy</Link>
             </div>
           </div>
 
