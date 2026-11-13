@@ -1,6 +1,6 @@
 // layout.tsx
 import type { Metadata } from 'next';
-import { Nunito, Poppins } from 'next/font/google';
+import { Figtree } from 'next/font/google';
 import type { ReactNode } from 'react';
 
 import SiteFooter from '@/components/site-footer';
@@ -12,20 +12,10 @@ import './globals.css';
 
 const homeUrl = siteUrl;
 
-const nunito = Nunito({
+const figtree = Figtree({
 	subsets: ['latin'],
-	weight: ['400', '500', '600', '700'],
-	variable: '--font-body',
-	display: 'swap',
-	preload: true,
-	fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial'],
-	adjustFontFallback: true,
-});
-
-const poppins = Poppins({
-	subsets: ['latin'],
-	weight: ['500', '600', '700'],
-	variable: '--font-heading',
+	weight: ['400', '500', '600', '700', '800'],
+	variable: '--font-sans',
 	display: 'swap',
 	preload: true,
 	fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial'],
@@ -156,7 +146,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="en-AU" className={`${nunito.variable} ${poppins.variable}`}>
+		<html lang="en-AU" className={figtree.variable}>
 			<head>
 				<script
 					type="application/ld+json"
