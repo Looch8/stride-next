@@ -162,8 +162,7 @@ export default function ContactPage() {
 								</p>
 								<p>
 									You can also explore{' '}
-									<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
-									<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+									<Link href="/services/ndis-podiatry">NDIS podiatry</Link>{' '}
 									and{' '}
 									<Link href="/services/support-at-home-podiatry">
 										Support at Home podiatry

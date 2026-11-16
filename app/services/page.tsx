@@ -43,18 +43,18 @@ const servicesLd = {
 export const metadata: Metadata = {
   title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
   description:
-    'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, DVA, aged care, foot pain and routine foot care.',
+    'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, aged care, foot pain and routine foot care.',
   alternates: { canonical: 'https://stridepodiatry.com.au/services' },
   openGraph: {
     title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
     description:
-      'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, DVA, aged care, foot pain and routine foot care.',
+      'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, aged care, foot pain and routine foot care.',
     url: 'https://stridepodiatry.com.au/services',
   },
   twitter: {
     title: 'Mobile Podiatry Services Adelaide | Home Visits | Stride Podiatry',
     description:
-      'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, DVA, aged care, foot pain and routine foot care.',
+      'Mobile podiatry home visits in Adelaide for private patients, NDIS, Support at Home, aged care, foot pain and routine foot care.',
   },
 };
 
@@ -76,7 +76,7 @@ export default function ServicesPage() {
           <p className="services-eyebrow">Services</p>
           <h1>Mobile podiatry services across Adelaide</h1>
           <p className="services-intro">
-            Home visits for private patients, NDIS, aged care, DVA, Support at
+            Home visits for private patients, NDIS, aged care, Support at
             Home and common foot problems.
           </p>
         </div>

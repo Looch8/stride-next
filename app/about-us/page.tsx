@@ -80,7 +80,7 @@ export default function AboutPage() {
 						</p>
 						<p>
 							We see private patients and also work with Medicare Chronic
-							Disease Management, Support at Home, DVA and NDIS where
+							Disease Management, Support at Home and NDIS where
 							applicable, coordinating with GPs, support coordinators,
 							providers and families when needed.
 						</p>

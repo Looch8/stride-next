@@ -19,7 +19,6 @@ const fundingSlugs = [
   'ndis-podiatry',
   'aged-care-podiatry',
   'support-at-home-podiatry',
-  'dva-podiatry',
 ];
 
 const toNavLink = (service: { slug: string; title: string }) => ({

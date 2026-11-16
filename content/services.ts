@@ -58,7 +58,7 @@ export const services: ServiceContent[] = [
       'Stride Podiatry is a fully mobile service: there is no clinic to travel to. Your podiatrist brings everything needed for the appointment, including sterilised instruments and a full podiatry kit, so the care you receive at home matches what you would expect in a clinic room.',
       'A visit starts with a short history and an assessment of the problem, followed by treatment on the day wherever possible: nail and skin care, offloading for pressure areas, or a plan for pain that needs more than one visit. You will always finish the appointment knowing what was done and what the next step is.',
       'Home visits remove the parts of a podiatry appointment that are hardest for many people: arranging transport, parking, walking distances and waiting rooms. That makes them practical for older adults, people recovering from surgery or illness, carers who would otherwise need to organise an outing, and busy households where a clinic trip never quite fits.',
-      'Visits are available across the Adelaide metropolitan area, with regional South Australia by arrangement. Private patients can book directly without a referral, and funded arrangements (Medicare Chronic Disease Management, NDIS, DVA and Support at Home) are supported where applicable.',
+      'Visits are available across the Adelaide metropolitan area, with regional South Australia by arrangement. Private patients can book directly without a referral, and funded arrangements (Medicare Chronic Disease Management, NDIS and Support at Home) are supported where applicable.',
     ],
     bodyImage: {
       src: '/images/luke-home-visit-travel.webp',
@@ -106,7 +106,7 @@ export const services: ServiceContent[] = [
           'Private bookings (no referral required)',
           'Medicare CDM with GP referral',
           'NDIS plan-managed and self-managed clients',
-          'Support at Home and DVA where applicable',
+          'Support at Home where applicable',
         ],
       },
     ],
@@ -130,7 +130,6 @@ export const services: ServiceContent[] = [
     relatedLinks: [
       { href: '/services/ndis-podiatry', label: 'NDIS podiatry home visits' },
       { href: '/services/support-at-home-podiatry', label: 'Support at Home podiatry' },
-      { href: '/services/dva-podiatry', label: 'DVA podiatry in Adelaide' },
       { href: '/service-areas', label: 'Adelaide service areas' },
     ],
     homeVisitOnly: true,
@@ -218,7 +217,6 @@ export const services: ServiceContent[] = [
     ],
     relatedLinks: [
       { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
-      { href: '/services/dva-podiatry', label: 'DVA podiatry' },
       { href: '/referral', label: 'Referral information for providers' },
       { href: '/service-areas', label: 'Check Adelaide service areas' },
       { href: '/booking', label: 'Request an appointment' },
@@ -300,7 +298,6 @@ export const services: ServiceContent[] = [
     ],
     relatedLinks: [
       { href: '/services/support-at-home-podiatry', label: 'Support at Home podiatry' },
-      { href: '/services/dva-podiatry', label: 'DVA podiatry home visits' },
       { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/contact-us', label: 'Talk through a care arrangement' },
     ],
@@ -381,112 +378,8 @@ export const services: ServiceContent[] = [
     ],
     relatedLinks: [
       { href: '/services/aged-care-podiatry', label: 'Aged care podiatry' },
-      { href: '/services/dva-podiatry', label: 'DVA podiatry in Adelaide' },
       { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
       { href: '/referral', label: 'Referral information for providers' },
-    ],
-    homeVisitOnly: true,
-  },
-  {
-    slug: 'dva-podiatry',
-    title: 'DVA Podiatry',
-    pageTitle: 'DVA Podiatry',
-    summary: 'Home-visit podiatry for eligible DVA clients across Adelaide.',
-    heroImage: '/images/luke-home-visit-travel.webp',
-    heroAlt: 'Mobile podiatrist heading out to a DVA home visit',
-    metaTitle: 'DVA Podiatry Adelaide | Home Visits | Stride Podiatry',
-    metaDescription:
-      'DVA podiatry home visits in Adelaide for eligible veterans and clients needing treatment, regular foot care and practical support at home.',
-    canonical: `${siteUrl}/services/dva-podiatry`,
-    overview:
-      'We provide DVA podiatry home visits across Adelaide for eligible clients who prefer to be seen at home.',
-    overviewDetails: [
-      'Eligible veterans can access podiatry through DVA arrangements, with care provided at home rather than in a clinic. This suits older veterans, anyone with mobility or transport barriers, and clients who simply prefer to be seen in their own home.',
-      'DVA podiatry usually requires a referral from a GP. If you are unsure about eligibility or the paperwork, call first, and we can explain exactly what is needed and coordinate with your GP where appropriate, so nothing is left for you to chase.',
-      'Common visit work includes routine nail and skin care, treatment for corns and calluses, foot pain management and diabetic foot monitoring. Many DVA clients are seen on a regular cycle so care stays consistent.',
-    ],
-    bodyImage: {
-      src: '/images/luke-forefoot-skin-care.webp',
-      alt: 'Skin and nail care during a DVA podiatry home visit',
-    },
-    sections: [
-      {
-        heading: 'Who this service suits',
-        items: [
-          'Eligible DVA clients needing treatment or regular foot care',
-          'Older veterans who prefer care at home',
-          'People with mobility issues, pain or transport barriers',
-        ],
-      },
-      {
-        heading: 'How visits work',
-        items: [
-          'Home visits only',
-          'Visits to private homes, retirement living and aged care where appropriate',
-          'Straightforward appointments shaped around the client and home environment',
-        ],
-      },
-      {
-        heading: 'Referrals and claiming',
-        items: [
-          'We can explain whether a referral is required',
-          'If needed, we can coordinate with your GP or referrer around the paperwork',
-          'If you are unsure about eligibility or claiming, contact us first',
-        ],
-      },
-      {
-        heading: 'Common treatments',
-        items: [
-          'Routine nail and skin care, corns and calluses',
-          'Foot pain treatment, including heel pain and pressure-related discomfort',
-          'Diabetes foot checks, circulation concerns and ongoing monitoring',
-        ],
-      },
-      {
-        heading: 'Coverage',
-        items: [
-          'Adelaide metro home visits',
-          'Regional South Australia by arrangement',
-          'Call to check suburb coverage and availability',
-        ],
-      },
-      {
-        heading: 'How to book',
-        items: [
-          'Call or request an appointment online',
-          'Let us know the booking is for a DVA client',
-          'We can coordinate with family members, carers or referrers where needed',
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: 'Do you provide DVA podiatry home visits in Adelaide?',
-        answer:
-          'Yes. We provide DVA podiatry home visits across Adelaide metro, with regional South Australia by arrangement.',
-      },
-      {
-        question: 'Do I need a referral for DVA podiatry?',
-        answer:
-          'Referral requirements can depend on the arrangement, so contact us and we can explain what is needed.',
-      },
-      {
-        question: 'What treatments can be provided during a DVA home visit?',
-        answer:
-          'Common treatments include nail and skin care, corn and callus treatment, pain management and diabetic foot checks.',
-      },
-      {
-        question: 'Do you visit private homes and aged care settings?',
-        answer:
-          'Yes. Appointments can be provided in private homes and, where appropriate, in retirement living or aged care settings.',
-      },
-    ],
-    relatedLinks: [
-      { href: '/services/home-visit-podiatry', label: 'Home visit podiatry in Adelaide' },
-      { href: '/services/aged-care-podiatry', label: 'Aged care podiatry' },
-      { href: '/referral', label: 'Referral information for providers' },
-      { href: '/service-areas', label: 'Adelaide service areas' },
-      { href: '/booking', label: 'Request a DVA appointment' },
     ],
     homeVisitOnly: true,
   },

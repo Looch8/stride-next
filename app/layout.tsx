@@ -102,19 +102,19 @@ export const metadata: Metadata = {
 	applicationName: 'Stride Podiatry',
 	title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 	description:
-		'Mobile podiatrist in Adelaide providing home visits. Foot care for private patients, NDIS, DVA, Support at Home, aged care and more.',
+		'Mobile podiatrist in Adelaide providing home visits. Foot care for private patients, NDIS, Support at Home, aged care and more.',
 	openGraph: {
 		type: 'website',
 		siteName: 'Stride Podiatry',
 		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
+			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, Support at Home, aged care and more.',
 		url: siteUrl,
 	},
 	twitter: {
 		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, DVA, Support at Home, aged care and more.',
+			'Mobile podiatrist in Adelaide providing home visits. Care for private patients, NDIS, Support at Home, aged care and more.',
 	},
 	icons: {
 		icon: [

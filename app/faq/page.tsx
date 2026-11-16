@@ -12,7 +12,7 @@ const breadcrumbsLd = buildBreadcrumbList([
 const faqData: FAQItem[] = [
 	{
 		question: 'Do I need a referral to see a podiatrist?',
-		answer: 'No referral is needed for private bookings. Medicare CDM requires a GP referral. We also see NDIS plan- and self-managed clients, Support at Home clients and DVA clients where applicable.',
+		answer: 'No referral is needed for private bookings. Medicare CDM requires a GP referral. We also see NDIS plan- and self-managed clients and Support at Home clients where applicable.',
 	},
 	{
 		question: 'What time will you arrive for my appointment?',
@@ -28,8 +28,8 @@ const faqData: FAQItem[] = [
 		answer: 'We can complete a biomechanical assessment in your home, including gait analysis and testing where needed. If custom orthotics are suitable, we use a mobile scanning system during the visit, then return for fitting and adjustments once they are made.',
 	},
 	{
-		question: 'Do you accept Medicare, NDIS, and DVA clients?',
-		answer: 'We work with Medicare CDM referrals, NDIS plan- and self-managed clients, Support at Home and DVA where applicable.',
+		question: 'Do you accept Medicare, NDIS and Support at Home clients?',
+		answer: 'We work with Medicare CDM referrals, NDIS plan- and self-managed clients and Support at Home clients where applicable.',
 	},
 	{
 		question: 'Where do you provide mobile podiatry services?',
@@ -62,18 +62,18 @@ const faqLD = {
 export const metadata: Metadata = {
 	title: 'FAQs | Stride Podiatry',
 	description:
-		'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
+		'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS and service areas.',
 	alternates: { canonical: 'https://stridepodiatry.com.au/faq' },
 	openGraph: {
 		title: 'FAQs | Stride Podiatry',
 		description:
-			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
+			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS and service areas.',
 		url: 'https://stridepodiatry.com.au/faq',
 	},
 	twitter: {
 		title: 'FAQs | Stride Podiatry',
 		description:
-			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS, DVA and service areas.',
+			'Answers to common questions about mobile podiatry in Adelaide, including bookings, Medicare, NDIS and service areas.',
 	},
 };
 

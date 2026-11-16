@@ -12,18 +12,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 	description:
-		'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
+		'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, aged care and Support at Home where applicable.',
 	alternates: { canonical: 'https://stridepodiatry.com.au/booking' },
 	openGraph: {
 		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 		description:
-			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
+			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, aged care and Support at Home where applicable.',
 		url: 'https://stridepodiatry.com.au/booking',
 	},
 	twitter: {
 		title: 'Book a Podiatry Home Visit in Adelaide | Stride Podiatry',
 		description:
-			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, DVA, aged care and Support at Home where applicable.',
+			'Request a podiatry home visit in Adelaide. Private bookings welcome, with support for Medicare CDM, NDIS, aged care and Support at Home where applicable.',
 	},
 };
 
@@ -52,7 +52,6 @@ export default function BookingPage() {
 						<p className="booking-muted">
 							Private bookings are welcome. We can also help with Medicare
 							CDM, <Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
-							<Link href="/services/dva-podiatry">DVA</Link>,{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>{' '}
 							and{' '}
 							<Link href="/services/support-at-home-podiatry">
@@ -92,8 +91,7 @@ export default function BookingPage() {
 							</p>
 							<p className="booking-muted">
 								Useful if you need{' '}
-								<Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
-								<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+								<Link href="/services/ndis-podiatry">NDIS podiatry</Link>{' '}
 								or{' '}
 								<Link href="/services/support-at-home-podiatry">
 									Support at Home podiatry

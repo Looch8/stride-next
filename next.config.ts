@@ -78,6 +78,12 @@ const nextConfig: NextConfig = {
 				destination: '/services/ingrown-toenail',
 				permanent: true,
 			},
+			// DVA podiatry is no longer offered; send old links to the services overview.
+			{
+				source: '/services/dva-podiatry',
+				destination: '/services',
+				permanent: true,
+			},
 			// The referral form PDF was renamed; referrers may still hold the old link.
 			{
 				source: '/referral-form.pdf',

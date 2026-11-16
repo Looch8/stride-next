@@ -11,18 +11,18 @@ const breadcrumbsLd = buildBreadcrumbList([
 export const metadata: Metadata = {
 	title: 'Referrals | Stride Podiatry',
 	description:
-		'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
+		'Referral information for GPs and coordinators, including Medicare CDM, NDIS and Support at Home.',
 	alternates: { canonical: 'https://stridepodiatry.com.au/referral' },
 	openGraph: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
+			'Referral information for GPs and coordinators, including Medicare CDM, NDIS and Support at Home.',
 		url: 'https://stridepodiatry.com.au/referral',
 	},
 	twitter: {
 		title: 'Referrals | Stride Podiatry',
 		description:
-			'Referral information for GPs and coordinators, including Medicare CDM, NDIS, DVA and Support at Home.',
+			'Referral information for GPs and coordinators, including Medicare CDM, NDIS and Support at Home.',
 	},
 };
 
@@ -71,13 +71,11 @@ export default function ReferralPage() {
 						<ul className="referral-list">
 							<li>GP referrals, including Medicare CDM arrangements</li>
 							<li>NDIS plan-managed and self-managed participants</li>
-							<li>DVA clients needing podiatry home visits</li>
 							<li>Support at Home and aged care provider referrals</li>
 							<li>Residential aged care, support coordination and case management</li>
 						</ul>
 						<p>
-							Helpful pages: <Link href="/services/ndis-podiatry">NDIS podiatry</Link>,{' '}
-							<Link href="/services/dva-podiatry">DVA podiatry</Link>{' '}
+							Helpful pages: <Link href="/services/ndis-podiatry">NDIS podiatry</Link>{' '}
 							and{' '}
 							<Link href="/services/support-at-home-podiatry">
 								Support at Home podiatry

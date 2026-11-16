@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 		absolute: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 	},
 	description:
-		'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
+		'Podiatry home visits in Adelaide for private, NDIS, Support at Home and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 	alternates: { canonical: 'https://stridepodiatry.com.au' },
 	openGraph: {
 		siteName: 'Stride Podiatry',
 		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
+			'Podiatry home visits in Adelaide for private, NDIS, Support at Home and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 		url: 'https://stridepodiatry.com.au',
 	},
 	twitter: {
 		title: 'Mobile Podiatrist Adelaide | Stride Podiatry',
 		description:
-			'Podiatry home visits in Adelaide for private, NDIS, Support at Home, DVA and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
+			'Podiatry home visits in Adelaide for private, NDIS, Support at Home and aged care patients. Routine foot care, custom orthotics and ingrown toenails.',
 	},
 };
 
@@ -122,8 +122,7 @@ export default function HomePage() {
 							Private patients can request an appointment directly. Visits are
 							also available for{' '}
 							<Link href="/services/aged-care-podiatry">aged care</Link>,{' '}
-							<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
-							<Link href="/services/dva-podiatry">DVA</Link> and{' '}
+							<Link href="/services/ndis-podiatry">NDIS</Link> and{' '}
 							<Link href="/services/support-at-home-podiatry">
 								Support at Home
 							</Link>{' '}
@@ -167,8 +166,7 @@ export default function HomePage() {
 								<h3>Private and funded care</h3>
 								<p>
 									Private appointments are available, along with{' '}
-									<Link href="/services/ndis-podiatry">NDIS</Link>,{' '}
-									<Link href="/services/dva-podiatry">DVA</Link> and{' '}
+									<Link href="/services/ndis-podiatry">NDIS</Link> and{' '}
 									<Link href="/services/support-at-home-podiatry">
 										Support at Home
 									</Link>
@@ -236,7 +234,7 @@ export default function HomePage() {
 					<h2>Questions about bookings, referrals or funding?</h2>
 					<p>
 						Visit the <Link href="/faq">FAQ page</Link> for quick answers
-						about Medicare, NDIS, DVA, Support at Home and home visits.
+						about Medicare, NDIS, Support at Home and home visits.
 					</p>
 				</div>
 			</section>
